@@ -7,7 +7,13 @@ Neon arcade of original browser games.
 ## Featured
 
 ### Nitro Gridiron
-Arcade football. Call a play (draw, sweep, slant, go, screen, hail mary), snap, then steer the ball carrier with **WASD / arrow keys** or by **dragging** on mobile. Four 2-minute quarters. Beat the CPU.
+Arcade football vs CPU. Four 2-minute quarters.
+
+- **On offense:** pick Draw, Sweep, Slant, Go Route, Screen, or Hail Mary.
+- **On defense:** pick 4-3, Nickel, Blitz, Cover 2, Goal Line, or QB Spy.
+- After the hike, steer your highlighted player with **WASD / arrows** or **drag** on mobile.
+- **Space** (or tap) to throw / hand off.
+- Plays stay slow on purpose so you can dodge and chase.
 
 ## The rest of the chaos
 
