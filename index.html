@@ -52,14 +52,31 @@
           <div><strong>Instant</strong><span>Digital delivery</span></div>
         </div>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-        <div class="hero-badge">
-          <span>New-age maker shop</span>
-          <span style="color:var(--accent-2);font-weight:600">STL · 3MF · OBJ</span>
+      <div class="hero-visual hero-slideshow" id="hero-slideshow" role="region" aria-roledescription="carousel" aria-label="Featured products">
+        <div class="hero-slideshow-track" data-slides></div>
+        <div class="hero-slideshow-overlay">
+          <div class="hero-slideshow-meta">
+            <span class="hero-slideshow-kicker">Now showing</span>
+            <a class="hero-slideshow-title" data-slide-title href="catalog.html">—</a>
+            <p class="hero-slideshow-tagline" data-slide-tagline></p>
+            <div class="hero-slideshow-row">
+              <span class="hero-slideshow-price" data-slide-price></span>
+              <a class="btn btn-primary hero-slideshow-link" data-slide-link href="catalog.html">View model</a>
+            </div>
+          </div>
+          <div class="hero-slideshow-controls">
+            <button type="button" class="hero-slideshow-btn" data-slide-prev aria-label="Previous product">‹</button>
+            <div class="hero-slideshow-dots" data-slide-dots role="tablist" aria-label="Slide indicators"></div>
+            <button type="button" class="hero-slideshow-btn" data-slide-next aria-label="Next product">›</button>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="now-showing-strip" id="now-showing-strip" hidden>
+      <div class="container now-showing-inner">
+        <span class="now-showing-label">In rotation</span>
+        <div class="now-showing-chips" data-now-chips></div>
       </div>
     </div>
 
