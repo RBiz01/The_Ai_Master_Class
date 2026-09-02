@@ -101,6 +101,10 @@
     <div class="buy-row">
       <button type="button" class="btn btn-primary" id="add-cart">Add to cart</button>
       <button type="button" class="btn btn-accent" id="buy-now">Buy now</button>
+      <button type="button" class="btn btn-3d" id="view-3d" aria-label="Open 3D view">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l9 5v8l-9 5-9-5V8l9-5z"/><path d="M12 12l9-5"/><path d="M12 12v10"/><path d="M12 12L3 7"/></svg>
+        3D View
+      </button>
     </div>
     <p style="margin-top:1rem;font-size:0.8rem;color:var(--text-muted)">* Placeholder license — replace with your commercial terms. Digital download after checkout.</p>
   </div>
@@ -126,4 +130,38 @@
     FC.addToCart(product.id, qty);
     location.href = FC.siteRoot() + 'cart.html';
   };
+
+  const view3dBtn = document.getElementById('view-3d');
+  let modelUrl = null;
+  if (product.downloads && (product.downloads.stl || product.downloads.obj)) {
+    modelUrl = FC.assetUrl(product.downloads.stl || product.downloads.obj);
+  }
+
+  if (!modelUrl) {
+    view3dBtn.addEventListener('click', () => FC.toast('3D preview coming soon'));
+  } else {
+    view3dBtn.addEventListener('click', () => {
+      const open = () => {
+        if (window.FCViewer && typeof FCViewer.open === 'function') {
+          FCViewer.open(modelUrl, { name: product.name });
+        } else {
+          FC.toast('3D viewer loading…');
+        }
+      };
+      if (window.FCViewer && typeof FCViewer.open === 'function') open();
+      else {
+        let n = 0;
+        const t = setInterval(() => {
+          n += 1;
+          if (window.FCViewer && typeof FCViewer.open === 'function') {
+            clearInterval(t);
+            open();
+          } else if (n > 40) {
+            clearInterval(t);
+            FC.toast('3D viewer unavailable');
+          }
+        }, 50);
+      }
+    });
+  }
 })();
