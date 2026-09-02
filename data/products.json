@@ -21,7 +21,7 @@
         "STL",
         "3MF"
       ],
-      "printTime": "4–6 hrs",
+      "printTime": "4\u20136 hrs",
       "tags": [
         "modular",
         "no-supports",
@@ -45,7 +45,7 @@
         "STL",
         "OBJ"
       ],
-      "printTime": "2–3 hrs (resin)",
+      "printTime": "2\u20133 hrs (resin)",
       "tags": [
         "tabletop",
         "articulated",
@@ -69,7 +69,7 @@
         "STL",
         "3MF"
       ],
-      "printTime": "1–2 hrs",
+      "printTime": "1\u20132 hrs",
       "tags": [
         "desk",
         "print-in-place",
@@ -93,7 +93,7 @@
         "STL",
         "3MF"
       ],
-      "printTime": "8–12 hrs",
+      "printTime": "8\u201312 hrs",
       "tags": [
         "lighting",
         "organic",
@@ -111,7 +111,7 @@
       "price": 13.99,
       "featured": true,
       "tagline": "A spiral of light for the modern altar.",
-      "description": "Premium desk sculpture — three helical ribbons of sacred geometry around a slender stem crowned by a crystal octahedron. Pearl/aurora PLA recommended. Support-free FDM. ~119.5 mm H × 82 mm footprint · ~14 g PLA · ~2.4 h print",
+      "description": "Premium desk sculpture \u2014 three helical ribbons of sacred geometry around a slender stem crowned by a crystal octahedron. Pearl/aurora PLA recommended. Support-free FDM. ~119.5 mm H \u00d7 82 mm footprint \u00b7 ~14 g PLA \u00b7 ~2.4 h print",
       "polyCount": "~21k",
       "fileFormats": [
         "STL",
@@ -145,7 +145,7 @@
       "price": 12.99,
       "featured": true,
       "tagline": "A blush-pink spiral bloom for quiet shelves.",
-      "description": "Bulbous spiral-fluted bud vase with ~20 deep helical ridges twisting from a stable foot to a soft flared scalloped rim. Matte blush-pink / dusty rose PLA look. Organic waves + spirals style. Support-free FDM hollow vessel. ~115 mm H · ~77 mm max dia · ~38 mm base · ~25 mm opening ID · ~45 g PLA · ~6.2 h",
+      "description": "Bulbous spiral-fluted bud vase with ~20 deep helical ridges twisting from a stable foot to a soft flared scalloped rim. Matte blush-pink / dusty rose PLA look. Organic waves + spirals style. Support-free FDM hollow vessel. ~115 mm H \u00b7 ~77 mm max dia \u00b7 ~38 mm base \u00b7 ~25 mm opening ID \u00b7 ~45 g PLA \u00b7 ~6.2 h",
       "fileFormats": [
         "STL",
         "OBJ"
@@ -178,7 +178,7 @@
       "price": 12.99,
       "featured": true,
       "tagline": "Soft waves that feel hand-thrown, not lathed.",
-      "description": "Organic wavy-ridged bud vase — soft bulbous silhouette with ~18 flowing vertical fins that undulate/snake as they rise (not spiral flutes). Hollow, watertight, support-free FDM. ~116 mm H · ~78 mm max · ~39 mm base · ~22–26 mm opening · ~50 g PLA · ~6.9 h",
+      "description": "Organic wavy-ridged bud vase \u2014 soft bulbous silhouette with ~18 flowing vertical fins that undulate/snake as they rise (not spiral flutes). Hollow, watertight, support-free FDM. ~116 mm H \u00b7 ~78 mm max \u00b7 ~39 mm base \u00b7 ~22\u201326 mm opening \u00b7 ~50 g PLA \u00b7 ~6.9 h",
       "fileFormats": [
         "STL",
         "OBJ"
@@ -211,7 +211,7 @@
       "price": 12.99,
       "featured": true,
       "tagline": "A coiled nautilus whisper for quiet shelves.",
-      "description": "Organic nautilus-form sculpture — soft logarithmic spiral (~2.3 whorls), rounded wave ridges on the outer coil, open aperture for a tiny stem/trinket. Support-free FDM with thickened flat foot. Distinct from Spira Bloom / Undula Vessel / Lumen Spire. ~89.9 × 32.9 × 69.5 mm · ~36 g PLA · ~5.0 h",
+      "description": "Organic nautilus-form sculpture \u2014 soft logarithmic spiral (~2.3 whorls), rounded wave ridges on the outer coil, open aperture for a tiny stem/trinket. Support-free FDM with thickened flat foot. Distinct from Spira Bloom / Undula Vessel / Lumen Spire. ~89.9 \u00d7 32.9 \u00d7 69.5 mm \u00b7 ~36 g PLA \u00b7 ~5.0 h",
       "fileFormats": [
         "STL",
         "OBJ"
@@ -238,39 +238,6 @@
       }
     },
     {
-      "id": "aura-loop",
-      "name": "Aura Loop",
-      "category": "Decor",
-      "price": 12.99,
-      "featured": true,
-      "tagline": "A soft Möbius whisper that holds the quiet.",
-      "description": "Organic standing wave-ribbon sculpture — continuous thick ribbon looping once into a Möbius-ish open ring with gentle undulation and a thickened oval foot. Support-free FDM. Distinct from Lumen Spire / Spira Bloom / Undula Vessel / Coil Shell. ~99.6 × 68.0 × 101.5 mm · ~217 g PLA · ~30 h (dense solid)",
-      "fileFormats": [
-        "STL",
-        "OBJ"
-      ],
-      "printTime": "~30 hrs",
-      "tags": [
-        "decor",
-        "sculpture",
-        "möbius",
-        "no-supports"
-      ],
-      "gradient": [
-        "#a78bfa",
-        "#c4b5fd"
-      ],
-      "image": "images/aura-loop/hero.png",
-      "images": {
-        "hero": "images/aura-loop/hero.png",
-        "alt": "images/aura-loop/alt.png"
-      },
-      "downloads": {
-        "stl": "downloads/aura-loop/aura_loop.stl",
-        "obj": "downloads/aura-loop/aura_loop.obj"
-      }
-    },
-    {
       "id": "bit-carousel",
       "name": "BitCarousel Tool Caddy",
       "category": "Organizational",
@@ -282,7 +249,7 @@
       "fileFormats": [
         "STL"
       ],
-      "printTime": "5–7 hrs",
+      "printTime": "5\u20137 hrs",
       "tags": [
         "workshop",
         "rotating",
@@ -306,7 +273,7 @@
         "STL",
         "3MF"
       ],
-      "printTime": "2–3 hrs",
+      "printTime": "2\u20133 hrs",
       "tags": [
         "fidget",
         "gears",
@@ -330,7 +297,7 @@
         "STL",
         "3MF"
       ],
-      "printTime": "3–5 hrs",
+      "printTime": "3\u20135 hrs",
       "tags": [
         "vase",
         "low-poly",
@@ -354,7 +321,7 @@
         "STL",
         "STEP"
       ],
-      "printTime": "2–4 hrs",
+      "printTime": "2\u20134 hrs",
       "tags": [
         "robotics",
         "servo",
