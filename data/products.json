@@ -172,6 +172,39 @@
       }
     },
     {
+      "id": "undula-vessel",
+      "name": "Undula Vessel",
+      "category": "Decor",
+      "price": 12.99,
+      "featured": true,
+      "tagline": "Soft waves that feel hand-thrown, not lathed.",
+      "description": "Organic wavy-ridged bud vase \u2014 soft bulbous silhouette with ~18 flowing vertical fins that undulate/snake as they rise (not spiral flutes). Hollow, watertight, support-free FDM. ~116 mm H \u00b7 ~78 mm max \u00b7 ~39 mm base \u00b7 ~22\u201326 mm opening \u00b7 ~50 g PLA \u00b7 ~6.9 h",
+      "fileFormats": [
+        "STL",
+        "OBJ"
+      ],
+      "printTime": "~6.9 hrs",
+      "tags": [
+        "decor",
+        "vase",
+        "organic",
+        "no-supports"
+      ],
+      "gradient": [
+        "#c2410c",
+        "#fdba74"
+      ],
+      "image": "images/undula-vessel/hero.png",
+      "images": {
+        "hero": "images/undula-vessel/hero.png",
+        "alt": "images/undula-vessel/hero.png"
+      },
+      "downloads": {
+        "stl": "downloads/undula-vessel/undula_vessel.stl",
+        "obj": "downloads/undula-vessel/undula_vessel.obj"
+      }
+    },
+    {
       "id": "bit-carousel",
       "name": "BitCarousel Tool Caddy",
       "category": "Organizational",
