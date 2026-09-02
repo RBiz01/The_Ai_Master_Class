@@ -21,7 +21,7 @@
         "STL",
         "3MF"
       ],
-      "printTime": "4\u20136 hrs",
+      "printTime": "4–6 hrs",
       "tags": [
         "modular",
         "no-supports",
@@ -45,7 +45,7 @@
         "STL",
         "OBJ"
       ],
-      "printTime": "2\u20133 hrs (resin)",
+      "printTime": "2–3 hrs (resin)",
       "tags": [
         "tabletop",
         "articulated",
@@ -69,7 +69,7 @@
         "STL",
         "3MF"
       ],
-      "printTime": "1\u20132 hrs",
+      "printTime": "1–2 hrs",
       "tags": [
         "desk",
         "print-in-place",
@@ -93,7 +93,7 @@
         "STL",
         "3MF"
       ],
-      "printTime": "8\u201312 hrs",
+      "printTime": "8–12 hrs",
       "tags": [
         "lighting",
         "organic",
@@ -111,7 +111,7 @@
       "price": 13.99,
       "featured": true,
       "tagline": "A spiral of light for the modern altar.",
-      "description": "Premium desk sculpture \u2014 three helical ribbons of sacred geometry around a slender stem crowned by a crystal octahedron. Pearl/aurora PLA recommended. Support-free FDM. ~119.5 mm H \u00d7 82 mm footprint \u00b7 ~14 g PLA \u00b7 ~2.4 h print",
+      "description": "Premium desk sculpture — three helical ribbons of sacred geometry around a slender stem crowned by a crystal octahedron. Pearl/aurora PLA recommended. Support-free FDM. ~119.5 mm H × 82 mm footprint · ~14 g PLA · ~2.4 h print",
       "polyCount": "~21k",
       "fileFormats": [
         "STL",
@@ -145,7 +145,7 @@
       "price": 12.99,
       "featured": true,
       "tagline": "A blush-pink spiral bloom for quiet shelves.",
-      "description": "Bulbous spiral-fluted bud vase with ~20 deep helical ridges twisting from a stable foot to a soft flared scalloped rim. Matte blush-pink / dusty rose PLA look. Organic waves + spirals style. Support-free FDM hollow vessel. ~115 mm H \u00b7 ~77 mm max dia \u00b7 ~38 mm base \u00b7 ~25 mm opening ID \u00b7 ~45 g PLA \u00b7 ~6.2 h",
+      "description": "Bulbous spiral-fluted bud vase with ~20 deep helical ridges twisting from a stable foot to a soft flared scalloped rim. Matte blush-pink / dusty rose PLA look. Organic waves + spirals style. Support-free FDM hollow vessel. ~115 mm H · ~77 mm max dia · ~38 mm base · ~25 mm opening ID · ~45 g PLA · ~6.2 h",
       "fileFormats": [
         "STL",
         "OBJ"
@@ -178,7 +178,7 @@
       "price": 12.99,
       "featured": true,
       "tagline": "Soft waves that feel hand-thrown, not lathed.",
-      "description": "Organic wavy-ridged bud vase \u2014 soft bulbous silhouette with ~18 flowing vertical fins that undulate/snake as they rise (not spiral flutes). Hollow, watertight, support-free FDM. ~116 mm H \u00b7 ~78 mm max \u00b7 ~39 mm base \u00b7 ~22\u201326 mm opening \u00b7 ~50 g PLA \u00b7 ~6.9 h",
+      "description": "Organic wavy-ridged bud vase — soft bulbous silhouette with ~18 flowing vertical fins that undulate/snake as they rise (not spiral flutes). Hollow, watertight, support-free FDM. ~116 mm H · ~78 mm max · ~39 mm base · ~22–26 mm opening · ~50 g PLA · ~6.9 h",
       "fileFormats": [
         "STL",
         "OBJ"
@@ -205,6 +205,40 @@
       }
     },
     {
+      "id": "tide-arch",
+      "name": "Tide Arch",
+      "category": "Decor",
+      "price": 13.49,
+      "featured": true,
+      "tagline": "A breaking tide, held open — soft clay, open air.",
+      "description": "Freestanding open wave-arch desk sculpture — one continuous soft organic ribbon on a low oval foot, see-through arch (NOT a vase/vessel). High-density mesh (~280k faces). Support-free FDM. ~123.7 × 49.8 × 106.1 mm · ~84 g PLA · ~11.5 h",
+      "polyCount": "~280k",
+      "fileFormats": [
+        "STL",
+        "OBJ"
+      ],
+      "printTime": "~11.5 hrs",
+      "tags": [
+        "decor",
+        "sculpture",
+        "organic",
+        "no-supports"
+      ],
+      "gradient": [
+        "#0f766e",
+        "#99f6e4"
+      ],
+      "image": "images/tide-arch/hero.png",
+      "images": {
+        "hero": "images/tide-arch/hero.png",
+        "alt": "images/tide-arch/hero.png"
+      },
+      "downloads": {
+        "stl": "downloads/tide-arch/tide_arch.stl",
+        "obj": "downloads/tide-arch/tide_arch.obj"
+      }
+    },
+    {
       "id": "bit-carousel",
       "name": "BitCarousel Tool Caddy",
       "category": "Organizational",
@@ -216,7 +250,7 @@
       "fileFormats": [
         "STL"
       ],
-      "printTime": "5\u20137 hrs",
+      "printTime": "5–7 hrs",
       "tags": [
         "workshop",
         "rotating",
@@ -240,7 +274,7 @@
         "STL",
         "3MF"
       ],
-      "printTime": "2\u20133 hrs",
+      "printTime": "2–3 hrs",
       "tags": [
         "fidget",
         "gears",
@@ -264,7 +298,7 @@
         "STL",
         "3MF"
       ],
-      "printTime": "3\u20135 hrs",
+      "printTime": "3–5 hrs",
       "tags": [
         "vase",
         "low-poly",
@@ -288,7 +322,7 @@
         "STL",
         "STEP"
       ],
-      "printTime": "2\u20134 hrs",
+      "printTime": "2–4 hrs",
       "tags": [
         "robotics",
         "servo",
