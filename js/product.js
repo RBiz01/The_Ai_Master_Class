@@ -1,9 +1,35 @@
 (async () => {
   const root = document.getElementById('product-root');
   if (!root) return;
-  const id = new URLSearchParams(location.search).get('id');
+
+  const KNOWN_PAGES = new Set([
+    'index.html',
+    'product.html',
+    'catalog.html',
+    'cart.html',
+    '404.html',
+    'products',
+    'fuzzy-chainsaw',
+    'css',
+    'js',
+    'data',
+    'images',
+    'downloads',
+  ]);
+
+  function idFromPath() {
+    const parts = location.pathname.split('/').filter(Boolean);
+    if (!parts.length) return null;
+    let last = parts[parts.length - 1];
+    if (last === 'index.html' && parts.length >= 2) last = parts[parts.length - 2];
+    if (!last || KNOWN_PAGES.has(last) || /\.html?$/i.test(last)) return null;
+    return last;
+  }
+
+  const id = new URLSearchParams(location.search).get('id') || idFromPath();
+  const catalogHref = `${FC.siteRoot()}catalog.html`;
   if (!id) {
-    root.innerHTML = '<div class="empty-state container">Product not found. <a href="catalog.html">Browse catalog</a></div>';
+    root.innerHTML = `<div class="empty-state container">No product selected. Open a model from the <a href="${catalogHref}">catalog</a>, or use a link with <code>?id=…</code>.</div>`;
     return;
   }
 
@@ -12,11 +38,11 @@
     const data = await FC.loadProducts();
     product = data.products.find((p) => p.id === id);
   } catch (e) {
-    root.innerHTML = '<div class="empty-state container">Failed to load product.</div>';
+    root.innerHTML = `<div class="empty-state container">Failed to load product data. <a href="${catalogHref}">Back to catalog</a></div>`;
     return;
   }
   if (!product) {
-    root.innerHTML = '<div class="empty-state container">Product not found. <a href="catalog.html">Browse catalog</a></div>';
+    root.innerHTML = `<div class="empty-state container">Product “${id}” not found. <a href="${catalogHref}">Browse catalog</a></div>`;
     return;
   }
 
@@ -27,12 +53,15 @@
     ? `<span class="was">${FC.formatMoney(p.base)}</span>${FC.formatMoney(p.final)}`
     : FC.formatMoney(p.final);
 
+  const heroRaw = (product.images && product.images.hero) || product.image;
+  const altRaw = product.images && product.images.alt;
+  const hero = heroRaw ? FC.assetUrl(heroRaw) : null;
+  const alt = altRaw ? FC.assetUrl(altRaw) : null;
+
   root.innerHTML = `
 <div class="container product-detail">
   <div class="detail-gallery">
     ${(() => {
-      const hero = (product.images && product.images.hero) || product.image;
-      const alt = product.images && product.images.alt;
       if (!hero) return FC.placeholderSVG(product, 900, 900);
       const thumbs = alt
         ? `<div class="gallery-thumbs">
@@ -95,6 +124,6 @@
   document.getElementById('add-cart').onclick = () => FC.addToCart(product.id, qty);
   document.getElementById('buy-now').onclick = () => {
     FC.addToCart(product.id, qty);
-    location.href = 'cart.html';
+    location.href = FC.siteRoot() + 'cart.html';
   };
 })();

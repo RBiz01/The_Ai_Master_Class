@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page not found · Fuzzy Chainsaw</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/fuzzy-chainsaw/css/styles.css" />
+  <style>
+    .not-found { min-height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 3rem 1rem; }
+    .not-found h1 { font-family: "Space Grotesk", system-ui, sans-serif; font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 0.75rem; }
+    .not-found p { color: var(--text-muted, #94a3b8); margin: 0 0 1.5rem; max-width: 28rem; }
+    .not-found .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+  </style>
+</head>
+<body>
+  <main class="not-found">
+    <div>
+      <div class="eyebrow" style="margin-bottom:0.75rem">404</div>
+      <h1>Page not found</h1>
+      <p>That URL isn’t in the shop. Try the catalog, or head home — Lumen Spire and other prints live there.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/fuzzy-chainsaw/catalog.html">Browse catalog</a>
+        <a class="btn btn-secondary" href="/fuzzy-chainsaw/">Home</a>
+        <a class="btn btn-ghost" href="/fuzzy-chainsaw/product.html?id=lumen-spire">Lumen Spire</a>
+      </div>
+    </div>
+  </main>
+  <script>
+    (function () {
+      var root = location.pathname.indexOf('/fuzzy-chainsaw') === 0 ? '/fuzzy-chainsaw/' : '/';
+      document.querySelectorAll('a[href^="/fuzzy-chainsaw/"]').forEach(function (a) {
+        a.setAttribute('href', a.getAttribute('href').replace(/^\/fuzzy-chainsaw\//, root));
+      });
+      var css = document.querySelector('link[href*="styles.css"]');
+      if (css) css.href = root + 'css/styles.css';
+    })();
+  </script>
+</body>
+</html>

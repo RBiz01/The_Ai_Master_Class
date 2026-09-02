@@ -24,9 +24,45 @@ const FC = (() => {
 
   let productsCache = null;
 
+  /** Shop root path with trailing slash (works under /fuzzy-chainsaw/ and local). */
+  function siteRoot() {
+    try {
+      const scripts = document.querySelectorAll('script[src*="js/app.js"]');
+      for (const s of scripts) {
+        const src = s.getAttribute('src') || '';
+        const abs = new URL(src, location.href);
+        const idx = abs.pathname.lastIndexOf('/js/app.js');
+        if (idx !== -1) return abs.pathname.slice(0, idx + 1);
+      }
+    } catch (_) { /* ignore */ }
+
+    let path = location.pathname || '/';
+    if (/\.html?$/i.test(path)) path = path.replace(/\/[^/]+$/, '/');
+    else if (!path.endsWith('/')) path += '/';
+    path = path.replace(/\/products\/[^/]+\/$/, '/');
+    // Collapse a single product-slug directory at the shop root (e.g. /…/lumen-spire/)
+    const segs = path.split('/').filter(Boolean);
+    const skip = new Set(['fuzzy-chainsaw', 'css', 'js', 'data', 'images', 'downloads', 'products']);
+    if (segs.length && !skip.has(segs[segs.length - 1])) {
+      const maybeSlug = segs[segs.length - 1];
+      if (!maybeSlug.includes('.')) {
+        path = '/' + segs.slice(0, -1).join('/') + (segs.length > 1 ? '/' : '');
+        if (path === '/') path = '/';
+        else if (!path.endsWith('/')) path += '/';
+      }
+    }
+    return path.endsWith('/') ? path : path + '/';
+  }
+
+  function assetUrl(rel) {
+    if (!rel) return rel;
+    if (/^(https?:|data:|\/)/i.test(rel)) return rel;
+    return siteRoot() + String(rel).replace(/^\.\//, '');
+  }
+
   async function loadProducts() {
     if (productsCache) return productsCache;
-    const res = await fetch('data/products.json');
+    const res = await fetch(siteRoot() + 'data/products.json');
     if (!res.ok) throw new Error('Failed to load products');
     productsCache = await res.json();
     return productsCache;
@@ -144,7 +180,8 @@ const FC = (() => {
     const src = (product.images && product.images.hero) || product.image;
     if (src) {
       const label = escapeXml(product.name || 'Model');
-      return `<img class="product-photo" src="${escapeXml(src)}" alt="${label}" width="${w}" height="${h}" loading="lazy" />`;
+      const resolved = assetUrl(src);
+      return `<img class="product-photo" src="${escapeXml(resolved)}" alt="${label}" width="${w}" height="${h}" loading="lazy" />`;
     }
     return placeholderSVG(product, w, h);
   }
@@ -160,15 +197,16 @@ const FC = (() => {
       : formatMoney(p.final);
     const saleBadge = p.discounted ? '<span class="badge badge-sale">10% off</span>' : '';
     const feat = product.featured ? '<span class="badge badge-feat">Featured</span>' : '';
+    const productHref = `${siteRoot()}product.html?id=${encodeURIComponent(product.id)}`;
     return `
 <article class="product-card">
-  <a href="product.html?id=${encodeURIComponent(product.id)}" class="product-thumb">
+  <a href="${productHref}" class="product-thumb">
     ${feat}
     ${productArtHTML(product)}
   </a>
   <div class="product-body">
     <div class="product-cat">${escapeXml(product.category)}</div>
-    <h3><a href="product.html?id=${encodeURIComponent(product.id)}">${escapeXml(product.name)}</a></h3>
+    <h3><a href="${productHref}">${escapeXml(product.name)}</a></h3>
     <p class="product-tagline">${escapeXml(product.tagline)}</p>
     <div class="product-meta">
       <div class="price">${priceHTML}</div>
@@ -313,6 +351,8 @@ const FC = (() => {
   }
 
   return {
+    siteRoot,
+    assetUrl,
     loadProducts,
     getCart,
     addToCart,
