@@ -238,6 +238,39 @@
       }
     },
     {
+      "id": "aura-loop",
+      "name": "Aura Loop",
+      "category": "Decor",
+      "price": 12.99,
+      "featured": true,
+      "tagline": "A soft Möbius whisper that holds the quiet.",
+      "description": "Organic standing wave-ribbon sculpture — continuous thick ribbon looping once into a Möbius-ish open ring with gentle undulation and a thickened oval foot. Support-free FDM. Distinct from Lumen Spire / Spira Bloom / Undula Vessel / Coil Shell. ~99.6 × 68.0 × 101.5 mm · ~217 g PLA · ~30 h (dense solid)",
+      "fileFormats": [
+        "STL",
+        "OBJ"
+      ],
+      "printTime": "~30 hrs",
+      "tags": [
+        "decor",
+        "sculpture",
+        "möbius",
+        "no-supports"
+      ],
+      "gradient": [
+        "#a78bfa",
+        "#c4b5fd"
+      ],
+      "image": "images/aura-loop/hero.png",
+      "images": {
+        "hero": "images/aura-loop/hero.png",
+        "alt": "images/aura-loop/alt.png"
+      },
+      "downloads": {
+        "stl": "downloads/aura-loop/aura_loop.stl",
+        "obj": "downloads/aura-loop/aura_loop.obj"
+      }
+    },
+    {
       "id": "bit-carousel",
       "name": "BitCarousel Tool Caddy",
       "category": "Organizational",
