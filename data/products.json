@@ -197,7 +197,7 @@
       "image": "images/undula-vessel/hero.png",
       "images": {
         "hero": "images/undula-vessel/hero.png",
-        "alt": "images/undula-vessel/hero.png"
+        "alt": "images/undula-vessel/alt.png"
       },
       "downloads": {
         "stl": "downloads/undula-vessel/undula_vessel.stl",
@@ -229,7 +229,8 @@
       ],
       "image": "images/coil-shell/hero.png",
       "images": {
-        "hero": "images/coil-shell/hero.png"
+        "hero": "images/coil-shell/hero.png",
+        "alt": "images/coil-shell/alt.png"
       },
       "downloads": {
         "stl": "downloads/coil-shell/coil_shell.stl",
