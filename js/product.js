@@ -29,7 +29,24 @@
 
   root.innerHTML = `
 <div class="container product-detail">
-  <div class="detail-gallery">${FC.placeholderSVG(product, 900, 900)}</div>
+  <div class="detail-gallery">
+    ${(() => {
+      const hero = (product.images && product.images.hero) || product.image;
+      const alt = product.images && product.images.alt;
+      if (!hero) return FC.placeholderSVG(product, 900, 900);
+      const thumbs = alt
+        ? `<div class="gallery-thumbs">
+            <button type="button" class="gallery-thumb is-active" data-gallery-src="${hero}" aria-label="Show main photo">
+              <img class="product-photo" src="${hero}" alt="${product.name}" />
+            </button>
+            <button type="button" class="gallery-thumb" data-gallery-src="${alt}" aria-label="Show alternate photo">
+              <img class="product-photo" src="${alt}" alt="${product.name} alternate" />
+            </button>
+          </div>`
+        : '';
+      return `<div class="gallery-main"><img class="product-photo" id="gallery-main-img" src="${hero}" alt="${product.name}" /></div>${thumbs}`;
+    })()}
+  </div>
   <div class="detail-info">
     <div class="product-cat">${product.category}</div>
     <h1>${product.name}</h1>
@@ -59,6 +76,18 @@
     <p style="margin-top:1rem;font-size:0.8rem;color:var(--text-muted)">* Placeholder license — replace with your commercial terms. Digital download after checkout.</p>
   </div>
 </div>`;
+
+
+  const mainImg = document.getElementById('gallery-main-img');
+  if (mainImg) {
+    document.querySelectorAll('[data-gallery-src]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        mainImg.src = btn.getAttribute('data-gallery-src');
+        document.querySelectorAll('.gallery-thumb').forEach((t) => t.classList.remove('is-active'));
+        btn.classList.add('is-active');
+      });
+    });
+  }
 
   const syncQty = () => { document.getElementById('qty-val').textContent = String(qty); };
   document.getElementById('qty-minus').onclick = () => { qty = Math.max(1, qty - 1); syncQty(); };

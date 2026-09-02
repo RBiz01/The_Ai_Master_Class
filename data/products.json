@@ -17,10 +17,20 @@
       "tagline": "Modular hex cells for succulents",
       "description": "A stackable hexagonal planter system with drainage channels and interlocking edges. Print as a single centerpiece or tile a living wall. Optimized for PLA and PETG; no supports needed in the recommended orientation.",
       "polyCount": "~48k",
-      "fileFormats": ["STL", "3MF"],
-      "printTime": "4–6 hrs",
-      "tags": ["modular", "no-supports", "succulent"],
-      "gradient": ["#0ea5e9", "#6366f1"]
+      "fileFormats": [
+        "STL",
+        "3MF"
+      ],
+      "printTime": "4\u20136 hrs",
+      "tags": [
+        "modular",
+        "no-supports",
+        "succulent"
+      ],
+      "gradient": [
+        "#0ea5e9",
+        "#6366f1"
+      ]
     },
     {
       "id": "dragon-miniature",
@@ -31,10 +41,20 @@
       "tagline": "Tabletop-ready articulated dragon",
       "description": "A 32mm-scale dragon miniature with articulated wings and jaw. Designed for resin or FDM with fine detail. Includes pre-supported and unsupported versions for resin printers.",
       "polyCount": "~120k",
-      "fileFormats": ["STL", "OBJ"],
-      "printTime": "2–3 hrs (resin)",
-      "tags": ["tabletop", "articulated", "fantasy"],
-      "gradient": ["#f43f5e", "#f97316"]
+      "fileFormats": [
+        "STL",
+        "OBJ"
+      ],
+      "printTime": "2\u20133 hrs (resin)",
+      "tags": [
+        "tabletop",
+        "articulated",
+        "fantasy"
+      ],
+      "gradient": [
+        "#f43f5e",
+        "#f97316"
+      ]
     },
     {
       "id": "cable-clutch",
@@ -45,10 +65,20 @@
       "tagline": "Snap-fit desk cable manager",
       "description": "Magnetic-ready cable clips that snap onto desk edges. Includes three sizes for USB-C, HDMI, and power bricks. Print-in-place hinges; no hardware required unless you add optional neodymium magnets.",
       "polyCount": "~22k",
-      "fileFormats": ["STL", "3MF"],
-      "printTime": "1–2 hrs",
-      "tags": ["desk", "print-in-place", "utility"],
-      "gradient": ["#14b8a6", "#22d3ee"]
+      "fileFormats": [
+        "STL",
+        "3MF"
+      ],
+      "printTime": "1\u20132 hrs",
+      "tags": [
+        "desk",
+        "print-in-place",
+        "utility"
+      ],
+      "gradient": [
+        "#14b8a6",
+        "#22d3ee"
+      ]
     },
     {
       "id": "voronoi-lamp",
@@ -59,10 +89,54 @@
       "tagline": "Organic lattice lamp shade",
       "description": "A voronoi-patterned lamp shade that casts intricate shadows. Fits standard E26/E27 pendant sockets via a printed adapter ring. Designed thin for translucency with white PLA or PETG.",
       "polyCount": "~95k",
-      "fileFormats": ["STL", "3MF"],
-      "printTime": "8–12 hrs",
-      "tags": ["lighting", "organic", "statement"],
-      "gradient": ["#a855f7", "#ec4899"]
+      "fileFormats": [
+        "STL",
+        "3MF"
+      ],
+      "printTime": "8\u201312 hrs",
+      "tags": [
+        "lighting",
+        "organic",
+        "statement"
+      ],
+      "gradient": [
+        "#a855f7",
+        "#ec4899"
+      ]
+    },
+    {
+      "id": "lumen-spire",
+      "name": "Lumen Spire",
+      "category": "Decor",
+      "price": 13.99,
+      "featured": true,
+      "tagline": "A spiral of light for the modern altar.",
+      "description": "Premium desk sculpture \u2014 three helical ribbons of sacred geometry around a slender stem crowned by a crystal octahedron. Pearl/aurora PLA recommended. Support-free FDM. ~119.5 mm H \u00d7 82 mm footprint \u00b7 ~14 g PLA \u00b7 ~2.4 h print",
+      "polyCount": "~21k",
+      "fileFormats": [
+        "STL",
+        "OBJ"
+      ],
+      "printTime": "~2.4 hrs",
+      "tags": [
+        "decor",
+        "sculpture",
+        "no-supports",
+        "sacred-geometry"
+      ],
+      "gradient": [
+        "#6366f1",
+        "#a855f7"
+      ],
+      "image": "images/lumen-spire/hero.png",
+      "images": {
+        "hero": "images/lumen-spire/hero.png",
+        "alt": "images/lumen-spire/alt.png"
+      },
+      "downloads": {
+        "stl": "downloads/lumen-spire/lumen_spire.stl",
+        "obj": "downloads/lumen-spire/lumen_spire.obj"
+      }
     },
     {
       "id": "bit-carousel",
@@ -73,10 +147,19 @@
       "tagline": "Rotating driver-bit carousel",
       "description": "A spinning carousel that holds 30+ hex bits with labeled slots. Ball-bearing race is print-in-place; optional steel balls for smoother spin. Desk-friendly footprint under 120mm diameter.",
       "polyCount": "~55k",
-      "fileFormats": ["STL"],
-      "printTime": "5–7 hrs",
-      "tags": ["workshop", "rotating", "storage"],
-      "gradient": ["#eab308", "#84cc16"]
+      "fileFormats": [
+        "STL"
+      ],
+      "printTime": "5\u20137 hrs",
+      "tags": [
+        "workshop",
+        "rotating",
+        "storage"
+      ],
+      "gradient": [
+        "#eab308",
+        "#84cc16"
+      ]
     },
     {
       "id": "gear-fidget",
@@ -87,10 +170,20 @@
       "tagline": "Print-in-place planetary gears",
       "description": "A satisfying planetary gear fidget that prints fully assembled. Sun, planet, and ring gears mesh out of the printer. Tune clearances with the included 0.1 / 0.15 / 0.2mm variants.",
       "polyCount": "~35k",
-      "fileFormats": ["STL", "3MF"],
-      "printTime": "2–3 hrs",
-      "tags": ["fidget", "gears", "print-in-place"],
-      "gradient": ["#6366f1", "#8b5cf6"]
+      "fileFormats": [
+        "STL",
+        "3MF"
+      ],
+      "printTime": "2\u20133 hrs",
+      "tags": [
+        "fidget",
+        "gears",
+        "print-in-place"
+      ],
+      "gradient": [
+        "#6366f1",
+        "#8b5cf6"
+      ]
     },
     {
       "id": "crystal-vase",
@@ -101,10 +194,20 @@
       "tagline": "Low-poly crystal vase form",
       "description": "A faceted bud vase with watertight interior. Low-poly exterior catches light dramatically. Print solid or vase-mode for a translucent look. Includes drainage-safe insert for fresh flowers.",
       "polyCount": "~18k",
-      "fileFormats": ["STL", "3MF"],
-      "printTime": "3–5 hrs",
-      "tags": ["vase", "low-poly", "home"],
-      "gradient": ["#06b6d4", "#3b82f6"]
+      "fileFormats": [
+        "STL",
+        "3MF"
+      ],
+      "printTime": "3\u20135 hrs",
+      "tags": [
+        "vase",
+        "low-poly",
+        "home"
+      ],
+      "gradient": [
+        "#06b6d4",
+        "#3b82f6"
+      ]
     },
     {
       "id": "servo-mount-kit",
@@ -115,10 +218,20 @@
       "tagline": "Universal SG90/MG996 mounts",
       "description": "A kit of brackets, horns, and linkages for common hobby servos. Includes pan-tilt base and rail mounts. Parametric source notes included so you can remix clearances for your brand of servo.",
       "polyCount": "~28k",
-      "fileFormats": ["STL", "STEP"],
-      "printTime": "2–4 hrs",
-      "tags": ["robotics", "servo", "kit"],
-      "gradient": ["#f97316", "#ef4444"]
+      "fileFormats": [
+        "STL",
+        "STEP"
+      ],
+      "printTime": "2\u20134 hrs",
+      "tags": [
+        "robotics",
+        "servo",
+        "kit"
+      ],
+      "gradient": [
+        "#f97316",
+        "#ef4444"
+      ]
     }
   ]
 }

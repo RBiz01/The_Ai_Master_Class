@@ -139,6 +139,16 @@ const FC = (() => {
 </svg>`;
   }
 
+
+  function productArtHTML(product, w = 800, h = 600) {
+    const src = (product.images && product.images.hero) || product.image;
+    if (src) {
+      const label = escapeXml(product.name || 'Model');
+      return `<img class="product-photo" src="${escapeXml(src)}" alt="${label}" width="${w}" height="${h}" loading="lazy" />`;
+    }
+    return placeholderSVG(product, w, h);
+  }
+
   function escapeXml(s) {
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
@@ -154,7 +164,7 @@ const FC = (() => {
 <article class="product-card">
   <a href="product.html?id=${encodeURIComponent(product.id)}" class="product-thumb">
     ${feat}
-    ${placeholderSVG(product)}
+    ${productArtHTML(product)}
   </a>
   <div class="product-body">
     <div class="product-cat">${escapeXml(product.category)}</div>
@@ -317,6 +327,7 @@ const FC = (() => {
     priceFor,
     formatMoney,
     placeholderSVG,
+    productArtHTML,
     productCardHTML,
     toast,
     DISCOUNT_RATE,

@@ -52,7 +52,7 @@
       .map(
         (i) => `
       <div class="cart-item" data-id="${i.id}">
-        <a class="cart-item-thumb" href="product.html?id=${encodeURIComponent(i.id)}">${FC.placeholderSVG(i.product, 200, 200)}</a>
+        <a class="cart-item-thumb" href="product.html?id=${encodeURIComponent(i.id)}">${FC.productArtHTML(i.product, 200, 200)}</a>
         <div>
           <h3><a href="product.html?id=${encodeURIComponent(i.id)}">${i.product.name}</a></h3>
           <div class="muted">${i.product.category} · ${FC.formatMoney(i.pricing.final)} each</div>
@@ -147,17 +147,21 @@
       <p style="color:var(--text-muted);font-size:0.9rem">Downloads ready (placeholder files). Replace with real STL packs after Stripe is wired.</p>
       <div class="download-list">
         ${items
-          .map(
-            (i) => `
-          <a href="downloads/sample-pack.zip" download="${i.product.id}-pack.zip">
-            <span>${i.product.name}.zip</span>
-            <span style="color:var(--accent-2)">Download</span>
-          </a>
-          <a href="downloads/sample-model.stl" download="${i.product.id}.stl">
-            <span>${i.product.name}.stl</span>
-            <span style="color:var(--accent-2)">Download</span>
-          </a>`
-          )
+          .map((i) => {
+            const d = i.product.downloads || {};
+            const links = [];
+            if (d.stl) {
+              links.push(`<a href="${d.stl}" download="${i.product.id}.stl"><span>${i.product.name}.stl</span><span style="color:var(--accent-2)">Download</span></a>`);
+            }
+            if (d.obj) {
+              links.push(`<a href="${d.obj}" download="${i.product.id}.obj"><span>${i.product.name}.obj</span><span style="color:var(--accent-2)">Download</span></a>`);
+            }
+            if (!links.length) {
+              links.push(`<a href="downloads/sample-pack.zip" download="${i.product.id}-pack.zip"><span>${i.product.name}.zip</span><span style="color:var(--accent-2)">Download</span></a>`);
+              links.push(`<a href="downloads/sample-model.stl" download="${i.product.id}.stl"><span>${i.product.name}.stl</span><span style="color:var(--accent-2)">Download</span></a>`);
+            }
+            return links.join('');
+          })
           .join('')}
       </div>
       <a class="btn btn-primary" href="catalog.html">Keep browsing</a>
