@@ -139,6 +139,39 @@
       }
     },
     {
+      "id": "spira-bloom",
+      "name": "Spira Bloom",
+      "category": "Decor",
+      "price": 12.99,
+      "featured": true,
+      "tagline": "A blush-pink spiral bloom for quiet shelves.",
+      "description": "Bulbous spiral-fluted bud vase with ~20 deep helical ridges twisting from a stable foot to a soft flared scalloped rim. Matte blush-pink / dusty rose PLA look. Organic waves + spirals style. Support-free FDM hollow vessel. ~115 mm H \u00b7 ~77 mm max dia \u00b7 ~38 mm base \u00b7 ~25 mm opening ID \u00b7 ~45 g PLA \u00b7 ~6.2 h",
+      "fileFormats": [
+        "STL",
+        "OBJ"
+      ],
+      "printTime": "~6.2 hrs",
+      "tags": [
+        "decor",
+        "vase",
+        "spiral",
+        "no-supports"
+      ],
+      "gradient": [
+        "#f9a8d4",
+        "#fb7185"
+      ],
+      "image": "images/spira-bloom/hero.png",
+      "images": {
+        "hero": "images/spira-bloom/hero.png",
+        "alt": "images/spira-bloom/alt.png"
+      },
+      "downloads": {
+        "stl": "downloads/spira-bloom/spira_bloom.stl",
+        "obj": "downloads/spira-bloom/spira_bloom.obj"
+      }
+    },
+    {
       "id": "bit-carousel",
       "name": "BitCarousel Tool Caddy",
       "category": "Organizational",
