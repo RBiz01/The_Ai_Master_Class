@@ -21,7 +21,7 @@ Shared chrome: sticky nav, cart badge, footer, first-visit email modal (injected
 
 ## What’s placeholder / TODO
 
-- **8 sample products** in `data/products.json` (planters, minis, gadgets, decor, mechanical).
+- **12 sample products** in `data/products.json` (planters, minis, gadgets, decor, mechanical).
 - **Images**: generated SVG/CSS gradients (no photo assets).
 - **Downloads**: `downloads/sample-model.stl` and `sample-pack.zip` — same files for every product after mock purchase.
 - **Payments**: mock “Complete purchase”; Stripe Payment Link constant is a TODO string.
