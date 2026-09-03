@@ -3,40 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Page not found · Fuzzy Chainsaw</title>
+  <title>Page not found · Fuzzy Chainsaw Academy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/fuzzy-chainsaw/css/styles.css" />
-  <style>
-    .not-found { min-height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 3rem 1rem; }
-    .not-found h1 { font-family: "Space Grotesk", system-ui, sans-serif; font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 0.75rem; }
-    .not-found p { color: var(--text-muted, #94a3b8); margin: 0 0 1.5rem; max-width: 28rem; }
-    .not-found .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237c5cff'/%3E%3Cpath d='M8 20 L16 8 L24 20 Z' fill='white' opacity='0.9'/%3E%3C/svg%3E" />
 </head>
 <body>
-  <main class="not-found">
-    <div>
-      <div class="eyebrow" style="margin-bottom:0.75rem">404</div>
-      <h1>Page not found</h1>
-      <p>That URL isn’t in the shop. Try the catalog, or head home — Lumen Spire and other prints live there.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="/fuzzy-chainsaw/catalog.html">Browse catalog</a>
-        <a class="btn btn-secondary" href="/fuzzy-chainsaw/">Home</a>
-        <a class="btn btn-ghost" href="/fuzzy-chainsaw/product.html?id=lumen-spire">Lumen Spire</a>
-      </div>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 14H4L12 3z"/><path d="M12 10v4"/><path d="M9 17h6"/></svg>
+        </span>
+        <span>Fuzzy Chainsaw<span class="logo-sub">Academy</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="cart.html">Checkout</a>
+      </nav>
     </div>
+  </header>
+  <main class="error-page container">
+    <h1>404</h1>
+    <p class="lead">This page isn’t in the academy catalog.</p>
+    <p class="muted" style="margin-bottom:1.5rem">Old 3D model / product URLs were retired. Try courses instead.</p>
+    <a class="btn btn-primary" href="courses.html">Browse courses</a>
+    <a class="btn btn-secondary" href="index.html" style="margin-left:0.5rem">Home</a>
   </main>
-  <script>
-    (function () {
-      var root = location.pathname.indexOf('/fuzzy-chainsaw') === 0 ? '/fuzzy-chainsaw/' : '/';
-      document.querySelectorAll('a[href^="/fuzzy-chainsaw/"]').forEach(function (a) {
-        a.setAttribute('href', a.getAttribute('href').replace(/^\/fuzzy-chainsaw\//, root));
-      });
-      var css = document.querySelector('link[href*="styles.css"]');
-      if (css) css.href = root + 'css/styles.css';
-    })();
-  </script>
 </body>
 </html>

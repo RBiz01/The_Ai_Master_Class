@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Fuzzy Chainsaw — sleek 3D printable designs &amp; digital model marketplace." />
-  <title>Fuzzy Chainsaw · 3D Printable Marketplace</title>
+  <meta name="description" content="Fuzzy Chainsaw Academy — polished digital AI learning courses. Prompting, agents, generative media, and strategy." />
+  <title>Fuzzy Chainsaw Academy · AI Courses</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -12,18 +12,17 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237c5cff'/%3E%3Cpath d='M8 20 L16 8 L24 20 Z' fill='white' opacity='0.9'/%3E%3C/svg%3E" />
 </head>
 <body>
-
   <header class="site-header">
     <div class="container nav">
       <a class="logo" href="index.html">
         <span class="logo-mark" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 14H4L12 3z"/><path d="M12 10v4"/><path d="M9 17h6"/></svg>
         </span>
-        Fuzzy Chainsaw
+        <span>Fuzzy Chainsaw<span class="logo-sub">Academy</span></span>
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="catalog.html">Catalog</a>
+        <a href="courses.html">Courses</a>
         <a href="cart.html">Checkout</a>
       </nav>
       <div class="nav-actions">
@@ -38,36 +37,36 @@
 
   <main>
     <div class="container hero">
-      <div>
-        <div class="eyebrow">3D printable marketplace</div>
-        <h1>Designs that <span>cut through</span> the noise</h1>
-        <p class="hero-lead">Sleek, print-ready STL &amp; 3MF models — geometric planters, tabletop minis, desk gadgets, and mechanical toys. Download. Slice. Print.</p>
+      <div class="hero-copy">
+        <div class="eyebrow">Digital AI Academy</div>
+        <h1>Learn AI that <span>actually ships</span></h1>
+        <p class="hero-lead">Premium, practical courses on prompting, agents, generative media, and strategy — built for creators, operators, and founders. Instant digital enrollment.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="catalog.html">Browse catalog</a>
-          <a class="btn btn-secondary" href="#featured">Featured drops</a>
+          <a class="btn btn-primary" href="courses.html">Browse courses</a>
+          <a class="btn btn-secondary" href="#featured">Featured paths</a>
         </div>
         <div class="hero-stats">
-          <div><strong>12+</strong><span>Sample models</span></div>
+          <div><strong data-course-count>6</strong><span>AI courses</span></div>
           <div><strong>10%</strong><span>First-visit discount</span></div>
-          <div><strong>Instant</strong><span>Digital delivery</span></div>
+          <div><strong>Instant</strong><span>Digital access</span></div>
         </div>
       </div>
-      <div class="hero-visual hero-slideshow" id="hero-slideshow" role="region" aria-roledescription="carousel" aria-label="Featured products">
+      <div class="hero-visual hero-slideshow" id="hero-slideshow" role="region" aria-roledescription="carousel" aria-label="Featured courses">
         <div class="hero-slideshow-track" data-slides></div>
         <div class="hero-slideshow-overlay">
           <div class="hero-slideshow-meta">
             <span class="hero-slideshow-kicker">Now showing</span>
-            <a class="hero-slideshow-title" data-slide-title href="catalog.html">—</a>
+            <a class="hero-slideshow-title" data-slide-title href="courses.html">—</a>
             <p class="hero-slideshow-tagline" data-slide-tagline></p>
             <div class="hero-slideshow-row">
               <span class="hero-slideshow-price" data-slide-price></span>
-              <a class="btn btn-primary hero-slideshow-link" data-slide-link href="catalog.html">View model</a>
+              <a class="btn btn-primary hero-slideshow-link" data-slide-link href="courses.html">View course</a>
             </div>
           </div>
           <div class="hero-slideshow-controls">
-            <button type="button" class="hero-slideshow-btn" data-slide-prev aria-label="Previous product">‹</button>
+            <button type="button" class="hero-slideshow-btn" data-slide-prev aria-label="Previous course">‹</button>
             <div class="hero-slideshow-dots" data-slide-dots role="tablist" aria-label="Slide indicators"></div>
-            <button type="button" class="hero-slideshow-btn" data-slide-next aria-label="Next product">›</button>
+            <button type="button" class="hero-slideshow-btn" data-slide-next aria-label="Next course">›</button>
           </div>
         </div>
       </div>
@@ -84,12 +83,12 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <h2>Featured prints</h2>
-            <p>Highlight reel — swap these via <code>data/products.json</code>.</p>
+            <h2>Featured courses</h2>
+            <p>Curated paths — edit anytime in <code>data/courses.json</code>.</p>
           </div>
-          <a class="btn btn-secondary" href="catalog.html">View all</a>
+          <a class="btn btn-secondary" href="courses.html">View all</a>
         </div>
-        <div class="product-grid" id="featured-grid"></div>
+        <div class="course-grid" id="featured-grid"></div>
       </div>
     </section>
 
@@ -98,25 +97,31 @@
         <div class="section-head">
           <div>
             <h2>Why Fuzzy Chainsaw</h2>
-            <p>Built for GitHub Pages — fast, static, zero paid APIs.</p>
+            <p>Static, fast, GitHub Pages — zero paid APIs required.</p>
           </div>
         </div>
         <div class="features">
-          <div class="feature">
-            <div class="icon">⬡</div>
-            <h3>Print-ready assets</h3>
-            <p>Orientation notes, format variants, and poly counts on every listing (placeholders until you plug in inventory).</p>
+          <div class="feature reveal">
+            <div class="icon">✦</div>
+            <h3>Practice-first curricula</h3>
+            <p>Modules built around workflows you’ll reuse Monday morning — not slide theaters.</p>
           </div>
-          <div class="feature">
-            <div class="icon">↯</div>
-            <h3>Instant downloads</h3>
-            <p>Mock checkout delivers a sample STL/ZIP today. Wire Stripe Payment Links when you go live.</p>
+          <div class="feature reveal">
+            <div class="icon">▷</div>
+            <h3>Playable trailers</h3>
+            <p>Every course detail page includes an HTML5 trailer so you know the vibe before you enroll.</p>
           </div>
-          <div class="feature">
+          <div class="feature reveal">
             <div class="icon">%</div>
             <h3>Welcome discount</h3>
-            <p>First-time visitors unlock 10% off via email signup — stored in localStorage until you connect Formspree.</p>
+            <p>First-time visitors unlock 10% off via email signup — stored locally until you connect Formspree.</p>
           </div>
+        </div>
+        <div class="proof" style="margin-top:1.5rem">
+          <div class="proof-card reveal"><strong>4.8★</strong><span>Avg. course rating</span></div>
+          <div class="proof-card reveal"><strong>1.5k+</strong><span>Review signals</span></div>
+          <div class="proof-card reveal"><strong>6</strong><span>Focused tracks</span></div>
+          <div class="proof-card reveal"><strong>24/7</strong><span>Digital access</span></div>
         </div>
       </div>
     </section>
@@ -126,32 +131,32 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <h4>Fuzzy Chainsaw</h4>
-          <p>Printable designs for makers who want models that look as good as they print. Digital downloads only.</p>
+          <h4>Fuzzy Chainsaw Academy</h4>
+          <p>Digital AI learning courses for people who ship. Prompting, agents, media, and strategy — no 3D models, no printables.</p>
         </div>
         <div>
-          <h4>Shop</h4>
-          <a href="catalog.html">All models</a>
-          <a href="catalog.html?cat=Planters">Planters</a>
-          <a href="catalog.html?cat=Miniatures">Miniatures</a>
-          <a href="catalog.html?cat=Gadgets">Gadgets</a>
-          <a href="catalog.html?cat=Decor">Decor</a>
+          <h4>Courses</h4>
+          <a href="courses.html">All courses</a>
+          <a href="courses.html?cat=Prompting">Prompting</a>
+          <a href="courses.html?cat=Agents">Agents</a>
+          <a href="courses.html?cat=Generative Media">Generative Media</a>
+          <a href="courses.html?cat=Strategy">Strategy</a>
         </div>
         <div>
           <h4>Next steps</h4>
           <a href="README.md">README / deploy</a>
+          <a href="BIBLE.md">Operating bible</a>
           <a href="SUMMARY.md">Project summary</a>
-          <span style="display:block;margin-top:0.5rem;font-size:0.8rem">TODO: real support email &amp; license page</span>
+          <span style="display:block;margin-top:0.5rem;font-size:0.8rem">TODO: real support email &amp; LMS delivery</span>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Fuzzy Chainsaw. Placeholder shop — no real charges.</span>
+        <span>© 2026 Fuzzy Chainsaw Academy. Placeholder storefront — no real charges.</span>
         <span>Built for GitHub Pages</span>
       </div>
     </div>
   </footer>
   <script src="js/app.js"></script>
-
   <script src="js/home.js"></script>
 </body>
 </html>

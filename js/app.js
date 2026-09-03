@@ -1,8 +1,7 @@
 /**
- * Fuzzy Chainsaw — shared app utilities
- * Cart, discount, products loader, UI helpers
+ * Fuzzy Chainsaw Academy — shared utilities
+ * Courses loader, cart, discount, UI helpers
  */
-
 const FC = (() => {
   const CART_KEY = 'fc_cart';
   const DISCOUNT_KEY = 'fc_discount';
@@ -10,21 +9,13 @@ const FC = (() => {
   const VISITED_KEY = 'fc_visited';
   const DISCOUNT_RATE = 0.10;
 
-  // TODO: Replace with your Formspree endpoint, e.g. https://formspree.io/f/xxxxxxxx
-  // or Netlify Forms (add data-netlify="true" on the form).
+  // TODO: Replace with Formspree endpoint
   const EMAIL_FORM_ENDPOINT = 'https://formspree.io/f/TODO_REPLACE_ME';
-
-  // TODO: Replace with real Stripe Payment Link or Checkout Session URL.
-  // Example Payment Link: https://buy.stripe.com/test_xxxxx
-  // Or use Stripe Checkout via a serverless function — see README.
+  // TODO: Replace with real Stripe Payment Link
   const STRIPE_PAYMENT_LINK = 'https://buy.stripe.com/TODO_REPLACE_ME';
-  // Optional env-style placeholders for future build tooling:
-  // const STRIPE_PUBLISHABLE_KEY = 'pk_test_TODO';
-  // const STRIPE_PRICE_MAP = { /* productId: 'price_xxx' */ };
 
-  let productsCache = null;
+  let coursesCache = null;
 
-  /** Shop root path with trailing slash (works under /fuzzy-chainsaw/ and local). */
   function siteRoot() {
     try {
       const scripts = document.querySelectorAll('script[src*="js/app.js"]');
@@ -35,22 +26,9 @@ const FC = (() => {
         if (idx !== -1) return abs.pathname.slice(0, idx + 1);
       }
     } catch (_) { /* ignore */ }
-
     let path = location.pathname || '/';
     if (/\.html?$/i.test(path)) path = path.replace(/\/[^/]+$/, '/');
     else if (!path.endsWith('/')) path += '/';
-    path = path.replace(/\/products\/[^/]+\/$/, '/');
-    // Collapse a single product-slug directory at the shop root (e.g. /…/lumen-spire/)
-    const segs = path.split('/').filter(Boolean);
-    const skip = new Set(['fuzzy-chainsaw', 'css', 'js', 'data', 'images', 'downloads', 'products']);
-    if (segs.length && !skip.has(segs[segs.length - 1])) {
-      const maybeSlug = segs[segs.length - 1];
-      if (!maybeSlug.includes('.')) {
-        path = '/' + segs.slice(0, -1).join('/') + (segs.length > 1 ? '/' : '');
-        if (path === '/') path = '/';
-        else if (!path.endsWith('/')) path += '/';
-      }
-    }
     return path.endsWith('/') ? path : path + '/';
   }
 
@@ -60,12 +38,16 @@ const FC = (() => {
     return siteRoot() + String(rel).replace(/^\.\//, '');
   }
 
-  async function loadProducts() {
-    if (productsCache) return productsCache;
-    const res = await fetch(siteRoot() + 'data/products.json');
-    if (!res.ok) throw new Error('Failed to load products');
-    productsCache = await res.json();
-    return productsCache;
+  async function loadCourses() {
+    if (coursesCache) return coursesCache;
+    const res = await fetch(siteRoot() + 'data/courses.json');
+    if (!res.ok) throw new Error('Failed to load courses');
+    coursesCache = await res.json();
+    return coursesCache;
+  }
+
+  function getCourse(data, id) {
+    return (data.courses || []).find((c) => c.id === id);
   }
 
   function getCart() {
@@ -81,27 +63,27 @@ const FC = (() => {
     updateCartBadge();
   }
 
-  function addToCart(productId, qty = 1) {
+  function addToCart(courseId, qty = 1) {
     const cart = getCart();
-    const existing = cart.find((i) => i.id === productId);
-    if (existing) existing.qty += qty;
-    else cart.push({ id: productId, qty });
+    const existing = cart.find((i) => i.id === courseId);
+    if (existing) existing.qty = 1; // digital: one enrollment
+    else cart.push({ id: courseId, qty: 1 });
     saveCart(cart);
     toast('Added to cart');
   }
 
-  function setQty(productId, qty) {
+  function setQty(courseId, qty) {
     let cart = getCart();
-    if (qty <= 0) cart = cart.filter((i) => i.id !== productId);
+    if (qty <= 0) cart = cart.filter((i) => i.id !== courseId);
     else {
-      const item = cart.find((i) => i.id === productId);
-      if (item) item.qty = qty;
+      const item = cart.find((i) => i.id === courseId);
+      if (item) item.qty = 1;
     }
     saveCart(cart);
   }
 
-  function removeFromCart(productId) {
-    saveCart(getCart().filter((i) => i.id !== productId));
+  function removeFromCart(courseId) {
+    saveCart(getCart().filter((i) => i.id !== courseId));
   }
 
   function clearCart() {
@@ -140,8 +122,8 @@ const FC = (() => {
     return !localStorage.getItem(VISITED_KEY) && !hasDiscount();
   }
 
-  function priceFor(product) {
-    const base = product.price;
+  function priceFor(course) {
+    const base = course.price;
     if (hasDiscount()) {
       return { base, final: +(base * (1 - DISCOUNT_RATE)).toFixed(2), discounted: true };
     }
@@ -152,66 +134,70 @@ const FC = (() => {
     return '$' + Number(n).toFixed(2);
   }
 
-  function placeholderSVG(product, w = 800, h = 600) {
-    const [c1, c2] = product.gradient || ['#7c5cff', '#00e5c0'];
-    const label = (product.name || 'Model').replace(/[<>&"]/g, '');
-    const initials = label.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
-    return `<svg class="placeholder-art" viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${label}">
-  <defs>
-    <linearGradient id="g-${product.id}" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="${c1}"/>
-      <stop offset="100%" stop-color="${c2}"/>
-    </linearGradient>
-    <pattern id="grid-${product.id}" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-    </pattern>
-  </defs>
-  <rect width="100%" height="100%" fill="url(#g-${product.id})"/>
-  <rect width="100%" height="100%" fill="url(#grid-${product.id})"/>
-  <circle cx="${w * 0.5}" cy="${h * 0.42}" r="${Math.min(w, h) * 0.18}" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
-  <polygon points="${w * 0.5},${h * 0.28} ${w * 0.62},${h * 0.5} ${w * 0.38},${h * 0.5}" fill="rgba(255,255,255,0.55)"/>
-  <text x="50%" y="${h * 0.78}" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="system-ui,sans-serif" font-size="${Math.max(18, w / 22)}" font-weight="700">${escapeXml(label)}</text>
-  <text x="50%" y="${h * 0.86}" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-family="system-ui,sans-serif" font-size="${Math.max(12, w / 40)}">${escapeXml(product.category || '')} · 3D Printable</text>
-</svg>`;
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
   }
 
-
-  function productArtHTML(product, w = 800, h = 600) {
-    const src = (product.images && product.images.hero) || product.image;
-    if (src) {
-      const label = escapeXml(product.name || 'Model');
-      const resolved = assetUrl(src);
-      return `<img class="product-photo" src="${escapeXml(resolved)}" alt="${label}" width="${w}" height="${h}" loading="lazy" />`;
+  function starsHTML(rating, max = 5) {
+    const full = Math.floor(rating);
+    const half = rating - full >= 0.4;
+    let out = '<span class="stars" aria-label="' + rating + ' out of 5">';
+    for (let i = 1; i <= max; i++) {
+      if (i <= full) out += '<span class="star on">★</span>';
+      else if (i === full + 1 && half) out += '<span class="star half">★</span>';
+      else out += '<span class="star">★</span>';
     }
-    return placeholderSVG(product, w, h);
+    out += '</span>';
+    return out;
   }
 
-  function escapeXml(s) {
-    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  function courseArtHTML(course, w = 800, h = 450) {
+    const [c1, c2] = course.gradient || ['#7c5cff', '#00e5c0'];
+    const label = escapeHtml(course.title || 'Course');
+    const level = escapeHtml(course.level || '');
+    return `<div class="course-art" style="--g1:${c1};--g2:${c2}" role="img" aria-label="${label}">
+  <div class="course-art-inner">
+    <span class="course-art-level">${level}</span>
+    <strong class="course-art-title">${label}</strong>
+    <span class="course-art-meta">${escapeHtml(course.duration || '')} · ${course.lessons || 0} lessons</span>
+  </div>
+</div>`;
   }
 
-  function productCardHTML(product) {
-    const p = priceFor(product);
+  function courseCardHTML(course) {
+    const p = priceFor(course);
     const priceHTML = p.discounted
       ? `<span class="was">${formatMoney(p.base)}</span>${formatMoney(p.final)}`
-      : formatMoney(p.final);
+      : (course.compareAtPrice
+          ? `<span class="was">${formatMoney(course.compareAtPrice)}</span>${formatMoney(p.final)}`
+          : formatMoney(p.final));
     const saleBadge = p.discounted ? '<span class="badge badge-sale">10% off</span>' : '';
-    const feat = product.featured ? '<span class="badge badge-feat">Featured</span>' : '';
-    const productHref = `${siteRoot()}product.html?id=${encodeURIComponent(product.id)}`;
+    const feat = course.featured ? '<span class="badge badge-feat">Featured</span>' : '';
+    const href = `${siteRoot()}course.html?id=${encodeURIComponent(course.id)}`;
+    const cats = Array.isArray(course.category) ? course.category.join(' · ') : (course.category || '');
     return `
-<article class="product-card">
-  <a href="${productHref}" class="product-thumb">
+<article class="course-card reveal">
+  <a href="${href}" class="course-thumb">
     ${feat}
-    ${productArtHTML(product)}
+    ${courseArtHTML(course)}
   </a>
-  <div class="product-body">
-    <div class="product-cat">${escapeXml(product.category)}</div>
-    <h3><a href="${productHref}">${escapeXml(product.name)}</a></h3>
-    <p class="product-tagline">${escapeXml(product.tagline)}</p>
-    <div class="product-meta">
+  <div class="course-body">
+    <div class="course-cat">${escapeHtml(cats)}</div>
+    <h3><a href="${href}">${escapeHtml(course.title)}</a></h3>
+    <p class="course-tagline">${escapeHtml(course.tagline)}</p>
+    <div class="course-rating">
+      ${starsHTML(course.rating)}
+      <span class="rating-num">${course.rating.toFixed(1)}</span>
+      <span class="rating-count">(${course.reviewCount})</span>
+    </div>
+    <div class="course-meta">
       <div class="price">${priceHTML}</div>
       ${saleBadge}
-      <button type="button" class="btn btn-secondary" data-add="${escapeXml(product.id)}" style="padding:0.45rem 0.85rem;font-size:0.85rem">Add</button>
+      <button type="button" class="btn btn-secondary btn-sm" data-add="${escapeHtml(course.id)}">Enroll</button>
     </div>
   </div>
 </article>`;
@@ -237,6 +223,7 @@ const FC = (() => {
     document.querySelectorAll('.nav-links a').forEach((a) => {
       const href = a.getAttribute('href');
       if (href === path || (path === '' && href === 'index.html')) a.classList.add('active');
+      if (path === 'course.html' && href === 'courses.html') a.classList.add('active');
     });
     const toggle = document.querySelector('.menu-toggle');
     const links = document.querySelector('.nav-links');
@@ -252,12 +239,33 @@ const FC = (() => {
     });
   }
 
+  function initReveal() {
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const els = document.querySelectorAll('.reveal');
+    if (reduced) {
+      els.forEach((el) => el.classList.add('in'));
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting) {
+            en.target.classList.add('in');
+            io.unobserve(en.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+    els.forEach((el) => io.observe(el));
+  }
+
   function initSignupModal() {
     const backdrop = document.getElementById('signup-modal');
     if (!backdrop) return;
 
     if (shouldShowSignupModal()) {
-      setTimeout(() => backdrop.classList.add('open'), 800);
+      setTimeout(() => backdrop.classList.add('open'), 900);
     }
 
     const close = () => {
@@ -281,10 +289,7 @@ const FC = (() => {
           toast('Enter a valid email');
           return;
         }
-
-        // Attempt Formspree/placeholder POST — fails silently if TODO endpoint
         try {
-          // TODO: Wire real Formspree / Netlify Forms endpoint
           if (!EMAIL_FORM_ENDPOINT.includes('TODO')) {
             await fetch(EMAIL_FORM_ENDPOINT, {
               method: 'POST',
@@ -292,18 +297,14 @@ const FC = (() => {
               body: JSON.stringify({ email, source: 'fuzzy-chainsaw-welcome-discount' }),
             });
           } else {
-            console.info('[TODO] Email signup captured locally. Set EMAIL_FORM_ENDPOINT in js/app.js', email);
+            console.info('[TODO] Email signup captured locally. Set EMAIL_FORM_ENDPOINT', email);
           }
         } catch (err) {
           console.warn('Email endpoint unavailable; discount still granted locally.', err);
         }
-
         grantDiscount(email);
         close();
         toast('Welcome! 10% off unlocked');
-        // Refresh prices on current page if cards already rendered
-        document.dispatchEvent(new CustomEvent('fc:discount'));
-        // Soft reload product prices by re-rendering if page hooks listen
         setTimeout(() => location.reload(), 600);
       });
     }
@@ -315,16 +316,11 @@ const FC = (() => {
   <div class="modal">
     <button type="button" class="close-x" data-close-modal aria-label="Close">&times;</button>
     <div class="discount-badge-big">10% OFF</div>
-    <h2 id="signup-title">Welcome to Fuzzy Chainsaw</h2>
-    <p>Join the list for printable drops &amp; get <strong>10% off</strong> your first digital download. Instant — no spam.</p>
-    <!--
-      TODO: Wire Formspree: set action to https://formspree.io/f/YOUR_ID and method="POST"
-      TODO: Or Netlify Forms: add data-netlify="true" name="welcome-signup" and a hidden form-name input
-    -->
+    <h2 id="signup-title">Welcome to the Academy</h2>
+    <p>Join for course drops &amp; get <strong>10% off</strong> your first enrollment. Instant — no spam.</p>
     <form id="signup-form" action="${EMAIL_FORM_ENDPOINT}" method="POST">
-      <label for="signup-email" style="display:block;font-size:0.8rem;color:var(--text-muted);margin-bottom:0.3rem">Email</label>
-      <input id="signup-email" name="email" type="email" required placeholder="you@example.com"
-        style="width:100%;padding:0.7rem 0.9rem;margin-bottom:1rem;border-radius:10px;border:1px solid var(--border-strong);background:var(--bg-elevated);color:var(--text);outline:none" />
+      <label for="signup-email" class="field-label">Email</label>
+      <input id="signup-email" name="email" type="email" required placeholder="you@example.com" class="field-input" />
       <button type="submit" class="btn btn-primary btn-block">Unlock 10% off</button>
       <button type="button" class="btn btn-ghost btn-block" data-close-modal style="margin-top:0.4rem">No thanks</button>
     </form>
@@ -342,6 +338,7 @@ const FC = (() => {
     injectChrome();
     initNav();
     initSignupModal();
+    requestAnimationFrame(() => initReveal());
   }
 
   if (document.readyState === 'loading') {
@@ -353,7 +350,8 @@ const FC = (() => {
   return {
     siteRoot,
     assetUrl,
-    loadProducts,
+    loadCourses,
+    getCourse,
     getCart,
     addToCart,
     setQty,
@@ -366,10 +364,12 @@ const FC = (() => {
     getEmail,
     priceFor,
     formatMoney,
-    placeholderSVG,
-    productArtHTML,
-    productCardHTML,
+    escapeHtml,
+    starsHTML,
+    courseArtHTML,
+    courseCardHTML,
     toast,
+    initReveal,
     DISCOUNT_RATE,
     STRIPE_PAYMENT_LINK,
     EMAIL_FORM_ENDPOINT,

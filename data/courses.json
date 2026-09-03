@@ -1,0 +1,327 @@
+{
+  "categories": [
+    "Prompting",
+    "Productivity",
+    "Generative Media",
+    "Agents",
+    "Machine Learning",
+    "Strategy"
+  ],
+  "courses": [
+    {
+      "id": "prompt-engineering-mastery",
+      "title": "Prompt Engineering Mastery",
+      "tagline": "Write prompts that reliably get the answer you want",
+      "description": "Master the craft of instructing large language models. Learn frameworks for clarity, constraints, chain-of-thought, few-shot patterns, and evaluation loops so your prompts work across ChatGPT, Claude, Gemini, and open models. Built for practitioners who want reproducible results—not lucky one-offs.",
+      "level": "Beginner",
+      "duration": "6 hours",
+      "lessons": 24,
+      "price": 79,
+      "compareAtPrice": 99,
+      "category": ["Prompting", "Productivity"],
+      "featured": true,
+      "rating": 4.9,
+      "reviewCount": 312,
+      "gradient": ["#7c5cff", "#00e5c0"],
+      "video": {
+        "poster": "gradient",
+        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+      },
+      "curriculum": [
+        "Foundations of clear instruction",
+        "Roles, constraints, and output formats",
+        "Few-shot & exemplars that stick",
+        "Chain-of-thought and decomposition",
+        "Evaluation, rubrics, and iteration",
+        "Prompt libraries for real workflows"
+      ],
+      "reviews": [
+        {
+          "name": "Maya Chen",
+          "stars": 5,
+          "text": "Cut my revision cycles in half. The few-shot templates alone paid for the course.",
+          "date": "2026-07-14"
+        },
+        {
+          "name": "Jordan Blake",
+          "stars": 5,
+          "text": "Finally a prompt course that teaches evaluation—not just magic phrases.",
+          "date": "2026-06-02"
+        },
+        {
+          "name": "Priya Nair",
+          "stars": 4,
+          "text": "Clear, practical, and model-agnostic. Wish the advanced section were longer.",
+          "date": "2026-05-18"
+        },
+        {
+          "name": "Sam Okonkwo",
+          "stars": 5,
+          "text": "Our team standardized on these patterns. Onboarding new hires is way faster.",
+          "date": "2026-04-29"
+        }
+      ]
+    },
+    {
+      "id": "ai-for-work",
+      "title": "AI for Work: ChatGPT & Claude",
+      "tagline": "Ship better writing, research, and decisions every day",
+      "description": "A practical operating system for knowledge work with ChatGPT and Claude. Cover email, docs, meeting notes, research synthesis, spreadsheets, and stakeholder communication—with guardrails for accuracy, privacy, and tone. Ideal for PMs, marketers, analysts, and operators.",
+      "level": "Beginner",
+      "duration": "5 hours",
+      "lessons": 20,
+      "price": 69,
+      "compareAtPrice": 89,
+      "category": ["Productivity", "Prompting"],
+      "featured": true,
+      "rating": 4.8,
+      "reviewCount": 428,
+      "gradient": ["#3b82f6", "#8b5cf6"],
+      "video": {
+        "poster": "gradient",
+        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+      },
+      "curriculum": [
+        "Your AI desk setup (tools & habits)",
+        "Writing that sounds like you",
+        "Research & synthesis without hallucinations",
+        "Meetings, notes, and action plans",
+        "Spreadsheets, tables, and light analysis",
+        "Privacy, policy, and team playbooks"
+      ],
+      "reviews": [
+        {
+          "name": "Elena Vogt",
+          "stars": 5,
+          "text": "I use the meeting-notes workflow daily. Managers noticed the quality jump.",
+          "date": "2026-08-01"
+        },
+        {
+          "name": "Chris Patel",
+          "stars": 5,
+          "text": "Best “get productive this week” AI course I’ve taken. No fluff.",
+          "date": "2026-07-22"
+        },
+        {
+          "name": "Aisha Rahman",
+          "stars": 4,
+          "text": "Great Claude vs ChatGPT comparisons. Helped me pick the right tool per task.",
+          "date": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "generative-media",
+      "title": "Generative Media: Image & Video with AI",
+      "tagline": "Produce scroll-stopping visuals without a studio",
+      "description": "Learn modern image and short-form video generation—from Midjourney/Flux-style prompting to editing, consistency, and brand-safe workflows. Cover storyboarding, style references, upscaling, and light motion for social and product storytelling.",
+      "level": "Intermediate",
+      "duration": "8 hours",
+      "lessons": 28,
+      "price": 119,
+      "compareAtPrice": 149,
+      "category": ["Generative Media", "Strategy"],
+      "featured": true,
+      "rating": 4.7,
+      "reviewCount": 196,
+      "gradient": ["#ec4899", "#f59e0b"],
+      "video": {
+        "poster": "gradient",
+        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+      },
+      "curriculum": [
+        "Visual literacy for generative tools",
+        "Prompting for style, lighting, and composition",
+        "Character & brand consistency",
+        "Editing, upscaling, and cleanup",
+        "Short-form AI video pipelines",
+        "Rights, ethics, and client delivery",
+        "Portfolio project sprint"
+      ],
+      "reviews": [
+        {
+          "name": "Diego Alvarez",
+          "stars": 5,
+          "text": "My client decks look like they came from an agency. Consistency tips were gold.",
+          "date": "2026-07-30"
+        },
+        {
+          "name": "Hannah Lee",
+          "stars": 5,
+          "text": "Finally understand when to regenerate vs edit. Saved hours of thrash.",
+          "date": "2026-06-19"
+        },
+        {
+          "name": "Omar Farouk",
+          "stars": 4,
+          "text": "Strong on images; video section is a great launchpad for further practice.",
+          "date": "2026-05-27"
+        },
+        {
+          "name": "Nina Kowalski",
+          "stars": 5,
+          "text": "The brand kit workflow is what I use for every campaign now.",
+          "date": "2026-04-08"
+        }
+      ]
+    },
+    {
+      "id": "ai-agents-automation",
+      "title": "AI Agents & Automation Bootcamp",
+      "tagline": "Build agents that research, decide, and take action",
+      "description": "Go beyond chatboxes. Design tool-using agents, multi-step workflows, and automations that connect APIs, docs, and browsers. Learn planning, memory patterns, guardrails, evaluation, and when not to agentify a process.",
+      "level": "Advanced",
+      "duration": "10 hours",
+      "lessons": 32,
+      "price": 149,
+      "compareAtPrice": 199,
+      "category": ["Agents", "Productivity"],
+      "featured": true,
+      "rating": 4.8,
+      "reviewCount": 154,
+      "gradient": ["#06b6d4", "#6366f1"],
+      "video": {
+        "poster": "gradient",
+        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+      },
+      "curriculum": [
+        "Agent mental models & architectures",
+        "Tools, functions, and API wiring",
+        "Planning, memory, and state",
+        "Human-in-the-loop & approvals",
+        "Evaluation harnesses & failure modes",
+        "No-code and low-code automation bridges",
+        "Capstone: ship a reliable agent",
+        "Ops, cost control, and monitoring"
+      ],
+      "reviews": [
+        {
+          "name": "Alex Rivera",
+          "stars": 5,
+          "text": "Went from demos to a production research agent. The eval module is unmatched.",
+          "date": "2026-08-12"
+        },
+        {
+          "name": "Taylor Kim",
+          "stars": 5,
+          "text": "Clear on when agents fail. Saved us from overengineering a simple Zap.",
+          "date": "2026-07-05"
+        },
+        {
+          "name": "Ben Novak",
+          "stars": 4,
+          "text": "Dense but worth it. Pair with the prompting course if you’re newer to LLMs.",
+          "date": "2026-05-21"
+        }
+      ]
+    },
+    {
+      "id": "no-code-ml-intuition",
+      "title": "No-Code Machine Learning Intuition",
+      "tagline": "Understand models without drowning in math",
+      "description": "Build real intuition for classification, regression, embeddings, and evaluation—using visual tools and no-code platforms. Perfect for PMs, founders, and designers who need to talk ML fluently and make better product bets.",
+      "level": "Intermediate",
+      "duration": "7 hours",
+      "lessons": 22,
+      "price": 89,
+      "compareAtPrice": 119,
+      "category": ["Machine Learning", "Strategy"],
+      "featured": false,
+      "rating": 4.6,
+      "reviewCount": 187,
+      "gradient": ["#10b981", "#3b82f6"],
+      "video": {
+        "poster": "gradient",
+        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+      },
+      "curriculum": [
+        "What models actually learn",
+        "Features, labels, and data quality",
+        "Train / validate / test without the jargon trap",
+        "Embeddings & similarity search",
+        "No-code experiments you can ship",
+        "Reading metrics that matter to the business"
+      ],
+      "reviews": [
+        {
+          "name": "Sofia Mendes",
+          "stars": 5,
+          "text": "I finally get embeddings. Conversations with our ML team are night and day.",
+          "date": "2026-07-18"
+        },
+        {
+          "name": "Ryan Cooper",
+          "stars": 4,
+          "text": "Great intuition builder. Not a coding bootcamp—and that’s the point.",
+          "date": "2026-06-03"
+        },
+        {
+          "name": "Leila Hassan",
+          "stars": 5,
+          "text": "The metrics chapter alone is worth the price for product folks.",
+          "date": "2026-04-15"
+        },
+        {
+          "name": "Marcus Webb",
+          "stars": 4,
+          "text": "Solid pacing. Would love a follow-up on LLMs vs classical ML tradeoffs.",
+          "date": "2026-03-28"
+        }
+      ]
+    },
+    {
+      "id": "ai-strategy-creators",
+      "title": "AI Strategy for Creators & Founders",
+      "tagline": "Turn AI into leverage—not another shiny tool",
+      "description": "A strategy course for indie creators, solopreneurs, and early-stage founders. Map your value chain, pick high-ROI AI bets, productize workflows, price digital offers, and build a moat that isn’t “we use ChatGPT.”",
+      "level": "Intermediate",
+      "duration": "6 hours",
+      "lessons": 18,
+      "price": 99,
+      "compareAtPrice": 129,
+      "category": ["Strategy", "Productivity"],
+      "featured": true,
+      "rating": 4.9,
+      "reviewCount": 241,
+      "gradient": ["#a855f7", "#ef4444"],
+      "video": {
+        "poster": "gradient",
+        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+      },
+      "curriculum": [
+        "AI opportunity mapping for your niche",
+        "Workflow productization & packaging",
+        "Pricing, positioning, and proof",
+        "Content systems that compound",
+        "Team of one: agents + contractors",
+        "Moats, ethics, and long-game bets"
+      ],
+      "reviews": [
+        {
+          "name": "Zoe Mitchell",
+          "stars": 5,
+          "text": "Reframed how I package offers. Booked two new clients with the case-study system.",
+          "date": "2026-08-08"
+        },
+        {
+          "name": "Ivan Petrov",
+          "stars": 5,
+          "text": "Strategic without being vague. Concrete frameworks I reused the same week.",
+          "date": "2026-07-01"
+        },
+        {
+          "name": "Grace Park",
+          "stars": 5,
+          "text": "The moat chapter is refreshingly honest. No hype, just leverage.",
+          "date": "2026-05-09"
+        },
+        {
+          "name": "Noah Berg",
+          "stars": 4,
+          "text": "Excellent for founders. Creators may skip one module—still highly recommend.",
+          "date": "2026-04-02"
+        }
+      ]
+    }
+  ]
+}

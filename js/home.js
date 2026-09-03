@@ -1,222 +1,134 @@
-(async () => {
-  const INTERVAL_MS = 4500;
-  const MAX_SLIDES = 8;
+/**
+ * Homepage — hero slideshow, featured courses, social proof
+ */
+(async function () {
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  const grid = document.getElementById('featured-grid');
-  const root = document.getElementById('hero-slideshow');
+  try {
+    const data = await FC.loadCourses();
+    const courses = data.courses || [];
+    const featured = courses.filter((c) => c.featured).concat(courses).filter((c, i, a) => a.findIndex((x) => x.id === c.id) === i).slice(0, 6);
 
-  function hasRealArt(p) {
-    return Boolean((p.images && p.images.hero) || p.image);
+    const countEl = document.querySelector('[data-course-count]');
+    if (countEl) countEl.textContent = String(courses.length);
+
+    const grid = document.getElementById('featured-grid');
+    if (grid) {
+      grid.innerHTML = featured.slice(0, 6).map((c) => FC.courseCardHTML(c)).join('');
+      FC.initReveal();
+    }
+
+    initSlideshow(featured);
+  } catch (err) {
+    console.error(err);
+    const grid = document.getElementById('featured-grid');
+    if (grid) grid.innerHTML = '<p class="muted">Could not load courses.</p>';
   }
 
-  /** Prefer real photos, then featured, then the rest — always include photo products. */
-  function pickSlideshowProducts(products) {
-    const withArt = products.filter(hasRealArt);
-    const featuredRest = products.filter((p) => p.featured && !hasRealArt(p));
-    const rest = products.filter((p) => !p.featured && !hasRealArt(p));
-    const ordered = [...withArt, ...featuredRest, ...rest];
-    const seen = new Set();
-    const out = [];
-    for (const p of ordered) {
-      if (seen.has(p.id)) continue;
-      seen.add(p.id);
-      out.push(p);
-      if (out.length >= MAX_SLIDES) break;
-    }
-    // Ensure Lumen Spire + Spira Bloom stay in rotation when present
-    for (const id of ['lumen-spire', 'spira-bloom']) {
-      if (out.some((p) => p.id === id)) continue;
-      const hit = products.find((p) => p.id === id);
-      if (hit) {
-        if (out.length >= MAX_SLIDES) out.pop();
-        out.unshift(hit);
-      }
-    }
-    return out;
-  }
-
-  function buildSlideshow(products) {
-    if (!root || !products.length) return;
+  function initSlideshow(courses) {
+    const root = document.getElementById('hero-slideshow');
+    if (!root || !courses.length) return;
 
     const track = root.querySelector('[data-slides]');
-    const dotsEl = root.querySelector('[data-slide-dots]');
     const titleEl = root.querySelector('[data-slide-title]');
-    const tagEl = root.querySelector('[data-slide-tagline]');
+    const taglineEl = root.querySelector('[data-slide-tagline]');
     const priceEl = root.querySelector('[data-slide-price]');
     const linkEl = root.querySelector('[data-slide-link]');
+    const dotsEl = root.querySelector('[data-slide-dots]');
     const prevBtn = root.querySelector('[data-slide-prev]');
     const nextBtn = root.querySelector('[data-slide-next]');
+    const chips = document.querySelector('[data-now-chips]');
     const strip = document.getElementById('now-showing-strip');
-    const chips = strip && strip.querySelector('[data-now-chips]');
-
-    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    function escapeText(s) {
-      return String(s)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-    }
-
-    track.innerHTML = products
-      .map((p, i) => {
-        const href = `${FC.siteRoot()}product.html?id=${encodeURIComponent(p.id)}`;
-        return `<a class="hero-slide${i === 0 ? ' is-active' : ''}" href="${href}" data-index="${i}" aria-hidden="${i === 0 ? 'false' : 'true'}">${FC.productArtHTML(p, 900, 900)}</a>`;
-      })
-      .join('');
-
-    dotsEl.innerHTML = products
-      .map(
-        (p, i) =>
-          `<button type="button" class="hero-slideshow-dot${i === 0 ? ' is-active' : ''}" role="tab" aria-label="Show ${String(p.name).replace(/"/g, '')}" aria-selected="${i === 0 ? 'true' : 'false'}" data-dot="${i}"></button>`
-      )
-      .join('');
-
-    if (strip && chips) {
-      strip.hidden = false;
-      chips.innerHTML = products
-        .map((p, i) => {
-          const href = `${FC.siteRoot()}product.html?id=${encodeURIComponent(p.id)}`;
-          return `<a class="now-showing-chip${i === 0 ? ' is-active' : ''}" href="${href}" data-chip="${i}">${escapeText(p.name)}</a>`;
-        })
-        .join('');
-    }
 
     let index = 0;
     let timer = null;
-    let paused = reduceMotion;
+    const INTERVAL = 5200;
 
-    function syncMeta(i) {
-      const p = products[i];
-      const href = `${FC.siteRoot()}product.html?id=${encodeURIComponent(p.id)}`;
-      const pricing = FC.priceFor(p);
-      titleEl.textContent = p.name;
+    track.innerHTML = courses
+      .map((c, i) => {
+        const [g1, g2] = c.gradient || ['#7c5cff', '#00e5c0'];
+        return `<div class="hero-slide${i === 0 ? ' is-active' : ''}" data-i="${i}" style="--g1:${g1};--g2:${g2}">
+          <div class="hero-slide-glow"></div>
+          <div class="hero-slide-content">
+            <span class="hero-slide-level">${FC.escapeHtml(c.level)}</span>
+            <span class="hero-slide-dur">${FC.escapeHtml(c.duration)} · ${c.lessons} lessons</span>
+          </div>
+        </div>`;
+      })
+      .join('');
+
+    dotsEl.innerHTML = courses
+      .map((_, i) => `<button type="button" class="hero-dot${i === 0 ? ' is-active' : ''}" role="tab" aria-label="Slide ${i + 1}" data-dot="${i}"></button>`)
+      .join('');
+
+    if (chips && strip) {
+      strip.hidden = false;
+      chips.innerHTML = courses
+        .map((c, i) => `<button type="button" class="now-chip${i === 0 ? ' is-active' : ''}" data-chip="${i}">${FC.escapeHtml(c.title)}</button>`)
+        .join('');
+    }
+
+    function go(n) {
+      index = (n + courses.length) % courses.length;
+      track.querySelectorAll('.hero-slide').forEach((el, i) => el.classList.toggle('is-active', i === index));
+      dotsEl.querySelectorAll('.hero-dot').forEach((el, i) => el.classList.toggle('is-active', i === index));
+      if (chips) chips.querySelectorAll('.now-chip').forEach((el, i) => el.classList.toggle('is-active', i === index));
+
+      const c = courses[index];
+      const href = FC.siteRoot() + 'course.html?id=' + encodeURIComponent(c.id);
+      const p = FC.priceFor(c);
+      titleEl.textContent = c.title;
       titleEl.href = href;
-      tagEl.textContent = p.tagline || '';
-      priceEl.innerHTML = pricing.discounted
-        ? `<span class="was">${FC.formatMoney(pricing.base)}</span>${FC.formatMoney(pricing.final)}`
-        : FC.formatMoney(pricing.final);
+      taglineEl.textContent = c.tagline;
+      priceEl.innerHTML = p.discounted
+        ? `<span class="was">${FC.formatMoney(p.base)}</span> ${FC.formatMoney(p.final)}`
+        : FC.formatMoney(p.final);
       linkEl.href = href;
-      root.setAttribute('aria-label', `Featured products — ${p.name}`);
     }
 
-    function go(i, { user } = {}) {
-      const slides = track.querySelectorAll('.hero-slide');
-      const dots = dotsEl.querySelectorAll('.hero-slideshow-dot');
-      const n = products.length;
-      index = ((i % n) + n) % n;
-      slides.forEach((el, j) => {
-        const on = j === index;
-        el.classList.toggle('is-active', on);
-        el.setAttribute('aria-hidden', on ? 'false' : 'true');
-      });
-      dots.forEach((el, j) => {
-        const on = j === index;
-        el.classList.toggle('is-active', on);
-        el.setAttribute('aria-selected', on ? 'true' : 'false');
-      });
-      if (chips) {
-        chips.querySelectorAll('.now-showing-chip').forEach((el, j) => {
-          el.classList.toggle('is-active', j === index);
-        });
-      }
-      syncMeta(index);
-      if (user) restart();
-    }
-
-    function next() {
-      go(index + 1);
-    }
-    function prev() {
-      go(index - 1, { user: true });
-    }
-
-    function stop() {
-      if (timer) {
-        clearInterval(timer);
-        timer = null;
-      }
-    }
+    function next() { go(index + 1); }
+    function prev() { go(index - 1); }
 
     function start() {
       stop();
-      if (paused || reduceMotion || products.length < 2) return;
-      timer = setInterval(next, INTERVAL_MS);
+      if (reduced || courses.length < 2) return;
+      timer = setInterval(next, INTERVAL);
+    }
+    function stop() {
+      if (timer) clearInterval(timer);
+      timer = null;
     }
 
-    function restart() {
-      stop();
-      start();
-    }
-
-    prevBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      go(index - 1, { user: true });
-    });
-    nextBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      go(index + 1, { user: true });
-    });
+    prevBtn?.addEventListener('click', () => { prev(); start(); });
+    nextBtn?.addEventListener('click', () => { next(); start(); });
     dotsEl.addEventListener('click', (e) => {
-      const btn = e.target.closest('[data-dot]');
-      if (!btn) return;
-      go(Number(btn.getAttribute('data-dot')), { user: true });
+      const d = e.target.closest('[data-dot]');
+      if (!d) return;
+      go(+d.dataset.dot);
+      start();
+    });
+    chips?.addEventListener('click', (e) => {
+      const d = e.target.closest('[data-chip]');
+      if (!d) return;
+      go(+d.dataset.chip);
+      start();
     });
 
-    root.addEventListener('mouseenter', () => {
-      paused = true;
-      stop();
-    });
-    root.addEventListener('mouseleave', () => {
-      if (!reduceMotion) {
-        paused = false;
-        start();
-      }
-    });
-    root.addEventListener('focusin', () => {
-      paused = true;
-      stop();
-    });
-    root.addEventListener('focusout', (e) => {
-      if (!root.contains(e.relatedTarget) && !reduceMotion) {
-        paused = false;
-        start();
-      }
-    });
+    root.addEventListener('mouseenter', stop);
+    root.addEventListener('mouseleave', start);
+    root.addEventListener('focusin', stop);
+    root.addEventListener('focusout', start);
 
-    root.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowLeft') {
-        e.preventDefault();
-        go(index - 1, { user: true });
-      } else if (e.key === 'ArrowRight') {
-        e.preventDefault();
-        go(index + 1, { user: true });
-      }
-    });
-    if (!root.hasAttribute('tabindex')) root.setAttribute('tabindex', '0');
+    let touchX = null;
+    root.addEventListener('touchstart', (e) => { touchX = e.changedTouches[0].screenX; }, { passive: true });
+    root.addEventListener('touchend', (e) => {
+      if (touchX == null) return;
+      const dx = e.changedTouches[0].screenX - touchX;
+      if (Math.abs(dx) > 40) { dx < 0 ? next() : prev(); start(); }
+      touchX = null;
+    }, { passive: true });
 
-    document.addEventListener('visibilitychange', () => {
-      if (document.hidden) stop();
-      else if (!paused) start();
-    });
-
-    syncMeta(0);
+    go(0);
     start();
-  }
-
-  try {
-    const data = await FC.loadProducts();
-    const products = data.products || [];
-
-    if (grid) {
-      const featured = products.filter((p) => p.featured).slice(0, 4);
-      grid.innerHTML = featured.map((p) => FC.productCardHTML(p)).join('');
-    }
-
-    buildSlideshow(pickSlideshowProducts(products));
-  } catch (e) {
-    if (grid) grid.innerHTML = '<div class="empty-state">Could not load products.</div>';
-    console.error(e);
   }
 })();
