@@ -10,6 +10,14 @@
 
 Choose embeddings vs keywords by need.
 
+## What to do
+
+1. Play the **Lesson video** all the way through — treat it as the cold open.
+2. Read **Teaching** and the worked micro-example like a playbook, not a skim.
+3. Open `l04-interactive.html` and follow its Instructions until you hit the success state (this locks in: When embeddings beat keywords (and when not)).
+4. Capture a one-sentence Monday-morning takeaway you could paste into Slack.
+5. **You’re done when:** you can explain — in plain language — *Choose embeddings vs keywords by need.* and `l04-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l04-video.mp4)

@@ -10,6 +10,14 @@
 
 Pick the minimum sharing scope that matches risk and audience for each Acme Ops assistant.
 
+## What to do
+
+1. Watch the **Lesson video** once; pause only if a beat truly clicks for your role.
+2. Work through **Teaching** and the worked example until you could explain it out loud.
+3. Open `l01-interactive.html` and follow its Instructions until you hit the success state (this locks in: Sharing models: private, team, public).
+4. Jot one reusable line in your own words — something you’d actually use at work.
+5. **You’re done when:** you can explain — in plain language — *Pick the minimum sharing scope that matches risk and audience for each Acme Ops assistant.* and `l01-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l01-video.mp4)

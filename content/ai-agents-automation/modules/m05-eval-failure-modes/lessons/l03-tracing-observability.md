@@ -10,6 +10,14 @@
 
 Specify trace spans: LLM, tool, approval, cost, latency.
 
+## What to do
+
+1. Watch the **Lesson video** once; pause only if a beat truly clicks for your role.
+2. Work through **Teaching** and the worked example until you could explain it out loud.
+3. Open `l03-interactive.html` and follow its Instructions until you hit the success state (this locks in: Tracing and observability).
+4. Jot one reusable line in your own words — something you’d actually use at work.
+5. **You’re done when:** you can explain — in plain language — *Specify trace spans: LLM, tool, approval, cost, latency.* and `l03-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l03-video.mp4)

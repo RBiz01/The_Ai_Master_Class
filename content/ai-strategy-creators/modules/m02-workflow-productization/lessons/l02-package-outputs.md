@@ -10,6 +10,14 @@
 
 Package outputs as deliverables with clear scope.
 
+## What to do
+
+1. Watch the **Lesson video** once for the visual hook.
+2. Read **Teaching** (and the worked example) without rushing.
+3. Open `l02-interactive.html` and follow its Instructions until you hit the success state (this locks in: Packaging AI outputs customers pay for).
+4. Rewrite or apply the idea once in your own words (one sentence is enough).
+5. **You’re done when:** you can explain — in plain language — *Package outputs as deliverables with clear scope.* and `l02-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l02-video.mp4)

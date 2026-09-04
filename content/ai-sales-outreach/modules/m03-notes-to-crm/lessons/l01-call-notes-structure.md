@@ -10,6 +10,14 @@
 
 Map raw Northstar↔Acme Ops call text into Pain, Impact, Decision criteria, Risks.
 
+## What to do
+
+1. Watch the **Lesson video** once for the visual hook.
+2. Read **Teaching** (and the worked example) without rushing.
+3. Open `l01-interactive.html` and follow its Instructions until you hit the success state (this locks in: Call notes structure that sticks).
+4. Rewrite or apply the idea once in your own words (one sentence is enough).
+5. **You’re done when:** you can explain — in plain language — *Map raw Northstar↔Acme Ops call text into Pain, Impact, Decision criteria, Risks.* and `l01-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l01-video.mp4)

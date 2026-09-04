@@ -192,3 +192,7 @@ Live `courses.json` should list:
 
 - Course/module intro MP4 trailers not in this package (scripts only; samples on live site). **All 24 lesson theme clips (m01–m06) are present** via Pillow+ffmpeg motion-graphics (no Grok T2V).  
 - No GitHub push performed from this workspace package.
+
+## Republish note
+
+- Lessons now include a learner-facing `## What to do` section (after Learning objective); republish lesson pages so learners see it.

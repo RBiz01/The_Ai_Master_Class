@@ -10,6 +10,14 @@
 
 Define long-game bets with kill criteria.
 
+## What to do
+
+1. Play the **Lesson video** all the way through — treat it as the cold open.
+2. Read **Teaching** and the worked micro-example like a playbook, not a skim.
+3. Open `l03-interactive.html` and follow its Instructions until you hit the success state (this locks in: Long-game bets and kill criteria).
+4. Capture a one-sentence Monday-morning takeaway you could paste into Slack.
+5. **You’re done when:** you can explain — in plain language — *Define long-game bets with kill criteria.* and `l03-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l03-video.mp4)

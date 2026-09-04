@@ -10,6 +10,14 @@
 
 Break a messy multi-step Acme Ops ask into ordered sub-prompts with clear handoffs—so each step has one goal and one format.
 
+## What to do
+
+1. Watch the **Lesson video** once for the visual hook.
+2. Read **Teaching** (and the worked example) without rushing.
+3. Open `l03-interactive.html` and follow its Instructions until you hit the success state (this locks in: Decomposing multi-step work).
+4. Rewrite or apply the idea once in your own words (one sentence is enough).
+5. **You’re done when:** you can explain — in plain language — *Break a messy multi-step Acme Ops ask into ordered sub-prompts with clear handoffs—so each step has one goal and one format.* and `l03-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l03-video.mp4)

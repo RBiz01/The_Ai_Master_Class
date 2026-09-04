@@ -10,6 +10,14 @@
 
 Specify output shapes—markdown tables, JSON, and checklists—so a human or a script can consume the answer without cleanup.
 
+## What to do
+
+1. Watch the **Lesson video** once for the visual hook.
+2. Read **Teaching** (and the worked example) without rushing.
+3. Open `l03-interactive.html` and follow its Instructions until you hit the success state (this locks in: Tables, JSON, and checklists that parse).
+4. Rewrite or apply the idea once in your own words (one sentence is enough).
+5. **You’re done when:** you can explain — in plain language — *Specify output shapes—markdown tables, JSON, and checklists—so a human or a script can consume the answer without cleanup.* and `l03-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l03-video.mp4)

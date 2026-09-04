@@ -142,3 +142,7 @@ Wire interactives as lesson “practice” objects (static HTML, no network requ
 | Samira Patel | 5 | 2026-07-28 | Finally a sales+AI course that won’t get you in trouble with Legal. Guardrails are practical. |
 | Chris Nguyen | 4 | 2026-06-19 | Strong on sequences and personalization. Wanted one more proposal template—still shipped faster. |
 | Jordan Lee | 5 | 2026-05-30 | Founder-seller here. Research → outreach → follow-up OS is exactly what I needed. |
+
+## Republish note
+
+- Lessons now include a learner-facing `## What to do` section (after Learning objective); republish lesson pages so learners see it.

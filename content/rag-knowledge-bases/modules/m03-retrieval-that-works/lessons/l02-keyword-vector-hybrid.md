@@ -10,6 +10,14 @@
 
 Choose keyword, vector, or hybrid retrieval for IDs, jargon, and paraphrased ops questions.
 
+## What to do
+
+1. Cue up the **Lesson video** and watch it once before you dig into the text.
+2. Read **Teaching** carefully — especially the worked example you can reuse Monday.
+3. Open `l02-interactive.html` and follow its Instructions until you hit the success state (this locks in: Keyword vs vector vs hybrid).
+4. Apply the idea once in your words (sticky note or note app is fine).
+5. **You’re done when:** you can explain — in plain language — *Choose keyword, vector, or hybrid retrieval for IDs, jargon, and paraphrased ops questions.* and `l02-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l02-video.mp4)

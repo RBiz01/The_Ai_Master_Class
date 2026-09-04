@@ -90,3 +90,7 @@ Catalog lists **6 hours / 18 lessons / 6 modules**. This package matches with **
 
 - Course/module intro MP4 trailers not in this package (scripts only).
 - No GitHub push performed from this workspace package.
+
+## Republish note
+
+- Lessons now include a learner-facing `## What to do` section (after Learning objective); republish lesson pages so learners see it.

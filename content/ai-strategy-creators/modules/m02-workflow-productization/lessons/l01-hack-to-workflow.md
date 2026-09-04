@@ -10,6 +10,14 @@
 
 Convert a personal AI hack into a named workflow.
 
+## What to do
+
+1. Cue up the **Lesson video** and watch it once before you dig into the text.
+2. Read **Teaching** carefully — especially the worked example you can reuse Monday.
+3. Open `l01-interactive.html` and follow its Instructions until you hit the success state (this locks in: From personal hack to productized workflow).
+4. Apply the idea once in your words (sticky note or note app is fine).
+5. **You’re done when:** you can explain — in plain language — *Convert a personal AI hack into a named workflow.* and `l01-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l01-video.mp4)

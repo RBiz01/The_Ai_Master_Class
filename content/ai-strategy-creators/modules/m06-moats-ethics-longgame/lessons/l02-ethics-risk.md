@@ -10,6 +10,14 @@
 
 Treat ethics as operational risk controls.
 
+## What to do
+
+1. Watch the **Lesson video** once for the visual hook.
+2. Read **Teaching** (and the worked example) without rushing.
+3. Open `l02-interactive.html` and follow its Instructions until you hit the success state (this locks in: Ethics as risk management).
+4. Rewrite or apply the idea once in your own words (one sentence is enough).
+5. **You’re done when:** you can explain — in plain language — *Treat ethics as operational risk controls.* and `l02-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l02-video.mp4)

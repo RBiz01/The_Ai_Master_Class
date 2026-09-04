@@ -90,3 +90,7 @@ Catalog may list **7 hours / 22 lessons / 6 modules**. This package uses pacing 
 
 - Course/module intro MP4 trailers not in this package (scripts only).
 - No GitHub push performed from this workspace package.
+
+## Republish note
+
+- Lessons now include a learner-facing `## What to do` section (after Learning objective); republish lesson pages so learners see it.

@@ -10,6 +10,14 @@
 
 Sort example snippets into public, internal, and restricted buckets.
 
+## What to do
+
+1. Watch the **Lesson video** once for the visual hook.
+2. Read **Teaching** (and the worked example) without rushing.
+3. Open `l01-interactive.html` and follow its Instructions until you hit the success state (this locks in: What not to paste (data classes)).
+4. Rewrite or apply the idea once in your own words (one sentence is enough).
+5. **You’re done when:** you can explain — in plain language — *Sort example snippets into public, internal, and restricted buckets.* and `l01-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l01-video.mp4)

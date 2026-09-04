@@ -10,6 +10,14 @@
 
 Deconstruct a reference still into transferable locks (palette, light direction, props, composition) without copying protected IP.
 
+## What to do
+
+1. Watch the **Lesson video** once for the visual hook.
+2. Read **Teaching** (and the worked example) without rushing.
+3. Open `l03-interactive.html` and follow its Instructions until you hit the success state (this locks in: Reading references like a creative director).
+4. Rewrite or apply the idea once in your own words (one sentence is enough).
+5. **You’re done when:** you can explain — in plain language — *Deconstruct a reference still into transferable locks (palette, light direction, props, composition) without copying protected IP.* and `l03-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l03-video.mp4)

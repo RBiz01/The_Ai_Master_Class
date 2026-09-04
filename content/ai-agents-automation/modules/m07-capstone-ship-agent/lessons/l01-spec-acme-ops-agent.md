@@ -10,6 +10,14 @@
 
 Write goal, users, tools, stop conditions, and non-goals for the capstone agent.
 
+## What to do
+
+1. Watch the **Lesson video** once for the visual hook.
+2. Read **Teaching** (and the worked example) without rushing.
+3. Open `l01-interactive.html` and follow its Instructions until you hit the success state (this locks in: Spec your Acme Ops agent).
+4. Rewrite or apply the idea once in your own words (one sentence is enough).
+5. **You’re done when:** you can explain — in plain language — *Write goal, users, tools, stop conditions, and non-goals for the capstone agent.* and `l01-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l01-video.mp4)

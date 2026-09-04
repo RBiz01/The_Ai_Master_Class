@@ -10,6 +10,14 @@
 
 Gate write actions with dry-run previews and explicit human confirmation; document blast radius.
 
+## What to do
+
+1. Watch the **Lesson video** once for the visual hook.
+2. Read **Teaching** (and the worked example) without rushing.
+3. Open `l03-interactive.html` and follow its Instructions until you hit the success state (this locks in: Confirmations, dry-runs & blast radius).
+4. Rewrite or apply the idea once in your own words (one sentence is enough).
+5. **You’re done when:** you can explain — in plain language — *Gate write actions with dry-run previews and explicit human confirmation; document blast radius.* and `l03-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l03-video.mp4)

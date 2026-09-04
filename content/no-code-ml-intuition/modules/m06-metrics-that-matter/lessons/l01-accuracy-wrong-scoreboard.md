@@ -10,6 +10,14 @@
 
 Show when class imbalance misleads.
 
+## What to do
+
+1. Watch the **Lesson video** once; pause only if a beat truly clicks for your role.
+2. Work through **Teaching** and the worked example until you could explain it out loud.
+3. Open `l01-interactive.html` and follow its Instructions until you hit the success state (this locks in: Accuracy is often the wrong scoreboard).
+4. Jot one reusable line in your own words — something you’d actually use at work.
+5. **You’re done when:** you can explain — in plain language — *Show when class imbalance misleads.* and `l01-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l01-video.mp4)

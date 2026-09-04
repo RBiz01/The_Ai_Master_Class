@@ -140,3 +140,7 @@ Keep catalog duration/lessons as-is; mark all 32 lessons available for completio
 
 - Course/module intro MP4 trailers not in this package (scripts only; samples on live site). **All 32 lesson theme clips (m01–m08) are present** via Pillow+ffmpeg motion-graphics (no Grok T2V).  
 - No GitHub push performed from this workspace package.
+
+## Republish note
+
+- Lessons now include a learner-facing `## What to do` section (after Learning objective); republish lesson pages so learners see it.

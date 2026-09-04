@@ -10,6 +10,14 @@
 
 Connect distribution loops to the offer.
 
+## What to do
+
+1. Cue up the **Lesson video** and watch it once before you dig into the text.
+2. Read **Teaching** carefully — especially the worked example you can reuse Monday.
+3. Open `l03-interactive.html` and follow its Instructions until you hit the success state (this locks in: Distribution loops that feed the offer).
+4. Apply the idea once in your words (sticky note or note app is fine).
+5. **You’re done when:** you can explain — in plain language — *Connect distribution loops to the offer.* and `l03-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l03-video.mp4)

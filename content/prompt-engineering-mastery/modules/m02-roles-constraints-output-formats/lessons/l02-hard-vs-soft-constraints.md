@@ -11,6 +11,14 @@
 
 Separate **hard** constraints (must / must-not) from **soft** preferences (nice-to-have), and set an explicit priority when they collide.
 
+## What to do
+
+1. Cue up the **Lesson video** and watch it once before you dig into the text.
+2. Read **Teaching** carefully — especially the worked example you can reuse Monday.
+3. Open `l02-interactive.html` and follow its Instructions until you hit the success state (this locks in: Hard vs soft constraints).
+4. Apply the idea once in your words (sticky note or note app is fine).
+5. **You’re done when:** you can explain — in plain language — *Separate **hard** constraints (must / must-not) from **soft** preferences (nice-to-have), and set an explicit priority when they collide.* and `l02-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l02-video.mp4)

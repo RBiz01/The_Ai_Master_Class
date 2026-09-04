@@ -71,3 +71,7 @@ Wire interactives as lesson “practice” objects (static HTML, no network requ
 - Course/module intro MP4 trailers not in this package (scripts only). **All 24 lesson theme clips (m01–m06) are present** via Pillow+ffmpeg.  
 - Catalog duration/lesson count may be stale (5h/20) — **update to 6h/24 on publish**.  
 - No GitHub push performed from this workspace package.
+
+## Republish note
+
+- Lessons now include a learner-facing `## What to do` section (after Learning objective); republish lesson pages so learners see it.

@@ -85,4 +85,8 @@ content/generative-media/
 ## Voice & safety reminders
 
 - Fictional brand **Northstar Studio** only  
-- No NSFW, no celebrity likenesses, no real client data  
+- No NSFW, no celebrity likenesses, no real client data
+
+## Republish note
+
+- Lessons now include a learner-facing `## What to do` section (after Learning objective); republish lesson pages so learners see it.

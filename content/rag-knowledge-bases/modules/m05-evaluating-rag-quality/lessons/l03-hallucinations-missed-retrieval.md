@@ -10,6 +10,14 @@
 
 Diagnose whether a bad answer is invented content or a retrieval miss—and pick the right fix.
 
+## What to do
+
+1. Watch the **Lesson video** once for the visual hook.
+2. Read **Teaching** (and the worked example) without rushing.
+3. Open `l03-interactive.html` and follow its Instructions until you hit the success state (this locks in: Spotting hallucinations and missed retrieval).
+4. Rewrite or apply the idea once in your own words (one sentence is enough).
+5. **You’re done when:** you can explain — in plain language — *Diagnose whether a bad answer is invented content or a retrieval miss—and pick the right fix.* and `l03-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l03-video.mp4)

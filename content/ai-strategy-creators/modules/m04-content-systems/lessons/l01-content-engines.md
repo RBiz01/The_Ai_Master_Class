@@ -10,6 +10,14 @@
 
 Design a compounding content engine.
 
+## What to do
+
+1. Play the **Lesson video** all the way through — treat it as the cold open.
+2. Read **Teaching** and the worked micro-example like a playbook, not a skim.
+3. Open `l01-interactive.html` and follow its Instructions until you hit the success state (this locks in: Content engines that compound with AI).
+4. Capture a one-sentence Monday-morning takeaway you could paste into Slack.
+5. **You’re done when:** you can explain — in plain language — *Design a compounding content engine.* and `l01-interactive.html` shows success.
+
 ## Lesson video
 
 ![Lesson video](assets/l01-video.mp4)
