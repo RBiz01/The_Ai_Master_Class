@@ -1,0 +1,516 @@
+{
+  "courseId": "ai-strategy-creators",
+  "title": "AI Strategy for Creators & Founders",
+  "product": "The Ai Master Class",
+  "duration": "6 hours",
+  "lessons": 18,
+  "pacing": "~1 hour per curriculum module x 6 modules",
+  "gradient": [
+    "#a855f7",
+    "#ef4444"
+  ],
+  "moduleStatus": {
+    "m01-opportunity-mapping": "built",
+    "m02-workflow-productization": "built",
+    "m03-pricing-positioning-proof": "built",
+    "m04-content-systems": "built",
+    "m05-team-of-one": "built",
+    "m06-moats-ethics-longgame": "built"
+  },
+  "minuteBudget": {
+    "perModuleMinutes": 60,
+    "courseTotalHours": 6,
+    "m01": {
+      "introVideo": 5,
+      "l01": 16,
+      "l02": 18,
+      "l03": 16,
+      "exampleVideo": 5,
+      "total": 60
+    },
+    "m02": {
+      "introVideo": 5,
+      "l01": 16,
+      "l02": 18,
+      "l03": 16,
+      "exampleVideo": 5,
+      "total": 60
+    },
+    "m03": {
+      "introVideo": 5,
+      "l01": 16,
+      "l02": 18,
+      "l03": 16,
+      "exampleVideo": 5,
+      "total": 60
+    },
+    "m04": {
+      "introVideo": 5,
+      "l01": 16,
+      "l02": 18,
+      "l03": 16,
+      "exampleVideo": 5,
+      "total": 60
+    },
+    "m05": {
+      "introVideo": 5,
+      "l01": 16,
+      "l02": 18,
+      "l03": 16,
+      "exampleVideo": 5,
+      "total": 60
+    },
+    "m06": {
+      "introVideo": 5,
+      "l01": 16,
+      "l02": 18,
+      "l03": 16,
+      "exampleVideo": 5,
+      "total": 60
+    }
+  },
+  "typeTags": [
+    "meta",
+    "lesson",
+    "interactive",
+    "diagram",
+    "video-script",
+    "video",
+    "image",
+    "doc",
+    "stub",
+    "other"
+  ],
+  "files": [
+    {
+      "path": "COURSE.md",
+      "type": "meta",
+      "bytes": 3981
+    },
+    {
+      "path": "HANDOFF.md",
+      "type": "meta",
+      "bytes": 3604
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "meta",
+      "bytes": 13204
+    },
+    {
+      "path": "assets/images/ai-strategy-creators-cover.png",
+      "type": "other",
+      "bytes": 22784
+    },
+    {
+      "path": "assets/intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1633
+    },
+    {
+      "path": "assets/videos/PROMPTS.md",
+      "type": "video-script",
+      "bytes": 227
+    },
+    {
+      "path": "bibles/video-style.txt",
+      "type": "other",
+      "bytes": 450
+    },
+    {
+      "path": "modules/m01-opportunity-mapping/MODULE.md",
+      "type": "meta",
+      "bytes": 1673
+    },
+    {
+      "path": "modules/m01-opportunity-mapping/assets/diagram-opportunity-map.svg",
+      "type": "diagram",
+      "bytes": 4284
+    },
+    {
+      "path": "modules/m01-opportunity-mapping/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 870
+    },
+    {
+      "path": "modules/m01-opportunity-mapping/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1477
+    },
+    {
+      "path": "modules/m01-opportunity-mapping/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 39093
+    },
+    {
+      "path": "modules/m01-opportunity-mapping/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 24743
+    },
+    {
+      "path": "modules/m01-opportunity-mapping/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 29124
+    },
+    {
+      "path": "modules/m01-opportunity-mapping/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6711
+    },
+    {
+      "path": "modules/m01-opportunity-mapping/lessons/l01-pain-to-leverage.md",
+      "type": "lesson",
+      "bytes": 1438
+    },
+    {
+      "path": "modules/m01-opportunity-mapping/lessons/l02-build-buy-wrap.md",
+      "type": "lesson",
+      "bytes": 1390
+    },
+    {
+      "path": "modules/m01-opportunity-mapping/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 5916
+    },
+    {
+      "path": "modules/m01-opportunity-mapping/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6725
+    },
+    {
+      "path": "modules/m01-opportunity-mapping/lessons/l03-score-opportunities.md",
+      "type": "lesson",
+      "bytes": 1265
+    },
+    {
+      "path": "modules/m02-workflow-productization/MODULE.md",
+      "type": "meta",
+      "bytes": 1650
+    },
+    {
+      "path": "modules/m02-workflow-productization/assets/diagram-productize-workflow.svg",
+      "type": "diagram",
+      "bytes": 4261
+    },
+    {
+      "path": "modules/m02-workflow-productization/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 862
+    },
+    {
+      "path": "modules/m02-workflow-productization/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1472
+    },
+    {
+      "path": "modules/m02-workflow-productization/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 45199
+    },
+    {
+      "path": "modules/m02-workflow-productization/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 23865
+    },
+    {
+      "path": "modules/m02-workflow-productization/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 28455
+    },
+    {
+      "path": "modules/m02-workflow-productization/lessons/l01-hack-to-workflow.md",
+      "type": "lesson",
+      "bytes": 1340
+    },
+    {
+      "path": "modules/m02-workflow-productization/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6727
+    },
+    {
+      "path": "modules/m02-workflow-productization/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 5925
+    },
+    {
+      "path": "modules/m02-workflow-productization/lessons/l02-package-outputs.md",
+      "type": "lesson",
+      "bytes": 1272
+    },
+    {
+      "path": "modules/m02-workflow-productization/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6688
+    },
+    {
+      "path": "modules/m02-workflow-productization/lessons/l03-sops-survive-handoff.md",
+      "type": "lesson",
+      "bytes": 1265
+    },
+    {
+      "path": "modules/m03-pricing-positioning-proof/MODULE.md",
+      "type": "meta",
+      "bytes": 1653
+    },
+    {
+      "path": "modules/m03-pricing-positioning-proof/assets/diagram-pricing-proof.svg",
+      "type": "diagram",
+      "bytes": 4270
+    },
+    {
+      "path": "modules/m03-pricing-positioning-proof/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 866
+    },
+    {
+      "path": "modules/m03-pricing-positioning-proof/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1482
+    },
+    {
+      "path": "modules/m03-pricing-positioning-proof/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 43321
+    },
+    {
+      "path": "modules/m03-pricing-positioning-proof/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 24703
+    },
+    {
+      "path": "modules/m03-pricing-positioning-proof/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 29440
+    },
+    {
+      "path": "modules/m03-pricing-positioning-proof/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6733
+    },
+    {
+      "path": "modules/m03-pricing-positioning-proof/lessons/l01-position-vs-diy.md",
+      "type": "lesson",
+      "bytes": 1315
+    },
+    {
+      "path": "modules/m03-pricing-positioning-proof/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 5912
+    },
+    {
+      "path": "modules/m03-pricing-positioning-proof/lessons/l02-pricing-ladders.md",
+      "type": "lesson",
+      "bytes": 1211
+    },
+    {
+      "path": "modules/m03-pricing-positioning-proof/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6728
+    },
+    {
+      "path": "modules/m03-pricing-positioning-proof/lessons/l03-proof-stacks.md",
+      "type": "lesson",
+      "bytes": 1196
+    },
+    {
+      "path": "modules/m04-content-systems/MODULE.md",
+      "type": "meta",
+      "bytes": 1624
+    },
+    {
+      "path": "modules/m04-content-systems/assets/diagram-content-compound.svg",
+      "type": "diagram",
+      "bytes": 4263
+    },
+    {
+      "path": "modules/m04-content-systems/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 859
+    },
+    {
+      "path": "modules/m04-content-systems/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1466
+    },
+    {
+      "path": "modules/m04-content-systems/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 42090
+    },
+    {
+      "path": "modules/m04-content-systems/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 23789
+    },
+    {
+      "path": "modules/m04-content-systems/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 28545
+    },
+    {
+      "path": "modules/m04-content-systems/lessons/l01-content-engines.md",
+      "type": "lesson",
+      "bytes": 1134
+    },
+    {
+      "path": "modules/m04-content-systems/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6716
+    },
+    {
+      "path": "modules/m04-content-systems/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 5909
+    },
+    {
+      "path": "modules/m04-content-systems/lessons/l02-repurpose-human.md",
+      "type": "lesson",
+      "bytes": 1109
+    },
+    {
+      "path": "modules/m04-content-systems/lessons/l03-distribution-loops.md",
+      "type": "lesson",
+      "bytes": 1137
+    },
+    {
+      "path": "modules/m04-content-systems/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6717
+    },
+    {
+      "path": "modules/m05-team-of-one/MODULE.md",
+      "type": "meta",
+      "bytes": 1618
+    },
+    {
+      "path": "modules/m05-team-of-one/assets/diagram-team-of-one.svg",
+      "type": "diagram",
+      "bytes": 4263
+    },
+    {
+      "path": "modules/m05-team-of-one/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 874
+    },
+    {
+      "path": "modules/m05-team-of-one/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1451
+    },
+    {
+      "path": "modules/m05-team-of-one/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 35296
+    },
+    {
+      "path": "modules/m05-team-of-one/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 24823
+    },
+    {
+      "path": "modules/m05-team-of-one/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 28990
+    },
+    {
+      "path": "modules/m05-team-of-one/lessons/l01-agent-vs-judgment.md",
+      "type": "lesson",
+      "bytes": 1142
+    },
+    {
+      "path": "modules/m05-team-of-one/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6697
+    },
+    {
+      "path": "modules/m05-team-of-one/lessons/l02-contractor-briefs.md",
+      "type": "lesson",
+      "bytes": 1135
+    },
+    {
+      "path": "modules/m05-team-of-one/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 5925
+    },
+    {
+      "path": "modules/m05-team-of-one/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6718
+    },
+    {
+      "path": "modules/m05-team-of-one/lessons/l03-operating-cadence.md",
+      "type": "lesson",
+      "bytes": 1115
+    },
+    {
+      "path": "modules/m06-moats-ethics-longgame/MODULE.md",
+      "type": "meta",
+      "bytes": 1604
+    },
+    {
+      "path": "modules/m06-moats-ethics-longgame/assets/diagram-moats-longgame.svg",
+      "type": "diagram",
+      "bytes": 4301
+    },
+    {
+      "path": "modules/m06-moats-ethics-longgame/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 865
+    },
+    {
+      "path": "modules/m06-moats-ethics-longgame/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1463
+    },
+    {
+      "path": "modules/m06-moats-ethics-longgame/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 38368
+    },
+    {
+      "path": "modules/m06-moats-ethics-longgame/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 24484
+    },
+    {
+      "path": "modules/m06-moats-ethics-longgame/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 28995
+    },
+    {
+      "path": "modules/m06-moats-ethics-longgame/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6693
+    },
+    {
+      "path": "modules/m06-moats-ethics-longgame/lessons/l01-real-moats.md",
+      "type": "lesson",
+      "bytes": 1144
+    },
+    {
+      "path": "modules/m06-moats-ethics-longgame/lessons/l02-ethics-risk.md",
+      "type": "lesson",
+      "bytes": 1122
+    },
+    {
+      "path": "modules/m06-moats-ethics-longgame/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 5905
+    },
+    {
+      "path": "modules/m06-moats-ethics-longgame/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6705
+    },
+    {
+      "path": "modules/m06-moats-ethics-longgame/lessons/l03-longgame-kill.md",
+      "type": "lesson",
+      "bytes": 1115
+    },
+    {
+      "path": "scripts/make_lesson_video.py",
+      "type": "other",
+      "bytes": 14086
+    }
+  ]
+}

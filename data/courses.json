@@ -188,7 +188,9 @@
           "date": "2026-04-08"
         }
       ],
-      "image": "images/courses/generative-media.png"
+      "image": "images/courses/generative-media.png",
+      "hasContent": true,
+      "contentPath": "content/generative-media/"
     },
     {
       "id": "ai-agents-automation",
@@ -255,8 +257,8 @@
       "tagline": "Understand models without drowning in math",
       "description": "Build real intuition for classification, regression, embeddings, and evaluation\u2014using visual tools and no-code platforms. Perfect for PMs, founders, and designers who need to talk ML fluently and make better product bets.",
       "level": "Intermediate",
-      "duration": "7 hours",
-      "lessons": 22,
+      "duration": "6 hours",
+      "lessons": 24,
       "price": 89,
       "compareAtPrice": 119,
       "category": [
@@ -308,7 +310,9 @@
           "date": "2026-03-28"
         }
       ],
-      "image": "images/courses/no-code-ml-intuition.png"
+      "image": "images/courses/no-code-ml-intuition.png",
+      "hasContent": true,
+      "contentPath": "content/no-code-ml-intuition/"
     },
     {
       "id": "ai-strategy-creators",
@@ -369,7 +373,9 @@
           "date": "2026-04-02"
         }
       ],
-      "image": "images/courses/ai-strategy-creators.png"
+      "image": "images/courses/ai-strategy-creators.png",
+      "hasContent": true,
+      "contentPath": "content/ai-strategy-creators/"
     }
   ]
 }

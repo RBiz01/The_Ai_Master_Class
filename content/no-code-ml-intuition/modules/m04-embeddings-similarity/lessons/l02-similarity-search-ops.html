@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Similarity search for creators &amp; ops · No-Code Machine Learning Intuition · The Ai Master Class</title>
+<meta name="description" content="Similarity search for creators &amp; ops · No-Code Machine Learning Intuition — The Ai Master Class" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg:#07070c; --panel:#121826; --card:#14151f; --border:#1e293b;
+  --text:#e8eaf2; --muted:#94a3b8; --accent:#10b981; --accent2:#3b82f6;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"DM Sans",system-ui,sans-serif;background:
+  radial-gradient(1000px 500px at 0% -10%,rgba(16,185,129,.18),transparent),
+  radial-gradient(800px 400px at 100% 0%,rgba(59,130,246,.12),transparent),
+  var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+a{color:var(--accent2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
+.topbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:28px}
+.brand{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:600;color:var(--text);display:flex;gap:10px;align-items:center}
+.brand span{opacity:.55;font-weight:500;font-size:.9rem}
+.crumbs{font-size:.9rem;color:var(--muted)}
+.crumbs a{color:var(--muted)}
+.crumbs a:hover{color:var(--accent2)}
+.hero{display:grid;gap:18px;margin-bottom:32px}
+.hero h1{font-family:"Space Grotesk",system-ui,sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);margin:0;letter-spacing:-.02em}
+.lead{color:var(--muted);margin:0;max-width:62ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;padding:6px 10px;border-radius:999px;border:1px solid rgba(16,185,129,.35);background:rgba(16,185,129,.1);color:rgb(123,216,185)}
+.pill.ok{border-color:rgba(59,130,246,.35);background:rgba(59,130,246,.08);color:var(--accent2)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:12px;font-weight:600;border:1px solid transparent;cursor:pointer;font-size:.95rem}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;box-shadow:0 10px 30px rgba(16,185,129,.35)}
+.btn-primary:hover{text-decoration:none;filter:brightness(1.05)}
+.btn-ghost{background:transparent;border-color:var(--border);color:var(--text)}
+.btn-ghost:hover{border-color:var(--accent2);text-decoration:none}
+.modules{display:grid;gap:16px}
+.mod{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.mod-head{padding:18px 20px;display:flex;justify-content:space-between;gap:12px;align-items:flex-start;border-bottom:1px solid var(--border)}
+.mod-head h2{margin:0;font-size:1.15rem;font-family:"Space Grotesk",system-ui,sans-serif}
+.mod-num{color:var(--accent2);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.lessons{list-style:none;margin:0;padding:8px}
+.lessons li{border-top:1px solid transparent}
+.lessons a.lesson-row{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:14px 12px;border-radius:12px;color:var(--text)}
+.lessons a.lesson-row:hover{background:rgba(255,255,255,.03);text-decoration:none}
+.lnum{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:rgba(16,185,129,.12);color:rgb(123,216,185);font-weight:600;font-size:.85rem}
+.ltitle{font-weight:560}
+.lmeta{font-size:.82rem;color:var(--muted)}
+.badge{font-size:.72rem;padding:4px 8px;border-radius:8px;background:rgba(59,130,246,.12);color:var(--accent2);border:1px solid rgba(59,130,246,.25)}
+.footer-note{margin-top:40px;color:var(--muted);font-size:.85rem}
+.layout{display:grid;grid-template-columns:260px 1fr;gap:24px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}}
+.sidebar{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;height:fit-content;position:sticky;top:16px}
+.sidebar h3{margin:0 0 10px;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.sidebar a{display:block;padding:8px 10px;border-radius:8px;color:var(--muted);font-size:.9rem}
+.sidebar a:hover,.sidebar a.active{background:rgba(16,185,129,.12);color:var(--text);text-decoration:none}
+.sidebar .mod-label{font-size:.72rem;color:var(--accent2);margin:12px 6px 4px;text-transform:uppercase;letter-spacing:.05em}
+.article{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 26px}
+.article h1{font-family:"Space Grotesk",system-ui,sans-serif;margin-top:0;letter-spacing:-.02em}
+.article h2{margin-top:1.6em;font-size:1.2rem}
+.article h3{margin-top:1.3em;font-size:1.05rem}
+.article p,.article li{color:#c9d0dd}
+.article strong{color:var(--text)}
+.article code{background:rgba(16,185,129,.12);padding:2px 6px;border-radius:6px;font-size:.9em}
+.article pre{background:#0b0f19;border:1px solid var(--border);border-radius:12px;padding:14px;overflow:auto}
+.article pre code{background:none;padding:0}
+.article blockquote{margin:1em 0;padding:12px 16px;border-left:3px solid var(--accent);background:rgba(16,185,129,.08);border-radius:0 12px 12px 0;color:#c9d0dd}
+.article hr{border:none;border-top:1px solid var(--border);margin:2em 0}
+.table-wrap{overflow:auto;margin:1em 0}
+.article table{width:100%;border-collapse:collapse;font-size:.92rem}
+.article th,.article td{border:1px solid var(--border);padding:10px 12px;text-align:left}
+.article th{background:rgba(16,185,129,.1);color:var(--text)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px}
+.diagram{margin:18px 0;padding:16px;background:#0b0f19;border:1px solid var(--border);border-radius:14px}
+.diagram img{max-width:100%;height:auto;display:block}
+.diagram figcaption{color:var(--muted);font-size:.85rem;margin-top:10px}
+.nav-lessons{display:flex;justify-content:space-between;gap:12px;margin-top:28px;padding-top:18px;border-top:1px solid var(--border)}
+.lesson-video{margin:0 0 1.25rem;border-radius:14px;overflow:hidden;border:1px solid var(--border);background:#0b0f19;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.lesson-video video{display:block;width:100%;height:auto;max-height:min(56vw,420px);background:#000}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand" href="../../../../index.html">The Ai Master <span>Class</span></a>
+    <div class="crumbs">
+      <a href="../../../../course.html?id=no-code-ml-intuition">Course</a> /
+      <a href="../../../index.html">Curriculum</a> /
+      <span>M4 · L2</span>
+    </div>
+  </div>
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>Course outline</h3>
+      <div class="mod-label">Module 1</div><a class="" href="../../m01-what-models-learn/lessons/l01-predictions-are-pattern-matches.html">1. Predictions are pattern matches, not magic</a><a class="" href="../../m01-what-models-learn/lessons/l02-parameters-weights-fitting.html">2. Parameters, weights, and fitting the curve</a><a class="" href="../../m01-what-models-learn/lessons/l03-underfit-vs-overfit.html">3. Underfitting vs overfitting in plain English</a><a class="" href="../../m01-what-models-learn/lessons/l04-what-models-cannot-learn.html">4. What models cannot learn from your data</a><div class="mod-label">Module 2</div><a class="" href="../../m02-features-labels-quality/lessons/l01-features-vs-labels.html">1. Features vs labels without the jargon</a><a class="" href="../../m02-features-labels-quality/lessons/l02-signal-noise-leakage.html">2. Signal, noise, and leakage</a><a class="" href="../../m02-features-labels-quality/lessons/l03-missing-messy-columns.html">3. Missing data and messy columns</a><a class="" href="../../m02-features-labels-quality/lessons/l04-label-quality-wins.html">4. Label quality beats fancy algorithms</a><div class="mod-label">Module 3</div><a class="" href="../../m03-train-validate-test/lessons/l01-why-one-split-fails.html">1. Why one split is not enough</a><a class="" href="../../m03-train-validate-test/lessons/l02-train-validate-test-jobs.html">2. Train / validate / test jobs</a><a class="" href="../../m03-train-validate-test/lessons/l03-cross-validation-intuition.html">3. Cross-validation intuition (no math)</a><a class="" href="../../m03-train-validate-test/lessons/l04-lookahead-trap.html">4. Avoiding the look-ahead trap</a><div class="mod-label">Module 4</div><a class="" href="../../m04-embeddings-similarity/lessons/l01-what-is-an-embedding.html">1. What an embedding actually is</a><a class="active" href="../../m04-embeddings-similarity/lessons/l02-similarity-search-ops.html">2. Similarity search for creators &amp; ops</a><a class="" href="../../m04-embeddings-similarity/lessons/l03-chunking-retrieval.html">3. Chunking and retrieval that works</a><a class="" href="../../m04-embeddings-similarity/lessons/l04-embeddings-vs-keywords.html">4. When embeddings beat keywords (and when not)</a><div class="mod-label">Module 5</div><a class="" href="../../m05-nocode-experiments/lessons/l01-question-before-tool.html">1. Pick a question before you pick a tool</a><a class="" href="../../m05-nocode-experiments/lessons/l02-nocode-field-guide.html">2. No-code ML platforms: a field guide</a><a class="" href="../../m05-nocode-experiments/lessons/l03-one-week-experiment.html">3. Design a one-week experiment</a><a class="" href="../../m05-nocode-experiments/lessons/l04-ship-measure-kill.html">4. Ship, measure, kill or keep</a><div class="mod-label">Module 6</div><a class="" href="../../m06-metrics-that-matter/lessons/l01-accuracy-wrong-scoreboard.html">1. Accuracy is often the wrong scoreboard</a><a class="" href="../../m06-metrics-that-matter/lessons/l02-precision-recall-cost.html">2. Precision, recall, and business cost</a><a class="" href="../../m06-metrics-that-matter/lessons/l03-confusion-for-humans.html">3. Confusion matrices for humans</a><a class="" href="../../m06-metrics-that-matter/lessons/l04-exec-dashboards.html">4. Dashboards execs will actually read</a>
+    </aside>
+    <div>
+      <div class="meta" style="margin-bottom:12px">
+        <span class="pill">Module 4</span>
+        <span class="pill ok">Lesson 2 of 4</span>
+        <span class="pill">#14 / 24</span>
+      </div>
+      <article class="article">
+        <h1>Lesson 4.2 — Similarity search for creators &amp; ops</h1>
+        <div class="lesson-video">
+          <video controls playsinline preload="metadata">
+            <source src="assets/l02-video.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+
+<p><strong>Module:</strong> Embeddings &amp; similarity search   <strong>Duration:</strong> ~6–8 min teaching + ~4–8 min interactive   <strong>Interactive:</strong> <code>l02-interactive.html</code></p>
+<hr />
+<h2>Learning objective</h2>
+<p>Use nearest-neighbor search for briefs and tickets.</p>
+<h2>Teaching</h2>
+<h3>Ops uses that ship</h3>
+<p>Northstar: find past briefs like this one; surface similar objections; dedupe assets. Acme Ops: related tickets; nearest policies.</p>
+<h3>Recipe</h3>
+<ol>
+<li>Embed the corpus</li>
+<li>Embed the query</li>
+<li>Return top-k neighbors</li>
+<li>Human (or LLM) reads passages</li>
+</ol>
+<h3>Talk-over narration</h3>
+<p><em>(Beat 1)</em> Similarity search means show neighbors. <em>(Beat 2)</em> Retrieval quality beats generator poetry for ops trust. <em>(Beat 3)</em> Log useful neighbors — that is your eval set.</p>
+<h2>Worked micro-example</h2>
+<p><strong>Before</strong></p>
+<blockquote><p>Vague take on: Similarity search for creators &amp; ops</p></blockquote>
+<p><strong>After</strong></p>
+<blockquote><p>Clear, actionable take that meets the objective: Use nearest-neighbor search for briefs and tickets.</p></blockquote>
+<h2>Practice</h2>
+<p>Open <code>l02-interactive.html</code> and complete the drill until success criteria turn green.</p>
+<h2>Takeaway</h2>
+<p>Apply this lesson on a fictional <strong>Northstar Studio</strong> / <strong>Acme Ops</strong> workflow before Monday.</p>
+        <figure class="diagram">
+<img src="../assets/diagram-embeddings.svg" alt="Lesson diagram" />
+<figcaption>Module diagram — reference while you practice.</figcaption>
+</figure>
+        <div class="actions">
+          <a class="btn btn-primary" href="l02-interactive.html" target="_blank" rel="noopener">Open practice</a>
+          <a class="btn btn-ghost" href="../../../index.html">All lessons</a>
+        </div>
+        <div class="nav-lessons">
+          <a class="btn btn-ghost" href="../../m04-embeddings-similarity/lessons/l01-what-is-an-embedding.html">← Previous</a>
+          <a class="btn btn-primary" href="../../m04-embeddings-similarity/lessons/l03-chunking-retrieval.html">Next →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+  <p class="footer-note">© 2026 The Ai Master Class · No-Code Machine Learning Intuition</p>
+</div>
+
+</body>
+</html>

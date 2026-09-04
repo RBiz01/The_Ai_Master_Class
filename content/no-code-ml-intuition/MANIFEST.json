@@ -1,0 +1,612 @@
+{
+  "courseId": "no-code-ml-intuition",
+  "title": "No-Code Machine Learning Intuition",
+  "product": "The Ai Master Class",
+  "duration": "6 hours",
+  "lessons": 24,
+  "pacing": "~1 hour per curriculum module x 6 modules",
+  "gradient": [
+    "#10b981",
+    "#3b82f6"
+  ],
+  "moduleStatus": {
+    "m01-what-models-learn": "built",
+    "m02-features-labels-quality": "built",
+    "m03-train-validate-test": "built",
+    "m04-embeddings-similarity": "built",
+    "m05-nocode-experiments": "built",
+    "m06-metrics-that-matter": "built"
+  },
+  "minuteBudget": {
+    "perModuleMinutes": 60,
+    "courseTotalHours": 6,
+    "m01": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m02": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m03": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m04": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m05": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m06": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    }
+  },
+  "typeTags": [
+    "meta",
+    "lesson",
+    "interactive",
+    "diagram",
+    "video-script",
+    "video",
+    "image",
+    "doc",
+    "stub",
+    "other"
+  ],
+  "files": [
+    {
+      "path": "COURSE.md",
+      "type": "meta",
+      "bytes": 4440
+    },
+    {
+      "path": "HANDOFF.md",
+      "type": "meta",
+      "bytes": 3655
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "meta",
+      "bytes": 15851
+    },
+    {
+      "path": "assets/images/no-code-ml-intuition-cover.png",
+      "type": "other",
+      "bytes": 19707
+    },
+    {
+      "path": "assets/intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1674
+    },
+    {
+      "path": "assets/videos/PROMPTS.md",
+      "type": "video-script",
+      "bytes": 226
+    },
+    {
+      "path": "bibles/video-style.txt",
+      "type": "other",
+      "bytes": 445
+    },
+    {
+      "path": "modules/m01-what-models-learn/MODULE.md",
+      "type": "meta",
+      "bytes": 1859
+    },
+    {
+      "path": "modules/m01-what-models-learn/assets/diagram-model-learns.svg",
+      "type": "diagram",
+      "bytes": 4316
+    },
+    {
+      "path": "modules/m01-what-models-learn/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 875
+    },
+    {
+      "path": "modules/m01-what-models-learn/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1527
+    },
+    {
+      "path": "modules/m01-what-models-learn/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 42137
+    },
+    {
+      "path": "modules/m01-what-models-learn/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 24255
+    },
+    {
+      "path": "modules/m01-what-models-learn/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 29395
+    },
+    {
+      "path": "modules/m01-what-models-learn/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 27675
+    },
+    {
+      "path": "modules/m01-what-models-learn/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6730
+    },
+    {
+      "path": "modules/m01-what-models-learn/lessons/l01-predictions-are-pattern-matches.md",
+      "type": "lesson",
+      "bytes": 2022
+    },
+    {
+      "path": "modules/m01-what-models-learn/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 5939
+    },
+    {
+      "path": "modules/m01-what-models-learn/lessons/l02-parameters-weights-fitting.md",
+      "type": "lesson",
+      "bytes": 1570
+    },
+    {
+      "path": "modules/m01-what-models-learn/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6738
+    },
+    {
+      "path": "modules/m01-what-models-learn/lessons/l03-underfit-vs-overfit.md",
+      "type": "lesson",
+      "bytes": 1390
+    },
+    {
+      "path": "modules/m01-what-models-learn/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 5943
+    },
+    {
+      "path": "modules/m01-what-models-learn/lessons/l04-what-models-cannot-learn.md",
+      "type": "lesson",
+      "bytes": 1421
+    },
+    {
+      "path": "modules/m02-features-labels-quality/MODULE.md",
+      "type": "meta",
+      "bytes": 1785
+    },
+    {
+      "path": "modules/m02-features-labels-quality/assets/diagram-features-labels.svg",
+      "type": "diagram",
+      "bytes": 4322
+    },
+    {
+      "path": "modules/m02-features-labels-quality/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 871
+    },
+    {
+      "path": "modules/m02-features-labels-quality/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1510
+    },
+    {
+      "path": "modules/m02-features-labels-quality/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 37759
+    },
+    {
+      "path": "modules/m02-features-labels-quality/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 21921
+    },
+    {
+      "path": "modules/m02-features-labels-quality/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 28726
+    },
+    {
+      "path": "modules/m02-features-labels-quality/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 27515
+    },
+    {
+      "path": "modules/m02-features-labels-quality/lessons/l01-features-vs-labels.md",
+      "type": "lesson",
+      "bytes": 1391
+    },
+    {
+      "path": "modules/m02-features-labels-quality/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6716
+    },
+    {
+      "path": "modules/m02-features-labels-quality/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 5903
+    },
+    {
+      "path": "modules/m02-features-labels-quality/lessons/l02-signal-noise-leakage.md",
+      "type": "lesson",
+      "bytes": 1263
+    },
+    {
+      "path": "modules/m02-features-labels-quality/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6698
+    },
+    {
+      "path": "modules/m02-features-labels-quality/lessons/l03-missing-messy-columns.md",
+      "type": "lesson",
+      "bytes": 1299
+    },
+    {
+      "path": "modules/m02-features-labels-quality/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 5920
+    },
+    {
+      "path": "modules/m02-features-labels-quality/lessons/l04-label-quality-wins.md",
+      "type": "lesson",
+      "bytes": 1318
+    },
+    {
+      "path": "modules/m03-train-validate-test/MODULE.md",
+      "type": "meta",
+      "bytes": 1781
+    },
+    {
+      "path": "modules/m03-train-validate-test/assets/diagram-splits.svg",
+      "type": "diagram",
+      "bytes": 4253
+    },
+    {
+      "path": "modules/m03-train-validate-test/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 875
+    },
+    {
+      "path": "modules/m03-train-validate-test/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1483
+    },
+    {
+      "path": "modules/m03-train-validate-test/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 35015
+    },
+    {
+      "path": "modules/m03-train-validate-test/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 23265
+    },
+    {
+      "path": "modules/m03-train-validate-test/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 29005
+    },
+    {
+      "path": "modules/m03-train-validate-test/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 26938
+    },
+    {
+      "path": "modules/m03-train-validate-test/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6672
+    },
+    {
+      "path": "modules/m03-train-validate-test/lessons/l01-why-one-split-fails.md",
+      "type": "lesson",
+      "bytes": 1247
+    },
+    {
+      "path": "modules/m03-train-validate-test/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 5911
+    },
+    {
+      "path": "modules/m03-train-validate-test/lessons/l02-train-validate-test-jobs.md",
+      "type": "lesson",
+      "bytes": 1336
+    },
+    {
+      "path": "modules/m03-train-validate-test/lessons/l03-cross-validation-intuition.md",
+      "type": "lesson",
+      "bytes": 1318
+    },
+    {
+      "path": "modules/m03-train-validate-test/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6713
+    },
+    {
+      "path": "modules/m03-train-validate-test/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 5924
+    },
+    {
+      "path": "modules/m03-train-validate-test/lessons/l04-lookahead-trap.md",
+      "type": "lesson",
+      "bytes": 1372
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/MODULE.md",
+      "type": "meta",
+      "bytes": 1769
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/assets/diagram-embeddings.svg",
+      "type": "diagram",
+      "bytes": 4283
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 868
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1496
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 35569
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 24473
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 29030
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 28809
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6690
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/lessons/l01-what-is-an-embedding.md",
+      "type": "lesson",
+      "bytes": 1290
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 5924
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/lessons/l02-similarity-search-ops.md",
+      "type": "lesson",
+      "bytes": 1310
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/lessons/l03-chunking-retrieval.md",
+      "type": "lesson",
+      "bytes": 1246
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6707
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/lessons/l04-embeddings-vs-keywords.md",
+      "type": "lesson",
+      "bytes": 1314
+    },
+    {
+      "path": "modules/m04-embeddings-similarity/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 5919
+    },
+    {
+      "path": "modules/m05-nocode-experiments/MODULE.md",
+      "type": "meta",
+      "bytes": 1750
+    },
+    {
+      "path": "modules/m05-nocode-experiments/assets/diagram-experiment-loop.svg",
+      "type": "diagram",
+      "bytes": 4240
+    },
+    {
+      "path": "modules/m05-nocode-experiments/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 867
+    },
+    {
+      "path": "modules/m05-nocode-experiments/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1478
+    },
+    {
+      "path": "modules/m05-nocode-experiments/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 40675
+    },
+    {
+      "path": "modules/m05-nocode-experiments/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 24055
+    },
+    {
+      "path": "modules/m05-nocode-experiments/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 28922
+    },
+    {
+      "path": "modules/m05-nocode-experiments/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 27193
+    },
+    {
+      "path": "modules/m05-nocode-experiments/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6713
+    },
+    {
+      "path": "modules/m05-nocode-experiments/lessons/l01-question-before-tool.md",
+      "type": "lesson",
+      "bytes": 1259
+    },
+    {
+      "path": "modules/m05-nocode-experiments/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 5903
+    },
+    {
+      "path": "modules/m05-nocode-experiments/lessons/l02-nocode-field-guide.md",
+      "type": "lesson",
+      "bytes": 1373
+    },
+    {
+      "path": "modules/m05-nocode-experiments/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6691
+    },
+    {
+      "path": "modules/m05-nocode-experiments/lessons/l03-one-week-experiment.md",
+      "type": "lesson",
+      "bytes": 1325
+    },
+    {
+      "path": "modules/m05-nocode-experiments/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 5909
+    },
+    {
+      "path": "modules/m05-nocode-experiments/lessons/l04-ship-measure-kill.md",
+      "type": "lesson",
+      "bytes": 1230
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/MODULE.md",
+      "type": "meta",
+      "bytes": 1786
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/assets/diagram-business-metrics.svg",
+      "type": "diagram",
+      "bytes": 4252
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 875
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1501
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 41639
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 23650
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 28433
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 27775
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/lessons/l01-accuracy-wrong-scoreboard.md",
+      "type": "lesson",
+      "bytes": 1212
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6719
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 5901
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/lessons/l02-precision-recall-cost.md",
+      "type": "lesson",
+      "bytes": 1276
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/lessons/l03-confusion-for-humans.md",
+      "type": "lesson",
+      "bytes": 1260
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6692
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/lessons/l04-exec-dashboards.md",
+      "type": "lesson",
+      "bytes": 1286
+    },
+    {
+      "path": "modules/m06-metrics-that-matter/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 5906
+    },
+    {
+      "path": "scripts/make_lesson_video.py",
+      "type": "other",
+      "bytes": 15640
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+# Lesson 3.4 — Avoiding the look-ahead trap
+
+**Module:** Train / validate / test without the jargon trap  
+**Duration:** ~6–8 min teaching + ~4–8 min interactive  
+**Interactive:** `l04-interactive.html`
+
+---
+
+## Learning objective
+
+Prevent future features from leaking into past predictions.
+
+## Lesson video
+
+![Lesson video](assets/l04-video.mp4)
+
+**Video:** `assets/l04-video.mp4` — example/theme clip for this lesson.
+
+## Teaching
+
+### Future leaking into the past
+
+Using resolution time to predict SLA breach — when resolution is only known after close — is look-ahead.
+
+### Guardrails
+
+- List features available at prediction time T
+- Ban anything after T
+- Train only on weeks before the target week
+- Watch rolling features carefully
+
+### Talk-over narration
+
+*(Beat 1)* If you would not know it at decision time, it is not a feature.
+*(Beat 2)* Look-ahead is leakage wearing a calendar.
+*(Beat 3)* Draw the timeline; cut the future off.
+
+## Worked micro-example
+
+**Before**
+
+> Vague take on: Avoiding the look-ahead trap
+
+**After**
+
+> Clear, actionable take that meets the objective: Prevent future features from leaking into past predictions.
+
+## Practice
+
+Open `l04-interactive.html` and complete the drill until success criteria turn green.
+
+## Takeaway
+
+Apply this lesson on a fictional **Northstar Studio** / **Acme Ops** workflow before Monday.

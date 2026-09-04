@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cleanup passes for delivery · Generative Media: Image &amp; Video with AI · The Ai Master Class</title>
+<meta name="description" content="Cleanup passes for delivery · Generative Media: Image &amp; Video with AI — The Ai Master Class" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg:#07070c; --panel:#121826; --card:#14151f; --border:#1e293b;
+  --text:#e8eaf2; --muted:#94a3b8; --accent:#ec4899; --accent2:#f59e0b;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"DM Sans",system-ui,sans-serif;background:
+  radial-gradient(1000px 500px at 0% -10%,rgba(236,72,153,.18),transparent),
+  radial-gradient(800px 400px at 100% 0%,rgba(245,158,11,.12),transparent),
+  var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+a{color:var(--accent2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
+.topbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:28px}
+.brand{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:600;color:var(--text);display:flex;gap:10px;align-items:center}
+.brand span{opacity:.55;font-weight:500;font-size:.9rem}
+.crumbs{font-size:.9rem;color:var(--muted)}
+.crumbs a{color:var(--muted)}
+.crumbs a:hover{color:var(--accent2)}
+.hero{display:grid;gap:18px;margin-bottom:32px}
+.hero h1{font-family:"Space Grotesk",system-ui,sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);margin:0;letter-spacing:-.02em}
+.lead{color:var(--muted);margin:0;max-width:62ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;padding:6px 10px;border-radius:999px;border:1px solid rgba(236,72,153,.35);background:rgba(236,72,153,.1);color:rgb(244,154,198)}
+.pill.ok{border-color:rgba(245,158,11,.35);background:rgba(245,158,11,.08);color:var(--accent2)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:12px;font-weight:600;border:1px solid transparent;cursor:pointer;font-size:.95rem}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;box-shadow:0 10px 30px rgba(236,72,153,.35)}
+.btn-primary:hover{text-decoration:none;filter:brightness(1.05)}
+.btn-ghost{background:transparent;border-color:var(--border);color:var(--text)}
+.btn-ghost:hover{border-color:var(--accent2);text-decoration:none}
+.modules{display:grid;gap:16px}
+.mod{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.mod-head{padding:18px 20px;display:flex;justify-content:space-between;gap:12px;align-items:flex-start;border-bottom:1px solid var(--border)}
+.mod-head h2{margin:0;font-size:1.15rem;font-family:"Space Grotesk",system-ui,sans-serif}
+.mod-num{color:var(--accent2);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.lessons{list-style:none;margin:0;padding:8px}
+.lessons li{border-top:1px solid transparent}
+.lessons a.lesson-row{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:14px 12px;border-radius:12px;color:var(--text)}
+.lessons a.lesson-row:hover{background:rgba(255,255,255,.03);text-decoration:none}
+.lnum{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:rgba(236,72,153,.12);color:rgb(244,154,198);font-weight:600;font-size:.85rem}
+.ltitle{font-weight:560}
+.lmeta{font-size:.82rem;color:var(--muted)}
+.badge{font-size:.72rem;padding:4px 8px;border-radius:8px;background:rgba(245,158,11,.12);color:var(--accent2);border:1px solid rgba(245,158,11,.25)}
+.footer-note{margin-top:40px;color:var(--muted);font-size:.85rem}
+.layout{display:grid;grid-template-columns:260px 1fr;gap:24px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}}
+.sidebar{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;height:fit-content;position:sticky;top:16px}
+.sidebar h3{margin:0 0 10px;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.sidebar a{display:block;padding:8px 10px;border-radius:8px;color:var(--muted);font-size:.9rem}
+.sidebar a:hover,.sidebar a.active{background:rgba(236,72,153,.12);color:var(--text);text-decoration:none}
+.sidebar .mod-label{font-size:.72rem;color:var(--accent2);margin:12px 6px 4px;text-transform:uppercase;letter-spacing:.05em}
+.article{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 26px}
+.article h1{font-family:"Space Grotesk",system-ui,sans-serif;margin-top:0;letter-spacing:-.02em}
+.article h2{margin-top:1.6em;font-size:1.2rem}
+.article h3{margin-top:1.3em;font-size:1.05rem}
+.article p,.article li{color:#c9d0dd}
+.article strong{color:var(--text)}
+.article code{background:rgba(236,72,153,.12);padding:2px 6px;border-radius:6px;font-size:.9em}
+.article pre{background:#0b0f19;border:1px solid var(--border);border-radius:12px;padding:14px;overflow:auto}
+.article pre code{background:none;padding:0}
+.article blockquote{margin:1em 0;padding:12px 16px;border-left:3px solid var(--accent);background:rgba(236,72,153,.08);border-radius:0 12px 12px 0;color:#c9d0dd}
+.article hr{border:none;border-top:1px solid var(--border);margin:2em 0}
+.table-wrap{overflow:auto;margin:1em 0}
+.article table{width:100%;border-collapse:collapse;font-size:.92rem}
+.article th,.article td{border:1px solid var(--border);padding:10px 12px;text-align:left}
+.article th{background:rgba(236,72,153,.1);color:var(--text)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px}
+.diagram{margin:18px 0;padding:16px;background:#0b0f19;border:1px solid var(--border);border-radius:14px}
+.diagram img{max-width:100%;height:auto;display:block}
+.diagram figcaption{color:var(--muted);font-size:.85rem;margin-top:10px}
+.nav-lessons{display:flex;justify-content:space-between;gap:12px;margin-top:28px;padding-top:18px;border-top:1px solid var(--border)}
+.lesson-video{margin:0 0 1.25rem;border-radius:14px;overflow:hidden;border:1px solid var(--border);background:#0b0f19;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.lesson-video video{display:block;width:100%;height:auto;max-height:min(56vw,420px);background:#000}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand" href="../../../../index.html">The Ai Master <span>Class</span></a>
+    <div class="crumbs">
+      <a href="../../../../course.html?id=generative-media">Course</a> /
+      <a href="../../../index.html">Curriculum</a> /
+      <span>M4 · L3</span>
+    </div>
+  </div>
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>Course outline</h3>
+      <div class="mod-label">Module 1</div><a class="" href="../../m01-visual-literacy/lessons/l01-how-models-read-a-visual-brief.html">1. How generative models read a visual brief</a><a class="" href="../../m01-visual-literacy/lessons/l02-subject-scene-camera-language.html">2. Subject, scene, and camera language</a><a class="" href="../../m01-visual-literacy/lessons/l03-reading-references-like-a-cd.html">3. Reading references like a creative director</a><a class="" href="../../m01-visual-literacy/lessons/l04-spotting-artifacts-and-ai-tells.html">4. Spotting artifacts and AI tells</a><div class="mod-label">Module 2</div><a class="" href="../../m02-style-lighting-composition/lessons/l01-style-anchors-that-stick.html">1. Style anchors that stick</a><a class="" href="../../m02-style-lighting-composition/lessons/l02-lighting-recipes-that-sell.html">2. Lighting recipes that sell the mood</a><a class="" href="../../m02-style-lighting-composition/lessons/l03-composition-grids-negative-space.html">3. Composition grids and negative space</a><a class="" href="../../m02-style-lighting-composition/lessons/l04-prompt-stacks-for-brandable-looks.html">4. Prompt stacks for brandable looks</a><div class="mod-label">Module 3</div><a class="" href="../../m03-character-brand-consistency/lessons/l01-character-sheets-that-transfer.html">1. Character sheets that transfer</a><a class="" href="../../m03-character-brand-consistency/lessons/l02-brand-kits-color-type-motif.html">2. Brand kits: color, type, motif</a><a class="" href="../../m03-character-brand-consistency/lessons/l03-seed-reference-lock-strategies.html">3. Seed, reference, and lock strategies</a><a class="" href="../../m03-character-brand-consistency/lessons/l04-multi-scene-consistency-checklists.html">4. Multi-scene consistency checklists</a><div class="mod-label">Module 4</div><a class="" href="../../m04-editing-upscaling-cleanup/lessons/l01-inpaint-outpaint-with-intent.html">1. Inpaint and outpaint with intent</a><a class="" href="../../m04-editing-upscaling-cleanup/lessons/l02-upscale-without-mush.html">2. Upscale without mush</a><a class="active" href="../../m04-editing-upscaling-cleanup/lessons/l03-cleanup-passes-for-delivery.html">3. Cleanup passes for delivery</a><a class="" href="../../m04-editing-upscaling-cleanup/lessons/l04-batch-pipelines-for-campaigns.html">4. Batch pipelines for campaigns</a><div class="mod-label">Module 5</div><a class="" href="../../m05-shortform-video-pipelines/lessons/l01-storyboard-to-shot-list.html">1. Storyboard to shot list</a><a class="" href="../../m05-shortform-video-pipelines/lessons/l02-image-to-video-motion-prompts.html">2. Image-to-video and motion prompts</a><a class="" href="../../m05-shortform-video-pipelines/lessons/l03-timing-cuts-and-captions.html">3. Timing, cuts, and captions</a><a class="" href="../../m05-shortform-video-pipelines/lessons/l04-export-packs-reels-shorts.html">4. Export packs for Reels / Shorts / TikTok</a><div class="mod-label">Module 6</div><a class="" href="../../m06-rights-ethics-delivery/lessons/l01-likeness-consent-training-risk.html">1. Likeness, consent, and training-data risk</a><a class="" href="../../m06-rights-ethics-delivery/lessons/l02-commercial-licenses-usage-scopes.html">2. Commercial licenses and usage scopes</a><a class="" href="../../m06-rights-ethics-delivery/lessons/l03-disclosure-and-client-contracts.html">3. Disclosure and client contracts</a><a class="" href="../../m06-rights-ethics-delivery/lessons/l04-delivery-packages-northstar.html">4. Delivery packages Northstar Studio ships</a><div class="mod-label">Module 7</div><a class="" href="../../m07-portfolio-sprint/lessons/l01-brief-intake-creative-strategy.html">1. Brief intake and creative strategy</a><a class="" href="../../m07-portfolio-sprint/lessons/l02-produce-the-hero-stills.html">2. Produce the hero stills</a><a class="" href="../../m07-portfolio-sprint/lessons/l03-produce-the-shortform-cut.html">3. Produce the short-form cut</a><a class="" href="../../m07-portfolio-sprint/lessons/l04-critique-package-and-ship.html">4. Critique, package, and ship</a>
+    </aside>
+    <div>
+      <div class="meta" style="margin-bottom:12px">
+        <span class="pill">Module 4</span>
+        <span class="pill ok">Lesson 3 of 4</span>
+        <span class="pill">#15 / 28</span>
+      </div>
+      <article class="article">
+        <h1>Lesson 4.3 — Cleanup passes for delivery</h1>
+        <div class="lesson-video">
+          <video controls playsinline preload="metadata">
+            <source src="assets/l03-video.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+
+<p><strong>Module:</strong> Editing, upscaling, and cleanup   <strong>Duration:</strong> ~6–8 min teaching + ~4 min interactive   <strong>Interactive:</strong> <code>l03-interactive.html</code></p>
+<hr />
+<h2>Learning objective</h2>
+<p>Run a final cleanup: spots, color, crop, and type overlays outside the model when needed.</p>
+<h2>Teaching</h2>
+<h3>Delivery cleanup order</h3>
+<ol>
+<li>Spot heal dust / sensor-like blobs  </li>
+<li>Micro-contrast on product edges  </li>
+<li>Crop to export ratio  </li>
+<li>Add <strong>real</strong> typography in layout tool—not AI gibberish  </li>
+</ol>
+<h3>Talk-over narration</h3>
+<p><em>(Beat 1)</em> “Typography belongs in design tools. Models invent alphabets.”</p>
+<h2>Worked micro-example</h2>
+<p><strong>Before</strong></p>
+<blockquote><p>Ask the model to write the headline in the image.</p></blockquote>
+<p><strong>After</strong></p>
+<blockquote><p>Cleanup spots → crop 4:5 → place real Northstar headline in layout app.</p></blockquote>
+<h2>Practice</h2>
+<p>Open <code>l03-interactive.html</code> and complete the drill until success criteria turn green.</p>
+<h2>Takeaway</h2>
+<p>Cleanup + real type = client-ready.</p>
+        
+        <div class="actions">
+          <a class="btn btn-primary" href="l03-interactive.html" target="_blank" rel="noopener">Open practice</a>
+          <a class="btn btn-ghost" href="../../../index.html">All lessons</a>
+        </div>
+        <div class="nav-lessons">
+          <a class="btn btn-ghost" href="../../m04-editing-upscaling-cleanup/lessons/l02-upscale-without-mush.html">← Previous</a>
+          <a class="btn btn-primary" href="../../m04-editing-upscaling-cleanup/lessons/l04-batch-pipelines-for-campaigns.html">Next →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+  <p class="footer-note">© 2026 The Ai Master Class · Generative Media: Image &amp; Video with AI</p>
+</div>
+
+</body>
+</html>

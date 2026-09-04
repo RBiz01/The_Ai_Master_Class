@@ -1,0 +1,711 @@
+{
+  "courseId": "generative-media",
+  "title": "Generative Media: Image & Video with AI",
+  "product": "The Ai Master Class",
+  "duration": "8 hours",
+  "lessons": 28,
+  "pacing": "~1 hour per curriculum module \u00d7 7 modules (~7 hours; catalog 8 hours)",
+  "level": "Intermediate",
+  "gradient": [
+    "#ec4899",
+    "#f59e0b"
+  ],
+  "moduleStatus": {
+    "m01-visual-literacy": "built",
+    "m02-style-lighting-composition": "built",
+    "m03-character-brand-consistency": "built",
+    "m04-editing-upscaling-cleanup": "built",
+    "m05-shortform-video-pipelines": "built",
+    "m06-rights-ethics-delivery": "built",
+    "m07-portfolio-sprint": "built"
+  },
+  "minuteBudget": {
+    "perModuleMinutes": 60,
+    "courseTotalHours": 7,
+    "m01": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m02": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m03": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m04": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m05": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m06": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m07": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    }
+  },
+  "typeTags": [
+    "meta",
+    "lesson",
+    "interactive",
+    "diagram",
+    "video-script",
+    "video",
+    "image",
+    "doc",
+    "stub",
+    "other"
+  ],
+  "files": [
+    {
+      "path": "COURSE.md",
+      "type": "meta",
+      "bytes": 4750
+    },
+    {
+      "path": "HANDOFF.md",
+      "type": "meta",
+      "bytes": 2979
+    },
+    {
+      "path": "assets/images/generative-media-cover.png",
+      "type": "image",
+      "bytes": 273037
+    },
+    {
+      "path": "assets/intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1735
+    },
+    {
+      "path": "assets/videos/PROMPTS.md",
+      "type": "video-script",
+      "bytes": 267
+    },
+    {
+      "path": "bibles/video-style.txt",
+      "type": "other",
+      "bytes": 368
+    },
+    {
+      "path": "modules/m01-visual-literacy/MODULE.md",
+      "type": "meta",
+      "bytes": 2115
+    },
+    {
+      "path": "modules/m01-visual-literacy/assets/diagram-visual-brief.svg",
+      "type": "diagram",
+      "bytes": 3789
+    },
+    {
+      "path": "modules/m01-visual-literacy/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1011
+    },
+    {
+      "path": "modules/m01-visual-literacy/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1873
+    },
+    {
+      "path": "modules/m01-visual-literacy/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 37591
+    },
+    {
+      "path": "modules/m01-visual-literacy/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 53937
+    },
+    {
+      "path": "modules/m01-visual-literacy/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 35699
+    },
+    {
+      "path": "modules/m01-visual-literacy/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 35687
+    },
+    {
+      "path": "modules/m01-visual-literacy/lessons/l01-how-models-read-a-visual-brief.md",
+      "type": "lesson",
+      "bytes": 2630
+    },
+    {
+      "path": "modules/m01-visual-literacy/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 7031
+    },
+    {
+      "path": "modules/m01-visual-literacy/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 6894
+    },
+    {
+      "path": "modules/m01-visual-literacy/lessons/l02-subject-scene-camera-language.md",
+      "type": "lesson",
+      "bytes": 1697
+    },
+    {
+      "path": "modules/m01-visual-literacy/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 7013
+    },
+    {
+      "path": "modules/m01-visual-literacy/lessons/l03-reading-references-like-a-cd.md",
+      "type": "lesson",
+      "bytes": 1603
+    },
+    {
+      "path": "modules/m01-visual-literacy/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 5732
+    },
+    {
+      "path": "modules/m01-visual-literacy/lessons/l04-spotting-artifacts-and-ai-tells.md",
+      "type": "lesson",
+      "bytes": 1322
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/MODULE.md",
+      "type": "meta",
+      "bytes": 2044
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/assets/diagram-style-light-comp.svg",
+      "type": "diagram",
+      "bytes": 3766
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1021
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1824
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 35073
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 51089
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 35017
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 49200
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6838
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/lessons/l01-style-anchors-that-stick.md",
+      "type": "lesson",
+      "bytes": 1386
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 6725
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/lessons/l02-lighting-recipes-that-sell.md",
+      "type": "lesson",
+      "bytes": 1406
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/lessons/l03-composition-grids-negative-space.md",
+      "type": "lesson",
+      "bytes": 1381
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6838
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6761
+    },
+    {
+      "path": "modules/m02-style-lighting-composition/lessons/l04-prompt-stacks-for-brandable-looks.md",
+      "type": "lesson",
+      "bytes": 1211
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/MODULE.md",
+      "type": "meta",
+      "bytes": 1982
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/assets/diagram-consistency-locks.svg",
+      "type": "diagram",
+      "bytes": 3754
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1004
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1798
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 36732
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 35614
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 50506
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 35384
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/lessons/l01-character-sheets-that-transfer.md",
+      "type": "lesson",
+      "bytes": 1412
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6848
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/lessons/l02-brand-kits-color-type-motif.md",
+      "type": "lesson",
+      "bytes": 1239
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 6695
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 5592
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/lessons/l03-seed-reference-lock-strategies.md",
+      "type": "lesson",
+      "bytes": 1343
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 5676
+    },
+    {
+      "path": "modules/m03-character-brand-consistency/lessons/l04-multi-scene-consistency-checklists.md",
+      "type": "lesson",
+      "bytes": 1143
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/MODULE.md",
+      "type": "meta",
+      "bytes": 1908
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/assets/diagram-edit-upscale-flow.svg",
+      "type": "diagram",
+      "bytes": 3770
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1006
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1776
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 35204
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 33385
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 51081
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 37136
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/lessons/l01-inpaint-outpaint-with-intent.md",
+      "type": "lesson",
+      "bytes": 1147
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6824
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 5586
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/lessons/l02-upscale-without-mush.md",
+      "type": "lesson",
+      "bytes": 1051
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/lessons/l03-cleanup-passes-for-delivery.md",
+      "type": "lesson",
+      "bytes": 1081
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 5580
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/lessons/l04-batch-pipelines-for-campaigns.md",
+      "type": "lesson",
+      "bytes": 1067
+    },
+    {
+      "path": "modules/m04-editing-upscaling-cleanup/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6785
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/MODULE.md",
+      "type": "meta",
+      "bytes": 1902
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/assets/diagram-shortform-pipeline.svg",
+      "type": "diagram",
+      "bytes": 3751
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1004
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1777
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 48741
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 37011
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 33612
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 47206
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6705
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/lessons/l01-storyboard-to-shot-list.md",
+      "type": "lesson",
+      "bytes": 1136
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/lessons/l02-image-to-video-motion-prompts.md",
+      "type": "lesson",
+      "bytes": 1248
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 6771
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6811
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/lessons/l03-timing-cuts-and-captions.md",
+      "type": "lesson",
+      "bytes": 1049
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/lessons/l04-export-packs-reels-shorts.md",
+      "type": "lesson",
+      "bytes": 1049
+    },
+    {
+      "path": "modules/m05-shortform-video-pipelines/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6656
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/MODULE.md",
+      "type": "meta",
+      "bytes": 1904
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/assets/diagram-rights-delivery.svg",
+      "type": "diagram",
+      "bytes": 3753
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1010
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1786
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 37623
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 37088
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 35386
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 51718
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 5562
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/lessons/l01-likeness-consent-training-risk.md",
+      "type": "lesson",
+      "bytes": 1130
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/lessons/l02-commercial-licenses-usage-scopes.md",
+      "type": "lesson",
+      "bytes": 1083
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 6791
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/lessons/l03-disclosure-and-client-contracts.md",
+      "type": "lesson",
+      "bytes": 1149
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6703
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/lessons/l04-delivery-packages-northstar.md",
+      "type": "lesson",
+      "bytes": 1014
+    },
+    {
+      "path": "modules/m06-rights-ethics-delivery/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6621
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/MODULE.md",
+      "type": "meta",
+      "bytes": 1869
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/assets/diagram-portfolio-sprint.svg",
+      "type": "diagram",
+      "bytes": 3739
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 999
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1747
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 36221
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 48756
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 33314
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 34699
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/lessons/l01-brief-intake-creative-strategy.md",
+      "type": "lesson",
+      "bytes": 1261
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6778
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 6714
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/lessons/l02-produce-the-hero-stills.md",
+      "type": "lesson",
+      "bytes": 1053
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 5645
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/lessons/l03-produce-the-shortform-cut.md",
+      "type": "lesson",
+      "bytes": 995
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/lessons/l04-critique-package-and-ship.md",
+      "type": "lesson",
+      "bytes": 1058
+    },
+    {
+      "path": "modules/m07-portfolio-sprint/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6736
+    },
+    {
+      "path": "scripts/build_all_content.py",
+      "type": "other",
+      "bytes": 12
+    },
+    {
+      "path": "scripts/make_lesson_video.py",
+      "type": "other",
+      "bytes": 18932
+    }
+  ],
+  "counts": {
+    "files": 120,
+    "lessons": 28,
+    "interactives": 28,
+    "diagrams": 7,
+    "videos": 28,
+    "videoScripts": 16
+  }
+}

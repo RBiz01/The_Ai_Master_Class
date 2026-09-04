@@ -175,6 +175,10 @@ curl -s "$BASE/data/courses.json" | python3 -c "import sys,json; c=[x for x in j
 
 - `prompt-engineering-mastery` — live under `content/prompt-engineering-mastery/`
 - `ai-for-work` — live under `content/ai-for-work/` (6 hours / 24 lessons)
+- `ai-agents-automation` — live under `content/ai-agents-automation/` (10 hours / 32 lessons)
+- `generative-media` — live under `content/generative-media/` (8 hours / 28 lessons)
+- `no-code-ml-intuition` — live under `content/no-code-ml-intuition/` (6 hours / 24 lessons)
+- `ai-strategy-creators` — live under `content/ai-strategy-creators/` (6 hours / 18 lessons)
 
 ## Deploy / GitHub Pages
 
