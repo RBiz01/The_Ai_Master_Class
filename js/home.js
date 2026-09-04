@@ -49,7 +49,7 @@
         const [g1, g2] = c.gradient || ['#7c5cff', '#00e5c0'];
         const img = c.image ? FC.assetUrl(c.image) : '';
         const photo = img
-          ? `<img class="hero-slide-photo" src="${FC.escapeHtml(img)}" alt="" loading="lazy" />`
+          ? `<img class="hero-slide-photo" src="${FC.escapeHtml(img)}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async" />`
           : '<div class="hero-slide-glow"></div>';
         return `<div class="hero-slide${i === 0 ? ' is-active' : ''}${img ? ' has-photo' : ''}" data-i="${i}" style="--g1:${g1};--g2:${g2}">
           ${photo}
@@ -83,7 +83,7 @@
       const p = FC.priceFor(c);
       titleEl.textContent = c.title;
       titleEl.href = href;
-      taglineEl.textContent = c.tagline;
+      taglineEl.textContent = c.tagline + (c.duration ? ` · ${c.duration} · ${c.lessons} lessons` : '');
       priceEl.innerHTML = p.discounted
         ? `<span class="was">${FC.formatMoney(p.base)}</span> ${FC.formatMoney(p.final)}`
         : FC.formatMoney(p.final);
