@@ -46,12 +46,7 @@
   const posterUrl = posterPath ? FC.assetUrl(posterPath) : '';
   const posterAttr = posterUrl ? ` poster="${FC.escapeHtml(posterUrl)}"` : '';
 
-  const coverBlock = course.image
-    ? `<div class="course-cover reveal">
-        <img src="${FC.escapeHtml(FC.assetUrl(course.image))}" alt="${FC.escapeHtml(course.title)} cover" loading="lazy" />
-      </div>`
-    : '';
-
+  // Course front page: trailer only (cover image used on cards/hero/poster, not here)
   const videoBlock = video.src
     ? `<div class="trailer" style="--g1:${g1};--g2:${g2}">
         <div class="trailer-frame">
@@ -104,7 +99,6 @@
 <nav class="breadcrumb"><a href="courses.html">Courses</a> / <span>${FC.escapeHtml(course.title)}</span></nav>
 <div class="course-hero-grid">
   <div class="course-media-col">
-    ${coverBlock}
     ${videoBlock}
   </div>
   <div class="course-buy-panel reveal">
