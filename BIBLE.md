@@ -170,6 +170,12 @@ curl -sI "$BASE/learn.html?id=$CID" | head -1
 curl -s "$BASE/data/courses.json" | python3 -c "import sys,json; c=[x for x in json.load(sys.stdin)['courses'] if x['id']=='$CID'][0]; assert c.get('hasContent') and c.get('contentPath'); assert c['duration']=='6 hours' and c['lessons']==24"
 ```
 
+
+### Published curricula
+
+- `prompt-engineering-mastery` — live under `content/prompt-engineering-mastery/`
+- `ai-for-work` — live under `content/ai-for-work/` (6 hours / 24 lessons)
+
 ## Deploy / GitHub Pages
 
 - Source: branch `main`, folder `/ (root)`.

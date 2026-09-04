@@ -1,0 +1,674 @@
+{
+  "courseId": "ai-for-work",
+  "title": "AI for Work: ChatGPT & Claude",
+  "product": "The Ai Master Class",
+  "tagline": "Ship better writing, research, and decisions every day",
+  "level": "Beginner",
+  "duration": "6 hours",
+  "lessons": 24,
+  "pacing": "~1 hour per curriculum module \u00d7 6 modules",
+  "catalogNote": "Catalog may still say 5 hours / 20 lessons \u2014 update to 6 hours / 24 lessons on publish",
+  "gradient": [
+    "#3b82f6",
+    "#8b5cf6"
+  ],
+  "moduleStatus": {
+    "m01-ai-desk-setup": "built",
+    "m02-writing-that-sounds-like-you": "built",
+    "m03-research-synthesis": "built",
+    "m04-meetings-notes-actions": "built",
+    "m05-spreadsheets-tables": "built",
+    "m06-privacy-policy-playbooks": "built"
+  },
+  "minuteBudget": {
+    "perModuleMinutes": 60,
+    "courseTotalHours": 6,
+    "m01": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m02": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m03": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m04": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m05": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m06": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    }
+  },
+  "typeTags": [
+    "meta",
+    "lesson",
+    "interactive",
+    "diagram",
+    "video-script",
+    "video",
+    "image",
+    "doc",
+    "stub",
+    "other"
+  ],
+  "files": [
+    {
+      "path": "COURSE.md",
+      "type": "meta",
+      "bytes": 4776
+    },
+    {
+      "path": "HANDOFF.md",
+      "type": "meta",
+      "bytes": 3236
+    },
+    {
+      "path": "assets/images/ai-for-work-cover.png",
+      "type": "other",
+      "bytes": 147970
+    },
+    {
+      "path": "assets/intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1647
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/MODULE.md",
+      "type": "meta",
+      "bytes": 2115
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/assets/diagram-ai-desk.svg",
+      "type": "diagram",
+      "bytes": 4155
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1097
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1866
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 76755
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 48289
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 42702
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 34372
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/lessons/l01-chatgpt-vs-claude-desk-tools.md",
+      "type": "lesson",
+      "bytes": 1742
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8044
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/lessons/l02-browser-apps-workspace-habits.md",
+      "type": "lesson",
+      "bytes": 1295
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8065
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/lessons/l03-custom-instructions-and-memory.md",
+      "type": "lesson",
+      "bytes": 1301
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8099
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8052
+    },
+    {
+      "path": "modules/m01-ai-desk-setup/lessons/l04-weekly-ai-ritual.md",
+      "type": "lesson",
+      "bytes": 1175
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/MODULE.md",
+      "type": "meta",
+      "bytes": 2045
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/assets/diagram-voice-loop.svg",
+      "type": "diagram",
+      "bytes": 4172
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1097
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1850
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 46078
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 55049
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 38634
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 41440
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/lessons/l01-capture-your-voice-with-exemplars.md",
+      "type": "lesson",
+      "bytes": 1090
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8030
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/lessons/l02-email-and-slack-like-you.md",
+      "type": "lesson",
+      "bytes": 970
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8019
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8045
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/lessons/l03-long-form-without-ai-accent.md",
+      "type": "lesson",
+      "bytes": 1013
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/lessons/l04-editing-passes-tighten-tone.md",
+      "type": "lesson",
+      "bytes": 898
+    },
+    {
+      "path": "modules/m02-writing-that-sounds-like-you/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8012
+    },
+    {
+      "path": "modules/m03-research-synthesis/MODULE.md",
+      "type": "meta",
+      "bytes": 2064
+    },
+    {
+      "path": "modules/m03-research-synthesis/assets/diagram-ground-verify.svg",
+      "type": "diagram",
+      "bytes": 4162
+    },
+    {
+      "path": "modules/m03-research-synthesis/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1102
+    },
+    {
+      "path": "modules/m03-research-synthesis/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1888
+    },
+    {
+      "path": "modules/m03-research-synthesis/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 53252
+    },
+    {
+      "path": "modules/m03-research-synthesis/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 34812
+    },
+    {
+      "path": "modules/m03-research-synthesis/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 38117
+    },
+    {
+      "path": "modules/m03-research-synthesis/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 62131
+    },
+    {
+      "path": "modules/m03-research-synthesis/lessons/l01-grounding-paste-sources.md",
+      "type": "lesson",
+      "bytes": 898
+    },
+    {
+      "path": "modules/m03-research-synthesis/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8071
+    },
+    {
+      "path": "modules/m03-research-synthesis/lessons/l02-claim-evidence-confidence.md",
+      "type": "lesson",
+      "bytes": 922
+    },
+    {
+      "path": "modules/m03-research-synthesis/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8011
+    },
+    {
+      "path": "modules/m03-research-synthesis/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8028
+    },
+    {
+      "path": "modules/m03-research-synthesis/lessons/l03-multi-source-synthesis-briefs.md",
+      "type": "lesson",
+      "bytes": 827
+    },
+    {
+      "path": "modules/m03-research-synthesis/lessons/l04-hallucination-red-flags.md",
+      "type": "lesson",
+      "bytes": 974
+    },
+    {
+      "path": "modules/m03-research-synthesis/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8022
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/MODULE.md",
+      "type": "meta",
+      "bytes": 2031
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/assets/diagram-meeting-pipeline.svg",
+      "type": "diagram",
+      "bytes": 4186
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1108
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1845
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 48979
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 39905
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 36972
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 37141
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8044
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/lessons/l01-transcript-to-structured-notes.md",
+      "type": "lesson",
+      "bytes": 820
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/lessons/l02-action-plans-owners-dates.md",
+      "type": "lesson",
+      "bytes": 854
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8004
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8019
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/lessons/l03-pre-meeting-briefs.md",
+      "type": "lesson",
+      "bytes": 789
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/lessons/l04-follow-ups-that-get-answered.md",
+      "type": "lesson",
+      "bytes": 771
+    },
+    {
+      "path": "modules/m04-meetings-notes-actions/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8003
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/MODULE.md",
+      "type": "meta",
+      "bytes": 2062
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/assets/diagram-data-to-decision.svg",
+      "type": "diagram",
+      "bytes": 4173
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1092
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1869
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 39382
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 82223
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 39285
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 32033
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8027
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/lessons/l01-messy-data-to-clean-tables.md",
+      "type": "lesson",
+      "bytes": 828
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/lessons/l02-formulas-pivots-plain-english.md",
+      "type": "lesson",
+      "bytes": 831
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8064
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8038
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/lessons/l03-light-analysis-trends-outliers.md",
+      "type": "lesson",
+      "bytes": 842
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/lessons/l04-charts-exec-one-pagers.md",
+      "type": "lesson",
+      "bytes": 806
+    },
+    {
+      "path": "modules/m05-spreadsheets-tables/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8026
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/MODULE.md",
+      "type": "meta",
+      "bytes": 2084
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/assets/diagram-privacy-playbook.svg",
+      "type": "diagram",
+      "bytes": 4193
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1123
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1864
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 62159
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 77303
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 48896
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 38134
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8085
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/lessons/l01-what-not-to-paste.md",
+      "type": "lesson",
+      "bytes": 990
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8041
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/lessons/l02-vendor-policies-company-rules.md",
+      "type": "lesson",
+      "bytes": 875
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8044
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/lessons/l03-team-playbooks-shared-prompts.md",
+      "type": "lesson",
+      "bytes": 819
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/lessons/l04-governance-versioning-review.md",
+      "type": "lesson",
+      "bytes": 862
+    },
+    {
+      "path": "modules/m06-privacy-policy-playbooks/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8076
+    },
+    {
+      "path": "scripts/make_lesson_video.py",
+      "type": "other",
+      "bytes": 32179
+    },
+    {
+      "path": "scripts/themes_afw.py",
+      "type": "other",
+      "bytes": 45965
+    }
+  ],
+  "lessonVideos": {
+    "m01": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m01-ai-desk-setup/lessons/assets/l01-video.mp4",
+        "modules/m01-ai-desk-setup/lessons/assets/l02-video.mp4",
+        "modules/m01-ai-desk-setup/lessons/assets/l03-video.mp4",
+        "modules/m01-ai-desk-setup/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok Imagine deferred)"
+    },
+    "m02": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m02-writing-that-sounds-like-you/lessons/assets/l01-video.mp4",
+        "modules/m02-writing-that-sounds-like-you/lessons/assets/l02-video.mp4",
+        "modules/m02-writing-that-sounds-like-you/lessons/assets/l03-video.mp4",
+        "modules/m02-writing-that-sounds-like-you/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok Imagine deferred)"
+    },
+    "m03": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m03-research-synthesis/lessons/assets/l01-video.mp4",
+        "modules/m03-research-synthesis/lessons/assets/l02-video.mp4",
+        "modules/m03-research-synthesis/lessons/assets/l03-video.mp4",
+        "modules/m03-research-synthesis/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok Imagine deferred)"
+    },
+    "m04": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m04-meetings-notes-actions/lessons/assets/l01-video.mp4",
+        "modules/m04-meetings-notes-actions/lessons/assets/l02-video.mp4",
+        "modules/m04-meetings-notes-actions/lessons/assets/l03-video.mp4",
+        "modules/m04-meetings-notes-actions/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok Imagine deferred)"
+    },
+    "m05": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m05-spreadsheets-tables/lessons/assets/l01-video.mp4",
+        "modules/m05-spreadsheets-tables/lessons/assets/l02-video.mp4",
+        "modules/m05-spreadsheets-tables/lessons/assets/l03-video.mp4",
+        "modules/m05-spreadsheets-tables/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok Imagine deferred)"
+    },
+    "m06": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m06-privacy-policy-playbooks/lessons/assets/l01-video.mp4",
+        "modules/m06-privacy-policy-playbooks/lessons/assets/l02-video.mp4",
+        "modules/m06-privacy-policy-playbooks/lessons/assets/l03-video.mp4",
+        "modules/m06-privacy-policy-playbooks/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok Imagine deferred)"
+    }
+  },
+  "lessonVideosNote": "All 24 lesson theme MP4s present (m01\u2013m06). Generated via local motion-graphics pipeline (Pillow + ffmpeg); Grok Imagine deferred."
+}
