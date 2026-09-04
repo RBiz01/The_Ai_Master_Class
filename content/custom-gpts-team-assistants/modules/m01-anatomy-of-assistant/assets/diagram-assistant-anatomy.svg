@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+<title id="title">Five surfaces of a custom assistant</title>
+<desc id="desc">Module 1 diagram for Custom GPTs & Team Assistants</desc>
+<defs>
+<linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0b0f19"/><stop offset="100%" stop-color="#121826"/></linearGradient>
+<linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#a855f7"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient>
+</defs>
+<rect width="960" height="540" fill="url(#bgGrad)"/>
+<circle cx="120" cy="80" r="90" fill="#a855f7" opacity="0.12"/>
+<circle cx="860" cy="460" r="110" fill="#06b6d4" opacity="0.10"/>
+<text x="48" y="56" font-family="DM Sans, system-ui, sans-serif" font-size="22" font-weight="700" fill="#f8fafc">Five surfaces of a custom assistant</text>
+<rect x="48" y="68" width="220" height="4" rx="2" fill="url(#accentGrad)"/>
+<rect x="48" y="100" width="412" height="150" rx="16" fill="#121826" stroke="#a855f7" stroke-width="2"/><text x="72" y="140" font-family="DM Sans, system-ui, sans-serif" font-size="16" font-weight="700" fill="#a855f7">1 · Instructions</text><text x="72" y="178" font-family="DM Sans, system-ui, sans-serif" font-size="18" fill="#e2e8f0">Behavior contract</text><text x="72" y="208" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#94a3b8">role · rules · shape</text>
+<rect x="500" y="100" width="412" height="150" rx="16" fill="#121826" stroke="#06b6d4" stroke-width="2"/><text x="524" y="140" font-family="DM Sans, system-ui, sans-serif" font-size="16" font-weight="700" fill="#06b6d4">2 · Knowledge</text><text x="524" y="178" font-family="DM Sans, system-ui, sans-serif" font-size="18" fill="#e2e8f0">Reference files</text><text x="524" y="208" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#94a3b8">versioned · bounded</text>
+<rect x="48" y="290" width="412" height="150" rx="16" fill="#121826" stroke="#a855f7" stroke-width="2"/><text x="72" y="330" font-family="DM Sans, system-ui, sans-serif" font-size="16" font-weight="700" fill="#a855f7">3 · Actions</text><text x="72" y="368" font-family="DM Sans, system-ui, sans-serif" font-size="18" fill="#e2e8f0">Optional tools</text><text x="72" y="398" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#94a3b8">read · draft · confirm</text>
+<rect x="500" y="290" width="412" height="150" rx="16" fill="#121826" stroke="#06b6d4" stroke-width="2"/><text x="524" y="330" font-family="DM Sans, system-ui, sans-serif" font-size="16" font-weight="700" fill="#06b6d4">4 · Starters + Share</text><text x="524" y="368" font-family="DM Sans, system-ui, sans-serif" font-size="18" fill="#e2e8f0">On-ramps · audience</text><text x="524" y="398" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#94a3b8">private → team</text>
+<text x="48" y="510" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#64748b">The Ai Master Class | Custom GPTs & Team Assistants | Module 1</text>
+</svg>

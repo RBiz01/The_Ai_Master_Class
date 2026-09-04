@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tighten the schema · Custom GPTs & Team Assistants</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root { --bg:#0b0f19; --panel:#121826; --border:#1e293b; --text:#e2e8f0; --muted:#94a3b8;
+  --accent:#a855f7; --accent2:#06b6d4; --danger:#f87171; --ok:#34d399; --warn:#fbbf24; }
+* { box-sizing:border-box; }
+body { margin:0; min-height:100vh; font-family:"DM Sans",system-ui,sans-serif; color:var(--text); line-height:1.55;
+  background: radial-gradient(1200px 600px at 10% -10%, #a855f72e, transparent),
+              radial-gradient(900px 500px at 100% 0%, #06b6d41f, transparent), var(--bg); }
+.wrap { max-width:820px; margin:0 auto; padding:28px 20px 48px; }
+.badge { display:inline-flex; font-size:12px; letter-spacing:.04em; text-transform:uppercase; color:var(--accent2);
+  background:#06b6d414; border:1px solid #06b6d440; padding:6px 10px; border-radius:999px; }
+h1 { font-size:1.55rem; margin:14px 0 8px; }
+.sub { color:var(--muted); margin:0 0 22px; }
+.card { background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:18px; margin-bottom:16px; }
+.card h2 { margin:0 0 10px; font-size:1rem; color:#fff; }
+.prompt-box { background:#0a0e16; border:1px dashed #334155; border-radius:10px; padding:12px 14px;
+  font-family:ui-monospace,Menlo,monospace; font-size:.9rem; color:#cbd5e1; white-space:pre-wrap; }
+label { display:block; font-size:.85rem; color:var(--muted); margin-bottom:6px; }
+textarea, select { width:100%; background:#0a0e16; color:var(--text); border:1px solid #334155; border-radius:10px; padding:12px 14px; font:inherit; resize:vertical; }
+.row { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+button { appearance:none; border:0; cursor:pointer; background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#fff; font-weight:600; padding:10px 16px; border-radius:10px; }
+button.secondary { background:transparent; border:1px solid #334155; color:var(--text); }
+#feedback { display:none; margin-top:12px; padding:12px 14px; border-radius:10px; border:1px solid var(--border); }
+#feedback.show { display:block; }
+#feedback.ok { background:rgba(52,211,153,.08); border-color:rgba(52,211,153,.35); color:#bbf7d0; }
+#feedback.bad { background:rgba(248,113,113,.08); border-color:rgba(248,113,113,.35); color:#fecaca; }
+#feedback.partial { background:rgba(251,191,36,.08); border-color:rgba(251,191,36,.35); color:#fde68a; }
+.success { display:none; margin-top:16px; padding:14px 16px; border-radius:12px; border:1px solid #06b6d466;
+  background:linear-gradient(135deg,#a855f726,#06b6d41a); }
+.success.show { display:block; }
+.success strong { color:var(--accent2); }
+.checks { list-style:none; padding:0; margin:8px 0 0; }
+.checks li { padding:4px 0 4px 22px; position:relative; color:var(--muted); }
+.checks li:before { content:"○"; position:absolute; left:0; }
+.checks li.pass { color:var(--ok); }
+.checks li.pass:before { content:"●"; }
+.hint { font-size:.85rem; color:var(--muted); margin-top:8px; }
+.opt { display:block; padding:8px 10px; margin:6px 0; border:1px solid #334155; border-radius:10px; cursor:pointer; }
+.chk { display:block; padding:8px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge">Module 4 · Lesson 2 · Interactive</div>
+  <h1>Tighten the schema</h1>
+  <p class="sub">Rewrite a vague action into a minimal safe schema.</p>
+  <div class="card"><h2>Instructions</h2>
+  <ol><li>Read the scenario.</li><li>Write your answer.</li><li>Click <strong>Check</strong>.</li>
+  <li>All criteria should turn green.</li></ol></div>
+  <div class="card"><h2>Scenario</h2><div class="prompt-box">Bad: do_stuff(payload: any)</div></div>
+  <div class="card"><h2>Your answer</h2><label for="editor">Write a read-only get_ticket-style schema with required fields and timeout.</label>
+  <textarea id="editor" rows="8" placeholder="Write here..."></textarea><div class="row">
+  <button type="button" id="check">Check</button>
+  <button type="button" class="secondary" id="hintBtn">Show hint</button>
+  <button type="button" class="secondary" id="reset">Reset</button></div>
+  <p class="hint" id="hint" hidden>Include get_ticket or ticket_id, read-only, and timeout.</p></div>
+  <div id="feedback" role="status" aria-live="polite"></div>
+  <div class="card"><h2>You are done when</h2><ul class="checks"><li id="c1">Names get_ticket or ticket</li>
+<li id="c2">Mentions read-only or GET</li>
+<li id="c3">Mentions timeout</li>
+<li id="c4">Mentions required field or id</li></ul></div>
+  <div class="success" id="success"><strong>Nice work.</strong> Capture a takeaway, then continue.</div>
+</div>
+<script>
+const editor=document.getElementById("editor");
+const feedback=document.getElementById("feedback");
+const success=document.getElementById("success");
+const hint=document.getElementById("hint");
+document.getElementById("hintBtn").onclick=()=>{hint.hidden=!hint.hidden;};
+document.getElementById("reset").onclick=()=>{
+  editor.value=""; feedback.className=""; feedback.textContent=""; feedback.classList.remove("show");
+  success.classList.remove("show"); ['c1','c2','c3','c4'].forEach(id=>document.getElementById(id).classList.remove("pass"));
+};
+function hasAny(text,words){return words.some(w=>text.includes(w));}
+document.getElementById("check").onclick=()=>{
+  const t=editor.value.toLowerCase().trim();
+  if(t.length<40){feedback.className="show bad";feedback.textContent="Too short — add actionable detail.";return;}
+  const c1=hasAny(t,["ticket", "get_ticket"]); const c2=hasAny(t,["read-only", "read only", "readonly", "get"]); const c3=hasAny(t,["timeout", "8s", "seconds"]); const c4=hasAny(t,["required", "ticket_id", "id"]);
+  const map={c1, c2, c3, c4};
+  Object.entries(map).forEach(([id,ok])=>document.getElementById(id).classList.toggle("pass",ok));
+  const score=[c1,c2,c3,c4].filter(Boolean).length;
+  if(score===4){feedback.className="show ok";feedback.textContent="All criteria met.";success.classList.add("show");}
+  else if(score>=2){feedback.className="show partial";feedback.textContent="Partial ("+score+"/4).";success.classList.remove("show");}
+  else{feedback.className="show bad";feedback.textContent="Keep refining — use the hint if stuck.";success.classList.remove("show");}
+};
+</script>
+</body>
+</html>

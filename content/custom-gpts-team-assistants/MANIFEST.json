@@ -1,0 +1,627 @@
+{
+  "courseId": "custom-gpts-team-assistants",
+  "title": "Custom GPTs & Team Assistants",
+  "product": "The Ai Master Class",
+  "duration": "6 hours",
+  "lessons": 24,
+  "pacing": "~1 hour per curriculum module \u00d7 6 modules",
+  "gradient": [
+    "#a855f7",
+    "#06b6d4"
+  ],
+  "moduleStatus": {
+    "m01-anatomy-of-assistant": "built",
+    "m02-instructions-that-stick": "built",
+    "m03-files-knowledge-boundaries": "built",
+    "m04-actions-and-tools": "built",
+    "m05-versioning-evals": "built",
+    "m06-team-rollout-governance": "built"
+  },
+  "minuteBudget": {
+    "perModuleMinutes": 60,
+    "courseTotalHours": 6,
+    "m01": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m02": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m03": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m04": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m05": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m06": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    }
+  },
+  "typeTags": [
+    "meta",
+    "lesson",
+    "interactive",
+    "diagram",
+    "video-script",
+    "video",
+    "image",
+    "doc",
+    "stub",
+    "other"
+  ],
+  "files": [
+    {
+      "path": "COURSE.md",
+      "type": "meta",
+      "bytes": 4463
+    },
+    {
+      "path": "HANDOFF.md",
+      "type": "meta",
+      "bytes": 7062
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "meta",
+      "bytes": 16298
+    },
+    {
+      "path": "assets/catalog-object.json",
+      "type": "other",
+      "bytes": 1984
+    },
+    {
+      "path": "assets/images/custom-gpts-team-assistants-cover.png",
+      "type": "image",
+      "bytes": 249433
+    },
+    {
+      "path": "assets/intro-video-script.md",
+      "type": "video-script",
+      "bytes": 2074
+    },
+    {
+      "path": "assets/videos/PROMPTS.md",
+      "type": "video-script",
+      "bytes": 4200
+    },
+    {
+      "path": "bibles/video-style.txt",
+      "type": "other",
+      "bytes": 453
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/MODULE.md",
+      "type": "meta",
+      "bytes": 2076
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/assets/diagram-assistant-anatomy.svg",
+      "type": "diagram",
+      "bytes": 3170
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1306
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1534
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 24544
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 46552
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 22524
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 45582
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/lessons/l01-chat-vs-custom-vs-agent.md",
+      "type": "lesson",
+      "bytes": 1799
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 5974
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/lessons/l02-five-surfaces.md",
+      "type": "lesson",
+      "bytes": 1813
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 6669
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6568
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/lessons/l03-naming-icon-discovery.md",
+      "type": "lesson",
+      "bytes": 1691
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 5892
+    },
+    {
+      "path": "modules/m01-anatomy-of-assistant/lessons/l04-when-not-to-build.md",
+      "type": "lesson",
+      "bytes": 1659
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/MODULE.md",
+      "type": "meta",
+      "bytes": 2059
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/assets/diagram-instruction-layers.svg",
+      "type": "diagram",
+      "bytes": 3117
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1289
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1528
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 25239
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 47469
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 26860
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 22544
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6442
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/lessons/l01-role-mission-nongoals.md",
+      "type": "lesson",
+      "bytes": 1710
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/lessons/l02-hard-vs-soft-rules.md",
+      "type": "lesson",
+      "bytes": 1632
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 7182
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6511
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/lessons/l03-output-contracts-starters.md",
+      "type": "lesson",
+      "bytes": 1606
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 5916
+    },
+    {
+      "path": "modules/m02-instructions-that-stick/lessons/l04-length-conflict-resolution.md",
+      "type": "lesson",
+      "bytes": 1637
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/MODULE.md",
+      "type": "meta",
+      "bytes": 2014
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/assets/diagram-knowledge-boundaries.svg",
+      "type": "diagram",
+      "bytes": 3098
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1289
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1532
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 21857
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 42247
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 24875
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 22607
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 7170
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/lessons/l01-knowledge-vs-prompt.md",
+      "type": "lesson",
+      "bytes": 1597
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/lessons/l02-freshness-versioning.md",
+      "type": "lesson",
+      "bytes": 1589
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 6569
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6401
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/lessons/l03-refuse-escalate-cite.md",
+      "type": "lesson",
+      "bytes": 1594
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 5808
+    },
+    {
+      "path": "modules/m03-files-knowledge-boundaries/lessons/l04-privacy-least-privilege.md",
+      "type": "lesson",
+      "bytes": 1583
+    },
+    {
+      "path": "modules/m04-actions-and-tools/MODULE.md",
+      "type": "meta",
+      "bytes": 2011
+    },
+    {
+      "path": "modules/m04-actions-and-tools/assets/diagram-action-safety.svg",
+      "type": "diagram",
+      "bytes": 3083
+    },
+    {
+      "path": "modules/m04-actions-and-tools/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1312
+    },
+    {
+      "path": "modules/m04-actions-and-tools/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1556
+    },
+    {
+      "path": "modules/m04-actions-and-tools/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 21185
+    },
+    {
+      "path": "modules/m04-actions-and-tools/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 40951
+    },
+    {
+      "path": "modules/m04-actions-and-tools/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 25955
+    },
+    {
+      "path": "modules/m04-actions-and-tools/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 41668
+    },
+    {
+      "path": "modules/m04-actions-and-tools/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 5794
+    },
+    {
+      "path": "modules/m04-actions-and-tools/lessons/l01-when-actions-earn-it.md",
+      "type": "lesson",
+      "bytes": 1545
+    },
+    {
+      "path": "modules/m04-actions-and-tools/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 6466
+    },
+    {
+      "path": "modules/m04-actions-and-tools/lessons/l02-safe-action-schemas.md",
+      "type": "lesson",
+      "bytes": 1546
+    },
+    {
+      "path": "modules/m04-actions-and-tools/lessons/l03-confirmations-dry-runs.md",
+      "type": "lesson",
+      "bytes": 1558
+    },
+    {
+      "path": "modules/m04-actions-and-tools/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6451
+    },
+    {
+      "path": "modules/m04-actions-and-tools/lessons/l04-debugging-flaky-actions.md",
+      "type": "lesson",
+      "bytes": 1562
+    },
+    {
+      "path": "modules/m04-actions-and-tools/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 5806
+    },
+    {
+      "path": "modules/m05-versioning-evals/MODULE.md",
+      "type": "meta",
+      "bytes": 1951
+    },
+    {
+      "path": "modules/m05-versioning-evals/assets/diagram-assistant-eval-loop.svg",
+      "type": "diagram",
+      "bytes": 3107
+    },
+    {
+      "path": "modules/m05-versioning-evals/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1272
+    },
+    {
+      "path": "modules/m05-versioning-evals/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1514
+    },
+    {
+      "path": "modules/m05-versioning-evals/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 23172
+    },
+    {
+      "path": "modules/m05-versioning-evals/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 23753
+    },
+    {
+      "path": "modules/m05-versioning-evals/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 42303
+    },
+    {
+      "path": "modules/m05-versioning-evals/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 24684
+    },
+    {
+      "path": "modules/m05-versioning-evals/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6440
+    },
+    {
+      "path": "modules/m05-versioning-evals/lessons/l01-versioning-like-products.md",
+      "type": "lesson",
+      "bytes": 1544
+    },
+    {
+      "path": "modules/m05-versioning-evals/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 6471
+    },
+    {
+      "path": "modules/m05-versioning-evals/lessons/l02-tiny-golden-set.md",
+      "type": "lesson",
+      "bytes": 1505
+    },
+    {
+      "path": "modules/m05-versioning-evals/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 5649
+    },
+    {
+      "path": "modules/m05-versioning-evals/lessons/l03-regression-on-change.md",
+      "type": "lesson",
+      "bytes": 1493
+    },
+    {
+      "path": "modules/m05-versioning-evals/lessons/l04-changelog-rollback.md",
+      "type": "lesson",
+      "bytes": 1549
+    },
+    {
+      "path": "modules/m05-versioning-evals/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6474
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/MODULE.md",
+      "type": "meta",
+      "bytes": 1909
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/assets/diagram-rollout-governance.svg",
+      "type": "diagram",
+      "bytes": 3081
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1257
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1498
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 22899
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 42175
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 24928
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 23041
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 7230
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/lessons/l01-sharing-models.md",
+      "type": "lesson",
+      "bytes": 1589
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 6350
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/lessons/l02-ownership-drift.md",
+      "type": "lesson",
+      "bytes": 1464
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/lessons/l03-adoption-playbooks.md",
+      "type": "lesson",
+      "bytes": 1494
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6447
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 5717
+    },
+    {
+      "path": "modules/m06-team-rollout-governance/lessons/l04-policy-audit-sunset.md",
+      "type": "lesson",
+      "bytes": 1511
+    },
+    {
+      "path": "scripts/build_course.py",
+      "type": "other",
+      "bytes": 52721
+    },
+    {
+      "path": "scripts/curriculum.py",
+      "type": "other",
+      "bytes": 36205
+    },
+    {
+      "path": "scripts/make_lesson_video.py",
+      "type": "other",
+      "bytes": 18469
+    }
+  ]
+}

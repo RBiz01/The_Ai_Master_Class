@@ -1,0 +1,685 @@
+{
+  "courseId": "rag-knowledge-bases",
+  "title": "RAG & Knowledge Bases for Operators",
+  "product": "The Ai Master Class",
+  "duration": "6 hours",
+  "lessons": 24,
+  "pacing": "~1 hour per curriculum module × 6 modules",
+  "gradient": [
+    "#14b8a6",
+    "#6366f1"
+  ],
+  "moduleStatus": {
+    "m01-what-rag-does": "built",
+    "m02-chunking-document-prep": "built",
+    "m03-retrieval-that-works": "built",
+    "m04-citations-grounded-answers": "built",
+    "m05-evaluating-rag-quality": "built",
+    "m06-shipping-knowledge-assistant": "built"
+  },
+  "minuteBudget": {
+    "perModuleMinutes": 60,
+    "courseTotalHours": 6,
+    "m01": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m02": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m03": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m04": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m05": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m06": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    }
+  },
+  "catalogObject": {
+    "id": "rag-knowledge-bases",
+    "title": "RAG & Knowledge Bases for Operators",
+    "tagline": "Ground answers in your docs—without hallucinating the handbook",
+    "description": "Learn retrieval-augmented generation for real teams. Chunk docs, retrieve the right passages, cite sources, evaluate quality, and ship a knowledge assistant operators will trust Monday morning.",
+    "level": "Intermediate",
+    "duration": "6 hours",
+    "lessons": 24,
+    "price": 99,
+    "compareAtPrice": 129,
+    "category": [
+      "Agents",
+      "Productivity"
+    ],
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 180,
+    "gradient": [
+      "#14b8a6",
+      "#6366f1"
+    ],
+    "video": {
+      "poster": "images/courses/rag-knowledge-bases.png",
+      "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+    },
+    "curriculum": [
+      "What RAG actually does",
+      "Chunking & document prep",
+      "Retrieval that finds the right passages",
+      "Citations & grounded answers",
+      "Evaluating RAG quality",
+      "Shipping a team knowledge assistant"
+    ],
+    "reviews": [
+      {
+        "name": "Casey Morgan",
+        "stars": 5,
+        "text": "Our ops team finally trusts the handbook bot—citations changed everything.",
+        "date": "2026-08-20"
+      },
+      {
+        "name": "Riley Okonkwo",
+        "stars": 5,
+        "text": "Chunking and hybrid retrieval modules are gold. Shipped a pilot in a week.",
+        "date": "2026-07-28"
+      },
+      {
+        "name": "Sam Park",
+        "stars": 4,
+        "text": "Practical eval loops, not academic fluff. Wish there were more PDF edge cases.",
+        "date": "2026-06-15"
+      },
+      {
+        "name": "Jordan Ellis",
+        "stars": 5,
+        "text": "Grounded answers + refusal patterns stopped our hallucination incidents cold.",
+        "date": "2026-05-03"
+      }
+    ],
+    "image": "images/courses/rag-knowledge-bases.png",
+    "hasContent": true,
+    "contentPath": "content/rag-knowledge-bases/"
+  },
+  "typeTags": [
+    "meta",
+    "lesson",
+    "interactive",
+    "diagram",
+    "video-script",
+    "video",
+    "image",
+    "doc",
+    "stub",
+    "other"
+  ],
+  "files": [
+    {
+      "path": "COURSE.md",
+      "type": "meta",
+      "bytes": 6528
+    },
+    {
+      "path": "HANDOFF.md",
+      "type": "meta",
+      "bytes": 6980
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "meta",
+      "bytes": 18389
+    },
+    {
+      "path": "assets/images/rag-knowledge-bases-cover.png",
+      "type": "image",
+      "bytes": 262017
+    },
+    {
+      "path": "assets/intro-video-script.md",
+      "type": "video-script",
+      "bytes": 2289
+    },
+    {
+      "path": "assets/videos/PROMPTS.md",
+      "type": "video-script",
+      "bytes": 3818
+    },
+    {
+      "path": "bibles/video-style.txt",
+      "type": "other",
+      "bytes": 435
+    },
+    {
+      "path": "modules/m01-what-rag-does/MODULE.md",
+      "type": "meta",
+      "bytes": 2141
+    },
+    {
+      "path": "modules/m01-what-rag-does/assets/diagram-rag-loop.svg",
+      "type": "diagram",
+      "bytes": 4889
+    },
+    {
+      "path": "modules/m01-what-rag-does/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1124
+    },
+    {
+      "path": "modules/m01-what-rag-does/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1873
+    },
+    {
+      "path": "modules/m01-what-rag-does/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 52992
+    },
+    {
+      "path": "modules/m01-what-rag-does/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 25201
+    },
+    {
+      "path": "modules/m01-what-rag-does/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 21292
+    },
+    {
+      "path": "modules/m01-what-rag-does/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 47367
+    },
+    {
+      "path": "modules/m01-what-rag-does/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 7084
+    },
+    {
+      "path": "modules/m01-what-rag-does/lessons/l01-rag-vs-finetune-vs-context.md",
+      "type": "lesson",
+      "bytes": 2174
+    },
+    {
+      "path": "modules/m01-what-rag-does/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 7986
+    },
+    {
+      "path": "modules/m01-what-rag-does/lessons/l02-retrieve-stuff-generate.md",
+      "type": "lesson",
+      "bytes": 1987
+    },
+    {
+      "path": "modules/m01-what-rag-does/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 7017
+    },
+    {
+      "path": "modules/m01-what-rag-does/lessons/l03-when-rag-is-wrong.md",
+      "type": "lesson",
+      "bytes": 1929
+    },
+    {
+      "path": "modules/m01-what-rag-does/lessons/l04-acme-ops-handbook-scenario.md",
+      "type": "lesson",
+      "bytes": 2002
+    },
+    {
+      "path": "modules/m01-what-rag-does/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8165
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/MODULE.md",
+      "type": "meta",
+      "bytes": 2048
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/assets/diagram-chunking-pipeline.svg",
+      "type": "diagram",
+      "bytes": 4903
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1115
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1871
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 22016
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 23393
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 41651
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 22221
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 7003
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/lessons/l01-what-a-chunk-is.md",
+      "type": "lesson",
+      "bytes": 1829
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8136
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/lessons/l02-size-overlap-boundaries.md",
+      "type": "lesson",
+      "bytes": 1754
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/lessons/l03-cleaning-metadata.md",
+      "type": "lesson",
+      "bytes": 1812
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 7043
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6994
+    },
+    {
+      "path": "modules/m02-chunking-document-prep/lessons/l04-tables-pdfs-messy-docs.md",
+      "type": "lesson",
+      "bytes": 1759
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/MODULE.md",
+      "type": "meta",
+      "bytes": 2057
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/assets/diagram-retrieval-stack.svg",
+      "type": "diagram",
+      "bytes": 4902
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1126
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1878
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 27176
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 44716
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 25899
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 22725
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/lessons/l01-embeddings-similarity.md",
+      "type": "lesson",
+      "bytes": 1909
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 7022
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 7043
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/lessons/l02-keyword-vector-hybrid.md",
+      "type": "lesson",
+      "bytes": 1713
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8132
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/lessons/l03-topk-filters-rerank.md",
+      "type": "lesson",
+      "bytes": 1724
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8088
+    },
+    {
+      "path": "modules/m03-retrieval-that-works/lessons/l04-query-rewriting.md",
+      "type": "lesson",
+      "bytes": 1710
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/MODULE.md",
+      "type": "meta",
+      "bytes": 2004
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/assets/diagram-grounded-answer.svg",
+      "type": "diagram",
+      "bytes": 4900
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1108
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1838
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 20740
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 25372
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 21473
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 46106
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 7001
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/lessons/l01-why-citations-earn-trust.md",
+      "type": "lesson",
+      "bytes": 1639
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/lessons/l02-grounded-answer-patterns.md",
+      "type": "lesson",
+      "bytes": 1716
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8138
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 7036
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/lessons/l03-refusal-when-weak.md",
+      "type": "lesson",
+      "bytes": 1748
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6996
+    },
+    {
+      "path": "modules/m04-citations-grounded-answers/lessons/l04-ui-patterns-operators.md",
+      "type": "lesson",
+      "bytes": 1736
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/MODULE.md",
+      "type": "meta",
+      "bytes": 2070
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/assets/diagram-rag-eval-loop.svg",
+      "type": "diagram",
+      "bytes": 4920
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1097
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1877
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 24297
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 44116
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 49677
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 27643
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/lessons/l01-faithfulness-relevance-quality.md",
+      "type": "lesson",
+      "bytes": 1742
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 7024
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/lessons/l02-golden-qa-set.md",
+      "type": "lesson",
+      "bytes": 1810
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8127
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/lessons/l03-hallucinations-missed-retrieval.md",
+      "type": "lesson",
+      "bytes": 1822
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 7038
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8066
+    },
+    {
+      "path": "modules/m05-evaluating-rag-quality/lessons/l04-iteration-without-thrash.md",
+      "type": "lesson",
+      "bytes": 1690
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/MODULE.md",
+      "type": "meta",
+      "bytes": 2026
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/assets/diagram-ship-assistant.svg",
+      "type": "diagram",
+      "bytes": 4901
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1115
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1861
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 48068
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 41174
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 26609
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 26983
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8115
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/lessons/l01-scope-first-assistant.md",
+      "type": "lesson",
+      "bytes": 1728
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/lessons/l02-access-freshness-ownership.md",
+      "type": "lesson",
+      "bytes": 1776
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 7027
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8025
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/lessons/l03-launch-checklist-feedback.md",
+      "type": "lesson",
+      "bytes": 1720
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6986
+    },
+    {
+      "path": "modules/m06-shipping-knowledge-assistant/lessons/l04-operate-on-mondays.md",
+      "type": "lesson",
+      "bytes": 1714
+    },
+    {
+      "path": "scripts/build_course.py",
+      "type": "other",
+      "bytes": 47910
+    },
+    {
+      "path": "scripts/curriculum.py",
+      "type": "other",
+      "bytes": 37778
+    },
+    {
+      "path": "scripts/make_lesson_video.py",
+      "type": "other",
+      "bytes": 20425
+    }
+  ]
+}

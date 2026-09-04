@@ -1,0 +1,63 @@
+{
+  "id": "custom-gpts-team-assistants",
+  "title": "Custom GPTs & Team Assistants",
+  "tagline": "Design shareable assistants your team will actually use",
+  "description": "Build custom assistants (GPTs and equivalents)—crystal instructions, files/knowledge boundaries, light actions, versioning, and rollout playbooks—so expertise scales without an engineering team.",
+  "level": "Intermediate",
+  "duration": "6 hours",
+  "lessons": 24,
+  "price": 99,
+  "compareAtPrice": 129,
+  "category": [
+    "Prompting",
+    "Agents"
+  ],
+  "featured": true,
+  "rating": 4.8,
+  "reviewCount": 165,
+  "gradient": [
+    "#a855f7",
+    "#06b6d4"
+  ],
+  "video": {
+    "poster": "images/courses/custom-gpts-team-assistants.png",
+    "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+  },
+  "curriculum": [
+    "Anatomy of a custom assistant",
+    "Instructions that stick",
+    "Files, knowledge & boundaries",
+    "Actions & tools (without the chaos)",
+    "Versioning, evals & iteration",
+    "Team rollout & governance"
+  ],
+  "reviews": [
+    {
+      "name": "Casey Morgan",
+      "stars": 5,
+      "text": "We finally shipped Vendor Triage as a real team assistant—not another fragile prompt paste.",
+      "date": "2026-08-19"
+    },
+    {
+      "name": "Riley Santos",
+      "stars": 5,
+      "text": "The knowledge boundary module stopped our hallucinated SLA problem cold.",
+      "date": "2026-07-28"
+    },
+    {
+      "name": "Avery Quinn",
+      "stars": 4,
+      "text": "Practical and model-agnostic. Wanted even more on actions, but the safety framing is excellent.",
+      "date": "2026-06-30"
+    },
+    {
+      "name": "Morgan Lee",
+      "stars": 5,
+      "text": "Rollout playbooks + golden sets made our GPT library something people trust.",
+      "date": "2026-05-22"
+    }
+  ],
+  "image": "images/courses/custom-gpts-team-assistants.png",
+  "hasContent": true,
+  "contentPath": "content/custom-gpts-team-assistants/"
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pick the share scope · Custom GPTs & Team Assistants</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root { --bg:#0b0f19; --panel:#121826; --border:#1e293b; --text:#e2e8f0; --muted:#94a3b8;
+  --accent:#a855f7; --accent2:#06b6d4; --danger:#f87171; --ok:#34d399; --warn:#fbbf24; }
+* { box-sizing:border-box; }
+body { margin:0; min-height:100vh; font-family:"DM Sans",system-ui,sans-serif; color:var(--text); line-height:1.55;
+  background: radial-gradient(1200px 600px at 10% -10%, #a855f72e, transparent),
+              radial-gradient(900px 500px at 100% 0%, #06b6d41f, transparent), var(--bg); }
+.wrap { max-width:820px; margin:0 auto; padding:28px 20px 48px; }
+.badge { display:inline-flex; font-size:12px; letter-spacing:.04em; text-transform:uppercase; color:var(--accent2);
+  background:#06b6d414; border:1px solid #06b6d440; padding:6px 10px; border-radius:999px; }
+h1 { font-size:1.55rem; margin:14px 0 8px; }
+.sub { color:var(--muted); margin:0 0 22px; }
+.card { background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:18px; margin-bottom:16px; }
+.card h2 { margin:0 0 10px; font-size:1rem; color:#fff; }
+.prompt-box { background:#0a0e16; border:1px dashed #334155; border-radius:10px; padding:12px 14px;
+  font-family:ui-monospace,Menlo,monospace; font-size:.9rem; color:#cbd5e1; white-space:pre-wrap; }
+label { display:block; font-size:.85rem; color:var(--muted); margin-bottom:6px; }
+textarea, select { width:100%; background:#0a0e16; color:var(--text); border:1px solid #334155; border-radius:10px; padding:12px 14px; font:inherit; resize:vertical; }
+.row { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+button { appearance:none; border:0; cursor:pointer; background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#fff; font-weight:600; padding:10px 16px; border-radius:10px; }
+button.secondary { background:transparent; border:1px solid #334155; color:var(--text); }
+#feedback { display:none; margin-top:12px; padding:12px 14px; border-radius:10px; border:1px solid var(--border); }
+#feedback.show { display:block; }
+#feedback.ok { background:rgba(52,211,153,.08); border-color:rgba(52,211,153,.35); color:#bbf7d0; }
+#feedback.bad { background:rgba(248,113,113,.08); border-color:rgba(248,113,113,.35); color:#fecaca; }
+#feedback.partial { background:rgba(251,191,36,.08); border-color:rgba(251,191,36,.35); color:#fde68a; }
+.success { display:none; margin-top:16px; padding:14px 16px; border-radius:12px; border:1px solid #06b6d466;
+  background:linear-gradient(135deg,#a855f726,#06b6d41a); }
+.success.show { display:block; }
+.success strong { color:var(--accent2); }
+.checks { list-style:none; padding:0; margin:8px 0 0; }
+.checks li { padding:4px 0 4px 22px; position:relative; color:var(--muted); }
+.checks li:before { content:"○"; position:absolute; left:0; }
+.checks li.pass { color:var(--ok); }
+.checks li.pass:before { content:"●"; }
+.hint { font-size:.85rem; color:var(--muted); margin-top:8px; }
+.opt { display:block; padding:8px 10px; margin:6px 0; border:1px solid #334155; border-radius:10px; cursor:pointer; }
+.chk { display:block; padding:8px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge">Module 6 · Lesson 1 · Interactive</div>
+  <h1>Pick the share scope</h1>
+  <p class="sub">Private, team, or broader.</p>
+  <div class="card"><h2>Instructions</h2><ol><li>Label each item.</li><li>Click Check.</li></ol></div>
+  <div class="card"><h2>Items</h2><div style="margin:10px 0"><div class="prompt-box">Draft v1.4 instructions still failing golden set</div><select id="s0"><option value="">Select…</option><option value="hard">Hard rule</option><option value="soft">Soft preference</option><option value="knowledge">Knowledge</option><option value="instructions">Instructions</option><option value="private">Private</option><option value="team">Team</option><option value="broader">Broader</option></select></div><div style="margin:10px 0"><div class="prompt-box">Vendor Triage with scrubbed SLA PDF for ops leads</div><select id="s1"><option value="">Select…</option><option value="hard">Hard rule</option><option value="soft">Soft preference</option><option value="knowledge">Knowledge</option><option value="instructions">Instructions</option><option value="private">Private</option><option value="team">Team</option><option value="broader">Broader</option></select></div><div style="margin:10px 0"><div class="prompt-box">Public glossary helper with no internal SLAs</div><select id="s2"><option value="">Select…</option><option value="hard">Hard rule</option><option value="soft">Soft preference</option><option value="knowledge">Knowledge</option><option value="instructions">Instructions</option><option value="private">Private</option><option value="team">Team</option><option value="broader">Broader</option></select></div><div style="margin:10px 0"><div class="prompt-box">HR Coach with compensation bands</div><select id="s3"><option value="">Select…</option><option value="hard">Hard rule</option><option value="soft">Soft preference</option><option value="knowledge">Knowledge</option><option value="instructions">Instructions</option><option value="private">Private</option><option value="team">Team</option><option value="broader">Broader</option></select></div>
+  <div class="row"><button type="button" id="check">Check</button>
+  <button type="button" class="secondary" id="reset">Reset</button></div></div>
+  <div id="feedback" role="status" aria-live="polite"></div>
+  <div class="card"><h2>You are done when</h2><ul class="checks"><li id="c1">Item 1 labeled correctly</li>
+<li id="c2">Item 2 labeled correctly</li>
+<li id="c3">Item 3 labeled correctly</li>
+<li id="c4">Item 4 labeled correctly</li></ul></div>
+  <div class="success" id="success"><strong>Nice work.</strong> Labels match the teaching.</div>
+</div>
+<script>
+const answers=["private", "team", "broader", "private"];
+const feedback=document.getElementById("feedback"); const success=document.getElementById("success");
+document.getElementById("reset").onclick=()=>{
+  for(let i=0;i<4;i++) document.getElementById("s"+i).value="";
+  feedback.className=""; feedback.textContent=""; feedback.classList.remove("show"); success.classList.remove("show");
+  document.querySelectorAll(".checks li").forEach(li=>li.classList.remove("pass"));
+};
+document.getElementById("check").onclick=()=>{
+  let score=0;
+  for(let i=0;i<4;i++){
+    const ok=document.getElementById("s"+i).value===answers[i];
+    document.getElementById("c"+(i+1)).classList.toggle("pass",ok);
+    if(ok) score++;
+  }
+  if(score===4){feedback.className="show ok";feedback.textContent="All labels correct.";success.classList.add("show");}
+  else if(score>=Math.ceil(4/2)){feedback.className="show partial";feedback.textContent="Partial ("+score+"/4).";success.classList.remove("show");}
+  else{feedback.className="show bad";feedback.textContent="Revisit the lesson definitions.";success.classList.remove("show");}
+};
+</script>
+</body>
+</html>
