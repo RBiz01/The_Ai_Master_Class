@@ -1128,3 +1128,28 @@ code { font-size: 0.9em; color: var(--accent-2); }
   .hero-slideshow-title { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
   .hero-slide-content { top: 0.55rem; left: 0.55rem; }
 }
+
+
+/* Mobile: always show media — lazy+opacity:0 reveal was skipping image/video loads */
+@media (max-width: 960px) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .course-art-photo,
+  .hero-slide-photo {
+    object-fit: cover;
+  }
+  .trailer-frame,
+  .trailer-video {
+    min-height: 180px;
+    width: 100%;
+  }
+  .course-thumb {
+    min-height: 140px;
+  }
+  .hero-slideshow {
+    min-height: 200px;
+  }
+}
+

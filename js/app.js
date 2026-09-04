@@ -161,7 +161,7 @@ const FC = (() => {
     const level = escapeHtml(course.level || '');
     const imgSrc = course.image ? assetUrl(course.image) : '';
     const photo = imgSrc
-      ? `<img class="course-art-photo" src="${escapeHtml(imgSrc)}" alt="" loading="lazy" width="${w}" height="${h}" />`
+      ? `<img class="course-art-photo" src="${escapeHtml(imgSrc)}" alt="" loading="eager" decoding="async" width="${w}" height="${h}" />`
       : '';
     return `<div class="course-art${imgSrc ? ' has-photo' : ''}" style="--g1:${c1};--g2:${c2}" role="img" aria-label="${label}">
   ${photo}
@@ -260,9 +260,14 @@ const FC = (() => {
           }
         });
       },
-      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+      { threshold: 0.01, rootMargin: '80px 0px 80px 0px' }
     );
-    els.forEach((el) => io.observe(el));
+    els.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      if (rect.top < vh + 80 && rect.bottom > -80) el.classList.add('in');
+      else io.observe(el);
+    });
   }
 
   function initSignupModal() {

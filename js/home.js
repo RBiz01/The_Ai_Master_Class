@@ -49,7 +49,7 @@
         const [g1, g2] = c.gradient || ['#7c5cff', '#00e5c0'];
         const img = c.image ? FC.assetUrl(c.image) : '';
         const photo = img
-          ? `<img class="hero-slide-photo" src="${FC.escapeHtml(img)}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async" />`
+          ? `<img class="hero-slide-photo" src="${FC.escapeHtml(img)}" alt="" loading="eager" decoding="async" />`
           : '<div class="hero-slide-glow"></div>';
         return `<div class="hero-slide${i === 0 ? ' is-active' : ''}${img ? ' has-photo' : ''}" data-i="${i}" style="--g1:${g1};--g2:${g2}">
           ${photo}
