@@ -119,10 +119,10 @@ a:hover{text-decoration:underline}
     </div>
   </div>
   <div class="layout">
-    <aside class="sidebar">
-      <h3>Course outline</h3>
+    <details class="sidebar outline-drawer" open>
+      <summary>Course outline</summary>
       <div class="mod-label">Module 1</div><a class="" href="../../m01-what-models-learn/lessons/l01-predictions-are-pattern-matches.html">1. Predictions are pattern matches, not magic</a><a class="" href="../../m01-what-models-learn/lessons/l02-parameters-weights-fitting.html">2. Parameters, weights, and fitting the curve</a><a class="" href="../../m01-what-models-learn/lessons/l03-underfit-vs-overfit.html">3. Underfitting vs overfitting in plain English</a><a class="" href="../../m01-what-models-learn/lessons/l04-what-models-cannot-learn.html">4. What models cannot learn from your data</a><div class="mod-label">Module 2</div><a class="" href="../../m02-features-labels-quality/lessons/l01-features-vs-labels.html">1. Features vs labels without the jargon</a><a class="" href="../../m02-features-labels-quality/lessons/l02-signal-noise-leakage.html">2. Signal, noise, and leakage</a><a class="" href="../../m02-features-labels-quality/lessons/l03-missing-messy-columns.html">3. Missing data and messy columns</a><a class="" href="../../m02-features-labels-quality/lessons/l04-label-quality-wins.html">4. Label quality beats fancy algorithms</a><div class="mod-label">Module 3</div><a class="" href="../../m03-train-validate-test/lessons/l01-why-one-split-fails.html">1. Why one split is not enough</a><a class="" href="../../m03-train-validate-test/lessons/l02-train-validate-test-jobs.html">2. Train / validate / test jobs</a><a class="" href="../../m03-train-validate-test/lessons/l03-cross-validation-intuition.html">3. Cross-validation intuition (no math)</a><a class="" href="../../m03-train-validate-test/lessons/l04-lookahead-trap.html">4. Avoiding the look-ahead trap</a><div class="mod-label">Module 4</div><a class="" href="../../m04-embeddings-similarity/lessons/l01-what-is-an-embedding.html">1. What an embedding actually is</a><a class="" href="../../m04-embeddings-similarity/lessons/l02-similarity-search-ops.html">2. Similarity search for creators &amp; ops</a><a class="" href="../../m04-embeddings-similarity/lessons/l03-chunking-retrieval.html">3. Chunking and retrieval that works</a><a class="" href="../../m04-embeddings-similarity/lessons/l04-embeddings-vs-keywords.html">4. When embeddings beat keywords (and when not)</a><div class="mod-label">Module 5</div><a class="active" href="../../m05-nocode-experiments/lessons/l01-question-before-tool.html">1. Pick a question before you pick a tool</a><a class="" href="../../m05-nocode-experiments/lessons/l02-nocode-field-guide.html">2. No-code ML platforms: a field guide</a><a class="" href="../../m05-nocode-experiments/lessons/l03-one-week-experiment.html">3. Design a one-week experiment</a><a class="" href="../../m05-nocode-experiments/lessons/l04-ship-measure-kill.html">4. Ship, measure, kill or keep</a><div class="mod-label">Module 6</div><a class="" href="../../m06-metrics-that-matter/lessons/l01-accuracy-wrong-scoreboard.html">1. Accuracy is often the wrong scoreboard</a><a class="" href="../../m06-metrics-that-matter/lessons/l02-precision-recall-cost.html">2. Precision, recall, and business cost</a><a class="" href="../../m06-metrics-that-matter/lessons/l03-confusion-for-humans.html">3. Confusion matrices for humans</a><a class="" href="../../m06-metrics-that-matter/lessons/l04-exec-dashboards.html">4. Dashboards execs will actually read</a>
-    </aside>
+    </details>
     <div>
       <div class="meta" style="margin-bottom:12px">
         <span class="pill">Module 5</span>
@@ -179,6 +179,26 @@ a:hover{text-decoration:underline}
   </div>
   <p class="footer-note">© 2026 The Ai Master Class · No-Code Machine Learning Intuition</p>
 </div>
+
+
+<script>
+(function(){
+  var d=document.querySelector("details.outline-drawer");
+  if(!d) return;
+  var mq=window.matchMedia("(max-width:900px)");
+  function sync(){
+    if(mq.matches) d.removeAttribute("open");
+    else d.setAttribute("open","");
+  }
+  sync();
+  if(mq.addEventListener) mq.addEventListener("change", sync);
+  else if(mq.addListener) mq.addListener(sync);
+  if(mq.matches){
+    var art=document.querySelector(".article");
+    if(art) try{ art.scrollIntoView({block:"start"}); }catch(e){}
+  }
+})();
+</script>
 
 </body>
 </html>

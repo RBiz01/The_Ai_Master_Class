@@ -119,10 +119,10 @@ a:hover{text-decoration:underline}
     </div>
   </div>
   <div class="layout">
-    <aside class="sidebar">
-      <h3>Course outline</h3>
+    <details class="sidebar outline-drawer" open>
+      <summary>Course outline</summary>
       <div class="mod-label">Module 1</div><a class="active" href="../../m01-anatomy-of-assistant/lessons/l01-chat-vs-custom-vs-agent.html">1. Chat vs custom assistant vs agent</a><a class="" href="../../m01-anatomy-of-assistant/lessons/l02-five-surfaces.html">2. The five surfaces</a><a class="" href="../../m01-anatomy-of-assistant/lessons/l03-naming-icon-discovery.html">3. Naming, icon &amp; discovery cues</a><a class="" href="../../m01-anatomy-of-assistant/lessons/l04-when-not-to-build.html">4. When NOT to build a custom assistant</a><div class="mod-label">Module 2</div><a class="" href="../../m02-instructions-that-stick/lessons/l01-role-mission-nongoals.html">1. Role, mission &amp; non-goals</a><a class="" href="../../m02-instructions-that-stick/lessons/l02-hard-vs-soft-rules.html">2. Hard rules vs style preferences</a><a class="" href="../../m02-instructions-that-stick/lessons/l03-output-contracts-starters.html">3. Output contracts &amp; conversation starters</a><a class="" href="../../m02-instructions-that-stick/lessons/l04-length-conflict-resolution.html">4. Length &amp; conflict resolution</a><div class="mod-label">Module 3</div><a class="" href="../../m03-files-knowledge-boundaries/lessons/l01-knowledge-vs-prompt.html">1. Knowledge vs the prompt</a><a class="" href="../../m03-files-knowledge-boundaries/lessons/l02-freshness-versioning.html">2. Freshness, versioning &amp; stale docs</a><a class="" href="../../m03-files-knowledge-boundaries/lessons/l03-refuse-escalate-cite.html">3. Boundaries: refuse, escalate, cite</a><a class="" href="../../m03-files-knowledge-boundaries/lessons/l04-privacy-least-privilege.html">4. Privacy &amp; least-privilege packs</a><div class="mod-label">Module 4</div><a class="" href="../../m04-actions-and-tools/lessons/l01-when-actions-earn-it.html">1. When actions earn their complexity</a><a class="" href="../../m04-actions-and-tools/lessons/l02-safe-action-schemas.html">2. Designing safe action schemas</a><a class="" href="../../m04-actions-and-tools/lessons/l03-confirmations-dry-runs.html">3. Confirmations, dry-runs &amp; blast radius</a><a class="" href="../../m04-actions-and-tools/lessons/l04-debugging-flaky-actions.html">4. Debugging flaky actions</a><div class="mod-label">Module 5</div><a class="" href="../../m05-versioning-evals/lessons/l01-versioning-like-products.html">1. Versioning assistants like products</a><a class="" href="../../m05-versioning-evals/lessons/l02-tiny-golden-set.html">2. Tiny golden sets for assistants</a><a class="" href="../../m05-versioning-evals/lessons/l03-regression-on-change.html">3. Regression when instructions change</a><a class="" href="../../m05-versioning-evals/lessons/l04-changelog-rollback.html">4. Changelog &amp; rollback playbooks</a><div class="mod-label">Module 6</div><a class="" href="../../m06-team-rollout-governance/lessons/l01-sharing-models.html">1. Sharing models: private, team, public</a><a class="" href="../../m06-team-rollout-governance/lessons/l02-ownership-drift.html">2. Ownership, on-call &amp; drift</a><a class="" href="../../m06-team-rollout-governance/lessons/l03-adoption-playbooks.html">3. Adoption playbooks &amp; office hours</a><a class="" href="../../m06-team-rollout-governance/lessons/l04-policy-audit-sunset.html">4. Policy, audit &amp; sunset</a>
-    </aside>
+    </details>
     <div>
       <div class="meta" style="margin-bottom:12px">
         <span class="pill">Module 1</span>
@@ -184,6 +184,26 @@ a:hover{text-decoration:underline}
   </div>
   <p class="footer-note">© 2026 The Ai Master Class · Custom GPTs &amp; Team Assistants</p>
 </div>
+
+
+<script>
+(function(){
+  var d=document.querySelector("details.outline-drawer");
+  if(!d) return;
+  var mq=window.matchMedia("(max-width:900px)");
+  function sync(){
+    if(mq.matches) d.removeAttribute("open");
+    else d.setAttribute("open","");
+  }
+  sync();
+  if(mq.addEventListener) mq.addEventListener("change", sync);
+  else if(mq.addListener) mq.addListener(sync);
+  if(mq.matches){
+    var art=document.querySelector(".article");
+    if(art) try{ art.scrollIntoView({block:"start"}); }catch(e){}
+  }
+})();
+</script>
 
 </body>
 </html>

@@ -119,10 +119,10 @@ a:hover{text-decoration:underline}
     </div>
   </div>
   <div class="layout">
-    <aside class="sidebar">
-      <h3>Course outline</h3>
+    <details class="sidebar outline-drawer" open>
+      <summary>Course outline</summary>
       <div class="mod-label">Module 1</div><a class="" href="../../m01-prospect-research/lessons/l01-icp-signals-from-public-pages.html">1. ICP signals from public pages</a><a class="" href="../../m01-prospect-research/lessons/l02-account-briefs-that-fit-crm.html">2. Account briefs that fit the CRM</a><a class="" href="../../m01-prospect-research/lessons/l03-trigger-events-without-stalking.html">3. Trigger events without stalking</a><a class="active" href="../../m01-prospect-research/lessons/l04-research-quality-checklist.html">4. Research quality checklist</a><div class="mod-label">Module 2</div><a class="" href="../../m02-human-outreach/lessons/l01-kill-the-ai-sales-accent.html">1. Kill the AI sales accent</a><a class="" href="../../m02-human-outreach/lessons/l02-personalization-that-earns-a-reply.html">2. Personalization that earns a reply</a><a class="" href="../../m02-human-outreach/lessons/l03-subject-lines-and-first-lines.html">3. Subject lines and first lines</a><a class="" href="../../m02-human-outreach/lessons/l04-channel-fit-email-linkedin-call.html">4. Channel fit: email, LinkedIn, call</a><div class="mod-label">Module 3</div><a class="" href="../../m03-notes-to-crm/lessons/l01-call-notes-structure.html">1. Call notes structure that sticks</a><a class="" href="../../m03-notes-to-crm/lessons/l02-crm-fields-without-invention.html">2. CRM fields without invention</a><a class="" href="../../m03-notes-to-crm/lessons/l03-next-steps-owners-dates.html">3. Next steps with owners and dates</a><a class="" href="../../m03-notes-to-crm/lessons/l04-handoff-notes-sdr-to-ae.html">4. Handoff notes: SDR to AE</a><div class="mod-label">Module 4</div><a class="" href="../../m04-sequences-followups/lessons/l01-sequence-architecture.html">1. Sequence architecture that respects humans</a><a class="" href="../../m04-sequences-followups/lessons/l02-follow-up-cadence-and-value.html">2. Follow-up cadence and value</a><a class="" href="../../m04-sequences-followups/lessons/l03-breakup-and-reengage.html">3. Breakup emails and re-engage moves</a><a class="" href="../../m04-sequences-followups/lessons/l04-reply-handling-branches.html">4. Reply handling branches</a><div class="mod-label">Module 5</div><a class="" href="../../m05-objections-proposals/lessons/l01-objection-maps-with-ai.html">1. Objection maps with AI</a><a class="" href="../../m05-objections-proposals/lessons/l02-proposal-one-pagers.html">2. Proposal one-pagers</a><a class="" href="../../m05-objections-proposals/lessons/l03-deck-talk-tracks.html">3. Deck talk tracks</a><a class="" href="../../m05-objections-proposals/lessons/l04-pricing-language-without-overpromise.html">4. Pricing language without overpromise</a><div class="mod-label">Module 6</div><a class="" href="../../m06-guardrails-compliance/lessons/l01-brand-voice-locks.html">1. Brand voice locks</a><a class="" href="../../m06-guardrails-compliance/lessons/l02-compliance-and-claims.html">2. Compliance and claims</a><a class="" href="../../m06-guardrails-compliance/lessons/l03-what-not-to-automate.html">3. What not to automate</a><a class="" href="../../m06-guardrails-compliance/lessons/l04-team-playbook-and-review.html">4. Team playbook and review</a>
-    </aside>
+    </details>
     <div>
       <div class="meta" style="margin-bottom:12px">
         <span class="pill">Module 1</span>
@@ -179,6 +179,26 @@ a:hover{text-decoration:underline}
   </div>
   <p class="footer-note">© 2026 The Ai Master Class · AI for Sales &amp; Outreach</p>
 </div>
+
+
+<script>
+(function(){
+  var d=document.querySelector("details.outline-drawer");
+  if(!d) return;
+  var mq=window.matchMedia("(max-width:900px)");
+  function sync(){
+    if(mq.matches) d.removeAttribute("open");
+    else d.setAttribute("open","");
+  }
+  sync();
+  if(mq.addEventListener) mq.addEventListener("change", sync);
+  else if(mq.addListener) mq.addListener(sync);
+  if(mq.matches){
+    var art=document.querySelector(".article");
+    if(art) try{ art.scrollIntoView({block:"start"}); }catch(e){}
+  }
+})();
+</script>
 
 </body>
 </html>

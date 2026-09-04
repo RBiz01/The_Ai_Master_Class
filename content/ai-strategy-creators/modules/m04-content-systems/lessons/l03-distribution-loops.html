@@ -119,10 +119,10 @@ a:hover{text-decoration:underline}
     </div>
   </div>
   <div class="layout">
-    <aside class="sidebar">
-      <h3>Course outline</h3>
+    <details class="sidebar outline-drawer" open>
+      <summary>Course outline</summary>
       <div class="mod-label">Module 1</div><a class="" href="../../m01-opportunity-mapping/lessons/l01-pain-to-leverage.html">1. Map pain to AI leverage in your niche</a><a class="" href="../../m01-opportunity-mapping/lessons/l02-build-buy-wrap.html">2. Build vs buy vs wrap decisions</a><a class="" href="../../m01-opportunity-mapping/lessons/l03-score-opportunities.html">3. Score opportunities by leverage x proof</a><div class="mod-label">Module 2</div><a class="" href="../../m02-workflow-productization/lessons/l01-hack-to-workflow.html">1. From personal hack to productized workflow</a><a class="" href="../../m02-workflow-productization/lessons/l02-package-outputs.html">2. Packaging AI outputs customers pay for</a><a class="" href="../../m02-workflow-productization/lessons/l03-sops-survive-handoff.html">3. SOPs that survive handoff</a><div class="mod-label">Module 3</div><a class="" href="../../m03-pricing-positioning-proof/lessons/l01-position-vs-diy.html">1. Positioning against I can do that in ChatGPT</a><a class="" href="../../m03-pricing-positioning-proof/lessons/l02-pricing-ladders.html">2. Pricing ladders for AI-augmented offers</a><a class="" href="../../m03-pricing-positioning-proof/lessons/l03-proof-stacks.html">3. Proof stacks: demos, case studies, guarantees</a><div class="mod-label">Module 4</div><a class="" href="../../m04-content-systems/lessons/l01-content-engines.html">1. Content engines that compound with AI</a><a class="" href="../../m04-content-systems/lessons/l02-repurpose-human.html">2. Repurposing without sounding automated</a><a class="active" href="../../m04-content-systems/lessons/l03-distribution-loops.html">3. Distribution loops that feed the offer</a><div class="mod-label">Module 5</div><a class="" href="../../m05-team-of-one/lessons/l01-agent-vs-judgment.html">1. Agent roles vs human judgment</a><a class="" href="../../m05-team-of-one/lessons/l02-contractor-briefs.html">2. Contractor briefs that actually work</a><a class="" href="../../m05-team-of-one/lessons/l03-operating-cadence.html">3. Operating cadence for a solo AI studio</a><div class="mod-label">Module 6</div><a class="" href="../../m06-moats-ethics-longgame/lessons/l01-real-moats.html">1. Moats that are not just we use GPT</a><a class="" href="../../m06-moats-ethics-longgame/lessons/l02-ethics-risk.html">2. Ethics as risk management</a><a class="" href="../../m06-moats-ethics-longgame/lessons/l03-longgame-kill.html">3. Long-game bets and kill criteria</a>
-    </aside>
+    </details>
     <div>
       <div class="meta" style="margin-bottom:12px">
         <span class="pill">Module 4</span>
@@ -178,6 +178,26 @@ a:hover{text-decoration:underline}
   </div>
   <p class="footer-note">© 2026 The Ai Master Class · AI Strategy for Creators &amp; Founders</p>
 </div>
+
+
+<script>
+(function(){
+  var d=document.querySelector("details.outline-drawer");
+  if(!d) return;
+  var mq=window.matchMedia("(max-width:900px)");
+  function sync(){
+    if(mq.matches) d.removeAttribute("open");
+    else d.setAttribute("open","");
+  }
+  sync();
+  if(mq.addEventListener) mq.addEventListener("change", sync);
+  else if(mq.addListener) mq.addListener(sync);
+  if(mq.matches){
+    var art=document.querySelector(".article");
+    if(art) try{ art.scrollIntoView({block:"start"}); }catch(e){}
+  }
+})();
+</script>
 
 </body>
 </html>

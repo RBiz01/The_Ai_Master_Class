@@ -119,10 +119,10 @@ a:hover{text-decoration:underline}
     </div>
   </div>
   <div class="layout">
-    <aside class="sidebar">
-      <h3>Course outline</h3>
+    <details class="sidebar outline-drawer" open>
+      <summary>Course outline</summary>
       <div class="mod-label">Module 1</div><a class="" href="../../m01-mental-models-architectures/lessons/l01-agent-vs-chatbot-vs-script.html">1. Agent vs chatbot vs script</a><a class="" href="../../m01-mental-models-architectures/lessons/l02-sense-plan-act-observe.html">2. Sense · Plan · Act · Observe</a><a class="" href="../../m01-mental-models-architectures/lessons/l03-single-vs-multi-agent.html">3. Single-agent vs multi-agent</a><a class="" href="../../m01-mental-models-architectures/lessons/l04-when-not-to-agent.html">4. When not to use an agent</a><div class="mod-label">Module 2</div><a class="" href="../../m02-tools-functions-api/lessons/l01-tool-schemas-models-call.html">1. Tool schemas models can call</a><a class="" href="../../m02-tools-functions-api/lessons/l02-function-calling-patterns.html">2. Function-calling patterns</a><a class="" href="../../m02-tools-functions-api/lessons/l03-wiring-apis-safely.html">3. Wiring APIs safely</a><a class="" href="../../m02-tools-functions-api/lessons/l04-tool-selection-routing.html">4. Tool selection and routing</a><div class="mod-label">Module 3</div><a class="" href="../../m03-planning-memory-state/lessons/l01-planning-strategies.html">1. Planning strategies</a><a class="" href="../../m03-planning-memory-state/lessons/l02-short-vs-long-memory.html">2. Short-term vs long-term memory</a><a class="" href="../../m03-planning-memory-state/lessons/l03-state-machines-runs.html">3. State machines for agent runs</a><a class="active" href="../../m03-planning-memory-state/lessons/l04-context-compression.html">4. Context windows and compression</a><div class="mod-label">Module 4</div><a class="" href="../../m04-human-in-the-loop/lessons/l01-when-to-pause.html">1. When to pause for humans</a><a class="" href="../../m04-human-in-the-loop/lessons/l02-approval-gates-risk.html">2. Approval gates and risk tiers</a><a class="" href="../../m04-human-in-the-loop/lessons/l03-escalation-paths.html">3. Escalation paths</a><a class="" href="../../m04-human-in-the-loop/lessons/l04-review-ui-design.html">4. Designing review UIs</a><div class="mod-label">Module 5</div><a class="" href="../../m05-eval-failure-modes/lessons/l01-failure-taxonomy.html">1. Agent failure taxonomy</a><a class="" href="../../m05-eval-failure-modes/lessons/l02-building-eval-harnesses.html">2. Building eval harnesses</a><a class="" href="../../m05-eval-failure-modes/lessons/l03-tracing-observability.html">3. Tracing and observability</a><a class="" href="../../m05-eval-failure-modes/lessons/l04-regression-suites.html">4. Regression suites</a><div class="mod-label">Module 6</div><a class="" href="../../m06-nocode-lowcode-bridges/lessons/l01-when-nocode-fits.html">1. When Zapier/Make/n8n fit</a><a class="" href="../../m06-nocode-lowcode-bridges/lessons/l02-bridging-agents-workflows.html">2. Bridging agents to workflow tools</a><a class="" href="../../m06-nocode-lowcode-bridges/lessons/l03-triggers-webhooks-queues.html">3. Triggers, webhooks, and queues</a><a class="" href="../../m06-nocode-lowcode-bridges/lessons/l04-citizen-automation-governance.html">4. Governance for citizen automation</a><div class="mod-label">Module 7</div><a class="" href="../../m07-capstone-ship-agent/lessons/l01-spec-acme-ops-agent.html">1. Spec your Acme Ops agent</a><a class="" href="../../m07-capstone-ship-agent/lessons/l02-build-tool-belt.html">2. Build the tool belt</a><a class="" href="../../m07-capstone-ship-agent/lessons/l03-add-hitl-evals.html">3. Add HITL and evals</a><a class="" href="../../m07-capstone-ship-agent/lessons/l04-ship-checklist-demo.html">4. Ship checklist and demo</a><div class="mod-label">Module 8</div><a class="" href="../../m08-ops-cost-monitoring/lessons/l01-cost-drivers.html">1. Cost drivers</a><a class="" href="../../m08-ops-cost-monitoring/lessons/l02-rate-limits-budgets.html">2. Rate limits and budgets</a><a class="" href="../../m08-ops-cost-monitoring/lessons/l03-monitoring-dashboards.html">3. Monitoring dashboards</a><a class="" href="../../m08-ops-cost-monitoring/lessons/l04-incident-response-agents.html">4. Incident response for agents</a>
-    </aside>
+    </details>
     <div>
       <div class="meta" style="margin-bottom:12px">
         <span class="pill">Module 3</span>
@@ -186,6 +186,26 @@ a:hover{text-decoration:underline}
   </div>
   <p class="footer-note">© 2026 The Ai Master Class · AI Agents &amp; Automation Bootcamp</p>
 </div>
+
+
+<script>
+(function(){
+  var d=document.querySelector("details.outline-drawer");
+  if(!d) return;
+  var mq=window.matchMedia("(max-width:900px)");
+  function sync(){
+    if(mq.matches) d.removeAttribute("open");
+    else d.setAttribute("open","");
+  }
+  sync();
+  if(mq.addEventListener) mq.addEventListener("change", sync);
+  else if(mq.addListener) mq.addListener(sync);
+  if(mq.matches){
+    var art=document.querySelector(".article");
+    if(art) try{ art.scrollIntoView({block:"start"}); }catch(e){}
+  }
+})();
+</script>
 
 </body>
 </html>

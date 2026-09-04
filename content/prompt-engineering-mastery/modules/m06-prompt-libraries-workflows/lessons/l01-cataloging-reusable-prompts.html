@@ -119,10 +119,10 @@ a:hover{text-decoration:underline}
     </div>
   </div>
   <div class="layout">
-    <aside class="sidebar">
-      <h3>Course outline</h3>
+    <details class="sidebar outline-drawer" open>
+      <summary>Course outline</summary>
       <div class="mod-label">Module 1</div><a class="" href="../../m01-foundations-of-clear-instruction/lessons/l01-what-makes-a-prompt-clear.html">1. What makes a prompt clear</a><a class="" href="../../m01-foundations-of-clear-instruction/lessons/l02-the-goal-context-constraints-frame.html">2. The Goal · Context · Constraints · Format frame</a><a class="" href="../../m01-foundations-of-clear-instruction/lessons/l03-specificity-without-overfitting.html">3. Specificity without overfitting</a><a class="" href="../../m01-foundations-of-clear-instruction/lessons/l04-common-failure-modes.html">4. Common failure modes</a><div class="mod-label">Module 2</div><a class="" href="../../m02-roles-constraints-output-formats/lessons/l01-role-prompting-that-helps.html">1. Role prompting that actually helps</a><a class="" href="../../m02-roles-constraints-output-formats/lessons/l02-hard-vs-soft-constraints.html">2. Hard vs soft constraints</a><a class="" href="../../m02-roles-constraints-output-formats/lessons/l03-tables-json-checklists.html">3. Tables, JSON, and checklists that parse</a><a class="" href="../../m02-roles-constraints-output-formats/lessons/l04-tone-audience-brand-locks.html">4. Tone, audience, and brand voice locks</a><div class="mod-label">Module 3</div><a class="" href="../../m03-few-shot-exemplars/lessons/l01-zero-vs-few-shot.html">1. Zero-shot vs few-shot: when to invest</a><a class="" href="../../m03-few-shot-exemplars/lessons/l02-writing-exemplars.html">2. Writing exemplars that teach the pattern</a><a class="" href="../../m03-few-shot-exemplars/lessons/l03-contrast-sets.html">3. Contrast sets and near-miss examples</a><a class="" href="../../m03-few-shot-exemplars/lessons/l04-token-budget-quality.html">4. Token budget and exemplar quality</a><div class="mod-label">Module 4</div><a class="" href="../../m04-chain-of-thought-decomposition/lessons/l01-when-to-ask-for-reasoning.html">1. When to ask for reasoning (and when not to)</a><a class="" href="../../m04-chain-of-thought-decomposition/lessons/l02-plan-then-answer.html">2. Plan-then-answer patterns</a><a class="" href="../../m04-chain-of-thought-decomposition/lessons/l03-decomposing-multistep.html">3. Decomposing multi-step work</a><a class="" href="../../m04-chain-of-thought-decomposition/lessons/l04-self-checks-verification.html">4. Self-checks and verification steps</a><div class="mod-label">Module 5</div><a class="" href="../../m05-evaluation-rubrics-iteration/lessons/l01-rubrics-beat-vibes.html">1. Rubrics beat vibes</a><a class="" href="../../m05-evaluation-rubrics-iteration/lessons/l02-tiny-golden-set.html">2. Building a tiny golden set</a><a class="" href="../../m05-evaluation-rubrics-iteration/lessons/l03-iterate-without-rewrite.html">3. Iterate without rewriting from scratch</a><a class="" href="../../m05-evaluation-rubrics-iteration/lessons/l04-model-agnostic-eval.html">4. Model-agnostic eval habits</a><div class="mod-label">Module 6</div><a class="active" href="../../m06-prompt-libraries-workflows/lessons/l01-cataloging-reusable-prompts.html">1. Cataloging prompts your team will reuse</a><a class="" href="../../m06-prompt-libraries-workflows/lessons/l02-email-notes-status-kits.html">2. Email, notes, and status update kits</a><a class="" href="../../m06-prompt-libraries-workflows/lessons/l03-research-synthesis-kits.html">3. Research &amp; synthesis kits</a><a class="" href="../../m06-prompt-libraries-workflows/lessons/l04-versioning-handoff-governance.html">4. Versioning, handoff, and governance</a>
-    </aside>
+    </details>
     <div>
       <div class="meta" style="margin-bottom:12px">
         <span class="pill">Module 6</span>
@@ -185,6 +185,26 @@ research.competitor-synth-bullets</code></pre>
   </div>
   <p class="footer-note">© 2026 The Ai Master Class · Prompt Engineering Mastery</p>
 </div>
+
+
+<script>
+(function(){
+  var d=document.querySelector("details.outline-drawer");
+  if(!d) return;
+  var mq=window.matchMedia("(max-width:900px)");
+  function sync(){
+    if(mq.matches) d.removeAttribute("open");
+    else d.setAttribute("open","");
+  }
+  sync();
+  if(mq.addEventListener) mq.addEventListener("change", sync);
+  else if(mq.addListener) mq.addListener(sync);
+  if(mq.matches){
+    var art=document.querySelector(".article");
+    if(art) try{ art.scrollIntoView({block:"start"}); }catch(e){}
+  }
+})();
+</script>
 
 </body>
 </html>

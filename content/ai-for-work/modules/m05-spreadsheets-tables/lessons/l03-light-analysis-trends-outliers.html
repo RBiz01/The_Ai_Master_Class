@@ -119,10 +119,10 @@ a:hover{text-decoration:underline}
     </div>
   </div>
   <div class="layout">
-    <aside class="sidebar">
-      <h3>Course outline</h3>
+    <details class="sidebar outline-drawer" open>
+      <summary>Course outline</summary>
       <div class="mod-label">Module 1</div><a class="" href="../../m01-ai-desk-setup/lessons/l01-chatgpt-vs-claude-desk-tools.html">1. ChatGPT vs Claude: pick the right desk tool</a><a class="" href="../../m01-ai-desk-setup/lessons/l02-browser-apps-workspace-habits.html">2. Browser, apps, and workspace habits that stick</a><a class="" href="../../m01-ai-desk-setup/lessons/l03-custom-instructions-and-memory.html">3. Custom instructions and memory that serve you</a><a class="" href="../../m01-ai-desk-setup/lessons/l04-weekly-ai-ritual.html">4. Your weekly AI ritual (ship Monday morning)</a><div class="mod-label">Module 2</div><a class="" href="../../m02-writing-that-sounds-like-you/lessons/l01-capture-your-voice-with-exemplars.html">1. Capture your voice with exemplars</a><a class="" href="../../m02-writing-that-sounds-like-you/lessons/l02-email-and-slack-like-you.html">2. Email and Slack that sound like you</a><a class="" href="../../m02-writing-that-sounds-like-you/lessons/l03-long-form-without-ai-accent.html">3. Long-form drafts without the AI accent</a><a class="" href="../../m02-writing-that-sounds-like-you/lessons/l04-editing-passes-tighten-tone.html">4. Editing passes: tighten, tone-check, brand-lock</a><div class="mod-label">Module 3</div><a class="" href="../../m03-research-synthesis/lessons/l01-grounding-paste-sources.html">1. Grounding: paste sources, don&#x27;t invent</a><a class="" href="../../m03-research-synthesis/lessons/l02-claim-evidence-confidence.html">2. Claim → Evidence → Confidence tags</a><a class="" href="../../m03-research-synthesis/lessons/l03-multi-source-synthesis-briefs.html">3. Multi-source synthesis briefs</a><a class="" href="../../m03-research-synthesis/lessons/l04-hallucination-red-flags.html">4. Hallucination red flags and verification loops</a><div class="mod-label">Module 4</div><a class="" href="../../m04-meetings-notes-actions/lessons/l01-transcript-to-structured-notes.html">1. From transcript to structured notes</a><a class="" href="../../m04-meetings-notes-actions/lessons/l02-action-plans-owners-dates.html">2. Action plans with owners and dates</a><a class="" href="../../m04-meetings-notes-actions/lessons/l03-pre-meeting-briefs.html">3. Pre-meeting briefs in five minutes</a><a class="" href="../../m04-meetings-notes-actions/lessons/l04-follow-ups-that-get-answered.html">4. Follow-ups that get answered</a><div class="mod-label">Module 5</div><a class="" href="../../m05-spreadsheets-tables/lessons/l01-messy-data-to-clean-tables.html">1. Paste messy data → clean tables</a><a class="" href="../../m05-spreadsheets-tables/lessons/l02-formulas-pivots-plain-english.html">2. Formulas and pivots explained in plain English</a><a class="active" href="../../m05-spreadsheets-tables/lessons/l03-light-analysis-trends-outliers.html">3. Light analysis: trends, outliers, asks</a><a class="" href="../../m05-spreadsheets-tables/lessons/l04-charts-exec-one-pagers.html">4. Charts and executive one-pagers</a><div class="mod-label">Module 6</div><a class="" href="../../m06-privacy-policy-playbooks/lessons/l01-what-not-to-paste.html">1. What not to paste (data classes)</a><a class="" href="../../m06-privacy-policy-playbooks/lessons/l02-vendor-policies-company-rules.html">2. Vendor policies and your company rules</a><a class="" href="../../m06-privacy-policy-playbooks/lessons/l03-team-playbooks-shared-prompts.html">3. Team playbooks and shared prompts</a><a class="" href="../../m06-privacy-policy-playbooks/lessons/l04-governance-versioning-review.html">4. Governance: versioning, review, escalation</a>
-    </aside>
+    </details>
     <div>
       <div class="meta" style="margin-bottom:12px">
         <span class="pill">Module 5</span>
@@ -173,6 +173,26 @@ a:hover{text-decoration:underline}
   </div>
   <p class="footer-note">© 2026 The Ai Master Class · AI for Work: ChatGPT &amp; Claude</p>
 </div>
+
+
+<script>
+(function(){
+  var d=document.querySelector("details.outline-drawer");
+  if(!d) return;
+  var mq=window.matchMedia("(max-width:900px)");
+  function sync(){
+    if(mq.matches) d.removeAttribute("open");
+    else d.setAttribute("open","");
+  }
+  sync();
+  if(mq.addEventListener) mq.addEventListener("change", sync);
+  else if(mq.addListener) mq.addListener(sync);
+  if(mq.matches){
+    var art=document.querySelector(".article");
+    if(art) try{ art.scrollIntoView({block:"start"}); }catch(e){}
+  }
+})();
+</script>
 
 </body>
 </html>

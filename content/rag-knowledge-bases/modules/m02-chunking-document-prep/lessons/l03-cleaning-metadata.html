@@ -119,10 +119,10 @@ a:hover{text-decoration:underline}
     </div>
   </div>
   <div class="layout">
-    <aside class="sidebar">
-      <h3>Course outline</h3>
+    <details class="sidebar outline-drawer" open>
+      <summary>Course outline</summary>
       <div class="mod-label">Module 1</div><a class="" href="../../m01-what-rag-does/lessons/l01-rag-vs-finetune-vs-context.html">1. RAG vs fine-tuning vs long context</a><a class="" href="../../m01-what-rag-does/lessons/l02-retrieve-stuff-generate.html">2. The retrieve → stuff → generate loop</a><a class="" href="../../m01-what-rag-does/lessons/l03-when-rag-is-wrong.html">3. When RAG is the wrong tool</a><a class="" href="../../m01-what-rag-does/lessons/l04-acme-ops-handbook-scenario.html">4. Acme Ops handbook scenario</a><div class="mod-label">Module 2</div><a class="" href="../../m02-chunking-document-prep/lessons/l01-what-a-chunk-is.html">1. What a chunk is (and isn’t)</a><a class="" href="../../m02-chunking-document-prep/lessons/l02-size-overlap-boundaries.html">2. Chunk size, overlap, and boundaries</a><a class="active" href="../../m02-chunking-document-prep/lessons/l03-cleaning-metadata.html">3. Cleaning &amp; metadata that retrieval needs</a><a class="" href="../../m02-chunking-document-prep/lessons/l04-tables-pdfs-messy-docs.html">4. Tables, PDFs, and messy ops docs</a><div class="mod-label">Module 3</div><a class="" href="../../m03-retrieval-that-works/lessons/l01-embeddings-similarity.html">1. Embeddings &amp; similarity search (operator view)</a><a class="" href="../../m03-retrieval-that-works/lessons/l02-keyword-vector-hybrid.html">2. Keyword vs vector vs hybrid</a><a class="" href="../../m03-retrieval-that-works/lessons/l03-topk-filters-rerank.html">3. Top-k, filters, and reranking</a><a class="" href="../../m03-retrieval-that-works/lessons/l04-query-rewriting.html">4. Query rewriting for operators</a><div class="mod-label">Module 4</div><a class="" href="../../m04-citations-grounded-answers/lessons/l01-why-citations-earn-trust.html">1. Why citations earn trust</a><a class="" href="../../m04-citations-grounded-answers/lessons/l02-grounded-answer-patterns.html">2. Grounded answer patterns</a><a class="" href="../../m04-citations-grounded-answers/lessons/l03-refusal-when-weak.html">3. Refusal when retrieval is weak</a><a class="" href="../../m04-citations-grounded-answers/lessons/l04-ui-patterns-operators.html">4. UI patterns operators actually use</a><div class="mod-label">Module 5</div><a class="" href="../../m05-evaluating-rag-quality/lessons/l01-faithfulness-relevance-quality.html">1. Faithfulness, relevance, and answer quality</a><a class="" href="../../m05-evaluating-rag-quality/lessons/l02-golden-qa-set.html">2. Building a golden Q&amp;A set from the handbook</a><a class="" href="../../m05-evaluating-rag-quality/lessons/l03-hallucinations-missed-retrieval.html">3. Spotting hallucinations and missed retrieval</a><a class="" href="../../m05-evaluating-rag-quality/lessons/l04-iteration-without-thrash.html">4. Iteration loops that don’t thrash</a><div class="mod-label">Module 6</div><a class="" href="../../m06-shipping-knowledge-assistant/lessons/l01-scope-first-assistant.html">1. Scope the first knowledge assistant</a><a class="" href="../../m06-shipping-knowledge-assistant/lessons/l02-access-freshness-ownership.html">2. Access, freshness, and ownership</a><a class="" href="../../m06-shipping-knowledge-assistant/lessons/l03-launch-checklist-feedback.html">3. Launch checklist &amp; feedback loops</a><a class="" href="../../m06-shipping-knowledge-assistant/lessons/l04-operate-on-mondays.html">4. Operating the assistant on Mondays</a>
-    </aside>
+    </details>
     <div>
       <div class="meta" style="margin-bottom:12px">
         <span class="pill">Module 2</span>
@@ -186,6 +186,26 @@ a:hover{text-decoration:underline}
   </div>
   <p class="footer-note">© 2026 The Ai Master Class · RAG &amp; Knowledge Bases for Operators</p>
 </div>
+
+
+<script>
+(function(){
+  var d=document.querySelector("details.outline-drawer");
+  if(!d) return;
+  var mq=window.matchMedia("(max-width:900px)");
+  function sync(){
+    if(mq.matches) d.removeAttribute("open");
+    else d.setAttribute("open","");
+  }
+  sync();
+  if(mq.addEventListener) mq.addEventListener("change", sync);
+  else if(mq.addListener) mq.addListener(sync);
+  if(mq.matches){
+    var art=document.querySelector(".article");
+    if(art) try{ art.scrollIntoView({block:"start"}); }catch(e){}
+  }
+})();
+</script>
 
 </body>
 </html>
