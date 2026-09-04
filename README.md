@@ -1,16 +1,17 @@
-# Fuzzy Chainsaw Academy — AI Course Storefront
+# The Ai Master Class — AI Course Storefront
 
 Polished **digital AI learning courses** marketplace — pure static HTML/CSS/JS on **GitHub Pages**.
 
-**Live:** https://rbiz01.github.io/fuzzy-chainsaw/
+**Live:** https://rbiz01.github.io/The_Ai_Master_Class/  
+**Repo:** https://github.com/RBiz01/The_Ai_Master_Class
 
-Formerly a 3D printable model shop (and before that, browser games). The product is now **courses only** — prompting, workplace AI, generative media, agents, ML intuition, and founder strategy.
+Practical courses on prompting, workplace AI, generative media, agents, ML intuition, and founder strategy.
 
 ## Features
 
-- **Homepage** — animated hero, mobile-friendly course slideshow, social proof
+- **Homepage** — animated hero, mobile-friendly course slideshow with cover images, social proof
 - **Course catalog** — category chips, search, sort
-- **Course detail** — HTML5 trailer, stars + reviews, curriculum, enroll CTA
+- **Course detail** — cover image, HTML5 trailer, stars + reviews, curriculum, enroll CTA
 - **Cart** — mock enrollment checkout (Stripe Payment Link placeholder)
 - **Welcome discount** — first-visit email modal unlocks **10%** (localStorage; Formspree TODO)
 - **Free stack** — no paid APIs, fonts, or video hosts required
@@ -26,13 +27,13 @@ Prefer a local server — some browsers block `fetch()` of JSON via `file://`.
 
 ## GitHub Pages
 
-Settings → Pages: deploy from **`main`** / **root**. After push, wait for the build, then verify:
+Settings → Pages: deploy from **`main`** / **root**. After push, wait for the build, then verify under `/The_Ai_Master_Class/`:
 
-- `/` · `/courses.html` · `/course.html?id=prompt-engineering-mastery` · `/data/courses.json`
+- `/` · `/courses.html` · `/course.html?id=prompt-engineering-mastery` · `/data/courses.json` · `/images/courses/`
 
 ## Add / edit courses
 
-Edit **`data/courses.json`**. See **`BIBLE.md`** for required fields, review rules, video conventions, and the live verification checklist.
+Edit **`data/courses.json`** and add a cover under **`images/courses/<id>.png`**. See **`BIBLE.md`** for required fields, review rules, video + image conventions, and the live verification checklist.
 
 ## Email signup (10% off)
 
@@ -49,6 +50,7 @@ Checkout is **mock**. Set `STRIPE_PAYMENT_LINK` in `js/app.js` when ready. Never
 ├── css/styles.css
 ├── js/app.js home.js courses.js course.js cart.js
 ├── data/courses.json
+├── images/courses/
 ├── BIBLE.md README.md SUMMARY.md
 └── catalog.html / product.html  (legacy redirects → courses)
 ```

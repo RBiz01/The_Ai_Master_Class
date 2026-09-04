@@ -25,7 +25,7 @@
     return;
   }
 
-  document.title = `${course.title} · Fuzzy Chainsaw Academy`;
+  document.title = `${course.title} · The Ai Master Class`;
   const meta = document.querySelector('meta[name="description"]');
   if (meta) meta.setAttribute('content', course.tagline);
 
@@ -40,10 +40,22 @@
   const [g1, g2] = course.gradient || ['#7c5cff', '#00e5c0'];
 
   const video = course.video || {};
+  const posterPath = (video.poster && video.poster !== 'gradient')
+    ? video.poster
+    : (course.image || '');
+  const posterUrl = posterPath ? FC.assetUrl(posterPath) : '';
+  const posterAttr = posterUrl ? ` poster="${FC.escapeHtml(posterUrl)}"` : '';
+
+  const coverBlock = course.image
+    ? `<div class="course-cover reveal">
+        <img src="${FC.escapeHtml(FC.assetUrl(course.image))}" alt="${FC.escapeHtml(course.title)} cover" loading="lazy" />
+      </div>`
+    : '';
+
   const videoBlock = video.src
     ? `<div class="trailer" style="--g1:${g1};--g2:${g2}">
         <div class="trailer-frame">
-          <video controls playsinline preload="metadata" poster="" class="trailer-video">
+          <video controls playsinline preload="metadata"${posterAttr} class="trailer-video">
             <source src="${FC.escapeHtml(video.src)}" type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
@@ -84,7 +96,8 @@
   root.innerHTML = `
 <nav class="breadcrumb"><a href="courses.html">Courses</a> / <span>${FC.escapeHtml(course.title)}</span></nav>
 <div class="course-hero-grid">
-  <div>
+  <div class="course-media-col">
+    ${coverBlock}
     ${videoBlock}
   </div>
   <div class="course-buy-panel reveal">

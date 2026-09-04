@@ -47,8 +47,12 @@
     track.innerHTML = courses
       .map((c, i) => {
         const [g1, g2] = c.gradient || ['#7c5cff', '#00e5c0'];
-        return `<div class="hero-slide${i === 0 ? ' is-active' : ''}" data-i="${i}" style="--g1:${g1};--g2:${g2}">
-          <div class="hero-slide-glow"></div>
+        const img = c.image ? FC.assetUrl(c.image) : '';
+        const photo = img
+          ? `<img class="hero-slide-photo" src="${FC.escapeHtml(img)}" alt="" loading="lazy" />`
+          : '<div class="hero-slide-glow"></div>';
+        return `<div class="hero-slide${i === 0 ? ' is-active' : ''}${img ? ' has-photo' : ''}" data-i="${i}" style="--g1:${g1};--g2:${g2}">
+          ${photo}
           <div class="hero-slide-content">
             <span class="hero-slide-level">${FC.escapeHtml(c.level)}</span>
             <span class="hero-slide-dur">${FC.escapeHtml(c.duration)} · ${c.lessons} lessons</span>

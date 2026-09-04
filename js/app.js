@@ -1,5 +1,5 @@
 /**
- * Fuzzy Chainsaw Academy — shared utilities
+ * The Ai Master Class — shared utilities
  * Courses loader, cart, discount, UI helpers
  */
 const FC = (() => {
@@ -159,7 +159,12 @@ const FC = (() => {
     const [c1, c2] = course.gradient || ['#7c5cff', '#00e5c0'];
     const label = escapeHtml(course.title || 'Course');
     const level = escapeHtml(course.level || '');
-    return `<div class="course-art" style="--g1:${c1};--g2:${c2}" role="img" aria-label="${label}">
+    const imgSrc = course.image ? assetUrl(course.image) : '';
+    const photo = imgSrc
+      ? `<img class="course-art-photo" src="${escapeHtml(imgSrc)}" alt="" loading="lazy" width="${w}" height="${h}" />`
+      : '';
+    return `<div class="course-art${imgSrc ? ' has-photo' : ''}" style="--g1:${c1};--g2:${c2}" role="img" aria-label="${label}">
+  ${photo}
   <div class="course-art-inner">
     <span class="course-art-level">${level}</span>
     <strong class="course-art-title">${label}</strong>
@@ -294,7 +299,7 @@ const FC = (() => {
             await fetch(EMAIL_FORM_ENDPOINT, {
               method: 'POST',
               headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-              body: JSON.stringify({ email, source: 'fuzzy-chainsaw-welcome-discount' }),
+              body: JSON.stringify({ email, source: 'the-ai-master-class-welcome-discount' }),
             });
           } else {
             console.info('[TODO] Email signup captured locally. Set EMAIL_FORM_ENDPOINT', email);
@@ -316,7 +321,7 @@ const FC = (() => {
   <div class="modal">
     <button type="button" class="close-x" data-close-modal aria-label="Close">&times;</button>
     <div class="discount-badge-big">10% OFF</div>
-    <h2 id="signup-title">Welcome to the Academy</h2>
+    <h2 id="signup-title">Welcome to The Ai Master Class</h2>
     <p>Join for course drops &amp; get <strong>10% off</strong> your first enrollment. Instant — no spam.</p>
     <form id="signup-form" action="${EMAIL_FORM_ENDPOINT}" method="POST">
       <label for="signup-email" class="field-label">Email</label>
