@@ -1,6 +1,22 @@
-/* Shared lesson media fixes for mobile */
+/* Shared lesson media + mobile layout */
 .lesson-video{min-height:160px}
 .lesson-video video{width:100%;height:auto;min-height:160px;max-height:min(70vh,480px);background:#000;object-fit:contain}
-@media (max-width:720px){
+
+@media (max-width:900px){
+  .layout{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  .layout > div{
+    order:1;
+  }
+  .layout > .sidebar{
+    order:2;
+    position:static;
+    max-height:min(240px,38vh);
+    overflow:auto;
+    -webkit-overflow-scrolling:touch;
+  }
   .lesson-video video{min-height:180px}
 }
