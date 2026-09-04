@@ -1,0 +1,693 @@
+{
+  "courseId": "ai-sales-outreach",
+  "title": "AI for Sales & Outreach",
+  "product": "The Ai Master Class",
+  "tagline": "Research, sequences, and CRM-safe messaging that still sound human",
+  "level": "Beginner",
+  "duration": "6 hours",
+  "lessons": 24,
+  "pacing": "~1 hour per curriculum module \u00d7 6 modules",
+  "price": 89,
+  "compareAtPrice": 119,
+  "categories": [
+    "Productivity",
+    "Strategy"
+  ],
+  "featured": true,
+  "rating": 4.7,
+  "reviewCount": 210,
+  "gradient": [
+    "#3b82f6",
+    "#f59e0b"
+  ],
+  "moduleStatus": {
+    "m01-prospect-research": "built",
+    "m02-human-outreach": "built",
+    "m03-notes-to-crm": "built",
+    "m04-sequences-followups": "built",
+    "m05-objections-proposals": "built",
+    "m06-guardrails-compliance": "built"
+  },
+  "minuteBudget": {
+    "perModuleMinutes": 60,
+    "courseTotalHours": 6,
+    "m01": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m02": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m03": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m04": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m05": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m06": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    }
+  },
+  "typeTags": [
+    "meta",
+    "lesson",
+    "interactive",
+    "diagram",
+    "video-script",
+    "video",
+    "image",
+    "doc",
+    "stub",
+    "other"
+  ],
+  "files": [
+    {
+      "path": "COURSE.md",
+      "type": "meta",
+      "bytes": 4299
+    },
+    {
+      "path": "HANDOFF.md",
+      "type": "meta",
+      "bytes": 5728
+    },
+    {
+      "path": "assets/images/ai-sales-outreach-cover.png",
+      "type": "image",
+      "bytes": 334676
+    },
+    {
+      "path": "assets/intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1612
+    },
+    {
+      "path": "assets/videos/PROMPTS.md",
+      "type": "video-script",
+      "bytes": 402
+    },
+    {
+      "path": "bibles/voice-safety.md",
+      "type": "doc",
+      "bytes": 300
+    },
+    {
+      "path": "modules/m01-prospect-research/MODULE.md",
+      "type": "meta",
+      "bytes": 2032
+    },
+    {
+      "path": "modules/m01-prospect-research/assets/diagram-research-pipeline.svg",
+      "type": "diagram",
+      "bytes": 4229
+    },
+    {
+      "path": "modules/m01-prospect-research/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 854
+    },
+    {
+      "path": "modules/m01-prospect-research/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1484
+    },
+    {
+      "path": "modules/m01-prospect-research/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 56291
+    },
+    {
+      "path": "modules/m01-prospect-research/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 42788
+    },
+    {
+      "path": "modules/m01-prospect-research/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 40482
+    },
+    {
+      "path": "modules/m01-prospect-research/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 60929
+    },
+    {
+      "path": "modules/m01-prospect-research/lessons/l01-icp-signals-from-public-pages.md",
+      "type": "lesson",
+      "bytes": 1506
+    },
+    {
+      "path": "modules/m01-prospect-research/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8128
+    },
+    {
+      "path": "modules/m01-prospect-research/lessons/l02-account-briefs-that-fit-crm.md",
+      "type": "lesson",
+      "bytes": 1112
+    },
+    {
+      "path": "modules/m01-prospect-research/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8124
+    },
+    {
+      "path": "modules/m01-prospect-research/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8190
+    },
+    {
+      "path": "modules/m01-prospect-research/lessons/l03-trigger-events-without-stalking.md",
+      "type": "lesson",
+      "bytes": 1061
+    },
+    {
+      "path": "modules/m01-prospect-research/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8165
+    },
+    {
+      "path": "modules/m01-prospect-research/lessons/l04-research-quality-checklist.md",
+      "type": "lesson",
+      "bytes": 1012
+    },
+    {
+      "path": "modules/m02-human-outreach/MODULE.md",
+      "type": "meta",
+      "bytes": 1987
+    },
+    {
+      "path": "modules/m02-human-outreach/assets/diagram-human-outreach.svg",
+      "type": "diagram",
+      "bytes": 4223
+    },
+    {
+      "path": "modules/m02-human-outreach/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 865
+    },
+    {
+      "path": "modules/m02-human-outreach/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1484
+    },
+    {
+      "path": "modules/m02-human-outreach/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 40713
+    },
+    {
+      "path": "modules/m02-human-outreach/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 49319
+    },
+    {
+      "path": "modules/m02-human-outreach/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 48141
+    },
+    {
+      "path": "modules/m02-human-outreach/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 63460
+    },
+    {
+      "path": "modules/m02-human-outreach/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8121
+    },
+    {
+      "path": "modules/m02-human-outreach/lessons/l01-kill-the-ai-sales-accent.md",
+      "type": "lesson",
+      "bytes": 1056
+    },
+    {
+      "path": "modules/m02-human-outreach/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8133
+    },
+    {
+      "path": "modules/m02-human-outreach/lessons/l02-personalization-that-earns-a-reply.md",
+      "type": "lesson",
+      "bytes": 1014
+    },
+    {
+      "path": "modules/m02-human-outreach/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8103
+    },
+    {
+      "path": "modules/m02-human-outreach/lessons/l03-subject-lines-and-first-lines.md",
+      "type": "lesson",
+      "bytes": 1001
+    },
+    {
+      "path": "modules/m02-human-outreach/lessons/l04-channel-fit-email-linkedin-call.md",
+      "type": "lesson",
+      "bytes": 992
+    },
+    {
+      "path": "modules/m02-human-outreach/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8124
+    },
+    {
+      "path": "modules/m03-notes-to-crm/MODULE.md",
+      "type": "meta",
+      "bytes": 1943
+    },
+    {
+      "path": "modules/m03-notes-to-crm/assets/diagram-notes-crm.svg",
+      "type": "diagram",
+      "bytes": 4206
+    },
+    {
+      "path": "modules/m03-notes-to-crm/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 854
+    },
+    {
+      "path": "modules/m03-notes-to-crm/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1422
+    },
+    {
+      "path": "modules/m03-notes-to-crm/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 49002
+    },
+    {
+      "path": "modules/m03-notes-to-crm/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 79347
+    },
+    {
+      "path": "modules/m03-notes-to-crm/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 42698
+    },
+    {
+      "path": "modules/m03-notes-to-crm/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 42643
+    },
+    {
+      "path": "modules/m03-notes-to-crm/lessons/l01-call-notes-structure.md",
+      "type": "lesson",
+      "bytes": 849
+    },
+    {
+      "path": "modules/m03-notes-to-crm/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8131
+    },
+    {
+      "path": "modules/m03-notes-to-crm/lessons/l02-crm-fields-without-invention.md",
+      "type": "lesson",
+      "bytes": 863
+    },
+    {
+      "path": "modules/m03-notes-to-crm/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8090
+    },
+    {
+      "path": "modules/m03-notes-to-crm/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8110
+    },
+    {
+      "path": "modules/m03-notes-to-crm/lessons/l03-next-steps-owners-dates.md",
+      "type": "lesson",
+      "bytes": 818
+    },
+    {
+      "path": "modules/m03-notes-to-crm/lessons/l04-handoff-notes-sdr-to-ae.md",
+      "type": "lesson",
+      "bytes": 897
+    },
+    {
+      "path": "modules/m03-notes-to-crm/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8082
+    },
+    {
+      "path": "modules/m04-sequences-followups/MODULE.md",
+      "type": "meta",
+      "bytes": 1971
+    },
+    {
+      "path": "modules/m04-sequences-followups/assets/diagram-sequence-flow.svg",
+      "type": "diagram",
+      "bytes": 4226
+    },
+    {
+      "path": "modules/m04-sequences-followups/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 832
+    },
+    {
+      "path": "modules/m04-sequences-followups/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1437
+    },
+    {
+      "path": "modules/m04-sequences-followups/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 40679
+    },
+    {
+      "path": "modules/m04-sequences-followups/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 37300
+    },
+    {
+      "path": "modules/m04-sequences-followups/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 41904
+    },
+    {
+      "path": "modules/m04-sequences-followups/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 50066
+    },
+    {
+      "path": "modules/m04-sequences-followups/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8161
+    },
+    {
+      "path": "modules/m04-sequences-followups/lessons/l01-sequence-architecture.md",
+      "type": "lesson",
+      "bytes": 920
+    },
+    {
+      "path": "modules/m04-sequences-followups/lessons/l02-follow-up-cadence-and-value.md",
+      "type": "lesson",
+      "bytes": 872
+    },
+    {
+      "path": "modules/m04-sequences-followups/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8148
+    },
+    {
+      "path": "modules/m04-sequences-followups/lessons/l03-breakup-and-reengage.md",
+      "type": "lesson",
+      "bytes": 874
+    },
+    {
+      "path": "modules/m04-sequences-followups/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8144
+    },
+    {
+      "path": "modules/m04-sequences-followups/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8146
+    },
+    {
+      "path": "modules/m04-sequences-followups/lessons/l04-reply-handling-branches.md",
+      "type": "lesson",
+      "bytes": 948
+    },
+    {
+      "path": "modules/m05-objections-proposals/MODULE.md",
+      "type": "meta",
+      "bytes": 1918
+    },
+    {
+      "path": "modules/m05-objections-proposals/assets/diagram-objection-proposal.svg",
+      "type": "diagram",
+      "bytes": 4224
+    },
+    {
+      "path": "modules/m05-objections-proposals/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 854
+    },
+    {
+      "path": "modules/m05-objections-proposals/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1391
+    },
+    {
+      "path": "modules/m05-objections-proposals/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 43691
+    },
+    {
+      "path": "modules/m05-objections-proposals/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 35185
+    },
+    {
+      "path": "modules/m05-objections-proposals/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 89719
+    },
+    {
+      "path": "modules/m05-objections-proposals/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 80428
+    },
+    {
+      "path": "modules/m05-objections-proposals/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8124
+    },
+    {
+      "path": "modules/m05-objections-proposals/lessons/l01-objection-maps-with-ai.md",
+      "type": "lesson",
+      "bytes": 928
+    },
+    {
+      "path": "modules/m05-objections-proposals/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8111
+    },
+    {
+      "path": "modules/m05-objections-proposals/lessons/l02-proposal-one-pagers.md",
+      "type": "lesson",
+      "bytes": 826
+    },
+    {
+      "path": "modules/m05-objections-proposals/lessons/l03-deck-talk-tracks.md",
+      "type": "lesson",
+      "bytes": 836
+    },
+    {
+      "path": "modules/m05-objections-proposals/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8112
+    },
+    {
+      "path": "modules/m05-objections-proposals/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8143
+    },
+    {
+      "path": "modules/m05-objections-proposals/lessons/l04-pricing-language-without-overpromise.md",
+      "type": "lesson",
+      "bytes": 964
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/MODULE.md",
+      "type": "meta",
+      "bytes": 1916
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/assets/diagram-guardrails-voice.svg",
+      "type": "diagram",
+      "bytes": 4219
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 843
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1413
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 46978
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 38724
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 60014
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 40824
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/lessons/l01-brand-voice-locks.md",
+      "type": "lesson",
+      "bytes": 892
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8102
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/lessons/l02-compliance-and-claims.md",
+      "type": "lesson",
+      "bytes": 940
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8129
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8135
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/lessons/l03-what-not-to-automate.md",
+      "type": "lesson",
+      "bytes": 975
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8143
+    },
+    {
+      "path": "modules/m06-guardrails-compliance/lessons/l04-team-playbook-and-review.md",
+      "type": "lesson",
+      "bytes": 880
+    },
+    {
+      "path": "scripts/make_lesson_video.py",
+      "type": "other",
+      "bytes": 32154
+    },
+    {
+      "path": "scripts/themes_aso.py",
+      "type": "other",
+      "bytes": 46013
+    }
+  ],
+  "lessonVideos": {
+    "m01": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m01-prospect-research/lessons/assets/l01-video.mp4",
+        "modules/m01-prospect-research/lessons/assets/l02-video.mp4",
+        "modules/m01-prospect-research/lessons/assets/l03-video.mp4",
+        "modules/m01-prospect-research/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok Imagine not used)"
+    },
+    "m02": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m02-human-outreach/lessons/assets/l01-video.mp4",
+        "modules/m02-human-outreach/lessons/assets/l02-video.mp4",
+        "modules/m02-human-outreach/lessons/assets/l03-video.mp4",
+        "modules/m02-human-outreach/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok Imagine not used)"
+    },
+    "m03": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m03-notes-to-crm/lessons/assets/l01-video.mp4",
+        "modules/m03-notes-to-crm/lessons/assets/l02-video.mp4",
+        "modules/m03-notes-to-crm/lessons/assets/l03-video.mp4",
+        "modules/m03-notes-to-crm/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok Imagine not used)"
+    },
+    "m04": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m04-sequences-followups/lessons/assets/l01-video.mp4",
+        "modules/m04-sequences-followups/lessons/assets/l02-video.mp4",
+        "modules/m04-sequences-followups/lessons/assets/l03-video.mp4",
+        "modules/m04-sequences-followups/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok Imagine not used)"
+    },
+    "m05": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m05-objections-proposals/lessons/assets/l01-video.mp4",
+        "modules/m05-objections-proposals/lessons/assets/l02-video.mp4",
+        "modules/m05-objections-proposals/lessons/assets/l03-video.mp4",
+        "modules/m05-objections-proposals/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok Imagine not used)"
+    },
+    "m06": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m06-guardrails-compliance/lessons/assets/l01-video.mp4",
+        "modules/m06-guardrails-compliance/lessons/assets/l02-video.mp4",
+        "modules/m06-guardrails-compliance/lessons/assets/l03-video.mp4",
+        "modules/m06-guardrails-compliance/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok Imagine not used)"
+    }
+  },
+  "lessonVideosNote": "All 24 lesson theme MP4s present (m01\u2013m06). Generated via local motion-graphics pipeline (Pillow + ffmpeg); Grok Imagine not used.",
+  "coverImage": "assets/images/ai-sales-outreach-cover.png"
+}

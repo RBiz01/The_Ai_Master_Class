@@ -376,6 +376,69 @@
       "image": "images/courses/ai-strategy-creators.png",
       "hasContent": true,
       "contentPath": "content/ai-strategy-creators/"
+    },
+    {
+      "id": "ai-sales-outreach",
+      "title": "AI for Sales & Outreach",
+      "tagline": "Research, sequences, and CRM-safe messaging that still sound human",
+      "description": "A practical sales OS with AI\u2014prospect research, personalized outreach, call notes to CRM, follow-up sequences, proposals, and brand/compliance guardrails. Built for SDRs, AEs, and founders who sell.",
+      "level": "Beginner",
+      "duration": "6 hours",
+      "lessons": 24,
+      "price": 89,
+      "compareAtPrice": 119,
+      "category": [
+        "Productivity",
+        "Strategy"
+      ],
+      "featured": true,
+      "rating": 4.7,
+      "reviewCount": 210,
+      "gradient": [
+        "#3b82f6",
+        "#f59e0b"
+      ],
+      "video": {
+        "poster": "images/courses/ai-sales-outreach.png",
+        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+      },
+      "curriculum": [
+        "AI-assisted prospect research",
+        "Outreach that doesn\u2019t sound robotic",
+        "Call & meeting notes to CRM",
+        "Sequences & smart follow-ups",
+        "Objections, proposals & decks",
+        "Guardrails, compliance & brand voice"
+      ],
+      "reviews": [
+        {
+          "name": "Alex Rivera",
+          "stars": 5,
+          "text": "Our SDRs stopped sending robotic AI emails in a week. The CRM notes module alone was worth it.",
+          "date": "2026-08-12"
+        },
+        {
+          "name": "Samira Patel",
+          "stars": 5,
+          "text": "Finally a sales+AI course that won\u2019t get you in trouble with Legal. Guardrails are practical.",
+          "date": "2026-07-28"
+        },
+        {
+          "name": "Chris Nguyen",
+          "stars": 4,
+          "text": "Strong on sequences and personalization. Wanted one more proposal template\u2014still shipped faster.",
+          "date": "2026-06-19"
+        },
+        {
+          "name": "Jordan Lee",
+          "stars": 5,
+          "text": "Founder-seller here. Research \u2192 outreach \u2192 follow-up OS is exactly what I needed.",
+          "date": "2026-05-30"
+        }
+      ],
+      "image": "images/courses/ai-sales-outreach.png",
+      "hasContent": true,
+      "contentPath": "content/ai-sales-outreach/"
     }
   ]
 }
