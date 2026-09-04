@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Course content · The Ai Master Class</title>
+<meta name="description" content="Browse published course curricula for The Ai Master Class." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg:#07070c; --card:#14151f; --border:#1e293b;
+  --text:#e8eaf2; --muted:#94a3b8; --accent:#7c5cff; --accent2:#00e5c0;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"DM Sans",system-ui,sans-serif;background:
+  radial-gradient(1000px 500px at 0% -10%,rgba(124,92,255,.16),transparent),
+  radial-gradient(800px 400px at 100% 0%,rgba(0,229,192,.1),transparent),
+  var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+a{color:var(--accent2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:960px;margin:0 auto;padding:28px 20px 72px}
+.top{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;margin-bottom:28px}
+.brand{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:600;color:var(--text)}
+.brand span{opacity:.55;font-weight:500;font-size:.9rem;margin-left:8px}
+.nav a{color:var(--muted);margin-left:14px;font-size:.92rem}
+.nav a:hover{color:var(--accent2)}
+h1{font-family:"Space Grotesk",system-ui,sans-serif;font-size:clamp(1.7rem,3vw,2.3rem);letter-spacing:-.02em;margin:0 0 .5rem}
+.lead{color:var(--muted);margin:0 0 1.75rem;max-width:58ch}
+.grid{display:grid;gap:16px}
+.card{display:grid;grid-template-columns:160px 1fr;gap:18px;padding:16px;border:1px solid var(--border);border-radius:16px;background:var(--card);align-items:center}
+@media(max-width:700px){.card{grid-template-columns:1fr}}
+.card img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:12px;border:1px solid var(--border);background:#0b0f19}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 12px}
+.pill{font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;padding:5px 9px;border-radius:999px;border:1px solid rgba(124,92,255,.35);background:rgba(124,92,255,.1);color:#c4b5fd}
+.pill.ok{border-color:rgba(0,229,192,.35);background:rgba(0,229,192,.08);color:var(--accent2)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:12px;font-weight:600;border:1px solid transparent}
+.btn-primary{background:linear-gradient(135deg,var(--accent),#5b8cff);color:#fff;box-shadow:0 10px 30px rgba(124,92,255,.35)}
+.btn-primary:hover{text-decoration:none;filter:brightness(1.05)}
+.btn-ghost{border-color:var(--border);color:var(--text)}
+.btn-ghost:hover{border-color:var(--accent2);text-decoration:none}
+.empty{color:var(--muted);padding:24px;border:1px dashed var(--border);border-radius:14px}
+.footer{margin-top:40px;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="brand" href="../index.html">The Ai Master<span>Class</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../courses.html">Courses</a>
+      <a href="../cart.html">Checkout</a>
+    </nav>
+  </div>
+  <h1>Published curricula</h1>
+  <p class="lead">Open a course hub to work through modules, lessons, practice pages, and lesson videos.</p>
+  <div class="grid" id="list"><p class="empty">Loading…</p></div>
+  <p class="footer">© 2026 The Ai Master Class</p>
+</div>
+<script>
+(async () => {
+  const list = document.getElementById('list');
+  const root = (() => {
+    const s = document.currentScript;
+    // page lives at .../content/index.html → site root is ../
+    return new URL('../', location.href).href;
+  })();
+  try {
+    const res = await fetch(new URL('data/courses.json', root));
+    if (!res.ok) throw new Error('courses.json ' + res.status);
+    const data = await res.json();
+    const courses = (data.courses || []).filter((c) => c.hasContent);
+    if (!courses.length) {
+      list.innerHTML = '<p class="empty">No published course content yet. Browse the <a href="../courses.html">catalog</a>.</p>';
+      return;
+    }
+    list.innerHTML = courses.map((c) => {
+      const hub = new URL((c.contentPath || ('content/' + c.id + '/')).replace(/\/?$/, '/') + 'index.html', root).href;
+      const img = c.image ? new URL(c.image, root).href : '';
+      const learn = new URL('learn.html?id=' + encodeURIComponent(c.id), root).href;
+      return `<article class="card">
+        ${img ? `<img src="${img}" alt="" loading="lazy" />` : '<div></div>'}
+        <div>
+          <h2 style="margin:0;font-family:Space Grotesk,system-ui,sans-serif;font-size:1.2rem">${c.title}</h2>
+          <p style="margin:.35rem 0 0;color:var(--muted)">${c.tagline || ''}</p>
+          <div class="meta">
+            <span class="pill">${c.level || ''}</span>
+            <span class="pill ok">${c.duration || ''} · ${c.lessons || 0} lessons</span>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px">
+            <a class="btn btn-primary" href="${hub}">Open curriculum</a>
+            <a class="btn btn-ghost" href="${learn}">Learn router</a>
+            <a class="btn btn-ghost" href="${new URL('course.html?id=' + encodeURIComponent(c.id), root).href}">Course page</a>
+          </div>
+        </div>
+      </article>`;
+    }).join('');
+  } catch (e) {
+    console.error(e);
+    list.innerHTML = '<p class="empty">Could not load courses. Try the <a href="../courses.html">catalog</a>.</p>';
+  }
+})();
+</script>
+</body>
+</html>

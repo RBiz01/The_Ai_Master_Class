@@ -38,6 +38,7 @@ We are not a 3D model shop, printable marketplace, STL/OBJ host, decor catalog, 
 │   ├── course.js        Detail page
 │   └── cart.js          Checkout
 ├── data/courses.json    Single source of course truth
+├── content/index.html  Directory of published curricula
 ├── images/courses/      Cover images (`<id>.png`)
 ├── learn.html?id=       Curriculum router → content/<id>/ when published
 ├── content/<course-id>/ Published lesson packages (see below)
