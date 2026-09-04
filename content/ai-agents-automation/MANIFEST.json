@@ -1,0 +1,803 @@
+{
+  "courseId": "ai-agents-automation",
+  "title": "AI Agents & Automation Bootcamp",
+  "product": "The Ai Master Class",
+  "duration": "10 hours",
+  "durationPacingHours": 8,
+  "lessons": 32,
+  "pacing": "~1 hour per curriculum module \u00d7 8 modules",
+  "gradient": [
+    "#06b6d4",
+    "#6366f1"
+  ],
+  "moduleStatus": {
+    "m01-mental-models-architectures": "built",
+    "m02-tools-functions-api": "built",
+    "m03-planning-memory-state": "built",
+    "m04-human-in-the-loop": "built",
+    "m05-eval-failure-modes": "built",
+    "m06-nocode-lowcode-bridges": "built",
+    "m07-capstone-ship-agent": "built",
+    "m08-ops-cost-monitoring": "built"
+  },
+  "minuteBudget": {
+    "perModuleMinutes": 60,
+    "courseTotalHours": 8,
+    "m01": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m02": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m03": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m04": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m05": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m06": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m07": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m08": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    }
+  },
+  "typeTags": [
+    "meta",
+    "lesson",
+    "interactive",
+    "diagram",
+    "video-script",
+    "video",
+    "image",
+    "doc",
+    "stub",
+    "other"
+  ],
+  "files": [
+    {
+      "path": "COURSE.md",
+      "type": "meta",
+      "bytes": 4884
+    },
+    {
+      "path": "HANDOFF.md",
+      "type": "meta",
+      "bytes": 5451
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "meta",
+      "bytes": 16524
+    },
+    {
+      "path": "assets/images/ai-agents-automation-cover.png",
+      "type": "image",
+      "bytes": 27295
+    },
+    {
+      "path": "assets/intro-video-script.md",
+      "type": "video-script",
+      "bytes": 2256
+    },
+    {
+      "path": "assets/videos/PROMPTS.md",
+      "type": "video-script",
+      "bytes": 4692
+    },
+    {
+      "path": "bibles/video-style.txt",
+      "type": "other",
+      "bytes": 426
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/MODULE.md",
+      "type": "meta",
+      "bytes": 2054
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/assets/diagram-agent-loop.svg",
+      "type": "diagram",
+      "bytes": 4454
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1273
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1911
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 21608
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 24472
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 57717
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 22794
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/lessons/l01-agent-vs-chatbot-vs-script.md",
+      "type": "lesson",
+      "bytes": 2068
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 7115
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8018
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/lessons/l02-sense-plan-act-observe.md",
+      "type": "lesson",
+      "bytes": 1926
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6974
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/lessons/l03-single-vs-multi-agent.md",
+      "type": "lesson",
+      "bytes": 1872
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6979
+    },
+    {
+      "path": "modules/m01-mental-models-architectures/lessons/l04-when-not-to-agent.md",
+      "type": "lesson",
+      "bytes": 1767
+    },
+    {
+      "path": "modules/m02-tools-functions-api/MODULE.md",
+      "type": "meta",
+      "bytes": 1983
+    },
+    {
+      "path": "modules/m02-tools-functions-api/assets/diagram-tool-wiring.svg",
+      "type": "diagram",
+      "bytes": 4457
+    },
+    {
+      "path": "modules/m02-tools-functions-api/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1264
+    },
+    {
+      "path": "modules/m02-tools-functions-api/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1851
+    },
+    {
+      "path": "modules/m02-tools-functions-api/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 45572
+    },
+    {
+      "path": "modules/m02-tools-functions-api/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 25751
+    },
+    {
+      "path": "modules/m02-tools-functions-api/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 45589
+    },
+    {
+      "path": "modules/m02-tools-functions-api/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 24654
+    },
+    {
+      "path": "modules/m02-tools-functions-api/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8011
+    },
+    {
+      "path": "modules/m02-tools-functions-api/lessons/l01-tool-schemas-models-call.md",
+      "type": "lesson",
+      "bytes": 1675
+    },
+    {
+      "path": "modules/m02-tools-functions-api/lessons/l02-function-calling-patterns.md",
+      "type": "lesson",
+      "bytes": 1664
+    },
+    {
+      "path": "modules/m02-tools-functions-api/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8114
+    },
+    {
+      "path": "modules/m02-tools-functions-api/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6974
+    },
+    {
+      "path": "modules/m02-tools-functions-api/lessons/l03-wiring-apis-safely.md",
+      "type": "lesson",
+      "bytes": 1563
+    },
+    {
+      "path": "modules/m02-tools-functions-api/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6958
+    },
+    {
+      "path": "modules/m02-tools-functions-api/lessons/l04-tool-selection-routing.md",
+      "type": "lesson",
+      "bytes": 1580
+    },
+    {
+      "path": "modules/m03-planning-memory-state/MODULE.md",
+      "type": "meta",
+      "bytes": 1915
+    },
+    {
+      "path": "modules/m03-planning-memory-state/assets/diagram-memory-state.svg",
+      "type": "diagram",
+      "bytes": 4455
+    },
+    {
+      "path": "modules/m03-planning-memory-state/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1247
+    },
+    {
+      "path": "modules/m03-planning-memory-state/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1764
+    },
+    {
+      "path": "modules/m03-planning-memory-state/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 50816
+    },
+    {
+      "path": "modules/m03-planning-memory-state/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 48299
+    },
+    {
+      "path": "modules/m03-planning-memory-state/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 25768
+    },
+    {
+      "path": "modules/m03-planning-memory-state/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 23668
+    },
+    {
+      "path": "modules/m03-planning-memory-state/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6953
+    },
+    {
+      "path": "modules/m03-planning-memory-state/lessons/l01-planning-strategies.md",
+      "type": "lesson",
+      "bytes": 1626
+    },
+    {
+      "path": "modules/m03-planning-memory-state/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 7017
+    },
+    {
+      "path": "modules/m03-planning-memory-state/lessons/l02-short-vs-long-memory.md",
+      "type": "lesson",
+      "bytes": 1626
+    },
+    {
+      "path": "modules/m03-planning-memory-state/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 7664
+    },
+    {
+      "path": "modules/m03-planning-memory-state/lessons/l03-state-machines-runs.md",
+      "type": "lesson",
+      "bytes": 1544
+    },
+    {
+      "path": "modules/m03-planning-memory-state/lessons/l04-context-compression.md",
+      "type": "lesson",
+      "bytes": 1592
+    },
+    {
+      "path": "modules/m03-planning-memory-state/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 7963
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/MODULE.md",
+      "type": "meta",
+      "bytes": 1833
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/assets/diagram-hitl-gates.svg",
+      "type": "diagram",
+      "bytes": 4440
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1251
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1750
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 41873
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 22145
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 26214
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 42088
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6963
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/lessons/l01-when-to-pause.md",
+      "type": "lesson",
+      "bytes": 1598
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/lessons/l02-approval-gates-risk.md",
+      "type": "lesson",
+      "bytes": 1617
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 6947
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/lessons/l03-escalation-paths.md",
+      "type": "lesson",
+      "bytes": 1520
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8098
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 7947
+    },
+    {
+      "path": "modules/m04-human-in-the-loop/lessons/l04-review-ui-design.md",
+      "type": "lesson",
+      "bytes": 1543
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/MODULE.md",
+      "type": "meta",
+      "bytes": 1877
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/assets/diagram-eval-harness.svg",
+      "type": "diagram",
+      "bytes": 4451
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1259
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1794
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 39065
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 24909
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 42362
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 21522
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/lessons/l01-failure-taxonomy.md",
+      "type": "lesson",
+      "bytes": 1555
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 7015
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/lessons/l02-building-eval-harnesses.md",
+      "type": "lesson",
+      "bytes": 1537
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 7945
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6977
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/lessons/l03-tracing-observability.md",
+      "type": "lesson",
+      "bytes": 1533
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6979
+    },
+    {
+      "path": "modules/m05-eval-failure-modes/lessons/l04-regression-suites.md",
+      "type": "lesson",
+      "bytes": 1472
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/MODULE.md",
+      "type": "meta",
+      "bytes": 1944
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/assets/diagram-nocode-bridge.svg",
+      "type": "diagram",
+      "bytes": 4413
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1257
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1771
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 45313
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 27140
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 26814
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 42883
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6959
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/lessons/l01-when-nocode-fits.md",
+      "type": "lesson",
+      "bytes": 1604
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/lessons/l02-bridging-agents-workflows.md",
+      "type": "lesson",
+      "bytes": 1583
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 7980
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 7922
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/lessons/l03-triggers-webhooks-queues.md",
+      "type": "lesson",
+      "bytes": 1531
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/lessons/l04-citizen-automation-governance.md",
+      "type": "lesson",
+      "bytes": 1551
+    },
+    {
+      "path": "modules/m06-nocode-lowcode-bridges/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6960
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/MODULE.md",
+      "type": "meta",
+      "bytes": 1807
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/assets/diagram-capstone-pipeline.svg",
+      "type": "diagram",
+      "bytes": 4428
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1252
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1720
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 43134
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 38156
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 28439
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 22930
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 7951
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/lessons/l01-spec-acme-ops-agent.md",
+      "type": "lesson",
+      "bytes": 1601
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/lessons/l02-build-tool-belt.md",
+      "type": "lesson",
+      "bytes": 1492
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 6967
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/lessons/l03-add-hitl-evals.md",
+      "type": "lesson",
+      "bytes": 1484
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6946
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 6960
+    },
+    {
+      "path": "modules/m07-capstone-ship-agent/lessons/l04-ship-checklist-demo.md",
+      "type": "lesson",
+      "bytes": 1552
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/MODULE.md",
+      "type": "meta",
+      "bytes": 1802
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/assets/diagram-ops-cost.svg",
+      "type": "diagram",
+      "bytes": 4435
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1256
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1711
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 23969
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 38871
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 25125
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 24803
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/lessons/l01-cost-drivers.md",
+      "type": "lesson",
+      "bytes": 1468
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 6966
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 7949
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/lessons/l02-rate-limits-budgets.md",
+      "type": "lesson",
+      "bytes": 1448
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 6969
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/lessons/l03-monitoring-dashboards.md",
+      "type": "lesson",
+      "bytes": 1482
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/lessons/l04-incident-response-agents.md",
+      "type": "lesson",
+      "bytes": 1564
+    },
+    {
+      "path": "modules/m08-ops-cost-monitoring/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 7901
+    },
+    {
+      "path": "scripts/build_course.py",
+      "type": "other",
+      "bytes": 40443
+    },
+    {
+      "path": "scripts/curriculum.py",
+      "type": "other",
+      "bytes": 41786
+    },
+    {
+      "path": "scripts/make_lesson_video.py",
+      "type": "other",
+      "bytes": 20936
+    }
+  ]
+}

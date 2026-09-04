@@ -245,7 +245,9 @@
           "date": "2026-05-21"
         }
       ],
-      "image": "images/courses/ai-agents-automation.png"
+      "image": "images/courses/ai-agents-automation.png",
+      "hasContent": true,
+      "contentPath": "content/ai-agents-automation/"
     },
     {
       "id": "no-code-ml-intuition",

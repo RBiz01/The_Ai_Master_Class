@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Trigger → agent → workflow bridge</title>
+  <desc id="desc">Module 6 diagram for No-code and low-code automation bridges.</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#121826"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#06b6d4"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  <circle cx="120" cy="80" r="90" fill="#06b6d4" opacity="0.12"/>
+  <circle cx="860" cy="460" r="110" fill="#6366f1" opacity="0.10"/>
+  <text x="48" y="52" font-family="DM Sans, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e2e8f0">Trigger → agent → workflow bridge</text>
+  <text x="48" y="78" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#94a3b8">Acme Ops · Module 6 · No/low-code bridges</text>
+  
+  <rect x="48" y="120" width="200" height="160" rx="16" fill="#121826" stroke="#06b6d4" stroke-width="2"/>
+  <text x="68" y="152" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#06b6d4">TRIGGER</text>
+  <text x="68" y="182" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">webhook</text>
+  <text x="68" y="236" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#94a3b8">SaaS event</text>
+
+  <rect x="268" y="120" width="200" height="160" rx="16" fill="#121826" stroke="#22d3ee" stroke-width="2"/>
+  <text x="288" y="152" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#22d3ee">QUEUE</text>
+  <text x="288" y="182" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">idempotent</text>
+  <text x="288" y="236" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#94a3b8">DLQ</text>
+
+  <rect x="488" y="120" width="200" height="160" rx="16" fill="#121826" stroke="#818cf8" stroke-width="2"/>
+  <text x="508" y="152" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#818cf8">AGENT</text>
+  <text x="508" y="182" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">fuzzy middle</text>
+  <text x="508" y="236" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#94a3b8">JSON out</text>
+
+  <rect x="708" y="120" width="200" height="160" rx="16" fill="#121826" stroke="#6366f1" stroke-width="2"/>
+  <text x="728" y="152" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#6366f1">WORKFLOW</text>
+  <text x="728" y="182" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">branch</text>
+  <text x="728" y="236" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#94a3b8">no-code</text>
+
+  <line x1="248" y1="200" x2="268" y2="200" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrow)"/><line x1="468" y1="200" x2="488" y2="200" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrow)"/><line x1="688" y1="200" x2="708" y2="200" stroke="#818cf8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="280" y="360" width="400" height="100" rx="18" fill="#0a0e16" stroke="url(#accentGrad)" stroke-width="2" filter="url(#glow)"/>
+  <text x="480" y="400" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="16" font-weight="700" fill="#e2e8f0">Reliable agent behavior</text>
+  <text x="480" y="426" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="13" fill="#94a3b8">Research · decide · act — with brakes</text>
+  <text x="48" y="510" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#64748b">The Ai Master Class · AI Agents &amp; Automation Bootcamp · Module 6</text>
+</svg>
