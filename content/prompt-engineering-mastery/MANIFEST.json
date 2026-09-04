@@ -1,0 +1,481 @@
+{
+  "courseId": "prompt-engineering-mastery",
+  "title": "Prompt Engineering Mastery",
+  "product": "The Ai Master Class",
+  "duration": "6 hours",
+  "lessons": 24,
+  "pacing": "~1 hour per curriculum module \u00d7 6 modules",
+  "gradient": [
+    "#7c5cff",
+    "#00e5c0"
+  ],
+  "moduleStatus": {
+    "m01-foundations-of-clear-instruction": "built",
+    "m02-roles-constraints-output-formats": "built",
+    "m03-few-shot-exemplars": "built",
+    "m04-chain-of-thought-decomposition": "built",
+    "m05-evaluation-rubrics-iteration": "built",
+    "m06-prompt-libraries-workflows": "built"
+  },
+  "minuteBudget": {
+    "perModuleMinutes": 60,
+    "courseTotalHours": 6,
+    "m01": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m02": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m03": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m04": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m05": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m06": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    }
+  },
+  "typeTags": [
+    "meta",
+    "lesson",
+    "interactive",
+    "diagram",
+    "video-script",
+    "image",
+    "doc",
+    "stub",
+    "other"
+  ],
+  "files": [
+    {
+      "path": "COURSE.md",
+      "type": "meta",
+      "bytes": 4389
+    },
+    {
+      "path": "HANDOFF.md",
+      "type": "meta",
+      "bytes": 4392
+    },
+    {
+      "path": "assets/images/prompt-engineering-mastery-cover.png",
+      "type": "image",
+      "bytes": 193091
+    },
+    {
+      "path": "assets/intro-video-script.md",
+      "type": "video-script",
+      "bytes": 2460
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/MODULE.md",
+      "type": "meta",
+      "bytes": 2386
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/assets/diagram-clear-prompt.svg",
+      "type": "diagram",
+      "bytes": 6143
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 2441
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 2314
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8626
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/lessons/l01-what-makes-a-prompt-clear.md",
+      "type": "lesson",
+      "bytes": 2810
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8894
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/lessons/l02-the-goal-context-constraints-frame.md",
+      "type": "lesson",
+      "bytes": 2757
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 9080
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/lessons/l03-specificity-without-overfitting.md",
+      "type": "lesson",
+      "bytes": 2773
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/lessons/l04-common-failure-modes.md",
+      "type": "lesson",
+      "bytes": 2565
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 9170
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/MODULE.md",
+      "type": "meta",
+      "bytes": 2487
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/assets/diagram-roles-constraints-formats.svg",
+      "type": "diagram",
+      "bytes": 5280
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 2517
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 2302
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8419
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/lessons/l01-role-prompting-that-helps.md",
+      "type": "lesson",
+      "bytes": 3014
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/lessons/l02-hard-vs-soft-constraints.md",
+      "type": "lesson",
+      "bytes": 2861
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8613
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8390
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/lessons/l03-tables-json-checklists.md",
+      "type": "lesson",
+      "bytes": 2795
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8418
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/lessons/l04-tone-audience-brand-locks.md",
+      "type": "lesson",
+      "bytes": 2829
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/MODULE.md",
+      "type": "meta",
+      "bytes": 2377
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/assets/diagram-exemplar-anatomy.svg",
+      "type": "diagram",
+      "bytes": 4759
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 2155
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 2141
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8425
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/lessons/l01-zero-vs-few-shot.md",
+      "type": "lesson",
+      "bytes": 2737
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8605
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/lessons/l02-writing-exemplars.md",
+      "type": "lesson",
+      "bytes": 2664
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/lessons/l03-contrast-sets.md",
+      "type": "lesson",
+      "bytes": 2416
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8593
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 9137
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/lessons/l04-token-budget-quality.md",
+      "type": "lesson",
+      "bytes": 2384
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/MODULE.md",
+      "type": "meta",
+      "bytes": 2409
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/assets/diagram-decompose-flow.svg",
+      "type": "diagram",
+      "bytes": 5755
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1824
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 2118
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8826
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/lessons/l01-when-to-ask-for-reasoning.md",
+      "type": "lesson",
+      "bytes": 2475
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 7886
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/lessons/l02-plan-then-answer.md",
+      "type": "lesson",
+      "bytes": 1966
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/lessons/l03-decomposing-multistep.md",
+      "type": "lesson",
+      "bytes": 1949
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8134
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 7588
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/lessons/l04-self-checks-verification.md",
+      "type": "lesson",
+      "bytes": 1954
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/MODULE.md",
+      "type": "meta",
+      "bytes": 2258
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/assets/diagram-eval-loop.svg",
+      "type": "diagram",
+      "bytes": 4716
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1499
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1905
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8436
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/lessons/l01-rubrics-beat-vibes.md",
+      "type": "lesson",
+      "bytes": 1946
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8013
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/lessons/l02-tiny-golden-set.md",
+      "type": "lesson",
+      "bytes": 1763
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8045
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/lessons/l03-iterate-without-rewrite.md",
+      "type": "lesson",
+      "bytes": 1722
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8250
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/lessons/l04-model-agnostic-eval.md",
+      "type": "lesson",
+      "bytes": 1957
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/MODULE.md",
+      "type": "meta",
+      "bytes": 2512
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/assets/diagram-library-taxonomy.svg",
+      "type": "diagram",
+      "bytes": 4594
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 1535
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 2035
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/assets/starter-library.md",
+      "type": "doc",
+      "bytes": 2199
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/lessons/l01-cataloging-reusable-prompts.md",
+      "type": "lesson",
+      "bytes": 1853
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 7968
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/lessons/l02-email-notes-status-kits.md",
+      "type": "lesson",
+      "bytes": 1744
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8375
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 7433
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/lessons/l03-research-synthesis-kits.md",
+      "type": "lesson",
+      "bytes": 1602
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8979
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/lessons/l04-versioning-handoff-governance.md",
+      "type": "lesson",
+      "bytes": 1931
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "meta",
+      "bytes": 13117
+    }
+  ]
+}

@@ -39,6 +39,8 @@ We are not a 3D model shop, printable marketplace, STL/OBJ host, decor catalog, 
 │   └── cart.js          Checkout
 ├── data/courses.json    Single source of course truth
 ├── images/courses/      Cover images (`<id>.png`)
+├── learn.html?id=       Curriculum router → content/<id>/ when published
+├── content/<course-id>/ Published lesson packages (see below)
 ├── BIBLE.md             This file
 ├── README.md
 └── SUMMARY.md
@@ -107,6 +109,66 @@ Add new category strings to the top-level `categories` array when needed.
 - Detail page shows the cover above/beside the trailer when `image` is set.
 - Prefer 16:10-ish crops; keep file sizes reasonable for GitHub Pages.
 
+
+## Course content packages (`content/<course-id>/`)
+
+Course Building handoffs land as a **full mirror** under `content/<course-id>/`. Catalog metadata stays in `data/courses.json`; lesson bodies live in the content tree.
+
+### Layout
+
+```
+content/<course-id>/
+  COURSE.md              Course overview (from builders)
+  HANDOFF.md             Publish instructions from Course Building
+  MANIFEST.json          File inventory + module status
+  outline.json           Learner outline (modules → lessons → paths)
+  index.html             Dark-theme curriculum hub (Start learning)
+  assets/                Course-level scripts / cover source
+  modules/<module-slug>/
+    MODULE.md
+    lessons/<lesson>.md          Source markdown
+    lessons/<lesson>.html        Rendered lesson page (Pages)
+    lessons/<lXX>-interactive.html  Practice (static HTML)
+    assets/*.svg                 Diagrams
+    assets/*-video-script.md     Talk-over scripts (no MP4s required)
+```
+
+### How Course Building handoffs publish
+
+1. Copy the package from `/workspace/courses/<course-id>/` → `content/<course-id>/` (full mirror).
+2. Copy the cover into `images/courses/<course-id>.png`; keep `courses.json` `image` + `video.poster` on that path.
+3. Generate `outline.json` + lesson HTML hub (`index.html`) if not already present.
+4. Set on the course object in `data/courses.json`:
+   - `hasContent`: `true`
+   - `contentPath`: `"content/<course-id>/"`
+5. Do **not** change `duration` / `lessons` unless Course Building explicitly resizes the catalog.
+6. Keep sample trailer MP4s until real recordings exist (scripts-only is OK).
+7. Commit + push `main` (no force). Wait for Pages `built`.
+
+### Learner URLs
+
+| Surface | URL |
+|---------|-----|
+| Curriculum hub | `content/<course-id>/index.html` |
+| Router | `learn.html?id=<course-id>` → redirects to hub when `hasContent` |
+| Lesson | `content/<course-id>/modules/<module>/lessons/<lesson>.html` |
+| Practice | `…/lessons/<lXX>-interactive.html` |
+| Course detail CTA | `course.html?id=<course-id>` shows **Start learning / Open curriculum** when `contentPath` or `hasContent` is set |
+
+Relative asset paths must resolve under **`/The_Ai_Master_Class/`**.
+
+### Content verification (add to live checklist)
+
+```bash
+BASE=https://rbiz01.github.io/The_Ai_Master_Class
+CID=prompt-engineering-mastery
+curl -sI "$BASE/content/$CID/index.html" | head -1
+curl -sI "$BASE/content/$CID/outline.json" | head -1
+# sample lesson + interactive (paths from outline.json)
+curl -sI "$BASE/learn.html?id=$CID" | head -1
+curl -s "$BASE/data/courses.json" | python3 -c "import sys,json; c=[x for x in json.load(sys.stdin)['courses'] if x['id']=='$CID'][0]; assert c.get('hasContent') and c.get('contentPath'); assert c['duration']=='6 hours' and c['lessons']==24"
+```
+
 ## Deploy / GitHub Pages
 
 - Source: branch `main`, folder `/ (root)`.
@@ -133,8 +195,11 @@ curl -s "$BASE/data/courses.json" | python3 -m json.tool >/dev/null
 curl -s "$BASE/" | grep -q "The Ai Master Class"
 ! curl -s "$BASE/" | grep -qi "Fuzzy Chainsaw"
 curl -s "$BASE/BIBLE.md" | grep -q "github.com/RBiz01/The_Ai_Master_Class"
+curl -sI "$BASE/content/prompt-engineering-mastery/index.html" | head -1   # 200 when published
+curl -sI "$BASE/learn.html?id=prompt-engineering-mastery" | head -1
 
 # Parse: N courses, unique ids, reviews 4–5 only, each has video + image
+# For courses with hasContent: contentPath hub returns 200; duration/lessons unchanged
 ```
 
 Also:

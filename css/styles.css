@@ -1070,3 +1070,9 @@ code { font-size: 0.9em; color: var(--accent-2); }
     padding: 0.22rem 0.45rem;
   }
 }
+
+
+/* Published curriculum CTA on course detail */
+.curriculum-cta { margin: 0 0 1rem; }
+.buy-actions { flex-wrap: wrap; }
+.buy-actions .btn { text-align: center; }

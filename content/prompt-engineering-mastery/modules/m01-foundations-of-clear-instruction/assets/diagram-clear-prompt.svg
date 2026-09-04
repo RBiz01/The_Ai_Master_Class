@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Clear prompt frame: Goal, Context, Constraints, Format</title>
+  <desc id="desc">Four labeled panels showing Goal, Context, Constraints, and Format flowing into a reliable output.</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#121826"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c5cff"/>
+      <stop offset="100%" stop-color="#00e5c0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#00e5c0"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  <circle cx="120" cy="80" r="90" fill="#7c5cff" opacity="0.12"/>
+  <circle cx="860" cy="460" r="110" fill="#00e5c0" opacity="0.10"/>
+
+  <text x="48" y="52" font-family="DM Sans, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e2e8f0">Clear Prompt Frame</text>
+  <text x="48" y="78" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#94a3b8">Goal · Context · Constraints · Format → reliable output</text>
+
+  <!-- Goal -->
+  <rect x="48" y="120" width="200" height="160" rx="16" fill="#121826" stroke="#7c5cff" stroke-width="2"/>
+  <text x="68" y="152" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#7c5cff">1 · GOAL</text>
+  <text x="68" y="182" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">What must exist</text>
+  <text x="68" y="204" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">when you&#39;re done?</text>
+  <text x="68" y="236" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#94a3b8">Observable outcome</text>
+  <text x="68" y="256" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#94a3b8">e.g. standup digest</text>
+
+  <!-- Context -->
+  <rect x="268" y="120" width="200" height="160" rx="16" fill="#121826" stroke="#8b7cff" stroke-width="2"/>
+  <text x="288" y="152" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#a78bfa">2 · CONTEXT</text>
+  <text x="288" y="182" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">Facts the model</text>
+  <text x="288" y="204" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">can&#39;t see</text>
+  <text x="288" y="236" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#94a3b8">Audience · systems</text>
+  <text x="288" y="256" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#94a3b8">dates · stakes</text>
+
+  <!-- Constraints -->
+  <rect x="488" y="120" width="200" height="160" rx="16" fill="#121826" stroke="#2dd4bf" stroke-width="2"/>
+  <text x="508" y="152" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#2dd4bf">3 · CONSTRAINTS</text>
+  <text x="508" y="182" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">Must / must-not</text>
+  <text x="508" y="204" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">limits</text>
+  <text x="508" y="236" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#94a3b8">Length · tone · do-nots</text>
+  <text x="508" y="256" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#94a3b8">priority if conflict</text>
+
+  <!-- Format -->
+  <rect x="708" y="120" width="200" height="160" rx="16" fill="#121826" stroke="#00e5c0" stroke-width="2"/>
+  <text x="728" y="152" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#00e5c0">4 · FORMAT</text>
+  <text x="728" y="182" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">Shape of the</text>
+  <text x="728" y="204" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">answer</text>
+  <text x="728" y="236" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#94a3b8">Bullets · table · JSON</text>
+  <text x="728" y="256" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#94a3b8">headers · schema</text>
+
+  <!-- arrows between boxes -->
+  <line x1="248" y1="200" x2="268" y2="200" stroke="#7c5cff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="468" y1="200" x2="488" y2="200" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="688" y1="200" x2="708" y2="200" stroke="#2dd4bf" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Output node -->
+  <rect x="280" y="360" width="400" height="100" rx="18" fill="#0a0e16" stroke="url(#accentGrad)" stroke-width="2" filter="url(#glow)"/>
+  <text x="480" y="400" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="16" font-weight="700" fill="#e2e8f0">Reliable output</text>
+  <text x="480" y="426" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="13" fill="#94a3b8">Same brief → consistent answers across models</text>
+
+  <line x1="148" y1="280" x2="360" y2="360" stroke="#7c5cff" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7"/>
+  <line x1="368" y1="280" x2="420" y2="360" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7"/>
+  <line x1="588" y1="280" x2="540" y2="360" stroke="#2dd4bf" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7"/>
+  <line x1="808" y1="280" x2="600" y2="360" stroke="#00e5c0" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7"/>
+
+  <text x="48" y="510" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#64748b">The Ai Master Class · Prompt Engineering Mastery · Module 1</text>
+</svg>

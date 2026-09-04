@@ -93,6 +93,13 @@
     )
     .join('');
 
+  const contentPath = course.contentPath || (course.hasContent ? `content/${course.id}/` : '');
+  const learnHref = contentPath ? FC.assetUrl(contentPath.replace(/\/?$/, '/') + 'index.html') : '';
+  const learnCTA = learnHref
+    ? `<a class="btn btn-primary btn-lg" href="${FC.escapeHtml(learnHref)}">Start learning</a>
+       <a class="btn btn-secondary btn-lg" href="${FC.escapeHtml(learnHref)}">Open curriculum</a>`
+    : '';
+
   root.innerHTML = `
 <nav class="breadcrumb"><a href="courses.html">Courses</a> / <span>${FC.escapeHtml(course.title)}</span></nav>
 <div class="course-hero-grid">
@@ -117,6 +124,7 @@
     </ul>
     <div class="buy-price">${priceHTML}</div>
     <div class="buy-actions">
+      ${learnCTA}
       <button type="button" class="btn btn-primary btn-lg" data-add="${FC.escapeHtml(course.id)}">Add to cart</button>
       <button type="button" class="btn btn-secondary btn-lg" id="buy-now">Enroll now</button>
     </div>
@@ -131,6 +139,7 @@
 
 <section class="section-block">
   <h2>Curriculum</h2>
+  ${learnHref ? `<p class="curriculum-cta"><a class="btn btn-primary" href="${FC.escapeHtml(learnHref)}">Open full curriculum &amp; lessons</a></p>` : ''}
   <ol class="curriculum">${curriculum}</ol>
 </section>
 

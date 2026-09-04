@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Specificity dial · Prompt Engineering Mastery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg: #0b0f19;
+  --panel: #121826;
+  --border: #1e293b;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #7c5cff;
+  --accent2: #00e5c0;
+  --danger: #f87171;
+  --ok: #34d399;
+  --warn: #fbbf24;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh;
+  font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(124,92,255,.18), transparent),
+              radial-gradient(900px 500px at 100% 0%, rgba(0,229,192,.12), transparent),
+              var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+.wrap { max-width: 820px; margin: 0 auto; padding: 28px 20px 48px; }
+.badge {
+  display: inline-flex; gap: 8px; align-items: center;
+  font-size: 12px; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--accent2); background: rgba(0,229,192,.08);
+  border: 1px solid rgba(0,229,192,.25); padding: 6px 10px; border-radius: 999px;
+}
+h1 { font-size: 1.55rem; margin: 14px 0 8px; letter-spacing: -0.02em; }
+.sub { color: var(--muted); margin: 0 0 22px; }
+.card {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 14px; padding: 18px 18px 16px; margin-bottom: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,.25);
+}
+.card h2 { margin: 0 0 10px; font-size: 1rem; color: #fff; }
+.card ol { margin: 0; padding-left: 1.2rem; color: var(--text); }
+.card li { margin: 6px 0; }
+.prompt-box {
+  background: #0a0e16; border: 1px dashed #334155; border-radius: 10px;
+  padding: 12px 14px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .9rem; color: #cbd5e1; white-space: pre-wrap;
+}
+label { display: block; font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
+textarea, select, input[type=text] {
+  width: 100%; background: #0a0e16; color: var(--text);
+  border: 1px solid #334155; border-radius: 10px; padding: 12px 14px;
+  font: inherit; resize: vertical;
+}
+textarea:focus, select:focus, input:focus {
+  outline: none; border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(124,92,255,.25);
+}
+.row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+button {
+  appearance: none; border: 0; cursor: pointer;
+  background: linear-gradient(135deg, var(--accent), #5b8cff);
+  color: white; font-weight: 600; padding: 10px 16px; border-radius: 10px;
+}
+button.secondary {
+  background: transparent; border: 1px solid #334155; color: var(--text);
+}
+button:disabled { opacity: .5; cursor: not-allowed; }
+#feedback {
+  display: none; margin-top: 12px; padding: 12px 14px; border-radius: 10px;
+  border: 1px solid var(--border); font-size: .95rem;
+}
+#feedback.show { display: block; }
+#feedback.ok { background: rgba(52,211,153,.08); border-color: rgba(52,211,153,.35); color: #bbf7d0; }
+#feedback.bad { background: rgba(248,113,113,.08); border-color: rgba(248,113,113,.35); color: #fecaca; }
+#feedback.partial { background: rgba(251,191,36,.08); border-color: rgba(251,191,36,.35); color: #fde68a; }
+.success {
+  display: none; margin-top: 16px; padding: 14px 16px; border-radius: 12px;
+  border: 1px solid rgba(0,229,192,.4);
+  background: linear-gradient(135deg, rgba(124,92,255,.15), rgba(0,229,192,.1));
+}
+.success.show { display: block; }
+.success strong { color: var(--accent2); }
+.checks { list-style: none; padding: 0; margin: 8px 0 0; }
+.checks li { padding: 4px 0 4px 22px; position: relative; color: var(--muted); }
+.checks li:before { content: "○"; position: absolute; left: 0; }
+.checks li.pass { color: var(--ok); }
+.checks li.pass:before { content: "●"; }
+.hint { font-size: .85rem; color: var(--muted); margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge">Module 1 · Lesson 3 · Interactive</div>
+  <h1>Tune specificity without overfitting</h1>
+  <p class="sub">Move a mushy status rewrite into the goldilocks band.</p>
+
+  <div class="card">
+    <h2>Instructions</h2>
+    
+    <ol>
+      <li>Read the vague prompt and the fictional status snippet.</li>
+      <li>Select the <strong>Goldilocks</strong> band, then write a rewrite that locks decisions (audience, length, lead-with-risk) without brittle one-off wording.</li>
+      <li>Click <strong>Check dial</strong>.</li>
+      <li>Avoid synonym museums, forced rhymes, or “sound exactly like…” traps.</li>
+    </ol>
+
+  </div>
+
+  
+  <div class="card">
+    <h2>Starting prompt (too vague)</h2>
+    <div class="prompt-box">Make this status update better.</div>
+    <p class="hint">Source paste (fictional): “Portal still waiting on vendor SSL cert. Two tickets open. Team tired. Ship soon?”</p>
+  </div>
+  <div class="card">
+    <h2>Tune the specificity dial</h2>
+    <label for="level">Choose target band</label>
+    <select id="level">
+      <option value="">Select…</option>
+      <option value="vague">Still vague</option>
+      <option value="gold">Goldilocks (specific, reusable)</option>
+      <option value="over">Overfitted</option>
+    </select>
+    <label for="editor" style="margin-top:10px">Your rewrite</label>
+    <textarea id="editor" rows="7" placeholder="Rewrite for the goldilocks band…"></textarea>
+    <div class="row">
+      <button type="button" id="check">Check dial</button>
+      <button type="button" class="secondary" id="reset">Reset</button>
+    </div>
+  </div>
+
+
+  <div id="feedback" role="status" aria-live="polite"></div>
+
+  <div class="card" style="margin-top:16px">
+    <h2>You're done when</h2>
+    <ul class="checks" id="criteria">
+      
+      <li id="c1">You selected the Goldilocks band</li>
+      <li id="c2">Rewrite names audience or channel (execs, standup, email)</li>
+      <li id="c3">Rewrite sets a length or structure limit</li>
+      <li id="c4">Rewrite avoids overfitting tells (exact wording museums, forced gimmicks)</li>
+
+    </ul>
+  </div>
+
+  <div class="success" id="success">
+    <strong>Nice work.</strong> Clarity unlocked for this drill. Capture one takeaway, then continue the module.
+  </div>
+</div>
+<script>
+
+const feedback = document.getElementById('feedback');
+const success = document.getElementById('success');
+document.getElementById('reset').onclick = () => {
+  level.value = ''; editor.value = '';
+  feedback.className=''; feedback.textContent=''; feedback.classList.remove('show');
+  success.classList.remove('show');
+  ['c1','c2','c3','c4'].forEach(id => document.getElementById(id).classList.remove('pass'));
+};
+document.getElementById('check').onclick = () => {
+  const band = level.value;
+  const t = editor.value.toLowerCase();
+  if (!band) {
+    feedback.className = 'show bad';
+    feedback.textContent = 'Pick a specificity band first.';
+    return;
+  }
+  if (t.trim().length < 30) {
+    feedback.className = 'show bad';
+    feedback.textContent = 'Write a fuller rewrite before checking.';
+    return;
+  }
+  const overfitTell = /(exactly like|synerg|rhyme|use the word|comma placement|sound exactly|mirror jordan)/.test(t);
+  const c1 = band === 'gold';
+  const c2 = /(exec|standup|stand-up|email|stakeholder|ops|leadership|manager)/.test(t);
+  const c3 = /(word|bullet|max |under |≤|<=|lead with|section|header|120|100|80)/.test(t);
+  const c4 = !overfitTell && band !== 'over';
+  // If they chose overfitted band intentionally, fail gold path
+  if (band === 'over' || band === 'vague') {
+    document.getElementById('c1').classList.remove('pass');
+    feedback.className = 'show bad';
+    feedback.textContent = band === 'over'
+      ? 'Overfitted band selected — switch to Goldilocks and remove brittle one-off rules.'
+      : 'Still marked vague — choose Goldilocks and lock audience + limits.';
+    success.classList.remove('show');
+    ['c2','c3','c4'].forEach(id => document.getElementById(id).classList.remove('pass'));
+    return;
+  }
+  if (overfitTell) {
+    document.getElementById('c1').classList.add('pass');
+    document.getElementById('c4').classList.remove('pass');
+    feedback.className = 'show partial';
+    feedback.textContent = 'You’re in the right band idea, but the rewrite has overfitting tells. Drop forced wording rules.';
+    success.classList.remove('show');
+  }
+  const map = {c1, c2, c3, c4};
+  Object.entries(map).forEach(([id, ok]) => document.getElementById(id).classList.toggle('pass', ok));
+  if (c1 && c2 && c3 && c4) {
+    feedback.className = 'show ok';
+    feedback.textContent = 'Goldilocks locked: specific where it matters, flexible where it doesn’t.';
+    success.classList.add('show');
+  } else if (c1) {
+    feedback.className = 'show partial';
+    feedback.textContent = 'Band is right — add audience and a reusable length/structure limit.';
+    success.classList.remove('show');
+  }
+};
+
+</script>
+</body>
+</html>

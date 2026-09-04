@@ -12,7 +12,7 @@
       "id": "prompt-engineering-mastery",
       "title": "Prompt Engineering Mastery",
       "tagline": "Write prompts that reliably get the answer you want",
-      "description": "Master the craft of instructing large language models. Learn frameworks for clarity, constraints, chain-of-thought, few-shot patterns, and evaluation loops so your prompts work across ChatGPT, Claude, Gemini, and open models. Built for practitioners who want reproducible results\u2014not lucky one-offs.",
+      "description": "Master the craft of instructing large language models. Learn frameworks for clarity, constraints, chain-of-thought, few-shot patterns, and evaluation loops so your prompts work across ChatGPT, Claude, Gemini, and open models. Built for practitioners who want reproducible results—not lucky one-offs.",
       "level": "Beginner",
       "duration": "6 hours",
       "lessons": 24,
@@ -51,7 +51,7 @@
         {
           "name": "Jordan Blake",
           "stars": 5,
-          "text": "Finally a prompt course that teaches evaluation\u2014not just magic phrases.",
+          "text": "Finally a prompt course that teaches evaluation—not just magic phrases.",
           "date": "2026-06-02"
         },
         {
@@ -67,13 +67,15 @@
           "date": "2026-04-29"
         }
       ],
-      "image": "images/courses/prompt-engineering-mastery.png"
+      "image": "images/courses/prompt-engineering-mastery.png",
+      "hasContent": true,
+      "contentPath": "content/prompt-engineering-mastery/"
     },
     {
       "id": "ai-for-work",
       "title": "AI for Work: ChatGPT & Claude",
       "tagline": "Ship better writing, research, and decisions every day",
-      "description": "A practical operating system for knowledge work with ChatGPT and Claude. Cover email, docs, meeting notes, research synthesis, spreadsheets, and stakeholder communication\u2014with guardrails for accuracy, privacy, and tone. Ideal for PMs, marketers, analysts, and operators.",
+      "description": "A practical operating system for knowledge work with ChatGPT and Claude. Cover email, docs, meeting notes, research synthesis, spreadsheets, and stakeholder communication—with guardrails for accuracy, privacy, and tone. Ideal for PMs, marketers, analysts, and operators.",
       "level": "Beginner",
       "duration": "5 hours",
       "lessons": 20,
@@ -112,7 +114,7 @@
         {
           "name": "Chris Patel",
           "stars": 5,
-          "text": "Best \u201cget productive this week\u201d AI course I\u2019ve taken. No fluff.",
+          "text": "Best “get productive this week” AI course I’ve taken. No fluff.",
           "date": "2026-07-22"
         },
         {
@@ -128,7 +130,7 @@
       "id": "generative-media",
       "title": "Generative Media: Image & Video with AI",
       "tagline": "Produce scroll-stopping visuals without a studio",
-      "description": "Learn modern image and short-form video generation\u2014from Midjourney/Flux-style prompting to editing, consistency, and brand-safe workflows. Cover storyboarding, style references, upscaling, and light motion for social and product storytelling.",
+      "description": "Learn modern image and short-form video generation—from Midjourney/Flux-style prompting to editing, consistency, and brand-safe workflows. Cover storyboarding, style references, upscaling, and light motion for social and product storytelling.",
       "level": "Intermediate",
       "duration": "8 hours",
       "lessons": 28,
@@ -237,7 +239,7 @@
         {
           "name": "Ben Novak",
           "stars": 4,
-          "text": "Dense but worth it. Pair with the prompting course if you\u2019re newer to LLMs.",
+          "text": "Dense but worth it. Pair with the prompting course if you’re newer to LLMs.",
           "date": "2026-05-21"
         }
       ],
@@ -247,7 +249,7 @@
       "id": "no-code-ml-intuition",
       "title": "No-Code Machine Learning Intuition",
       "tagline": "Understand models without drowning in math",
-      "description": "Build real intuition for classification, regression, embeddings, and evaluation\u2014using visual tools and no-code platforms. Perfect for PMs, founders, and designers who need to talk ML fluently and make better product bets.",
+      "description": "Build real intuition for classification, regression, embeddings, and evaluation—using visual tools and no-code platforms. Perfect for PMs, founders, and designers who need to talk ML fluently and make better product bets.",
       "level": "Intermediate",
       "duration": "7 hours",
       "lessons": 22,
@@ -286,7 +288,7 @@
         {
           "name": "Ryan Cooper",
           "stars": 4,
-          "text": "Great intuition builder. Not a coding bootcamp\u2014and that\u2019s the point.",
+          "text": "Great intuition builder. Not a coding bootcamp—and that’s the point.",
           "date": "2026-06-03"
         },
         {
@@ -307,8 +309,8 @@
     {
       "id": "ai-strategy-creators",
       "title": "AI Strategy for Creators & Founders",
-      "tagline": "Turn AI into leverage\u2014not another shiny tool",
-      "description": "A strategy course for indie creators, solopreneurs, and early-stage founders. Map your value chain, pick high-ROI AI bets, productize workflows, price digital offers, and build a moat that isn\u2019t \u201cwe use ChatGPT.\u201d",
+      "tagline": "Turn AI into leverage—not another shiny tool",
+      "description": "A strategy course for indie creators, solopreneurs, and early-stage founders. Map your value chain, pick high-ROI AI bets, productize workflows, price digital offers, and build a moat that isn’t “we use ChatGPT.”",
       "level": "Intermediate",
       "duration": "6 hours",
       "lessons": 18,
@@ -359,7 +361,7 @@
         {
           "name": "Noah Berg",
           "stars": 4,
-          "text": "Excellent for founders. Creators may skip one module\u2014still highly recommend.",
+          "text": "Excellent for founders. Creators may skip one module—still highly recommend.",
           "date": "2026-04-02"
         }
       ],

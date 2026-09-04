@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hard vs soft constraints · Prompt Engineering Mastery · The Ai Master Class</title>
+<meta name="description" content="Hard vs soft constraints · Prompt Engineering Mastery — The Ai Master Class" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg:#07070c; --panel:#121826; --card:#14151f; --border:#1e293b;
+  --text:#e8eaf2; --muted:#94a3b8; --accent:#7c5cff; --accent2:#00e5c0;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"DM Sans",system-ui,sans-serif;background:
+  radial-gradient(1000px 500px at 0% -10%,rgba(124,92,255,.16),transparent),
+  radial-gradient(800px 400px at 100% 0%,rgba(0,229,192,.1),transparent),
+  var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+a{color:var(--accent2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
+.topbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:28px}
+.brand{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:600;color:var(--text);display:flex;gap:10px;align-items:center}
+.brand span{opacity:.55;font-weight:500;font-size:.9rem}
+.crumbs{font-size:.9rem;color:var(--muted)}
+.crumbs a{color:var(--muted)}
+.crumbs a:hover{color:var(--accent2)}
+.hero{display:grid;gap:18px;margin-bottom:32px}
+.hero h1{font-family:"Space Grotesk",system-ui,sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);margin:0;letter-spacing:-.02em}
+.lead{color:var(--muted);margin:0;max-width:62ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;padding:6px 10px;border-radius:999px;border:1px solid rgba(124,92,255,.35);background:rgba(124,92,255,.1);color:#c4b5fd}
+.pill.ok{border-color:rgba(0,229,192,.35);background:rgba(0,229,192,.08);color:var(--accent2)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:12px;font-weight:600;border:1px solid transparent;cursor:pointer;font-size:.95rem}
+.btn-primary{background:linear-gradient(135deg,var(--accent),#5b8cff);color:#fff;box-shadow:0 10px 30px rgba(124,92,255,.35)}
+.btn-primary:hover{text-decoration:none;filter:brightness(1.05)}
+.btn-ghost{background:transparent;border-color:var(--border);color:var(--text)}
+.btn-ghost:hover{border-color:var(--accent2);text-decoration:none}
+.modules{display:grid;gap:16px}
+.mod{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.mod-head{padding:18px 20px;display:flex;justify-content:space-between;gap:12px;align-items:flex-start;border-bottom:1px solid var(--border)}
+.mod-head h2{margin:0;font-size:1.15rem;font-family:"Space Grotesk",system-ui,sans-serif}
+.mod-num{color:var(--accent2);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.lessons{list-style:none;margin:0;padding:8px}
+.lessons li{border-top:1px solid transparent}
+.lessons a.lesson-row{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:14px 12px;border-radius:12px;color:var(--text)}
+.lessons a.lesson-row:hover{background:rgba(255,255,255,.03);text-decoration:none}
+.lnum{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:rgba(124,92,255,.12);color:#c4b5fd;font-weight:600;font-size:.85rem}
+.ltitle{font-weight:560}
+.lmeta{font-size:.82rem;color:var(--muted)}
+.badge{font-size:.72rem;padding:4px 8px;border-radius:8px;background:rgba(0,229,192,.1);color:var(--accent2);border:1px solid rgba(0,229,192,.25)}
+.footer-note{margin-top:40px;color:var(--muted);font-size:.85rem}
+.layout{display:grid;grid-template-columns:260px 1fr;gap:24px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}}
+.sidebar{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;height:fit-content;position:sticky;top:16px}
+.sidebar h3{margin:0 0 10px;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.sidebar a{display:block;padding:8px 10px;border-radius:8px;color:var(--muted);font-size:.9rem}
+.sidebar a:hover,.sidebar a.active{background:rgba(124,92,255,.12);color:var(--text);text-decoration:none}
+.sidebar .mod-label{font-size:.72rem;color:var(--accent2);margin:12px 6px 4px;text-transform:uppercase;letter-spacing:.05em}
+.article{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 26px}
+.article h1{font-family:"Space Grotesk",system-ui,sans-serif;margin-top:0;letter-spacing:-.02em}
+.article h2{margin-top:1.6em;font-size:1.2rem}
+.article h3{margin-top:1.3em;font-size:1.05rem}
+.article p,.article li{color:#c9d0dd}
+.article strong{color:var(--text)}
+.article code{background:rgba(124,92,255,.12);padding:2px 6px;border-radius:6px;font-size:.9em}
+.article pre{background:#0b0f19;border:1px solid var(--border);border-radius:12px;padding:14px;overflow:auto}
+.article pre code{background:none;padding:0}
+.article blockquote{margin:1em 0;padding:12px 16px;border-left:3px solid var(--accent);background:rgba(124,92,255,.08);border-radius:0 12px 12px 0;color:#c9d0dd}
+.article hr{border:none;border-top:1px solid var(--border);margin:2em 0}
+.table-wrap{overflow:auto;margin:1em 0}
+.article table{width:100%;border-collapse:collapse;font-size:.92rem}
+.article th,.article td{border:1px solid var(--border);padding:10px 12px;text-align:left}
+.article th{background:rgba(124,92,255,.1);color:var(--text)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px}
+.diagram{margin:18px 0;padding:16px;background:#0b0f19;border:1px solid var(--border);border-radius:14px}
+.diagram img{max-width:100%;height:auto;display:block}
+.diagram figcaption{color:var(--muted);font-size:.85rem;margin-top:10px}
+.nav-lessons{display:flex;justify-content:space-between;gap:12px;margin-top:28px;padding-top:18px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand" href="../../../../index.html">The Ai Master <span>Class</span></a>
+    <div class="crumbs">
+      <a href="../../../../course.html?id=prompt-engineering-mastery">Course</a> /
+      <a href="../../../index.html">Curriculum</a> /
+      <span>M2 · L2</span>
+    </div>
+  </div>
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>Course outline</h3>
+      <div class="mod-label">Module 1</div><a class="" href="../../m01-foundations-of-clear-instruction/lessons/l01-what-makes-a-prompt-clear.html">1. What makes a prompt clear</a><a class="" href="../../m01-foundations-of-clear-instruction/lessons/l02-the-goal-context-constraints-frame.html">2. The Goal · Context · Constraints · Format frame</a><a class="" href="../../m01-foundations-of-clear-instruction/lessons/l03-specificity-without-overfitting.html">3. Specificity without overfitting</a><a class="" href="../../m01-foundations-of-clear-instruction/lessons/l04-common-failure-modes.html">4. Common failure modes</a><div class="mod-label">Module 2</div><a class="" href="../../m02-roles-constraints-output-formats/lessons/l01-role-prompting-that-helps.html">1. Role prompting that actually helps</a><a class="active" href="../../m02-roles-constraints-output-formats/lessons/l02-hard-vs-soft-constraints.html">2. Hard vs soft constraints</a><a class="" href="../../m02-roles-constraints-output-formats/lessons/l03-tables-json-checklists.html">3. Tables, JSON, and checklists that parse</a><a class="" href="../../m02-roles-constraints-output-formats/lessons/l04-tone-audience-brand-locks.html">4. Tone, audience, and brand voice locks</a><div class="mod-label">Module 3</div><a class="" href="../../m03-few-shot-exemplars/lessons/l01-zero-vs-few-shot.html">1. Zero-shot vs few-shot: when to invest</a><a class="" href="../../m03-few-shot-exemplars/lessons/l02-writing-exemplars.html">2. Writing exemplars that teach the pattern</a><a class="" href="../../m03-few-shot-exemplars/lessons/l03-contrast-sets.html">3. Contrast sets and near-miss examples</a><a class="" href="../../m03-few-shot-exemplars/lessons/l04-token-budget-quality.html">4. Token budget and exemplar quality</a><div class="mod-label">Module 4</div><a class="" href="../../m04-chain-of-thought-decomposition/lessons/l01-when-to-ask-for-reasoning.html">1. When to ask for reasoning (and when not to)</a><a class="" href="../../m04-chain-of-thought-decomposition/lessons/l02-plan-then-answer.html">2. Plan-then-answer patterns</a><a class="" href="../../m04-chain-of-thought-decomposition/lessons/l03-decomposing-multistep.html">3. Decomposing multi-step work</a><a class="" href="../../m04-chain-of-thought-decomposition/lessons/l04-self-checks-verification.html">4. Self-checks and verification steps</a><div class="mod-label">Module 5</div><a class="" href="../../m05-evaluation-rubrics-iteration/lessons/l01-rubrics-beat-vibes.html">1. Rubrics beat vibes</a><a class="" href="../../m05-evaluation-rubrics-iteration/lessons/l02-tiny-golden-set.html">2. Building a tiny golden set</a><a class="" href="../../m05-evaluation-rubrics-iteration/lessons/l03-iterate-without-rewrite.html">3. Iterate without rewriting from scratch</a><a class="" href="../../m05-evaluation-rubrics-iteration/lessons/l04-model-agnostic-eval.html">4. Model-agnostic eval habits</a><div class="mod-label">Module 6</div><a class="" href="../../m06-prompt-libraries-workflows/lessons/l01-cataloging-reusable-prompts.html">1. Cataloging prompts your team will reuse</a><a class="" href="../../m06-prompt-libraries-workflows/lessons/l02-email-notes-status-kits.html">2. Email, notes, and status update kits</a><a class="" href="../../m06-prompt-libraries-workflows/lessons/l03-research-synthesis-kits.html">3. Research &amp; synthesis kits</a><a class="" href="../../m06-prompt-libraries-workflows/lessons/l04-versioning-handoff-governance.html">4. Versioning, handoff, and governance</a>
+    </aside>
+    <div>
+      <div class="meta" style="margin-bottom:12px">
+        <span class="pill">Module 2</span>
+        <span class="pill ok">Lesson 2 of 4</span>
+        <span class="pill">#6 / 24</span>
+      </div>
+      <article class="article">
+        <h1>Lesson 2.2 — Hard vs soft constraints</h1>
+<p><strong>Module:</strong> Roles, constraints, and output formats   <strong>Duration:</strong> ~8–10 min teaching + ~4 min interactive   <strong>Interactive:</strong> <code>l02-interactive.html</code>   <strong>Diagram:</strong> <code>../assets/diagram-roles-constraints-formats.svg</code></p>
+<hr />
+<h2>Learning objective</h2>
+<p>Separate <strong>hard</strong> constraints (must / must-not) from <strong>soft</strong> preferences (nice-to-have), and set an explicit priority when they collide.</p>
+<h2>Teaching</h2>
+<h3>Two buckets</h3>
+<div class="table-wrap"><table><tr><th>Hard (non-negotiable)</th><th>Soft (preference)</th></tr><tr><td>Must include ticket IDs from the paste</td><td>Prefer shorter sentences</td></tr><tr><td>Must not invent vendors</td><td>Prefer active voice</td></tr><tr><td>Max 5 bullets</td><td>Prefer starting with the biggest risk</td></tr><tr><td>Label blockers with the word BLOCKER</td><td>Prefer friendly tone if space allows</td></tr></table></div>
+<p>Models treat every sentence like a rule unless you say otherwise. Soft preferences written like hard laws create silent conflicts.</p>
+<h3>Label them in the prompt</h3>
+<pre><code class="lang-text">HARD CONSTRAINTS:
+- Max 5 bullets
+- No speculation beyond the emails
+- Mark go-live threats with BLOCKER
+- Preserve ticket IDs and dates exactly
+
+SOFT PREFERENCES:
+- Lead with the highest-severity item when possible
+- Prefer plain words over jargon</code></pre>
+<h3>Priority line (conflict breaker)</h3>
+<p>When two hard constraints might fight, name the winner:</p>
+<pre><code class="lang-text">PRIORITY: If content won’t fit in 5 bullets, keep all BLOCKERs and drop WATCH items.</code></pre>
+<h3>Diagram link</h3>
+<p>Open <code>diagram-roles-constraints-formats.svg</code>: Role sits on top; <strong>Hard</strong> fences the output; <strong>Soft</strong> nudges style; <strong>Format</strong> packages the result. Soft never cuts the fence.</p>
+<h3>Common Acme Ops collisions</h3>
+<div class="table-wrap"><table><tr><th>Collision</th><th>Fix</th></tr><tr><td>“Be brief” + “cover everything”</td><td>Priority: brief; top 3 only</td></tr><tr><td>“Be thorough” + “no speculation”</td><td>Thorough <em>within</em> the paste only</td></tr><tr><td>“Friendly” + “escalate firmly”</td><td>Soft: friendly; Hard: must include next step + owner</td></tr></table></div>
+<h3>Talk-over narration</h3>
+<p><em>(Beat 1)</em>   “Hard means break-the-build if violated. Soft means ‘when you have room.’”</p>
+<p><em>(Beat 2)</em>   “If you don’t label them, the model invents its own priority—and invents differently tomorrow.”</p>
+<p><em>(Beat 3)</em>   “In the interactive, you’ll sort mixed constraints into Hard, Soft, and Priority.”</p>
+<h2>Worked micro-example</h2>
+<p><strong>Messy</strong></p>
+<blockquote><p>Keep it short but cover every vendor in depth, be warm, never speculate, use BLOCKER, maybe a joke if it fits.</p></blockquote>
+<p><strong>Sorted</strong></p>
+<pre><code class="lang-text">HARD: ≤5 bullets; no speculation; use BLOCKER for go-live threats; no jokes in standup digests.
+SOFT: Warm phrasing if it doesn’t add words; prefer plain language.
+PRIORITY: BLOCKERs over completeness.</code></pre>
+<h2>Practice</h2>
+<p>Complete <code>l02-interactive.html</code>: classify and write a priority line.</p>
+<h2>Takeaway</h2>
+<p><strong>Hard fences. Soft nudges. Priority breaks ties.</strong> Label all three or accept random tradeoffs.</p>
+        <figure class="diagram">
+<img src="../assets/diagram-roles-constraints-formats.svg" alt="Lesson diagram" />
+<figcaption>Module diagram — reference while you practice.</figcaption>
+</figure>
+        <div class="actions">
+          <a class="btn btn-primary" href="l02-interactive.html" target="_blank" rel="noopener">Open practice</a>
+          <a class="btn btn-ghost" href="../../../index.html">All lessons</a>
+        </div>
+        <div class="nav-lessons">
+          <a class="btn btn-ghost" href="../../m02-roles-constraints-output-formats/lessons/l01-role-prompting-that-helps.html">← Previous</a>
+          <a class="btn btn-primary" href="../../m02-roles-constraints-output-formats/lessons/l03-tables-json-checklists.html">Next →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+  <p class="footer-note">© 2026 The Ai Master Class · Prompt Engineering Mastery</p>
+</div>
+
+</body>
+</html>
