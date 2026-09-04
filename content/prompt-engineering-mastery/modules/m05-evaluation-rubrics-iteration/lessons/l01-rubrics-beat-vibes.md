@@ -10,6 +10,12 @@
 
 Write a short rubric (3–5 criteria) that catches **real** Acme Ops failures—not vague “sounds good” scores.
 
+## Lesson video
+
+![Lesson video](assets/l01-video.mp4)
+
+**Video:** `assets/l01-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Vibes vs criteria

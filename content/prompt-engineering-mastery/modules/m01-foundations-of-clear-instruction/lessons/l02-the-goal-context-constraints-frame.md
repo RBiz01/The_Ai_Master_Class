@@ -11,6 +11,12 @@
 
 Apply the **Goal · Context · Constraints · Format (GCCF)** frame to any work prompt so the model has a complete brief.
 
+## Lesson video
+
+![Lesson video](assets/l02-video.mp4)
+
+**Video:** `assets/l02-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### The frame

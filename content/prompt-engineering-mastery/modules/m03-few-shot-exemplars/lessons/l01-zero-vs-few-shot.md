@@ -10,6 +10,12 @@
 
 Decide when a clear GCCF + role + format prompt is enough (zero-shot), and when investing in exemplars pays off for Acme Ops workflows.
 
+## Lesson video
+
+![Lesson video](assets/l01-video.mp4)
+
+**Video:** `assets/l01-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Definitions that ship

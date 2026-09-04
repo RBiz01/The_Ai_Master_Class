@@ -10,6 +10,12 @@
 
 Decide when asking the model to show reasoning improves accuracy—and when it wastes tokens, slows paste-ready work, or invents a confident-sounding chain that is still wrong.
 
+## Lesson video
+
+![Lesson video](assets/l01-video.mp4)
+
+**Video:** `assets/l01-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Reasoning is a tool, not a personality

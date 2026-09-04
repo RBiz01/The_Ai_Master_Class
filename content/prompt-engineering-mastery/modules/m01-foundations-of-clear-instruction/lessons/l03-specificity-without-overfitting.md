@@ -10,6 +10,12 @@
 
 Raise specificity enough for reliable outputs—without writing a brittle prompt that only works for one paste, one day, or one model mood.
 
+## Lesson video
+
+![Lesson video](assets/l03-video.mp4)
+
+**Video:** `assets/l03-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### The specificity dial

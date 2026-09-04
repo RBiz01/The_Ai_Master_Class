@@ -10,6 +10,12 @@
 
 Diagnose the four most common clarity failures and apply a targeted fix instead of rewriting from scratch.
 
+## Lesson video
+
+![Lesson video](assets/l04-video.mp4)
+
+**Video:** `assets/l04-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Failure mode cheat sheet

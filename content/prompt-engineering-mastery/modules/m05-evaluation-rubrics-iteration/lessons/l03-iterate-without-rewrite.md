@@ -10,6 +10,12 @@
 
 Patch failing prompts surgically—change one lever at a time—so you don’t thrash into a blank page every time a score dips.
 
+## Lesson video
+
+![Lesson video](assets/l03-video.mp4)
+
+**Video:** `assets/l03-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Thrash looks like

@@ -11,6 +11,12 @@
 
 Assemble three reusable kits—**customer email**, **meeting notes**, and **status update**—using GCCF, tone locks, and formats that paste clean.
 
+## Lesson video
+
+![Lesson video](assets/l02-video.mp4)
+
+**Video:** `assets/l02-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Kit pattern

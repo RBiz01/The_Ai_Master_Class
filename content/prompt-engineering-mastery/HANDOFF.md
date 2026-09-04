@@ -10,7 +10,7 @@ Live catalog: https://rbiz01.github.io/The_Ai_Master_Class/ (see `data/courses.j
 ## What to publish
 
 1. **Modules 1–6 are fully built** — ship all lessons, interactives, SVG diagrams, video scripts, and the Module 6 starter library.
-2. **Full course content is ready for publish** — still **scripts-only for MP4s** (no final recordings in this package).
+2. **Full course content is ready for publish** — **All 24 lesson MP4 theme clips** are present (`modules/m01–m06/…/lessons/assets/l01–l04-video.mp4`).
 3. **Do not push from this package automatically** — copy into the site content tree via your normal publish flow. **No GitHub push** from this workspace.
 
 ## Suggested site paths
@@ -63,7 +63,10 @@ Live `courses.json` already lists:
 ## Trailers & video assets
 
 - Course detail page currently uses a **sample MP4** (`video.src` in `courses.json`, Google gtv sample bucket) until real trailers replace it.
-- This package provides **talk-over scripts + shot lists only** (course intro, module intros, example demos). Record/replace sample MP4s later; keep posters/gradients in the meantime.
+- **All 24 lesson theme videos present (m01–m06)** — dark edtech motion-graphics MP4s at each module’s `lessons/assets/l01-video.mp4` … `l04-video.mp4` (854×480, ~8s, 12fps, H.264 yuv420p +faststart, silent).
+- **Pipeline:** `scripts/make_lesson_video.py` (+ `scripts/themes_m02_m06.py`) renders Pillow frames → ffmpeg. Used because **Grok text-to-video was rate-limited**; prompts remain in `assets/videos/PROMPTS.md` for optional future T2V.
+- CLI: `--all-m01` … `--all-m06`, `--all-remaining` (m02–m06), `--all`.
+- Course/module intro trailers still scripts-only.
 - Product spelling: **The Ai Master Class** (keep “Ai”).
 
 ## Module publish checklist
@@ -75,6 +78,8 @@ Live `courses.json` already lists:
 - [x] `assets/module-intro-video-script.md`  
 - [x] `assets/example-video-script.md`  
 - [x] Course `assets/intro-video-script.md`  
+- [x] `lessons/assets/l01-video.mp4` … `l04-video.mp4` (theme clips; Pillow+ffmpeg)  
+- [x] `scripts/make_lesson_video.py` (reusable generator)  
 
 ### Module 2
 - [x] `l01`–`l04` lesson markdown  
@@ -82,6 +87,7 @@ Live `courses.json` already lists:
 - [x] `assets/diagram-roles-constraints-formats.svg`  
 - [x] `assets/module-intro-video-script.md`  
 - [x] `assets/example-video-script.md`  
+- [x] `lessons/assets/l01-video.mp4` … `l04-video.mp4` (theme clips; Pillow+ffmpeg)  
 
 ### Module 3
 - [x] `l01`–`l04` lesson markdown  
@@ -89,6 +95,7 @@ Live `courses.json` already lists:
 - [x] `assets/diagram-exemplar-anatomy.svg`  
 - [x] `assets/module-intro-video-script.md`  
 - [x] `assets/example-video-script.md`  
+- [x] `lessons/assets/l01-video.mp4` … `l04-video.mp4` (theme clips; Pillow+ffmpeg)  
 
 ### Module 4
 - [x] `l01`–`l04` lesson markdown  
@@ -96,6 +103,7 @@ Live `courses.json` already lists:
 - [x] `assets/diagram-decompose-flow.svg`  
 - [x] `assets/module-intro-video-script.md`  
 - [x] `assets/example-video-script.md`  
+- [x] `lessons/assets/l01-video.mp4` … `l04-video.mp4` (theme clips; Pillow+ffmpeg)  
 
 ### Module 5
 - [x] `l01`–`l04` lesson markdown  
@@ -103,6 +111,7 @@ Live `courses.json` already lists:
 - [x] `assets/diagram-eval-loop.svg`  
 - [x] `assets/module-intro-video-script.md`  
 - [x] `assets/example-video-script.md`  
+- [x] `lessons/assets/l01-video.mp4` … `l04-video.mp4` (theme clips; Pillow+ffmpeg)  
 
 ### Module 6
 - [x] `l01`–`l04` lesson markdown  
@@ -110,7 +119,8 @@ Live `courses.json` already lists:
 - [x] `assets/diagram-library-taxonomy.svg`  
 - [x] `assets/module-intro-video-script.md`  
 - [x] `assets/example-video-script.md`  
-- [x] `assets/starter-library.md` (Monday-morning kit stub)
+- [x] `assets/starter-library.md` (Monday-morning kit stub)  
+- [x] `lessons/assets/l01-video.mp4` … `l04-video.mp4` (theme clips; Pillow+ffmpeg)  
 
 ## Safety / voice
 
@@ -120,5 +130,5 @@ Live `courses.json` already lists:
 
 ## Blockers
 
-- Real MP4 trailers not in this package (scripts only; samples on live site).  
+- Course/module intro MP4 trailers not in this package (scripts only; samples on live site). **All 24 lesson theme clips (m01–m06) are present** via Pillow+ffmpeg motion-graphics (Grok T2V rate-limited).  
 - No GitHub push performed from this workspace package.

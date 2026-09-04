@@ -10,6 +10,12 @@
 
 Explain why vague prompts fail, and rewrite a mushy ask into a clear instruction that a model can execute without guessing.
 
+## Lesson video
+
+![Lesson video](assets/l01-video.mp4)
+
+**Video:** `assets/l01-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### The Monday-morning problem

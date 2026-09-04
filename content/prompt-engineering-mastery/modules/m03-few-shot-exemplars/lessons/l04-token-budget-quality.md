@@ -10,6 +10,12 @@
 
 Trim and rank exemplars so quality beats quantity—fit the pattern into a realistic token budget without deleting the teaching signal.
 
+## Lesson video
+
+![Lesson video](assets/l04-video.mp4)
+
+**Video:** `assets/l04-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Tokens are rent

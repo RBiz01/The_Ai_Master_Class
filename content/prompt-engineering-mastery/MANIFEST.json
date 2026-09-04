@@ -81,6 +81,7 @@
     "interactive",
     "diagram",
     "video-script",
+    "video",
     "image",
     "doc",
     "stub",
@@ -95,17 +96,27 @@
     {
       "path": "HANDOFF.md",
       "type": "meta",
-      "bytes": 4392
+      "bytes": 5545
     },
     {
       "path": "assets/images/prompt-engineering-mastery-cover.png",
-      "type": "image",
+      "type": "other",
       "bytes": 193091
     },
     {
       "path": "assets/intro-video-script.md",
       "type": "video-script",
       "bytes": 2460
+    },
+    {
+      "path": "assets/videos/PROMPTS.md",
+      "type": "video-script",
+      "bytes": 4424
+    },
+    {
+      "path": "bibles/video-style.txt",
+      "type": "other",
+      "bytes": 426
     },
     {
       "path": "modules/m01-foundations-of-clear-instruction/MODULE.md",
@@ -128,6 +139,26 @@
       "bytes": 2314
     },
     {
+      "path": "modules/m01-foundations-of-clear-instruction/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 38476
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 87531
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 43341
+    },
+    {
+      "path": "modules/m01-foundations-of-clear-instruction/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 60606
+    },
+    {
       "path": "modules/m01-foundations-of-clear-instruction/lessons/l01-interactive.html",
       "type": "interactive",
       "bytes": 8626
@@ -135,7 +166,7 @@
     {
       "path": "modules/m01-foundations-of-clear-instruction/lessons/l01-what-makes-a-prompt-clear.md",
       "type": "lesson",
-      "bytes": 2810
+      "bytes": 2941
     },
     {
       "path": "modules/m01-foundations-of-clear-instruction/lessons/l02-interactive.html",
@@ -145,7 +176,7 @@
     {
       "path": "modules/m01-foundations-of-clear-instruction/lessons/l02-the-goal-context-constraints-frame.md",
       "type": "lesson",
-      "bytes": 2757
+      "bytes": 2888
     },
     {
       "path": "modules/m01-foundations-of-clear-instruction/lessons/l03-interactive.html",
@@ -155,12 +186,12 @@
     {
       "path": "modules/m01-foundations-of-clear-instruction/lessons/l03-specificity-without-overfitting.md",
       "type": "lesson",
-      "bytes": 2773
+      "bytes": 2904
     },
     {
       "path": "modules/m01-foundations-of-clear-instruction/lessons/l04-common-failure-modes.md",
       "type": "lesson",
-      "bytes": 2565
+      "bytes": 2696
     },
     {
       "path": "modules/m01-foundations-of-clear-instruction/lessons/l04-interactive.html",
@@ -188,6 +219,26 @@
       "bytes": 2302
     },
     {
+      "path": "modules/m02-roles-constraints-output-formats/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 35314
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 73279
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 42205
+    },
+    {
+      "path": "modules/m02-roles-constraints-output-formats/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 46923
+    },
+    {
       "path": "modules/m02-roles-constraints-output-formats/lessons/l01-interactive.html",
       "type": "interactive",
       "bytes": 8419
@@ -195,12 +246,12 @@
     {
       "path": "modules/m02-roles-constraints-output-formats/lessons/l01-role-prompting-that-helps.md",
       "type": "lesson",
-      "bytes": 3014
+      "bytes": 3145
     },
     {
       "path": "modules/m02-roles-constraints-output-formats/lessons/l02-hard-vs-soft-constraints.md",
       "type": "lesson",
-      "bytes": 2861
+      "bytes": 2992
     },
     {
       "path": "modules/m02-roles-constraints-output-formats/lessons/l02-interactive.html",
@@ -215,7 +266,7 @@
     {
       "path": "modules/m02-roles-constraints-output-formats/lessons/l03-tables-json-checklists.md",
       "type": "lesson",
-      "bytes": 2795
+      "bytes": 2926
     },
     {
       "path": "modules/m02-roles-constraints-output-formats/lessons/l04-interactive.html",
@@ -225,7 +276,7 @@
     {
       "path": "modules/m02-roles-constraints-output-formats/lessons/l04-tone-audience-brand-locks.md",
       "type": "lesson",
-      "bytes": 2829
+      "bytes": 2960
     },
     {
       "path": "modules/m03-few-shot-exemplars/MODULE.md",
@@ -248,6 +299,26 @@
       "bytes": 2141
     },
     {
+      "path": "modules/m03-few-shot-exemplars/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 43301
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 46398
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 38933
+    },
+    {
+      "path": "modules/m03-few-shot-exemplars/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 36245
+    },
+    {
       "path": "modules/m03-few-shot-exemplars/lessons/l01-interactive.html",
       "type": "interactive",
       "bytes": 8425
@@ -255,7 +326,7 @@
     {
       "path": "modules/m03-few-shot-exemplars/lessons/l01-zero-vs-few-shot.md",
       "type": "lesson",
-      "bytes": 2737
+      "bytes": 2868
     },
     {
       "path": "modules/m03-few-shot-exemplars/lessons/l02-interactive.html",
@@ -265,12 +336,12 @@
     {
       "path": "modules/m03-few-shot-exemplars/lessons/l02-writing-exemplars.md",
       "type": "lesson",
-      "bytes": 2664
+      "bytes": 2795
     },
     {
       "path": "modules/m03-few-shot-exemplars/lessons/l03-contrast-sets.md",
       "type": "lesson",
-      "bytes": 2416
+      "bytes": 2547
     },
     {
       "path": "modules/m03-few-shot-exemplars/lessons/l03-interactive.html",
@@ -285,7 +356,7 @@
     {
       "path": "modules/m03-few-shot-exemplars/lessons/l04-token-budget-quality.md",
       "type": "lesson",
-      "bytes": 2384
+      "bytes": 2515
     },
     {
       "path": "modules/m04-chain-of-thought-decomposition/MODULE.md",
@@ -308,6 +379,26 @@
       "bytes": 2118
     },
     {
+      "path": "modules/m04-chain-of-thought-decomposition/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 41334
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 46033
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 38807
+    },
+    {
+      "path": "modules/m04-chain-of-thought-decomposition/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 35425
+    },
+    {
       "path": "modules/m04-chain-of-thought-decomposition/lessons/l01-interactive.html",
       "type": "interactive",
       "bytes": 8826
@@ -315,7 +406,7 @@
     {
       "path": "modules/m04-chain-of-thought-decomposition/lessons/l01-when-to-ask-for-reasoning.md",
       "type": "lesson",
-      "bytes": 2475
+      "bytes": 2606
     },
     {
       "path": "modules/m04-chain-of-thought-decomposition/lessons/l02-interactive.html",
@@ -325,12 +416,12 @@
     {
       "path": "modules/m04-chain-of-thought-decomposition/lessons/l02-plan-then-answer.md",
       "type": "lesson",
-      "bytes": 1966
+      "bytes": 2097
     },
     {
       "path": "modules/m04-chain-of-thought-decomposition/lessons/l03-decomposing-multistep.md",
       "type": "lesson",
-      "bytes": 1949
+      "bytes": 2080
     },
     {
       "path": "modules/m04-chain-of-thought-decomposition/lessons/l03-interactive.html",
@@ -345,7 +436,7 @@
     {
       "path": "modules/m04-chain-of-thought-decomposition/lessons/l04-self-checks-verification.md",
       "type": "lesson",
-      "bytes": 1954
+      "bytes": 2085
     },
     {
       "path": "modules/m05-evaluation-rubrics-iteration/MODULE.md",
@@ -368,6 +459,26 @@
       "bytes": 1905
     },
     {
+      "path": "modules/m05-evaluation-rubrics-iteration/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 33650
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 38668
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 35581
+    },
+    {
+      "path": "modules/m05-evaluation-rubrics-iteration/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 43680
+    },
+    {
       "path": "modules/m05-evaluation-rubrics-iteration/lessons/l01-interactive.html",
       "type": "interactive",
       "bytes": 8436
@@ -375,7 +486,7 @@
     {
       "path": "modules/m05-evaluation-rubrics-iteration/lessons/l01-rubrics-beat-vibes.md",
       "type": "lesson",
-      "bytes": 1946
+      "bytes": 2077
     },
     {
       "path": "modules/m05-evaluation-rubrics-iteration/lessons/l02-interactive.html",
@@ -385,7 +496,7 @@
     {
       "path": "modules/m05-evaluation-rubrics-iteration/lessons/l02-tiny-golden-set.md",
       "type": "lesson",
-      "bytes": 1763
+      "bytes": 1894
     },
     {
       "path": "modules/m05-evaluation-rubrics-iteration/lessons/l03-interactive.html",
@@ -395,7 +506,7 @@
     {
       "path": "modules/m05-evaluation-rubrics-iteration/lessons/l03-iterate-without-rewrite.md",
       "type": "lesson",
-      "bytes": 1722
+      "bytes": 1853
     },
     {
       "path": "modules/m05-evaluation-rubrics-iteration/lessons/l04-interactive.html",
@@ -405,7 +516,7 @@
     {
       "path": "modules/m05-evaluation-rubrics-iteration/lessons/l04-model-agnostic-eval.md",
       "type": "lesson",
-      "bytes": 1957
+      "bytes": 2088
     },
     {
       "path": "modules/m06-prompt-libraries-workflows/MODULE.md",
@@ -433,9 +544,29 @@
       "bytes": 2199
     },
     {
+      "path": "modules/m06-prompt-libraries-workflows/lessons/assets/l01-video.mp4",
+      "type": "video",
+      "bytes": 48598
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/lessons/assets/l02-video.mp4",
+      "type": "video",
+      "bytes": 60478
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/lessons/assets/l03-video.mp4",
+      "type": "video",
+      "bytes": 52671
+    },
+    {
+      "path": "modules/m06-prompt-libraries-workflows/lessons/assets/l04-video.mp4",
+      "type": "video",
+      "bytes": 40596
+    },
+    {
       "path": "modules/m06-prompt-libraries-workflows/lessons/l01-cataloging-reusable-prompts.md",
-      "type": "lesson",
-      "bytes": 1853
+      "type": "video-script",
+      "bytes": 1984
     },
     {
       "path": "modules/m06-prompt-libraries-workflows/lessons/l01-interactive.html",
@@ -445,7 +576,7 @@
     {
       "path": "modules/m06-prompt-libraries-workflows/lessons/l02-email-notes-status-kits.md",
       "type": "lesson",
-      "bytes": 1744
+      "bytes": 1875
     },
     {
       "path": "modules/m06-prompt-libraries-workflows/lessons/l02-interactive.html",
@@ -460,7 +591,7 @@
     {
       "path": "modules/m06-prompt-libraries-workflows/lessons/l03-research-synthesis-kits.md",
       "type": "lesson",
-      "bytes": 1602
+      "bytes": 1733
     },
     {
       "path": "modules/m06-prompt-libraries-workflows/lessons/l04-interactive.html",
@@ -470,12 +601,86 @@
     {
       "path": "modules/m06-prompt-libraries-workflows/lessons/l04-versioning-handoff-governance.md",
       "type": "lesson",
-      "bytes": 1931
+      "bytes": 2062
     },
     {
-      "path": "MANIFEST.json",
-      "type": "meta",
-      "bytes": 13117
+      "path": "scripts/make_lesson_video.py",
+      "type": "other",
+      "bytes": 32220
+    },
+    {
+      "path": "scripts/themes_m02_m06.py",
+      "type": "other",
+      "bytes": 45979
     }
-  ]
+  ],
+  "lessonVideos": {
+    "m01": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m01-foundations-of-clear-instruction/lessons/assets/l01-video.mp4",
+        "modules/m01-foundations-of-clear-instruction/lessons/assets/l02-video.mp4",
+        "modules/m01-foundations-of-clear-instruction/lessons/assets/l03-video.mp4",
+        "modules/m01-foundations-of-clear-instruction/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok T2V rate-limited)"
+    },
+    "m02": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m02-roles-constraints-output-formats/lessons/assets/l01-video.mp4",
+        "modules/m02-roles-constraints-output-formats/lessons/assets/l02-video.mp4",
+        "modules/m02-roles-constraints-output-formats/lessons/assets/l03-video.mp4",
+        "modules/m02-roles-constraints-output-formats/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok T2V rate-limited)"
+    },
+    "m03": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m03-few-shot-exemplars/lessons/assets/l01-video.mp4",
+        "modules/m03-few-shot-exemplars/lessons/assets/l02-video.mp4",
+        "modules/m03-few-shot-exemplars/lessons/assets/l03-video.mp4",
+        "modules/m03-few-shot-exemplars/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok T2V rate-limited)"
+    },
+    "m04": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m04-chain-of-thought-decomposition/lessons/assets/l01-video.mp4",
+        "modules/m04-chain-of-thought-decomposition/lessons/assets/l02-video.mp4",
+        "modules/m04-chain-of-thought-decomposition/lessons/assets/l03-video.mp4",
+        "modules/m04-chain-of-thought-decomposition/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok T2V rate-limited)"
+    },
+    "m05": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m05-evaluation-rubrics-iteration/lessons/assets/l01-video.mp4",
+        "modules/m05-evaluation-rubrics-iteration/lessons/assets/l02-video.mp4",
+        "modules/m05-evaluation-rubrics-iteration/lessons/assets/l03-video.mp4",
+        "modules/m05-evaluation-rubrics-iteration/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok T2V rate-limited)"
+    },
+    "m06": {
+      "status": "added",
+      "generator": "scripts/make_lesson_video.py",
+      "clips": [
+        "modules/m06-prompt-libraries-workflows/lessons/assets/l01-video.mp4",
+        "modules/m06-prompt-libraries-workflows/lessons/assets/l02-video.mp4",
+        "modules/m06-prompt-libraries-workflows/lessons/assets/l03-video.mp4",
+        "modules/m06-prompt-libraries-workflows/lessons/assets/l04-video.mp4"
+      ],
+      "specs": "854x480 H.264 yuv420p +faststart ~8s @12fps dark-edtech theme clips (Pillow+ffmpeg motion-graphics; Grok T2V rate-limited)"
+    }
+  },
+  "lessonVideosNote": "All 24 lesson theme MP4s present (m01\u2013m06). Generated via local motion-graphics pipeline (Pillow + ffmpeg) because Grok text-to-video was rate-limited."
 }

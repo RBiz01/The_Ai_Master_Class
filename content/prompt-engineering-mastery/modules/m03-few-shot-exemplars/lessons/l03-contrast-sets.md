@@ -10,6 +10,12 @@
 
 Add contrast sets and near-miss exemplars that teach boundaries—what looks almost right but fails the Acme Ops policy or format.
 
+## Lesson video
+
+![Lesson video](assets/l03-video.mp4)
+
+**Video:** `assets/l03-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Why positive-only sets drift

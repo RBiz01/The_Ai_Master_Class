@@ -11,6 +11,12 @@
 
 Write prompts that separate a short **scratchpad / plan** from a clean **FINAL** answer so teammates can paste without scrubbing.
 
+## Lesson video
+
+![Lesson video](assets/l02-video.mp4)
+
+**Video:** `assets/l02-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Scratchpad vs final answer

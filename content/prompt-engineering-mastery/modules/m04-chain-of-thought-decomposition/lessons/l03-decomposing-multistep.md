@@ -10,6 +10,12 @@
 
 Break a messy multi-step Acme Ops ask into ordered sub-prompts with clear handoffs—so each step has one goal and one format.
 
+## Lesson video
+
+![Lesson video](assets/l03-video.mp4)
+
+**Video:** `assets/l03-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### When one prompt is too fat

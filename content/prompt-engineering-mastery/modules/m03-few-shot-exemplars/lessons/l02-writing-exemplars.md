@@ -11,6 +11,12 @@
 
 Write positive few-shot exemplars that teach **structure, tone, and decision rules**—not one-off trivia from a single lucky paste.
 
+## Lesson video
+
+![Lesson video](assets/l02-video.mp4)
+
+**Video:** `assets/l02-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Anatomy of an exemplar (see diagram)

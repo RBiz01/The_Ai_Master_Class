@@ -10,6 +10,12 @@
 
 Decide when to change the **prompt** versus the **process**—and keep rubrics/golden sets portable across ChatGPT, Claude, Gemini, or whatever Acme Ops uses next quarter.
 
+## Lesson video
+
+![Lesson video](assets/l04-video.mp4)
+
+**Video:** `assets/l04-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Prompt vs process

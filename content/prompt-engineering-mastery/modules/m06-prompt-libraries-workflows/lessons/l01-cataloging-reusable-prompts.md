@@ -10,6 +10,12 @@
 
 Design a personal (or Acme Ops team) prompt library card so winners are findable, owned, and versioned—not lost in chat history.
 
+## Lesson video
+
+![Lesson video](assets/l01-video.mp4)
+
+**Video:** `assets/l01-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Library card fields (minimum)

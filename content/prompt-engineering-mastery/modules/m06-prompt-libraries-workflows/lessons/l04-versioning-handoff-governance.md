@@ -10,6 +10,12 @@
 
 Apply light governance: version bumps, handoff notes, retirement rules, and a hard list of **what never to paste** into prompts or libraries.
 
+## Lesson video
+
+![Lesson video](assets/l04-video.mp4)
+
+**Video:** `assets/l04-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Versioning

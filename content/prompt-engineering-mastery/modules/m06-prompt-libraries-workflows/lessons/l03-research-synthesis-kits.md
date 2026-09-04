@@ -10,6 +10,12 @@
 
 Build a research synthesis kit that separates **claims**, **sources**, and **confidence**—so Acme Ops never ships a rumor as a fact.
 
+## Lesson video
+
+![Lesson video](assets/l03-video.mp4)
+
+**Video:** `assets/l03-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Synthesis kit essentials

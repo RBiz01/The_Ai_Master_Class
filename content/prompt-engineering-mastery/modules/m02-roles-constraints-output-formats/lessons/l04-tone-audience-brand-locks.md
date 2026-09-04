@@ -10,6 +10,12 @@
 
 Lock tone, audience, and brand voice so outputs sound like Acme Ops—not a random chatbot—without overfitting to one person’s quirks.
 
+## Lesson video
+
+![Lesson video](assets/l04-video.mp4)
+
+**Video:** `assets/l04-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Three locks

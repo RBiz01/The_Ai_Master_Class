@@ -10,6 +10,12 @@
 
 Add lightweight self-checks that catch real Acme Ops failures—invented facts, format drift, policy misses—without turning every prompt into a compliance novel.
 
+## Lesson video
+
+![Lesson video](assets/l04-video.mp4)
+
+**Video:** `assets/l04-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Cheap checks beat vibes

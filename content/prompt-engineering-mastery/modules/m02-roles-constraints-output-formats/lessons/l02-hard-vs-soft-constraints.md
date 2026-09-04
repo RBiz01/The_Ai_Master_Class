@@ -11,6 +11,12 @@
 
 Separate **hard** constraints (must / must-not) from **soft** preferences (nice-to-have), and set an explicit priority when they collide.
 
+## Lesson video
+
+![Lesson video](assets/l02-video.mp4)
+
+**Video:** `assets/l02-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Two buckets

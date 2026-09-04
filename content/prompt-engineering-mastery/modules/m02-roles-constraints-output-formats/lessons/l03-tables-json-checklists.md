@@ -10,6 +10,12 @@
 
 Specify output shapes—markdown tables, JSON, and checklists—so a human or a script can consume the answer without cleanup.
 
+## Lesson video
+
+![Lesson video](assets/l03-video.mp4)
+
+**Video:** `assets/l03-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Format is a contract

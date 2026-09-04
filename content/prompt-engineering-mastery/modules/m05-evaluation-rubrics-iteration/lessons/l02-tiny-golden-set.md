@@ -11,6 +11,12 @@
 
 Build a pocket eval set—**happy path, edge, and cliff**—so you can re-check a prompt in five minutes after any change.
 
+## Lesson video
+
+![Lesson video](assets/l02-video.mp4)
+
+**Video:** `assets/l02-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### Tiny beats huge

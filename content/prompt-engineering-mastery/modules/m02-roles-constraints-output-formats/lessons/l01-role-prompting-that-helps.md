@@ -10,6 +10,12 @@
 
 Write a role line that improves judgment or style for the task—without wasting tokens on theatrical personas that don’t change the answer.
 
+## Lesson video
+
+![Lesson video](assets/l01-video.mp4)
+
+**Video:** `assets/l01-video.mp4` — example/theme clip for this lesson.
+
 ## Teaching
 
 ### The Monday-morning problem
