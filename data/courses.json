@@ -589,7 +589,7 @@
       ],
       "video": {
         "poster": "images/courses/ai-music-production.png",
-        "src": ""
+        "src": "content/ai-music-production/assets/course-intro-video.mp4"
       },
       "curriculum": [
         "Song brief & taste lock",
