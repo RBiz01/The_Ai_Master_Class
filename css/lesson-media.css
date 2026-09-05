@@ -1,7 +1,26 @@
 /* Shared lesson media + mobile layout */
 /* Locked 16:9 frame — intrinsic MP4 size must not change the player. */
+/* Prevent wide images/tables from expanding the article column (grid blowout). */
+
+.layout { min-width: 0; }
+.layout > *,
+.article { min-width: 0; max-width: 100%; }
+
+.article img,
+.article svg,
+.diagram img,
+.article video {
+  max-width: 100%;
+  height: auto;
+}
+.article .table-wrap,
+.article pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 .lesson-video{
-  margin:0 0 1.25rem;
+  margin:0 auto 1.25rem;
   border-radius:14px;
   overflow:hidden;
   border:1px solid var(--border, #1e293b);
@@ -10,7 +29,7 @@
   line-height:0;
   position:relative;
   width:100%;
-  max-width:100%;
+  max-width:min(100%, 720px);
   aspect-ratio:16 / 9;
 }
 .lesson-video video{

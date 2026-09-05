@@ -768,11 +768,19 @@ code { font-size: 0.9em; color: var(--accent-2); }
   border: 1px solid var(--border);
   background: linear-gradient(145deg, var(--g1), var(--g2));
   aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: min(100%, 720px);
+  margin-left: auto;
+  margin-right: auto;
 }
 .trailer-video {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
+  max-width: none;
   object-fit: contain;
+  object-position: center center;
   display: block;
   background: #000;
 }
@@ -1218,5 +1226,5 @@ code { font-size: 0.9em; color: var(--accent-2); }
 .buy-price .price-free{font-size:1.35rem}
 .hero-slideshow-price .price-row{color:inherit}
 
-.welcome-video{margin:0 auto;max-width:920px;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:#0b0f19;box-shadow:0 12px 40px rgba(0,0,0,.35);line-height:0}
-.welcome-video video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#000}
+.welcome-video{margin:0 auto;width:100%;max-width:min(100%,720px);border-radius:16px;overflow:hidden;border:1px solid var(--border);background:#0b0f19;box-shadow:0 12px 40px rgba(0,0,0,.35);line-height:0;position:relative;aspect-ratio:16/9}
+.welcome-video video{display:block;position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:contain;object-position:center;background:#000}
