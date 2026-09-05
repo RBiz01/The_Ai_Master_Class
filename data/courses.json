@@ -652,7 +652,7 @@
       ],
       "video": {
         "poster": "images/courses/ai-image-studio.png",
-        "src": ""
+        "src": "content/ai-image-studio/assets/course-intro-video.mp4"
       },
       "curriculum": [
         "Visual brief",
