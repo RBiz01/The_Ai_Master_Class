@@ -31,7 +31,7 @@
       listEl.innerHTML = `
         <div class="empty-cart">
           <h2>Your cart is empty</h2>
-          <p>Browse the academy and enroll in a course.</p>
+          <p>Browse the academy and open any free course.</p>
           <a class="btn btn-primary" href="courses.html">Browse courses</a>
         </div>`;
       summaryEl.innerHTML = '';
@@ -48,7 +48,7 @@
             <p>${FC.escapeHtml(course.level)} · ${FC.escapeHtml(course.duration)} · Digital access</p>
             <button type="button" class="linkish" data-remove="${FC.escapeHtml(course.id)}">Remove</button>
           </div>
-          <div class="cart-price">${discounted ? `<span class="was">${FC.formatMoney(base)}</span> ` : ''}${FC.formatMoney(unit)}</div>
+          <div class="cart-price">${FC.priceRowHTML(course, { compact: true, donate: true })}</div>
         </article>`;
       })
       .join('');
@@ -59,22 +59,21 @@
 
     summaryEl.innerHTML = `
       <div class="summary-card">
-        <h2>Enrollment summary</h2>
-        <div class="summary-row"><span>Subtotal</span><span>${FC.formatMoney(subtotal)}</span></div>
-        ${saved > 0 ? `<div class="summary-row accent"><span>Welcome discount (10%)</span><span>−${FC.formatMoney(saved)}</span></div>` : ''}
-        ${!FC.hasDiscount() ? `<p class="hint">First-visit email signup unlocks <strong>10% off</strong>.</p>` : `<p class="hint success-text">Welcome discount applied.</p>`}
-        <div class="summary-row total"><span>Total</span><span>${FC.formatMoney(subtotal)}</span></div>
-        <button type="button" class="btn btn-primary btn-block" id="mock-checkout">Complete enrollment</button>
-        <a class="btn btn-secondary btn-block" id="stripe-link" href="${FC.STRIPE_PAYMENT_LINK}" target="_blank" rel="noopener">Pay with Stripe (TODO)</a>
-        <p class="fineprint">Mock checkout only — no real charges. Wire <code>STRIPE_PAYMENT_LINK</code> in <code>js/app.js</code>.</p>
+        <h2>Your free courses</h2>
+        <div class="summary-row"><span>Subtotal</span><span><span class="was">${FC.formatMoney(listTotal)}</span></span></div>
+        <div class="summary-row total"><span>Total</span><span class="price-free">FREE</span></div>
+        <p class="hint success-text">All courses are free. Optional donations keep new lessons coming.</p>
+        <button type="button" class="btn btn-primary btn-block" id="mock-checkout">Start learning</button>
+        <a class="btn btn-donate btn-block" id="donate-link" href="${FC.DONATE_PAYMENT_LINK}" target="_blank" rel="noopener" data-donate>Donate</a>
+        <p class="fineprint">No payment required. Donate link is a placeholder until wired in <code>js/app.js</code>.</p>
       </div>`;
 
     document.getElementById('mock-checkout')?.addEventListener('click', completeMock);
-    const stripe = document.getElementById('stripe-link');
-    if (stripe && FC.STRIPE_PAYMENT_LINK.includes('TODO')) {
-      stripe.addEventListener('click', (e) => {
+    const donate = document.getElementById('donate-link');
+    if (donate && (FC.DONATE_PAYMENT_LINK || '').includes('TODO')) {
+      donate.addEventListener('click', (e) => {
         e.preventDefault();
-        FC.toast('TODO: set STRIPE_PAYMENT_LINK in js/app.js');
+        FC.toast('Donate link coming soon — courses are free meanwhile');
       });
     }
   }
@@ -90,12 +89,12 @@
     successEl.innerHTML = `
       <div class="success-inner">
         <div class="success-icon">✓</div>
-        <h2>You're enrolled (mock)</h2>
+        <h2>You're in — free access</h2>
         <p>Placeholder access for: <strong>${names.map(FC.escapeHtml).join(', ')}</strong></p>
-        <p class="fineprint">TODO: deliver real LMS access / magic-link email after Stripe webhook.</p>
+        <p class="fineprint">Courses are free. Optional donate supports new lessons.</p>
         <a class="btn btn-primary" href="courses.html">Browse more courses</a>
       </div>`;
-    FC.toast('Enrollment complete (mock)');
+    FC.toast('Ready — start learning');
   }
 
   listEl.addEventListener('click', (e) => {

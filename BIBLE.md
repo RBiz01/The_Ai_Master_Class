@@ -193,7 +193,7 @@ curl -s "$BASE/data/courses.json" | python3 -c "import sys,json; c=[x for x in j
 ### Stripe / email TODOs
 
 - `STRIPE_PAYMENT_LINK` and `EMAIL_FORM_ENDPOINT` in `js/app.js`.
-- Mock enrollment is intentional until Stripe + LMS delivery exist.
+- Courses are free; optional Donate uses `DONATE_PAYMENT_LINK`. Mock “Start learning” needs no payment.
 - Never commit secret keys.
 - Signup `source` string: `the-ai-master-class-welcome-discount`.
 
@@ -235,12 +235,11 @@ Also:
 - Do **not** claim “live” without the curl/JSON checklist above.
 - Do **not** store Stripe secret keys in the repo.
 
-## Cart & discount
+## Pricing (free + donate)
 
-- Cart keyed by course id in `localStorage` (`fc_cart`).
-- Digital enrollment: quantity stays 1 per course.
-- First-visit modal → 10% welcome discount (`fc_discount`) — wording for courses / The Ai Master Class.
+- Courses are **free**. Keep `price` in `data/courses.json` as the list/compare amount for strike-through UI — do not zero those values.
+- Shared UI: `FC.priceRowHTML(course)` → struck list price + **FREE** + **Donate** button.
+- Donate URL: `DONATE_PAYMENT_LINK` in `js/app.js` (placeholder until Stripe donate link is set).
+- Cart (`fc_cart`) is optional; mock checkout is “Start learning” with no charge.
+- First-visit email modal is for updates / course drops (no longer a 10% discount gate).
 
----
-
-When in doubt: **AI courses only, The Ai Master Class branding, static Pages under `/The_Ai_Master_Class/`, honest mock checkout, believable 4–5★ social proof, playable trailers + course cover images.**

@@ -80,14 +80,12 @@
 
       const c = courses[index];
       const href = FC.siteRoot() + 'course.html?id=' + encodeURIComponent(c.id);
-      const p = FC.priceFor(c);
       titleEl.textContent = c.title;
       titleEl.href = href;
       taglineEl.textContent = c.tagline + (c.duration ? ` · ${c.duration} · ${c.lessons} lessons` : '');
-      priceEl.innerHTML = p.discounted
-        ? `<span class="was">${FC.formatMoney(p.base)}</span> ${FC.formatMoney(p.final)}`
-        : FC.formatMoney(p.final);
+      priceEl.innerHTML = FC.priceRowHTML(c, { compact: true });
       linkEl.href = href;
+      linkEl.textContent = 'View free course';
     }
 
     function next() { go(index + 1); }

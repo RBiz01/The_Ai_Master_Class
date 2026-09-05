@@ -13,6 +13,8 @@ const FC = (() => {
   const EMAIL_FORM_ENDPOINT = 'https://formspree.io/f/TODO_REPLACE_ME';
   // TODO: Replace with real Stripe Payment Link
   const STRIPE_PAYMENT_LINK = 'https://buy.stripe.com/TODO_REPLACE_ME';
+  // TODO: Replace with Stripe Payment Link / Donate link
+  const DONATE_PAYMENT_LINK = 'https://buy.stripe.com/TODO_DONATE';
 
   let coursesCache = null;
 
@@ -123,11 +125,28 @@ const FC = (() => {
   }
 
   function priceFor(course) {
-    const base = course.price;
-    if (hasDiscount()) {
-      return { base, final: +(base * (1 - DISCOUNT_RATE)).toFixed(2), discounted: true };
-    }
-    return { base, final: base, discounted: false };
+    const base = Number(course.price) || 0;
+    // All courses are free; keep list price for strike-through display.
+    return { base, final: 0, discounted: false, free: true };
+  }
+
+  function donateHref() {
+    return DONATE_PAYMENT_LINK;
+  }
+
+  function priceRowHTML(course, opts = {}) {
+    const p = priceFor(course);
+    const showDonate = opts.donate !== false;
+    const compact = !!opts.compact;
+    const list = formatMoney(p.base || course.compareAtPrice || 0);
+    const donateBtn = showDonate
+      ? `<a class="btn btn-donate${compact ? ' btn-sm' : ''}" href="${escapeHtml(donateHref())}" target="_blank" rel="noopener" data-donate>Donate</a>`
+      : '';
+    return `<span class="price-row${compact ? ' is-compact' : ''}">
+      <span class="was">${list}</span>
+      <span class="price-free">FREE</span>
+      ${donateBtn}
+    </span>`;
   }
 
   function formatMoney(n) {
@@ -174,20 +193,15 @@ const FC = (() => {
   }
 
   function courseCardHTML(course) {
-    const p = priceFor(course);
-    const priceHTML = p.discounted
-      ? `<span class="was">${formatMoney(p.base)}</span>${formatMoney(p.final)}`
-      : (course.compareAtPrice
-          ? `<span class="was">${formatMoney(course.compareAtPrice)}</span>${formatMoney(p.final)}`
-          : formatMoney(p.final));
-    const saleBadge = p.discounted ? '<span class="badge badge-sale">10% off</span>' : '';
     const feat = course.featured ? '<span class="badge badge-feat">Featured</span>' : '';
+    const freeBadge = '<span class="badge badge-free">Free</span>';
     const href = `${siteRoot()}course.html?id=${encodeURIComponent(course.id)}`;
     const cats = Array.isArray(course.category) ? course.category.join(' · ') : (course.category || '');
     return `
 <article class="course-card reveal">
   <a href="${href}" class="course-thumb">
     ${feat}
+    ${freeBadge}
     ${courseArtHTML(course)}
   </a>
   <div class="course-body">
@@ -200,9 +214,8 @@ const FC = (() => {
       <span class="rating-count">(${course.reviewCount})</span>
     </div>
     <div class="course-meta">
-      <div class="price">${priceHTML}</div>
-      ${saleBadge}
-      <button type="button" class="btn btn-secondary btn-sm" data-add="${escapeHtml(course.id)}">Enroll</button>
+      <div class="price">${priceRowHTML(course, { compact: true })}</div>
+      <a class="btn btn-secondary btn-sm" href="${href}">Open</a>
     </div>
   </div>
 </article>`;
@@ -236,6 +249,14 @@ const FC = (() => {
       toggle.addEventListener('click', () => links.classList.toggle('open'));
     }
     document.body.addEventListener('click', (e) => {
+      const donate = e.target.closest('[data-donate]');
+      if (donate) {
+        if ((DONATE_PAYMENT_LINK || '').includes('TODO')) {
+          e.preventDefault();
+          toast('Donate link coming soon — courses are free meanwhile');
+        }
+        return;
+      }
       const btn = e.target.closest('[data-add]');
       if (btn) {
         e.preventDefault();
@@ -314,7 +335,7 @@ const FC = (() => {
         }
         grantDiscount(email);
         close();
-        toast('Welcome! 10% off unlocked');
+        toast('Welcome — you\'re on the list');
         setTimeout(() => location.reload(), 600);
       });
     }
@@ -325,13 +346,13 @@ const FC = (() => {
 <div class="modal-backdrop" id="signup-modal" role="dialog" aria-modal="true" aria-labelledby="signup-title">
   <div class="modal">
     <button type="button" class="close-x" data-close-modal aria-label="Close">&times;</button>
-    <div class="discount-badge-big">10% OFF</div>
+    <div class="discount-badge-big">FREE</div>
     <h2 id="signup-title">Welcome to The Ai Master Class</h2>
-    <p>Join for course drops &amp; get <strong>10% off</strong> your first enrollment. Instant — no spam.</p>
+    <p>All courses are <strong>free</strong>. Join for new drops &amp; updates — optional donate anytime. Instant — no spam.</p>
     <form id="signup-form" action="${EMAIL_FORM_ENDPOINT}" method="POST">
       <label for="signup-email" class="field-label">Email</label>
       <input id="signup-email" name="email" type="email" required placeholder="you@example.com" class="field-input" />
-      <button type="submit" class="btn btn-primary btn-block">Unlock 10% off</button>
+      <button type="submit" class="btn btn-primary btn-block">Join the list</button>
       <button type="button" class="btn btn-ghost btn-block" data-close-modal style="margin-top:0.4rem">No thanks</button>
     </form>
   </div>
@@ -373,6 +394,8 @@ const FC = (() => {
     grantDiscount,
     getEmail,
     priceFor,
+    priceRowHTML,
+    donateHref,
     formatMoney,
     escapeHtml,
     starsHTML,
@@ -382,6 +405,7 @@ const FC = (() => {
     initReveal,
     DISCOUNT_RATE,
     STRIPE_PAYMENT_LINK,
+    DONATE_PAYMENT_LINK,
     EMAIL_FORM_ENDPOINT,
   };
 })();

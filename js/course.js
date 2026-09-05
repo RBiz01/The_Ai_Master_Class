@@ -29,12 +29,7 @@
   const meta = document.querySelector('meta[name="description"]');
   if (meta) meta.setAttribute('content', course.tagline);
 
-  const p = FC.priceFor(course);
-  const priceHTML = p.discounted
-    ? `<span class="was">${FC.formatMoney(p.base)}</span> ${FC.formatMoney(p.final)}`
-    : (course.compareAtPrice
-        ? `<span class="was">${FC.formatMoney(course.compareAtPrice)}</span> ${FC.formatMoney(p.final)}`
-        : FC.formatMoney(p.final));
+  const priceHTML = FC.priceRowHTML(course);
 
   const cats = Array.isArray(course.category) ? course.category : [course.category];
   const [g1, g2] = course.gradient || ['#7c5cff', '#00e5c0'];
@@ -118,11 +113,9 @@
     </ul>
     <div class="buy-price">${priceHTML}</div>
     <div class="buy-actions">
-      ${learnCTA}
-      <button type="button" class="btn btn-primary btn-lg" data-add="${FC.escapeHtml(course.id)}">Add to cart</button>
-      <button type="button" class="btn btn-secondary btn-lg" id="buy-now">Enroll now</button>
+      ${learnCTA || `<a class="btn btn-primary btn-lg" href="courses.html">Browse courses</a>`}
     </div>
-    <p class="fineprint">Mock checkout · Stripe TODO · Instant enrollment placeholder</p>
+    <p class="fineprint">Free to learn · Optional donate supports more courses</p>
   </div>
 </div>
 
@@ -156,11 +149,6 @@
       if (videoEl.currentTime < 0.3) playBtn.classList.remove('is-hidden');
     });
   }
-
-  document.getElementById('buy-now')?.addEventListener('click', () => {
-    FC.addToCart(course.id, 1);
-    location.href = FC.siteRoot() + 'cart.html';
-  });
 
   FC.initReveal();
 })();

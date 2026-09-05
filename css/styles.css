@@ -1153,3 +1153,45 @@ code { font-size: 0.9em; color: var(--accent-2); }
   }
 }
 
+/* Free + donate pricing */
+.price-row{
+  display:inline-flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:0.45rem 0.65rem;
+}
+.price-row .was{margin-right:0}
+.price-free{
+  font-weight:800;
+  letter-spacing:0.04em;
+  color:var(--accent-2);
+  font-size:1.05em;
+}
+.price-row.is-compact .price-free{font-size:1em}
+.btn-donate{
+  background:linear-gradient(135deg,#ff4d8d,#7c5cff);
+  color:#fff !important;
+  border:none;
+  box-shadow:0 8px 24px rgba(255,77,141,0.28);
+}
+.btn-donate:hover{filter:brightness(1.06);text-decoration:none}
+.badge-free{
+  position:absolute;
+  top:0.7rem;
+  left:0.7rem;
+  z-index:3;
+  background:rgba(0,229,192,0.92);
+  color:#041016;
+  font-size:0.68rem;
+  font-weight:800;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  padding:0.25rem 0.55rem;
+  border-radius:999px;
+}
+.course-thumb .badge-feat{left:auto; right:0.7rem}
+.course-thumb .badge-free{left:0.7rem}
+.buy-price .price-row{gap:0.55rem 0.85rem}
+.buy-price .price-free{font-size:1.35rem}
+.hero-slideshow-price .price-row{color:inherit}
+
