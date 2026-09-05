@@ -565,6 +565,195 @@
       "image": "images/courses/rag-knowledge-bases.png",
       "hasContent": true,
       "contentPath": "content/rag-knowledge-bases/"
+    },
+    {
+      "id": "ai-music-production",
+      "title": "AI Music Production",
+      "tagline": "Write, generate, arrange, and ship tracks with AI music tools",
+      "description": "A practical music OS with AI\u2014song briefs, lyrics & structure, generation loops, arrangement & mix notes, rights & release, and a weekly ship cadence. Model-agnostic (Suno/Udio-style). Built for creators who ship.",
+      "level": "Beginner",
+      "duration": "6 hours",
+      "lessons": 24,
+      "price": 99,
+      "compareAtPrice": 129,
+      "category": [
+        "Generative Media",
+        "Strategy"
+      ],
+      "featured": true,
+      "rating": 4.8,
+      "reviewCount": 142,
+      "gradient": [
+        "#ec4899",
+        "#8b5cf6"
+      ],
+      "video": {
+        "poster": "images/courses/ai-music-production.png",
+        "src": ""
+      },
+      "curriculum": [
+        "Song brief & taste lock",
+        "Lyrics & structure",
+        "Generate & iterate",
+        "Arrangement & mix notes",
+        "Rights, credits, release",
+        "A weekly music OS"
+      ],
+      "reviews": [
+        {
+          "name": "Maya Ortiz",
+          "stars": 5,
+          "text": "Finally a music+AI course that starts with briefs and taste locks instead of one vendor\u2019s UI tour. Shipped my first clean single in a week.",
+          "date": "2026-08-18"
+        },
+        {
+          "name": "Devon Blake",
+          "stars": 5,
+          "text": "The rights and release checklist alone saved us from a messy upload. Model-agnostic advice actually transfers.",
+          "date": "2026-07-22"
+        },
+        {
+          "name": "Priya Shah",
+          "stars": 4,
+          "text": "Hook-writing and arrangement maps are excellent. Wanted one more DAW edit demo\u2014still worth it.",
+          "date": "2026-06-30"
+        },
+        {
+          "name": "Chris Alvarez",
+          "stars": 5,
+          "text": "Weekly music OS turned random prompting into a ship cadence. Northstar scenarios feel real without being risky.",
+          "date": "2026-05-14"
+        }
+      ],
+      "image": "images/courses/ai-music-production.png",
+      "hasContent": true,
+      "contentPath": "content/ai-music-production/"
+    },
+    {
+      "id": "ai-image-studio",
+      "title": "AI Image Studio",
+      "tagline": "Brand-consistent stills \u2014 photoreal, stylized, and campaign-ready",
+      "description": "A stills-only creative OS with AI\u2014visual briefs, prompt control, character and product locks, edit/upscale, brand kits, and client-safe delivery. Model-agnostic depth on consistency (deeper than a generative-media survey).",
+      "level": "Beginner",
+      "duration": "6 hours",
+      "lessons": 24,
+      "price": 99,
+      "compareAtPrice": 129,
+      "category": [
+        "Generative Media",
+        "Strategy"
+      ],
+      "featured": true,
+      "rating": 4.8,
+      "reviewCount": 168,
+      "gradient": [
+        "#f59e0b",
+        "#ec4899"
+      ],
+      "video": {
+        "poster": "images/courses/ai-image-studio.png",
+        "src": ""
+      },
+      "curriculum": [
+        "Visual brief",
+        "Prompting for control",
+        "Character & product lock",
+        "Edit, upscale, cleanup",
+        "Brand kit & delivery",
+        "Image OS"
+      ],
+      "reviews": [
+        {
+          "name": "Riley Chen",
+          "stars": 5,
+          "text": "Finally a stills course that treats consistency like a system. Our campaign sets actually match now.",
+          "date": "2026-08-18"
+        },
+        {
+          "name": "Morgan Ellis",
+          "stars": 5,
+          "text": "Brand kit + rights modules are practical. Loved the no-likeness rule framed for real client work.",
+          "date": "2026-07-22"
+        },
+        {
+          "name": "Avery Brooks",
+          "stars": 4,
+          "text": "Upscale-without-plastic and batch checklist alone paid for the course. Wanted one more print recipe.",
+          "date": "2026-06-14"
+        },
+        {
+          "name": "Quinn Sato",
+          "stars": 5,
+          "text": "Model-agnostic prompting for control\u2014exactly what we needed after tool-hopping for months.",
+          "date": "2026-05-27"
+        }
+      ],
+      "image": "images/courses/ai-image-studio.png",
+      "hasContent": true,
+      "contentPath": "content/ai-image-studio/"
+    },
+    {
+      "id": "ai-video-music-videos",
+      "title": "AI Video & Music Videos",
+      "tagline": "Text-to-video, presenter clips, and a locked-look music-video pipeline",
+      "description": "Text-to-video, presenter clips, and a locked-look music-video pipeline\u2014briefs, continuity, beat-grid stitch, and platform export. Motion + music-video assembly for creators who ship.",
+      "level": "Intermediate",
+      "duration": "6 hours",
+      "lessons": 24,
+      "price": 119,
+      "compareAtPrice": 149,
+      "category": [
+        "Generative Media",
+        "Strategy"
+      ],
+      "featured": true,
+      "rating": 4.7,
+      "reviewCount": 121,
+      "gradient": [
+        "#7c5cff",
+        "#ec4899"
+      ],
+      "video": {
+        "poster": "images/courses/ai-video-music-videos.png",
+        "src": ""
+      },
+      "curriculum": [
+        "Video brief",
+        "Text-to-video",
+        "Presenter & narration",
+        "Music video pipeline",
+        "Edit & ship",
+        "Video OS"
+      ],
+      "reviews": [
+        {
+          "name": "Riley Chen",
+          "stars": 5,
+          "text": "Finally a course that treats music-video assembly as a system\u2014look lock and beat grid alone changed our turnaround.",
+          "date": "2026-08-18"
+        },
+        {
+          "name": "Morgan Blake",
+          "stars": 5,
+          "text": "Presenter vs VO guidance was practical. We ship lesson videos without fighting the graphics stack now.",
+          "date": "2026-07-22"
+        },
+        {
+          "name": "Avery Okonkwo",
+          "stars": 4,
+          "text": "Strong on continuity and failure modes. Wanted one more vertical-export lab\u2014still the best motion pipeline I\u2019ve used.",
+          "date": "2026-06-30"
+        },
+        {
+          "name": "Quinn Nakamura",
+          "stars": 5,
+          "text": "Differentiates from stills and music courses perfectly. Shipped a 60s cut in the capstone week.",
+          "date": "2026-05-14"
+        }
+      ],
+      "image": "images/courses/ai-video-music-videos.png",
+      "hasContent": true,
+      "contentPath": "content/ai-video-music-videos/"
     }
   ]
 }

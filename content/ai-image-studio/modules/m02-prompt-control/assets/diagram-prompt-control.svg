@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Stack → camera → frame → refs</title>
+  <desc id="desc">Stack → camera → frame → refs for AI Image Studio module 2</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f19"/><stop offset="100%" stop-color="#121826"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#ec4899"/>
+    </marker>
+  </defs>
+<rect width="960" height="540" fill="url(#bgGrad)"/>
+<circle cx="120" cy="80" r="90" fill="#f59e0b" opacity="0.12"/>
+<circle cx="860" cy="460" r="110" fill="#ec4899" opacity="0.10"/>
+<text x="48" y="52" font-family="DM Sans, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e2e8f0">Stack → camera → frame → refs</text>
+<text x="48" y="78" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#94a3b8">AI Image Studio · Module 2 · Northstar Studio</text>
+  <rect x="48" y="160" width="200" height="140" rx="16" fill="#121826" stroke="#f59e0b" stroke-width="2"/>
+  <text x="68" y="192" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#f59e0b">1 · STACK</text>
+  <text x="68" y="228" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">Photoreal / illustration</text>
+  <text x="68" y="252" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0"></text>
+  <line x1="248" y1="230" x2="278" y2="230" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="278" y="160" width="200" height="140" rx="16" fill="#121826" stroke="#fbbf24" stroke-width="2"/>
+  <text x="298" y="192" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#fbbf24">2 · CAMERA</text>
+  <text x="298" y="228" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">Lens</text>
+  <text x="298" y="252" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">light language</text>
+  <line x1="478" y1="230" x2="508" y2="230" stroke="#fbbf24" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="508" y="160" width="200" height="140" rx="16" fill="#121826" stroke="#f472b6" stroke-width="2"/>
+  <text x="528" y="192" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#f472b6">3 · FRAME</text>
+  <text x="528" y="228" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">Neg space</text>
+  <text x="528" y="252" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">composition</text>
+  <line x1="708" y1="230" x2="738" y2="230" stroke="#f472b6" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="738" y="160" width="200" height="140" rx="16" fill="#121826" stroke="#ec4899" stroke-width="2"/>
+  <text x="758" y="192" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#ec4899">4 · REFS</text>
+  <text x="758" y="228" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0">Helpful vs noisy</text>
+  <text x="758" y="252" font-family="DM Sans, system-ui, sans-serif" font-size="14" fill="#e2e8f0"></text>
+<rect x="280" y="360" width="400" height="90" rx="18" fill="#0a0e16" stroke="url(#accentGrad)" stroke-width="2"/>
+<text x="480" y="400" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="16" font-weight="700" fill="#e2e8f0">Control language. Not vendor clicks.</text>
+<text x="480" y="426" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="13" fill="#94a3b8">Stills only · lock · consistency · edit · brand kit</text>
+<text x="48" y="510" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#64748b">The Ai Master Class · AI Image Studio · Module 2</text>
+</svg>

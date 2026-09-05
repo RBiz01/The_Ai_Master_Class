@@ -1,0 +1,521 @@
+{
+  "courseId": "ai-image-studio",
+  "title": "AI Image Studio",
+  "product": "The Ai Master Class",
+  "tagline": "Brand-consistent stills — photoreal, stylized, and campaign-ready",
+  "level": "Beginner",
+  "duration": "6 hours",
+  "lessons": 24,
+  "pacing": "~1 hour per curriculum module × 6 modules",
+  "price": 99,
+  "compareAtPrice": 129,
+  "categories": [
+    "Generative Media",
+    "Strategy"
+  ],
+  "featured": true,
+  "rating": 4.8,
+  "reviewCount": 168,
+  "gradient": [
+    "#f59e0b",
+    "#ec4899"
+  ],
+  "moduleStatus": {
+    "m01-visual-brief": "built",
+    "m02-prompt-control": "built",
+    "m03-character-product": "built",
+    "m04-edit-upscale": "built",
+    "m05-brand-kit": "built",
+    "m06-image-os": "built"
+  },
+  "minuteBudget": {
+    "perModuleMinutes": 60,
+    "courseTotalHours": 6,
+    "m01": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m02": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m03": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m04": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m05": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m06": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    }
+  },
+  "typeTags": [
+    "meta",
+    "lesson",
+    "interactive",
+    "diagram",
+    "video-script",
+    "video",
+    "image",
+    "doc",
+    "stub",
+    "other"
+  ],
+  "files": [
+    {
+      "path": "COURSE.md",
+      "type": "meta",
+      "bytes": 4506
+    },
+    {
+      "path": "COVER-NOTE.md",
+      "type": "doc",
+      "bytes": 1054
+    },
+    {
+      "path": "HANDOFF.md",
+      "type": "meta",
+      "bytes": 8265
+    },
+    {
+      "path": "assets/intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1726
+    },
+    {
+      "path": "bibles/voice-safety.md",
+      "type": "doc",
+      "bytes": 482
+    },
+    {
+      "path": "modules/m01-visual-brief/MODULE.md",
+      "type": "meta",
+      "bytes": 1862
+    },
+    {
+      "path": "modules/m01-visual-brief/assets/diagram-visual-brief.svg",
+      "type": "diagram",
+      "bytes": 4166
+    },
+    {
+      "path": "modules/m01-visual-brief/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 927
+    },
+    {
+      "path": "modules/m01-visual-brief/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1460
+    },
+    {
+      "path": "modules/m01-visual-brief/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8294
+    },
+    {
+      "path": "modules/m01-visual-brief/lessons/l01-what-a-usable-still-needs.md",
+      "type": "lesson",
+      "bytes": 2573
+    },
+    {
+      "path": "modules/m01-visual-brief/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8268
+    },
+    {
+      "path": "modules/m01-visual-brief/lessons/l02-subject-light-lens-grade.md",
+      "type": "lesson",
+      "bytes": 2382
+    },
+    {
+      "path": "modules/m01-visual-brief/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8333
+    },
+    {
+      "path": "modules/m01-visual-brief/lessons/l03-style-locks-vs-one-off-pretty.md",
+      "type": "lesson",
+      "bytes": 2300
+    },
+    {
+      "path": "modules/m01-visual-brief/lessons/l04-failure-modes-mush-extras-off-brand.md",
+      "type": "lesson",
+      "bytes": 2274
+    },
+    {
+      "path": "modules/m01-visual-brief/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8347
+    },
+    {
+      "path": "modules/m02-prompt-control/MODULE.md",
+      "type": "meta",
+      "bytes": 1991
+    },
+    {
+      "path": "modules/m02-prompt-control/assets/diagram-prompt-control.svg",
+      "type": "diagram",
+      "bytes": 4185
+    },
+    {
+      "path": "modules/m02-prompt-control/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 929
+    },
+    {
+      "path": "modules/m02-prompt-control/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1566
+    },
+    {
+      "path": "modules/m02-prompt-control/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8339
+    },
+    {
+      "path": "modules/m02-prompt-control/lessons/l01-photoreal-vs-illustration-stacks.md",
+      "type": "lesson",
+      "bytes": 2167
+    },
+    {
+      "path": "modules/m02-prompt-control/lessons/l02-camera-and-lighting-language.md",
+      "type": "lesson",
+      "bytes": 2197
+    },
+    {
+      "path": "modules/m02-prompt-control/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8359
+    },
+    {
+      "path": "modules/m02-prompt-control/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8352
+    },
+    {
+      "path": "modules/m02-prompt-control/lessons/l03-negative-space-and-composition.md",
+      "type": "lesson",
+      "bytes": 2058
+    },
+    {
+      "path": "modules/m02-prompt-control/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8406
+    },
+    {
+      "path": "modules/m02-prompt-control/lessons/l04-reference-images-that-help-and-that-dont.md",
+      "type": "lesson",
+      "bytes": 2219
+    },
+    {
+      "path": "modules/m03-character-product/MODULE.md",
+      "type": "meta",
+      "bytes": 1859
+    },
+    {
+      "path": "modules/m03-character-product/assets/diagram-character-product.svg",
+      "type": "diagram",
+      "bytes": 4192
+    },
+    {
+      "path": "modules/m03-character-product/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 926
+    },
+    {
+      "path": "modules/m03-character-product/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1495
+    },
+    {
+      "path": "modules/m03-character-product/lessons/l01-character-sheets-that-hold.md",
+      "type": "lesson",
+      "bytes": 2137
+    },
+    {
+      "path": "modules/m03-character-product/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8387
+    },
+    {
+      "path": "modules/m03-character-product/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8407
+    },
+    {
+      "path": "modules/m03-character-product/lessons/l02-product-shots-that-match.md",
+      "type": "lesson",
+      "bytes": 2055
+    },
+    {
+      "path": "modules/m03-character-product/lessons/l03-consistency-across-a-set.md",
+      "type": "lesson",
+      "bytes": 2006
+    },
+    {
+      "path": "modules/m03-character-product/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8347
+    },
+    {
+      "path": "modules/m03-character-product/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8345
+    },
+    {
+      "path": "modules/m03-character-product/lessons/l04-when-to-seed-vs-describe.md",
+      "type": "lesson",
+      "bytes": 2211
+    },
+    {
+      "path": "modules/m04-edit-upscale/MODULE.md",
+      "type": "meta",
+      "bytes": 1837
+    },
+    {
+      "path": "modules/m04-edit-upscale/assets/diagram-edit-upscale.svg",
+      "type": "diagram",
+      "bytes": 4190
+    },
+    {
+      "path": "modules/m04-edit-upscale/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 945
+    },
+    {
+      "path": "modules/m04-edit-upscale/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1484
+    },
+    {
+      "path": "modules/m04-edit-upscale/lessons/l01-inpaint-vs-regenerate.md",
+      "type": "lesson",
+      "bytes": 2052
+    },
+    {
+      "path": "modules/m04-edit-upscale/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8375
+    },
+    {
+      "path": "modules/m04-edit-upscale/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8354
+    },
+    {
+      "path": "modules/m04-edit-upscale/lessons/l02-upscale-without-plastic-skin.md",
+      "type": "lesson",
+      "bytes": 2044
+    },
+    {
+      "path": "modules/m04-edit-upscale/lessons/l03-crop-grade-and-export-sizes.md",
+      "type": "lesson",
+      "bytes": 2133
+    },
+    {
+      "path": "modules/m04-edit-upscale/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8369
+    },
+    {
+      "path": "modules/m04-edit-upscale/lessons/l04-batch-a-small-campaign-set.md",
+      "type": "lesson",
+      "bytes": 2003
+    },
+    {
+      "path": "modules/m04-edit-upscale/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8319
+    },
+    {
+      "path": "modules/m05-brand-kit/MODULE.md",
+      "type": "meta",
+      "bytes": 1818
+    },
+    {
+      "path": "modules/m05-brand-kit/assets/diagram-brand-kit.svg",
+      "type": "diagram",
+      "bytes": 4192
+    },
+    {
+      "path": "modules/m05-brand-kit/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 957
+    },
+    {
+      "path": "modules/m05-brand-kit/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1483
+    },
+    {
+      "path": "modules/m05-brand-kit/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8335
+    },
+    {
+      "path": "modules/m05-brand-kit/lessons/l01-palette-type-and-motif-locks.md",
+      "type": "lesson",
+      "bytes": 2017
+    },
+    {
+      "path": "modules/m05-brand-kit/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8393
+    },
+    {
+      "path": "modules/m05-brand-kit/lessons/l02-social-vs-print-vs-thumbnail.md",
+      "type": "lesson",
+      "bytes": 1932
+    },
+    {
+      "path": "modules/m05-brand-kit/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8415
+    },
+    {
+      "path": "modules/m05-brand-kit/lessons/l03-rights-and-likeness.md",
+      "type": "lesson",
+      "bytes": 2215
+    },
+    {
+      "path": "modules/m05-brand-kit/lessons/l04-client-safe-delivery.md",
+      "type": "lesson",
+      "bytes": 1945
+    },
+    {
+      "path": "modules/m05-brand-kit/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8388
+    },
+    {
+      "path": "modules/m06-image-os/MODULE.md",
+      "type": "meta",
+      "bytes": 1790
+    },
+    {
+      "path": "modules/m06-image-os/assets/diagram-image-os.svg",
+      "type": "diagram",
+      "bytes": 4171
+    },
+    {
+      "path": "modules/m06-image-os/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 920
+    },
+    {
+      "path": "modules/m06-image-os/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1431
+    },
+    {
+      "path": "modules/m06-image-os/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8377
+    },
+    {
+      "path": "modules/m06-image-os/lessons/l01-prompt-library-for-stills.md",
+      "type": "lesson",
+      "bytes": 1905
+    },
+    {
+      "path": "modules/m06-image-os/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8356
+    },
+    {
+      "path": "modules/m06-image-os/lessons/l02-review-rubric-for-images.md",
+      "type": "lesson",
+      "bytes": 1881
+    },
+    {
+      "path": "modules/m06-image-os/lessons/l03-handoff-to-video.md",
+      "type": "lesson",
+      "bytes": 2168
+    },
+    {
+      "path": "modules/m06-image-os/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8450
+    },
+    {
+      "path": "modules/m06-image-os/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8395
+    },
+    {
+      "path": "modules/m06-image-os/lessons/l04-ship-a-6-image-kit.md",
+      "type": "lesson",
+      "bytes": 2034
+    }
+  ],
+  "lessonVideos": {
+    "status": "heygen_pending",
+    "note": "All 24 lesson paths referenced in markdown as assets/l0N-video.mp4; MP4 files omitted (do not create silent placeholders).",
+    "expectedPaths": [
+      "modules/m01-visual-brief/lessons/assets/l01-video.mp4",
+      "modules/m01-visual-brief/lessons/assets/l02-video.mp4",
+      "modules/m01-visual-brief/lessons/assets/l03-video.mp4",
+      "modules/m01-visual-brief/lessons/assets/l04-video.mp4",
+      "modules/m02-prompt-control/lessons/assets/l01-video.mp4",
+      "modules/m02-prompt-control/lessons/assets/l02-video.mp4",
+      "modules/m02-prompt-control/lessons/assets/l03-video.mp4",
+      "modules/m02-prompt-control/lessons/assets/l04-video.mp4",
+      "modules/m03-character-product/lessons/assets/l01-video.mp4",
+      "modules/m03-character-product/lessons/assets/l02-video.mp4",
+      "modules/m03-character-product/lessons/assets/l03-video.mp4",
+      "modules/m03-character-product/lessons/assets/l04-video.mp4",
+      "modules/m04-edit-upscale/lessons/assets/l01-video.mp4",
+      "modules/m04-edit-upscale/lessons/assets/l02-video.mp4",
+      "modules/m04-edit-upscale/lessons/assets/l03-video.mp4",
+      "modules/m04-edit-upscale/lessons/assets/l04-video.mp4",
+      "modules/m05-brand-kit/lessons/assets/l01-video.mp4",
+      "modules/m05-brand-kit/lessons/assets/l02-video.mp4",
+      "modules/m05-brand-kit/lessons/assets/l03-video.mp4",
+      "modules/m05-brand-kit/lessons/assets/l04-video.mp4",
+      "modules/m06-image-os/lessons/assets/l01-video.mp4",
+      "modules/m06-image-os/lessons/assets/l02-video.mp4",
+      "modules/m06-image-os/lessons/assets/l03-video.mp4",
+      "modules/m06-image-os/lessons/assets/l04-video.mp4"
+    ]
+  },
+  "lessonVideosNote": "HeyGen pending — 24 lesson MP4s omitted from MANIFEST files list. No silent placeholder MP4s.",
+  "coverImage": null,
+  "coverNote": "COVER-NOTE.md — no fake cover PNG in package; site target images/courses/ai-image-studio.png"
+}

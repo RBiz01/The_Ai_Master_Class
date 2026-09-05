@@ -1,0 +1,545 @@
+{
+  "courseId": "ai-video-music-videos",
+  "title": "AI Video & Music Videos",
+  "product": "The Ai Master Class",
+  "tagline": "Text-to-video, presenter clips, and a locked-look music-video pipeline",
+  "level": "Intermediate",
+  "duration": "6 hours",
+  "lessons": 24,
+  "pacing": "~1 hour per curriculum module × 6 modules",
+  "price": 119,
+  "compareAtPrice": 149,
+  "categories": [
+    "Generative Media",
+    "Strategy"
+  ],
+  "featured": true,
+  "rating": 4.7,
+  "reviewCount": 121,
+  "gradient": [
+    "#7c5cff",
+    "#ec4899"
+  ],
+  "moduleStatus": {
+    "m01-video-brief": "built",
+    "m02-text-to-video": "built",
+    "m03-presenter-narration": "built",
+    "m04-music-video": "built",
+    "m05-edit-ship": "built",
+    "m06-video-os": "built"
+  },
+  "minuteBudget": {
+    "perModuleMinutes": 60,
+    "courseTotalHours": 6,
+    "m01": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m02": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m03": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m04": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m05": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    },
+    "m06": {
+      "introVideo": 4,
+      "l01": 12,
+      "l02": 14,
+      "l03": 12,
+      "l04": 12,
+      "exampleVideo": 6,
+      "total": 60
+    }
+  },
+  "videoStatus": "heygen_pending",
+  "omitMissingMp4s": true,
+  "typeTags": [
+    "meta",
+    "lesson",
+    "interactive",
+    "diagram",
+    "video-script",
+    "video",
+    "image",
+    "doc",
+    "stub",
+    "other"
+  ],
+  "files": [
+    {
+      "path": "COURSE.md",
+      "type": "meta",
+      "bytes": 4599
+    },
+    {
+      "path": "HANDOFF.md",
+      "type": "meta",
+      "bytes": 5980
+    },
+    {
+      "path": "assets/images/COVER-NOTE.md",
+      "type": "doc",
+      "bytes": 651
+    },
+    {
+      "path": "assets/intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1662
+    },
+    {
+      "path": "assets/videos/PROMPTS.md",
+      "type": "video-script",
+      "bytes": 228
+    },
+    {
+      "path": "bibles/voice-safety.md",
+      "type": "doc",
+      "bytes": 508
+    },
+    {
+      "path": "modules/m01-video-brief/MODULE.md",
+      "type": "meta",
+      "bytes": 1988
+    },
+    {
+      "path": "modules/m01-video-brief/assets/diagram-brief-pipeline.svg",
+      "type": "diagram",
+      "bytes": 4253
+    },
+    {
+      "path": "modules/m01-video-brief/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 898
+    },
+    {
+      "path": "modules/m01-video-brief/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1452
+    },
+    {
+      "path": "modules/m01-video-brief/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8228
+    },
+    {
+      "path": "modules/m01-video-brief/lessons/l01-what-a-usable-clip-needs.md",
+      "type": "lesson",
+      "bytes": 2319
+    },
+    {
+      "path": "modules/m01-video-brief/lessons/l02-aspect-duration-look-lock.md",
+      "type": "lesson",
+      "bytes": 2327
+    },
+    {
+      "path": "modules/m01-video-brief/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8203
+    },
+    {
+      "path": "modules/m01-video-brief/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8205
+    },
+    {
+      "path": "modules/m01-video-brief/lessons/l03-shot-list-vs-vibe-prompt.md",
+      "type": "lesson",
+      "bytes": 2114
+    },
+    {
+      "path": "modules/m01-video-brief/lessons/l04-failure-modes-morph-mute-off-look.md",
+      "type": "lesson",
+      "bytes": 2264
+    },
+    {
+      "path": "modules/m01-video-brief/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8189
+    },
+    {
+      "path": "modules/m02-text-to-video/MODULE.md",
+      "type": "meta",
+      "bytes": 1970
+    },
+    {
+      "path": "modules/m02-text-to-video/assets/diagram-t2v-pipeline.svg",
+      "type": "diagram",
+      "bytes": 4223
+    },
+    {
+      "path": "modules/m02-text-to-video/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 902
+    },
+    {
+      "path": "modules/m02-text-to-video/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1441
+    },
+    {
+      "path": "modules/m02-text-to-video/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8227
+    },
+    {
+      "path": "modules/m02-text-to-video/lessons/l01-one-shot-clips-that-match.md",
+      "type": "lesson",
+      "bytes": 2074
+    },
+    {
+      "path": "modules/m02-text-to-video/lessons/l02-camera-moves-you-can-name.md",
+      "type": "lesson",
+      "bytes": 2071
+    },
+    {
+      "path": "modules/m02-text-to-video/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8173
+    },
+    {
+      "path": "modules/m02-text-to-video/lessons/l03-continuity-across-four-clips.md",
+      "type": "lesson",
+      "bytes": 2190
+    },
+    {
+      "path": "modules/m02-text-to-video/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8218
+    },
+    {
+      "path": "modules/m02-text-to-video/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8135
+    },
+    {
+      "path": "modules/m02-text-to-video/lessons/l04-when-to-regenerate.md",
+      "type": "lesson",
+      "bytes": 1924
+    },
+    {
+      "path": "modules/m03-presenter-narration/MODULE.md",
+      "type": "meta",
+      "bytes": 2049
+    },
+    {
+      "path": "modules/m03-presenter-narration/assets/diagram-presenter-pipeline.svg",
+      "type": "diagram",
+      "bytes": 4264
+    },
+    {
+      "path": "modules/m03-presenter-narration/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 918
+    },
+    {
+      "path": "modules/m03-presenter-narration/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1515
+    },
+    {
+      "path": "modules/m03-presenter-narration/lessons/l01-avatar-vs-voice-over-only.md",
+      "type": "lesson",
+      "bytes": 2204
+    },
+    {
+      "path": "modules/m03-presenter-narration/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8190
+    },
+    {
+      "path": "modules/m03-presenter-narration/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8190
+    },
+    {
+      "path": "modules/m03-presenter-narration/lessons/l02-script-for-the-ear.md",
+      "type": "lesson",
+      "bytes": 2048
+    },
+    {
+      "path": "modules/m03-presenter-narration/lessons/l03-hyperframes-plus-graphics.md",
+      "type": "lesson",
+      "bytes": 2094
+    },
+    {
+      "path": "modules/m03-presenter-narration/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8235
+    },
+    {
+      "path": "modules/m03-presenter-narration/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8207
+    },
+    {
+      "path": "modules/m03-presenter-narration/lessons/l04-the-course-lesson-video-pattern.md",
+      "type": "lesson",
+      "bytes": 2112
+    },
+    {
+      "path": "modules/m04-music-video/MODULE.md",
+      "type": "meta",
+      "bytes": 1960
+    },
+    {
+      "path": "modules/m04-music-video/assets/diagram-music-video-pipeline.svg",
+      "type": "diagram",
+      "bytes": 4231
+    },
+    {
+      "path": "modules/m04-music-video/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 916
+    },
+    {
+      "path": "modules/m04-music-video/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1435
+    },
+    {
+      "path": "modules/m04-music-video/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8178
+    },
+    {
+      "path": "modules/m04-music-video/lessons/l01-lock-one-visual-style.md",
+      "type": "lesson",
+      "bytes": 2153
+    },
+    {
+      "path": "modules/m04-music-video/lessons/l02-cut-to-the-beat-in-16-9.md",
+      "type": "lesson",
+      "bytes": 2023
+    },
+    {
+      "path": "modules/m04-music-video/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8118
+    },
+    {
+      "path": "modules/m04-music-video/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8201
+    },
+    {
+      "path": "modules/m04-music-video/lessons/l03-stitch-without-look-drift.md",
+      "type": "lesson",
+      "bytes": 1989
+    },
+    {
+      "path": "modules/m04-music-video/lessons/l04-audio-track-vs-narration.md",
+      "type": "lesson",
+      "bytes": 1928
+    },
+    {
+      "path": "modules/m04-music-video/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8146
+    },
+    {
+      "path": "modules/m05-edit-ship/MODULE.md",
+      "type": "meta",
+      "bytes": 1823
+    },
+    {
+      "path": "modules/m05-edit-ship/assets/diagram-edit-ship.svg",
+      "type": "diagram",
+      "bytes": 4193
+    },
+    {
+      "path": "modules/m05-edit-ship/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 898
+    },
+    {
+      "path": "modules/m05-edit-ship/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1331
+    },
+    {
+      "path": "modules/m05-edit-ship/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8138
+    },
+    {
+      "path": "modules/m05-edit-ship/lessons/l01-selects-trim-concat.md",
+      "type": "lesson",
+      "bytes": 1861
+    },
+    {
+      "path": "modules/m05-edit-ship/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8156
+    },
+    {
+      "path": "modules/m05-edit-ship/lessons/l02-titles-and-end-cards.md",
+      "type": "lesson",
+      "bytes": 1881
+    },
+    {
+      "path": "modules/m05-edit-ship/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8176
+    },
+    {
+      "path": "modules/m05-edit-ship/lessons/l03-platform-exports.md",
+      "type": "lesson",
+      "bytes": 2000
+    },
+    {
+      "path": "modules/m05-edit-ship/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8175
+    },
+    {
+      "path": "modules/m05-edit-ship/lessons/l04-rights-and-likeness.md",
+      "type": "lesson",
+      "bytes": 2118
+    },
+    {
+      "path": "modules/m06-video-os/MODULE.md",
+      "type": "meta",
+      "bytes": 1913
+    },
+    {
+      "path": "modules/m06-video-os/assets/diagram-video-os.svg",
+      "type": "diagram",
+      "bytes": 4214
+    },
+    {
+      "path": "modules/m06-video-os/assets/example-video-script.md",
+      "type": "video-script",
+      "bytes": 892
+    },
+    {
+      "path": "modules/m06-video-os/assets/module-intro-video-script.md",
+      "type": "video-script",
+      "bytes": 1350
+    },
+    {
+      "path": "modules/m06-video-os/lessons/l01-interactive.html",
+      "type": "interactive",
+      "bytes": 8152
+    },
+    {
+      "path": "modules/m06-video-os/lessons/l01-shot-library.md",
+      "type": "lesson",
+      "bytes": 1931
+    },
+    {
+      "path": "modules/m06-video-os/lessons/l02-brief-templates.md",
+      "type": "lesson",
+      "bytes": 1969
+    },
+    {
+      "path": "modules/m06-video-os/lessons/l02-interactive.html",
+      "type": "interactive",
+      "bytes": 8137
+    },
+    {
+      "path": "modules/m06-video-os/lessons/l03-handoff-from-music-and-stills.md",
+      "type": "lesson",
+      "bytes": 2257
+    },
+    {
+      "path": "modules/m06-video-os/lessons/l03-interactive.html",
+      "type": "interactive",
+      "bytes": 8240
+    },
+    {
+      "path": "modules/m06-video-os/lessons/l04-interactive.html",
+      "type": "interactive",
+      "bytes": 8205
+    },
+    {
+      "path": "modules/m06-video-os/lessons/l04-ship-one-60-second-piece.md",
+      "type": "lesson",
+      "bytes": 2006
+    },
+    {
+      "path": "scripts/__pycache__/_curriculum.cpython-313.pyc",
+      "type": "other",
+      "bytes": 8737
+    },
+    {
+      "path": "scripts/__pycache__/_teaching_m12.cpython-313.pyc",
+      "type": "other",
+      "bytes": 11683
+    },
+    {
+      "path": "scripts/__pycache__/_teaching_m34.cpython-313.pyc",
+      "type": "other",
+      "bytes": 10903
+    },
+    {
+      "path": "scripts/__pycache__/_teaching_m56.cpython-313.pyc",
+      "type": "other",
+      "bytes": 10516
+    },
+    {
+      "path": "scripts/_curriculum.py",
+      "type": "other",
+      "bytes": 8932
+    },
+    {
+      "path": "scripts/_interactive_shell.html",
+      "type": "other",
+      "bytes": 7489
+    },
+    {
+      "path": "scripts/_teaching_m12.py",
+      "type": "other",
+      "bytes": 11458
+    },
+    {
+      "path": "scripts/_teaching_m34.py",
+      "type": "other",
+      "bytes": 10587
+    },
+    {
+      "path": "scripts/_teaching_m56.py",
+      "type": "other",
+      "bytes": 10188
+    },
+    {
+      "path": "scripts/build_content.py",
+      "type": "other",
+      "bytes": 32793
+    }
+  ]
+}

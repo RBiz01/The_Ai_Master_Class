@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Character sheets that hold · AI Image Studio · The Ai Master Class</title>
+<meta name="description" content="Character sheets that hold · AI Image Studio — The Ai Master Class" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg:#07070c; --panel:#121826; --card:#14151f; --border:#1e293b;
+  --text:#e8eaf2; --muted:#94a3b8; --accent:#f59e0b; --accent2:#ec4899;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"DM Sans",system-ui,sans-serif;background:
+  radial-gradient(1000px 500px at 0% -10%,rgba(245,158,11,.18),transparent),
+  radial-gradient(800px 400px at 100% 0%,rgba(236,72,153,.12),transparent),
+  var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+a{color:var(--accent2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
+.topbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:28px}
+.brand{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:600;color:var(--text);display:flex;gap:10px;align-items:center}
+.brand span{opacity:.55;font-weight:500;font-size:.9rem}
+.crumbs{font-size:.9rem;color:var(--muted)}
+.crumbs a{color:var(--muted)}
+.crumbs a:hover{color:var(--accent2)}
+.hero{display:grid;gap:18px;margin-bottom:32px}
+.hero h1{font-family:"Space Grotesk",system-ui,sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);margin:0;letter-spacing:-.02em}
+.lead{color:var(--muted);margin:0;max-width:62ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;padding:6px 10px;border-radius:999px;border:1px solid rgba(245,158,11,.35);background:rgba(245,158,11,.1);color:rgb(249,201,120)}
+.pill.ok{border-color:rgba(236,72,153,.35);background:rgba(236,72,153,.08);color:var(--accent2)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:12px;font-weight:600;border:1px solid transparent;cursor:pointer;font-size:.95rem}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;box-shadow:0 10px 30px rgba(245,158,11,.35)}
+.btn-primary:hover{text-decoration:none;filter:brightness(1.05)}
+.btn-ghost{background:transparent;border-color:var(--border);color:var(--text)}
+.btn-ghost:hover{border-color:var(--accent2);text-decoration:none}
+.modules{display:grid;gap:16px}
+.mod{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.mod-head{padding:18px 20px;display:flex;justify-content:space-between;gap:12px;align-items:flex-start;border-bottom:1px solid var(--border)}
+.mod-head h2{margin:0;font-size:1.15rem;font-family:"Space Grotesk",system-ui,sans-serif}
+.mod-num{color:var(--accent2);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.lessons{list-style:none;margin:0;padding:8px}
+.lessons li{border-top:1px solid transparent}
+.lessons a.lesson-row{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:14px 12px;border-radius:12px;color:var(--text)}
+.lessons a.lesson-row:hover{background:rgba(255,255,255,.03);text-decoration:none}
+.lnum{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:rgba(245,158,11,.12);color:rgb(249,201,120);font-weight:600;font-size:.85rem}
+.ltitle{font-weight:560}
+.lmeta{font-size:.82rem;color:var(--muted)}
+.badge{font-size:.72rem;padding:4px 8px;border-radius:8px;background:rgba(236,72,153,.12);color:var(--accent2);border:1px solid rgba(236,72,153,.25)}
+.footer-note{margin-top:40px;color:var(--muted);font-size:.85rem}
+.layout{display:grid;grid-template-columns:260px 1fr;gap:24px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}}
+.sidebar{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;height:fit-content;position:sticky;top:16px}
+.sidebar h3{margin:0 0 10px;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.sidebar a{display:block;padding:8px 10px;border-radius:8px;color:var(--muted);font-size:.9rem}
+.sidebar a:hover,.sidebar a.active{background:rgba(245,158,11,.12);color:var(--text);text-decoration:none}
+.sidebar .mod-label{font-size:.72rem;color:var(--accent2);margin:12px 6px 4px;text-transform:uppercase;letter-spacing:.05em}
+.article{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 26px}
+.article h1{font-family:"Space Grotesk",system-ui,sans-serif;margin-top:0;letter-spacing:-.02em}
+.article h2{margin-top:1.6em;font-size:1.2rem}
+.article h3{margin-top:1.3em;font-size:1.05rem}
+.article p,.article li{color:#c9d0dd}
+.article strong{color:var(--text)}
+.article code{background:rgba(245,158,11,.12);padding:2px 6px;border-radius:6px;font-size:.9em}
+.article pre{background:#0b0f19;border:1px solid var(--border);border-radius:12px;padding:14px;overflow:auto}
+.article pre code{background:none;padding:0}
+.article blockquote{margin:1em 0;padding:12px 16px;border-left:3px solid var(--accent);background:rgba(245,158,11,.08);border-radius:0 12px 12px 0;color:#c9d0dd}
+.article hr{border:none;border-top:1px solid var(--border);margin:2em 0}
+.table-wrap{overflow:auto;margin:1em 0}
+.article table{width:100%;border-collapse:collapse;font-size:.92rem}
+.article th,.article td{border:1px solid var(--border);padding:10px 12px;text-align:left}
+.article th{background:rgba(245,158,11,.1);color:var(--text)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px}
+.diagram{margin:18px 0;padding:16px;background:#0b0f19;border:1px solid var(--border);border-radius:14px}
+.diagram img{max-width:100%;height:auto;display:block}
+.diagram figcaption{color:var(--muted);font-size:.85rem;margin-top:10px}
+.nav-lessons{display:flex;justify-content:space-between;gap:12px;margin-top:28px;padding-top:18px;border-top:1px solid var(--border)}
+.lesson-video{margin:0 0 1.25rem;border-radius:14px;overflow:hidden;border:1px solid var(--border);background:#0b0f19;box-shadow:0 12px 40px rgba(0,0,0,.35);line-height:0}
+.lesson-video video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#000;max-width:100%}
+
+.outline-drawer > summary{list-style:none;cursor:pointer;font-family:"Space Grotesk",system-ui,sans-serif;font-weight:600;font-size:.95rem;padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.03);color:var(--text);margin-bottom:10px}
+.outline-drawer > summary::-webkit-details-marker{display:none}
+.outline-drawer > summary::after{content:" ▾"; float:right; opacity:.7}
+@media(max-width:900px){
+  .layout{display:flex;flex-direction:column;gap:16px}
+  .layout > div{order:1}
+  .layout > .outline-drawer,.layout > .sidebar{order:2;position:static;max-height:none;overflow:visible}
+  .outline-drawer[open]{max-height:min(50vh,360px);overflow:auto;-webkit-overflow-scrolling:touch}
+}
+@media(min-width:901px){.outline-drawer > summary{display:none}.outline-drawer{display:block}}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand" href="../../../../../index.html">The Ai Master <span>Class</span></a>
+    <div class="crumbs">
+      <a href="../../../../../course.html?id=ai-image-studio">Course</a> /
+      <a href="../../../index.html">Curriculum</a> /
+      <span>M3 · L1</span>
+    </div>
+  </div>
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>Course outline</h3>
+      <div class="mod-label">Module 1</div><a class="" href="../../m01-visual-brief/lessons/l01-what-a-usable-still-needs.html">1. What a usable still needs</a><a class="" href="../../m01-visual-brief/lessons/l02-subject-light-lens-grade.html">2. Subject, light, lens, grade</a><a class="" href="../../m01-visual-brief/lessons/l03-style-locks-vs-one-off-pretty.html">3. Style locks vs one-off pretty</a><a class="" href="../../m01-visual-brief/lessons/l04-failure-modes-mush-extras-off-brand.html">4. Failure modes: mush, extras, off-brand</a><div class="mod-label">Module 2</div><a class="" href="../../m02-prompt-control/lessons/l01-photoreal-vs-illustration-stacks.html">1. Photoreal vs illustration stacks</a><a class="" href="../../m02-prompt-control/lessons/l02-camera-and-lighting-language.html">2. Camera and lighting language</a><a class="" href="../../m02-prompt-control/lessons/l03-negative-space-and-composition.html">3. Negative space and composition</a><a class="" href="../../m02-prompt-control/lessons/l04-reference-images-that-help-and-that-dont.html">4. Reference images that help (and that don&#x27;t)</a><div class="mod-label">Module 3</div><a class="active" href="../../m03-character-product/lessons/l01-character-sheets-that-hold.html">1. Character sheets that hold</a><a class="" href="../../m03-character-product/lessons/l02-product-shots-that-match.html">2. Product shots that match</a><a class="" href="../../m03-character-product/lessons/l03-consistency-across-a-set.html">3. Consistency across a set</a><a class="" href="../../m03-character-product/lessons/l04-when-to-seed-vs-describe.html">4. When to seed vs describe</a><div class="mod-label">Module 4</div><a class="" href="../../m04-edit-upscale/lessons/l01-inpaint-vs-regenerate.html">1. Inpaint vs regenerate</a><a class="" href="../../m04-edit-upscale/lessons/l02-upscale-without-plastic-skin.html">2. Upscale without plastic skin</a><a class="" href="../../m04-edit-upscale/lessons/l03-crop-grade-and-export-sizes.html">3. Crop, grade, and export sizes</a><a class="" href="../../m04-edit-upscale/lessons/l04-batch-a-small-campaign-set.html">4. Batch a small campaign set</a><div class="mod-label">Module 5</div><a class="" href="../../m05-brand-kit/lessons/l01-palette-type-and-motif-locks.html">1. Palette, type, and motif locks</a><a class="" href="../../m05-brand-kit/lessons/l02-social-vs-print-vs-thumbnail.html">2. Social vs print vs thumbnail</a><a class="" href="../../m05-brand-kit/lessons/l03-rights-and-likeness.html">3. Rights and likeness</a><a class="" href="../../m05-brand-kit/lessons/l04-client-safe-delivery.html">4. Client-safe delivery</a><div class="mod-label">Module 6</div><a class="" href="../../m06-image-os/lessons/l01-prompt-library-for-stills.html">1. Prompt library for stills</a><a class="" href="../../m06-image-os/lessons/l02-review-rubric-for-images.html">2. Review rubric for images</a><a class="" href="../../m06-image-os/lessons/l03-handoff-to-video.html">3. Handoff to video</a><a class="" href="../../m06-image-os/lessons/l04-ship-a-6-image-kit.html">4. Ship a 6-image kit</a>
+    </aside>
+    <div>
+      <div class="meta" style="margin-bottom:12px">
+        <span class="pill">Module 3</span>
+        <span class="pill ok">Lesson 1 of 4</span>
+        <span class="pill">#9 / 24</span>
+      </div>
+      <article class="article">
+        <h1>Lesson 3.1 — Character sheets that hold</h1>
+        <div class="lesson-video">
+          <video controls playsinline preload="metadata">
+            <source src="assets/l01-video.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+
+<p><strong>Module:</strong> Character &amp; product lock <strong>Duration:</strong> ~6–8 min teaching + ~4 min interactive <strong>Interactive:</strong> <code>l01-interactive.html</code></p>
+<hr />
+<h2>Learning objective</h2>
+<p>Write a fictional character sheet with transferable traits so the same hero reads consistently across stills.</p>
+<h2>What to do</h2>
+<ol>
+<li>Watch the <strong>Lesson video</strong> once for the visual hook.</li>
+<li>Read <strong>Teaching</strong> (and the worked example) without rushing.</li>
+<li>Open <code>l01-interactive.html</code> and follow its Instructions until you hit the success state (this locks in: Character sheets that hold).</li>
+<li>Rewrite or apply the idea once in your own words (one sentence is enough).</li>
+<li><strong>You’re done when:</strong> you can explain — in plain language — <em>Write a fictional character sheet with transferable traits so the same hero reads consistently across stills.</em> and <code>l01-interactive.html</code> shows success.</li>
+</ol>
+<h2>Teaching</h2>
+<h3>Traits transfer; vibes don&#x27;t</h3>
+<p>Northstar uses <strong>fictional</strong> talent only—no real celebrity likeness. A sheet that holds lists countable traits:</p>
+<ul>
+<li>Face shape, hair, age band, wardrobe colors  </li>
+<li>Signature prop or motif  </li>
+<li>Expression range allowed  </li>
+<li>Hard do-nots (no real lookalikes)</li>
+</ul>
+<pre><code class="lang-text">CHARACTER SHEET — “Nova” (fictional)
+Hair: short black with amber tips · Face: oval, soft jaw
+Wardrobe: charcoal jacket, magenta stitch accent
+Prop: ceramic Northstar pin
+Expression: calm confidence · no caricature grin
+Do-not: real-person likeness · NSFW · extra fingers</code></pre>
+<h3>Talk-over narration</h3>
+<p><em>(Beat 1)</em> “If you can’t checklist the traits, you can’t QA the set.”</p>
+<p><em>(Beat 2)</em> “Fictional Nova stays Nova—amber tips and magenta stitch are the memory.”</p>
+<h3>Worked micro-example</h3>
+<p><strong>Weak:</strong> “cool stylish person.”   <strong>Hold:</strong> paste CHARACTER SHEET + shot note.</p>
+<h2>Practice</h2>
+<p>Open <code>l01-interactive.html</code> and rewrite the vague prompt until the checker lights green.</p>
+<h2>Takeaway</h2>
+<p>Lock countable traits on a fictional sheet; ban real-person likeness explicitly.</p>
+        
+        <div class="actions">
+          <a class="btn btn-primary" href="l01-interactive.html" target="_blank" rel="noopener">Open practice</a>
+          <a class="btn btn-ghost" href="../../../index.html">All lessons</a>
+        </div>
+        <div class="nav-lessons">
+          <a class="btn btn-ghost" href="../../m02-prompt-control/lessons/l04-reference-images-that-help-and-that-dont.html">← Previous</a>
+          <a class="btn btn-primary" href="../../m03-character-product/lessons/l02-product-shots-that-match.html">Next →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+  <p class="footer-note">© 2026 The Ai Master Class · AI Image Studio</p>
+</div>
+
+
+<script>
+(function(){
+  var mq=window.matchMedia("(max-width:900px)");
+  document.querySelectorAll(".layout > .sidebar").forEach(function(el){
+    if(el.tagName.toLowerCase()==="details") return;
+    var d=document.createElement("details");
+    d.className=el.className+" outline-drawer";
+    var s=document.createElement("summary");
+    s.textContent="Course outline";
+    d.appendChild(s);
+    while(el.firstChild) d.appendChild(el.firstChild);
+    el.replaceWith(d);
+    function sync(){ if(mq.matches) d.removeAttribute("open"); else d.setAttribute("open",""); }
+    sync();
+    mq.addEventListener("change", sync);
+  });
+})();
+</script>
+
+</body>
+</html>
