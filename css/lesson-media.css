@@ -1,6 +1,22 @@
 /* Shared lesson media + mobile layout */
-.lesson-video{min-height:160px}
-.lesson-video video{width:100%;height:auto;min-height:160px;max-height:min(70vh,480px);background:#000;object-fit:contain}
+.lesson-video{
+  margin:0 0 1.25rem;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid var(--border, #1e293b);
+  background:#0b0f19;
+  box-shadow:0 12px 40px rgba(0,0,0,.35);
+  line-height:0;
+}
+.lesson-video video{
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  aspect-ratio:16 / 9;
+  object-fit:contain;
+  background:#000;
+}
 
 .outline-drawer > summary{
   list-style:none;
@@ -24,7 +40,6 @@
     flex-direction:column;
     gap:16px;
   }
-  /* Lesson content first; outline is a collapsed drawer under/above as summary only */
   .layout > div{order:1}
   .layout > .outline-drawer,
   .layout > .sidebar{
@@ -33,15 +48,11 @@
     max-height:none;
     overflow:visible;
   }
-  .outline-drawer:not([open]){
-    /* collapsed: only summary shows — lesson is the page */
-  }
   .outline-drawer[open]{
     max-height:min(50vh,360px);
     overflow:auto;
     -webkit-overflow-scrolling:touch;
   }
-  .lesson-video video{min-height:180px}
   .article{scroll-margin-top:12px}
 }
 
