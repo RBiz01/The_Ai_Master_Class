@@ -94,7 +94,7 @@
       ],
       "video": {
         "poster": "images/courses/ai-for-work.png",
-        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+        "src": "content/ai-for-work/assets/course-intro-video.mp4"
       },
       "curriculum": [
         "Your AI desk setup",
@@ -151,7 +151,7 @@
       ],
       "video": {
         "poster": "images/courses/generative-media.png",
-        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+        "src": "content/generative-media/assets/course-intro-video.mp4"
       },
       "curriculum": [
         "Visual literacy for generative tools",
@@ -215,7 +215,7 @@
       ],
       "video": {
         "poster": "images/courses/ai-agents-automation.png",
-        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+        "src": "content/ai-agents-automation/assets/course-intro-video.mp4"
       },
       "curriculum": [
         "Agent mental models & architectures",
@@ -274,7 +274,7 @@
       ],
       "video": {
         "poster": "images/courses/no-code-ml-intuition.png",
-        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+        "src": "content/no-code-ml-intuition/assets/course-intro-video.mp4"
       },
       "curriculum": [
         "What models actually learn",
@@ -337,7 +337,7 @@
       ],
       "video": {
         "poster": "images/courses/ai-strategy-creators.png",
-        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+        "src": "content/ai-strategy-creators/assets/course-intro-video.mp4"
       },
       "curriculum": [
         "AI opportunity mapping for your niche",
@@ -400,7 +400,7 @@
       ],
       "video": {
         "poster": "images/courses/ai-sales-outreach.png",
-        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+        "src": "content/ai-sales-outreach/assets/course-intro-video.mp4"
       },
       "curriculum": [
         "AI-assisted prospect research",
@@ -463,7 +463,7 @@
       ],
       "video": {
         "poster": "images/courses/custom-gpts-team-assistants.png",
-        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+        "src": "content/custom-gpts-team-assistants/assets/course-intro-video.mp4"
       },
       "curriculum": [
         "Anatomy of a custom assistant",
@@ -526,7 +526,7 @@
       ],
       "video": {
         "poster": "images/courses/rag-knowledge-bases.png",
-        "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+        "src": "content/rag-knowledge-bases/assets/course-intro-video.mp4"
       },
       "curriculum": [
         "What RAG actually does",
