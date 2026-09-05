@@ -1,10 +1,39 @@
 /* Shared lesson media + mobile layout */
 /* Locked 16:9 frame — intrinsic MP4 size must not change the player. */
-/* Prevent wide images/tables from expanding the article column (grid blowout). */
+/* Prevent wide images/tables/SVGs from expanding the page (grid blowout). */
 
-.layout { min-width: 0; }
+html {
+  overflow-x: clip;
+}
+body {
+  overflow-x: clip;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1080px;
+  box-sizing: border-box;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+.layout {
+  display: grid; /* reinforce; pages also set columns inline */
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
 .layout > *,
-.article { min-width: 0; max-width: 100%; }
+.article,
+.diagram,
+.table-wrap {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.article {
+  overflow-x: auto;
+}
 
 .article img,
 .article svg,
@@ -12,11 +41,23 @@
 .article video {
   max-width: 100%;
   height: auto;
+  min-width: 0;
+}
+.diagram {
+  overflow: hidden;
+}
+.diagram img {
+  width: 100%;
+  display: block;
 }
 .article .table-wrap,
 .article pre {
   max-width: 100%;
   overflow-x: auto;
+}
+.article pre {
+  white-space: pre;
+  word-break: normal;
 }
 
 .lesson-video{
@@ -59,6 +100,11 @@
 }
 .outline-drawer > summary::-webkit-details-marker{display:none}
 .outline-drawer > summary::after{content:" ▾"; float:right; opacity:.7}
+
+.sidebar a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 
 @media (max-width:900px){
   .layout{

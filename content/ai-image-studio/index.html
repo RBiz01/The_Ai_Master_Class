@@ -20,7 +20,7 @@ body{margin:0;font-family:"DM Sans",system-ui,sans-serif;background:
   var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
 a{color:var(--accent2);text-decoration:none}
 a:hover{text-decoration:underline}
-.wrap{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:24px 20px 64px;box-sizing:border-box;min-width:0;overflow-x:clip}
 .topbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:28px}
 .brand{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:600;color:var(--text);display:flex;gap:10px;align-items:center}
 .brand span{opacity:.55;font-weight:500;font-size:.9rem}
@@ -52,7 +52,7 @@ a:hover{text-decoration:underline}
 .lmeta{font-size:.82rem;color:var(--muted)}
 .badge{font-size:.72rem;padding:4px 8px;border-radius:8px;background:rgba(236,72,153,.12);color:var(--accent2);border:1px solid rgba(236,72,153,.25)}
 .footer-note{margin-top:40px;color:var(--muted);font-size:.85rem}
-.layout{display:grid;grid-template-columns:260px 1fr;gap:24px}
+.layout{display:grid;grid-template-columns:260px 1fr;gap:24px;width:100%;max-width:100%;min-width:0}.layout>*{min-width:0}
 @media(max-width:900px){.layout{grid-template-columns:1fr}}
 .sidebar{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;height:fit-content;position:sticky;top:16px}
 .sidebar h3{margin:0 0 10px;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
@@ -76,7 +76,7 @@ a:hover{text-decoration:underline}
 .article th{background:rgba(245,158,11,.1);color:var(--text)}
 .actions{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px}
 .diagram{margin:18px 0;padding:16px;background:#0b0f19;border:1px solid var(--border);border-radius:14px}
-.diagram img{max-width:100%;height:auto;display:block}
+.diagram{max-width:100%;min-width:0;overflow:hidden}.diagram img{max-width:100%;width:100%;height:auto;display:block;min-width:0}
 .diagram figcaption{color:var(--muted);font-size:.85rem;margin-top:10px}
 .nav-lessons{display:flex;justify-content:space-between;gap:12px;margin-top:28px;padding-top:18px;border-top:1px solid var(--border)}
 .lesson-video{margin:0 auto 1.25rem;border-radius:14px;overflow:hidden;border:1px solid var(--border);background:#0b0f19;box-shadow:0 12px 40px rgba(0,0,0,.35);line-height:0;position:relative;width:100%;max-width:min(100%,720px);aspect-ratio:16/9}
