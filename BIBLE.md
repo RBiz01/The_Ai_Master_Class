@@ -95,11 +95,23 @@ Add new category strings to the top-level `categories` array when needed.
 ### Video trailers
 
 - Prefer **HTML5** `<video controls playsinline>` with a hotlinkable free MP4 (`video.src`).
-  - Reliable samples: Google gtv-videos-bucket sample clips.
 - Alternative (consistent site-wide): YouTube privacy-enhanced embeds via `youtube-nocookie.com` + `video.youtubeId`.
 - Every detail page must show a **playable** trailer with a glow play overlay when using HTML5.
 - Do **not** require paid video hosting (no Mux/Vimeo Pro requirement).
+- Do **not** use Google sample / gtv-videos-bucket MP4s as trailers. Leave `video.src` empty until a real intro exists, or use a narrated fallback.
 - Set `video.poster` to the course cover path (same as `image`) when available; `"gradient"` is a legacy fallback only.
+
+### Video size (course intros + lesson videos) — required
+
+**Every course intro/trailer and every lesson video must play in the same on-page size.** Intrinsic file resolution must not change the player.
+
+- Frame: **16:9** (`aspect-ratio: 16 / 9`), full content column width.
+- Video: `width/height 100%` of that frame, **`object-fit: contain`** on black (letterbox if needed). Never `cover`, never `height: auto` on the `<video>` (that lets 752×416 files render a different box than 1920×1080).
+- Gold standard: Prompt Engineering Mastery Lesson 1.1 — `1920×1080` 16:9 talking-head in `.lesson-video`.
+- Course intros: same frame via `.trailer-frame` / `.trailer-video` on `course.html`.
+- Lesson videos: same frame via `.lesson-video` in `css/lesson-media.css` (keep inline lesson CSS in sync).
+- Prefer new renders at **1920×1080 16:9**. Fallback narrated clips (1280×720) and older HeyGen cuts (752×416) still sit in this same frame until replaced.
+- Homepage welcome video uses the same 16:9 contain rule.
 
 ### Course images
 

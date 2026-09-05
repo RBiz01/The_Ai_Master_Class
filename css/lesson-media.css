@@ -1,4 +1,5 @@
 /* Shared lesson media + mobile layout */
+/* Locked 16:9 frame — intrinsic MP4 size must not change the player. */
 .lesson-video{
   margin:0 0 1.25rem;
   border-radius:14px;
@@ -7,14 +8,20 @@
   background:#0b0f19;
   box-shadow:0 12px 40px rgba(0,0,0,.35);
   line-height:0;
+  position:relative;
+  width:100%;
+  max-width:100%;
+  aspect-ratio:16 / 9;
 }
 .lesson-video video{
   display:block;
+  position:absolute;
+  inset:0;
   width:100%;
-  max-width:100%;
-  height:auto;
-  aspect-ratio:16 / 9;
+  height:100%;
+  max-width:none;
   object-fit:contain;
+  object-position:center center;
   background:#000;
 }
 
