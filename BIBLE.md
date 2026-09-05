@@ -237,8 +237,8 @@ Also:
 
 ## Pricing (free + donate)
 
-- Courses are **free**. Keep `price` in `data/courses.json` as the list/compare amount for strike-through UI — do not zero those values.
-- Shared UI: `FC.priceRowHTML(course)` → struck list price + **FREE** + **Donate** button.
+- Courses are **free**. Do not show dollar amounts in the UI.
+- Shared UI: `FC.priceRowHTML(course)` → **FREE** + **Donate** button (no strike-through list price).
 - Donate URL: `DONATE_PAYMENT_LINK` in `js/app.js` (placeholder until Stripe donate link is set).
 - Cart (`fc_cart`) is optional; mock checkout is “Start learning” with no charge.
 - First-visit email modal is for updates / course drops (no longer a 10% discount gate).

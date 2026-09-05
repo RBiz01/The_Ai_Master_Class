@@ -126,7 +126,7 @@ const FC = (() => {
 
   function priceFor(course) {
     const base = Number(course.price) || 0;
-    // All courses are free; keep list price for strike-through display.
+    // Courses are free. Catalog price is unused in the UI.
     return { base, final: 0, discounted: false, free: true };
   }
 
@@ -135,15 +135,12 @@ const FC = (() => {
   }
 
   function priceRowHTML(course, opts = {}) {
-    const p = priceFor(course);
     const showDonate = opts.donate !== false;
     const compact = !!opts.compact;
-    const list = formatMoney(p.base || course.compareAtPrice || 0);
     const donateBtn = showDonate
       ? `<a class="btn btn-donate${compact ? ' btn-sm' : ''}" href="${escapeHtml(donateHref())}" target="_blank" rel="noopener" data-donate>Donate</a>`
       : '';
     return `<span class="price-row${compact ? ' is-compact' : ''}">
-      <span class="was">${list}</span>
       <span class="price-free">FREE</span>
       ${donateBtn}
     </span>`;

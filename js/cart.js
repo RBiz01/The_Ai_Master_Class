@@ -60,7 +60,6 @@
     summaryEl.innerHTML = `
       <div class="summary-card">
         <h2>Your free courses</h2>
-        <div class="summary-row"><span>Subtotal</span><span><span class="was">${FC.formatMoney(listTotal)}</span></span></div>
         <div class="summary-row total"><span>Total</span><span class="price-free">FREE</span></div>
         <p class="hint success-text">All courses are free. Optional donations keep new lessons coming.</p>
         <button type="button" class="btn btn-primary btn-block" id="mock-checkout">Start learning</button>

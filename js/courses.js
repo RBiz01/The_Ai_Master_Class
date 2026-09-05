@@ -43,10 +43,6 @@
   function sortCourses(list, mode) {
     const arr = list.slice();
     switch (mode) {
-      case 'price-asc':
-        return arr.sort((a, b) => a.price - b.price);
-      case 'price-desc':
-        return arr.sort((a, b) => b.price - a.price);
       case 'rating':
         return arr.sort((a, b) => b.rating - a.rating);
       case 'title':
