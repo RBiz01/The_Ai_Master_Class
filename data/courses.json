@@ -715,7 +715,7 @@
       ],
       "video": {
         "poster": "images/courses/ai-video-music-videos.png",
-        "src": ""
+        "src": "content/ai-video-music-videos/assets/course-intro-video.mp4"
       },
       "curriculum": [
         "Video brief",
