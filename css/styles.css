@@ -1194,3 +1194,5 @@ code { font-size: 0.9em; color: var(--accent-2); }
 .buy-price .price-free{font-size:1.35rem}
 .hero-slideshow-price .price-row{color:inherit}
 
+.welcome-video{margin:0 auto;max-width:920px;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:#0b0f19;box-shadow:0 12px 40px rgba(0,0,0,.35);line-height:0}
+.welcome-video video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#000}
