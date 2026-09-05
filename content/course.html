@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecting… · The Ai Master Class</title>
+  <script>
+    (function () {
+      var q = location.search || '';
+      location.replace('../course.html' + q);
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=../course.html" />
+  </noscript>
+</head>
+<body>
+  <p>This page moved. <a id="go" href="../course.html">Open the course page</a>.</p>
+  <script>
+    document.getElementById('go').href = '../course.html' + (location.search || '');
+  </script>
+</body>
+</html>

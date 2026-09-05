@@ -243,3 +243,10 @@ Also:
 - Cart (`fc_cart`) is optional; mock checkout is “Start learning” with no charge.
 - First-visit email modal is for updates / course drops (no longer a 10% discount gate).
 
+## Course URLs (no broken links)
+
+- Course **detail** page: `/course.html?id=<course-id>` (site root). Never `/content/course.html`.
+- Curriculum **hub**: `/content/<course-id>/`.
+- Lesson pages live under `/content/<course-id>/modules/.../lessons/`. From a lesson file, site-root links need **five** `../` segments (`../../../../../course.html`), not four (four lands on `/content/course.html` and 404s).
+- `content/course.html` is a compatibility redirect → `../course.html` + query string.
+
